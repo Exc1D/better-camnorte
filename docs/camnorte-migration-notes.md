@@ -24,8 +24,8 @@ Source-backed updates already applied:
 
 Sources used:
 
-- Official province site: https://camsnorte.com/
-- Official legislative page: https://camsnorte.com/the-sanggunian/
+- Official province site: https://camarinesnorte.gov.ph/
+- Official legislative page: https://camarinesnorte.gov.ph/the-sanggunian/
 - Official Facebook page: https://www.facebook.com/piocamnorte
 - PSA PSGC province profile: https://psa.gov.ph/classification/psgc/citimuni/0501600000
 - PhilAtlas province profile: https://www.philatlas.com/luzon/r05/camarines-norte.html

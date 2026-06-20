@@ -20,8 +20,6 @@ var PRECACHE_URLS = [
   '/assets/js/translations.js',
   '/assets/js/info-bar.js',
   '/assets/images/logo/camnorte-logo.png',
-  '/assets/images/logo/camnorte-logo.png',
-  '/assets/images/logo/camnorte-logo.png',
   '/assets/images/logo/favicon.ico',
   '/manifest.webmanifest',
 ];

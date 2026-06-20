@@ -115,7 +115,7 @@ export default function HealthPage() {
               <span className="health-stat-label">{t('health-stat-hospitals')}</span>
             </div>
             <div className="health-stat-card">
-              <span className="health-stat-num">TBD</span>
+              <span className="health-stat-num">22</span>
               <span className="health-stat-label">{t('health-stat-bhs')}</span>
             </div>
             <div className="health-stat-card">

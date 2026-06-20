@@ -432,7 +432,7 @@ All public information is sourced from official government portals:
 
 | Source                             | URL                                                                       | Data Type                 |
 | ---------------------------------- | ------------------------------------------------------------------------- | ------------------------- |
-| Camarines Norte Provincial Government Official Website        | [camnorte.gov.ph](https://camnorte.gov.ph/)                                   | Services, Officials       |
+| Camarines Norte Provincial Government Official Website        | [camarinesnorte.gov.ph](https://camarinesnorte.gov.ph/)                                   | Services, Officials       |
 | Sangguniang Panlalawigan ng Camarines Norte        | [sangguniangbayan.camnorte.gov.ph](https://sangguniangbayan.camnorte.gov.ph/) | Ordinances, Resolutions   |
 | Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/)                                       | Budget, Financial Reports |
 | Philippine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)                                         | Demographics, Census      |

@@ -642,7 +642,7 @@ export default function HomePage() {
                   <i className="bi bi-envelope"></i> pgcamarinesnorte@gmail.com
                 </a>
                 <a href="https://camsnorte.com/">
-                  <i className="bi bi-telephone"></i> Provincial Capitol, Brgy III, Daet
+                  <i className="bi bi-geo-alt"></i> Provincial Capitol, Brgy III, Daet
                 </a>
               </div>
             </div>
@@ -654,7 +654,7 @@ export default function HomePage() {
                   <i className="bi bi-envelope"></i> pgcamarinesnorte@gmail.com
                 </a>
                 <a href="https://camsnorte.com/">
-                  <i className="bi bi-telephone"></i> Provincial Capitol, Brgy III, Daet
+                  <i className="bi bi-geo-alt"></i> Provincial Capitol, Brgy III, Daet
                 </a>
               </div>
             </div>

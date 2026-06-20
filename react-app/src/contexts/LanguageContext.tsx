@@ -624,7 +624,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-section-mho': 'Opisina ng Kalusugan ng Munisipalidad',
     'health-section-bhs': 'Mga Barangay Health Station',
     'health-bhs-subtitle':
-      '282 barangays Health Stations/Centers na naglilingkod sa lahat ng barangay ng Camarines Norte',
+      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Camarines Norte',
     'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Camarines Norte',
     'health-mho-desc':
       'Ang Municipal Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',

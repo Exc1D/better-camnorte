@@ -568,7 +568,7 @@ FIL_SENTENCES = {
     "2024 POPCEN population by municipality": "2024 POPCEN ng Populasyon",
 
     # Education
-    "Schools data pending": "22 paaralan",
+    "Schools data pending": "Nakabinbin ang datos ng mga paaralan",
     "6 schools": "6 na paaralan",
     "7 institutions": "7 institusyon",
 
@@ -721,7 +721,7 @@ ILO_SENTENCES = {
     "2024 POPCEN population by municipality": "2024 POPCEN ti Populasion",
 
     # Education
-    "Schools data pending": "22 nga eskuelaan",
+    "Schools data pending": "Ur-urayen pay ti datos dagiti eskuelaan",
     "6 schools": "6 nga eskuelaan",
     "7 institutions": "7 nga institusion",
 

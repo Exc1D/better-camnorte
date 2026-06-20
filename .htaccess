@@ -97,7 +97,7 @@ AddDefaultCharset UTF-8
     AddType application/font-woff2 .woff2
     
     # SVG
-    AddType image/png .svg .svgz
+    AddType image/svg+xml .svg .svgz
     
     # JSON
     AddType application/json .json

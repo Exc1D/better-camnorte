@@ -626,7 +626,7 @@ FIL7 = {
     "Data and statistics about Camarines Norte": "Datos at estadistika tungkol sa Camarines Norte",
     "Demographics Overview": "Pangkalahatang Demograpiya",
     "Economic Indicators": "Mga Tagapagpahiwatig ng Ekonomiya",
-    "Population by Municipality": "Populasyon ayon sa Barangay",
+    "Population by Municipality": "Populasyon ayon sa Munisipyo",
     "Historical growth from 1990 to 2024": "Makasaysayang paglago mula 1990 hanggang 2024",
     "Cities and Municipalities Competitiveness Index (CMCI) Performance 2016-2024": "Pagganap ng Cities and Municipalities Competitiveness Index (CMCI) 2016-2024",
     "Camarines Norte at a Glance": "Camarines Norte sa Isang Tingin",
