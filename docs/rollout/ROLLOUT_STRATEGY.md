@@ -2,11 +2,11 @@
 
 **Document Status:** Draft 1.0
 **Target Audience:** Technical Leads, Frontend Developers, LGU Data Custodians
-**Reference Implementation:** BetterSolano (GitHub)
+**Reference Implementation:** BetterCamNorte (GitHub)
 
 ## Executive Summary
 
-This document serves as the authoritative "Source of Truth" for deploying the BetterLGU transparency platform. It outlines the mandatory design standards, data synchronization protocols, and architectural decisions required to scale the BetterSolano template to other Local Government Units (LGUs). All contributors must adhere to the "Kapwa" design values and the data normalization standards defined herein to ensure the platform remains accessible, maintainable, and civic-centric.
+This document serves as the authoritative "Source of Truth" for deploying the BetterLGU transparency platform. It outlines the mandatory design standards, data synchronization protocols, and architectural decisions required to scale the BetterCamNorte template to other Local Government Units (LGUs). All contributors must adhere to the "Kapwa" design values and the data normalization standards defined herein to ensure the platform remains accessible, maintainable, and civic-centric.
 
 ---
 
@@ -27,7 +27,7 @@ Adherence to the [Kapwa Design Values](https://github.com/bettergovph/kapwa/wiki
 
 ### 1.2 Low Bandwidth Optimization & WCAG 2.1 AA
 
-Given the mobile data context in the Philippines (prepaid metering, fluctuating 3G/4G signals), the following technical constraints apply:
+Given the mobile data context in the Placeholderpines (prepaid metering, fluctuating 3G/4G signals), the following technical constraints apply:
 
 - **Asset Weight:** The initial page load (First Contentful Paint) must be under 300KB (gzipped).
 - **Image Handling:**
@@ -52,7 +52,7 @@ Developers are responsible for ETL (Extract, Transform, Load) operations mapping
 | **Demographics**    | **PSA** (psa.gov.ph)       | Local CBMS Data           | `data/demographics.json`        |
 | **Fiscal Data**     | **BLGF** (blgf.gov.ph)     | LGU Accounting Office     | `data/fiscal_transparency.json` |
 | **Competitiveness** | **CMCI** (cmci.dti.gov.ph) | DTI Provincial Office     | `data/indices.json`             |
-| **Ordinances**      | **Sangguniang Bayan**      | Official SB Facebook Page | `data/legislative.json`         |
+| **Ordinances**      | **Sangguniang Panlalawigan**      | Official SB Facebook Page | `data/legislative.json`         |
 | **Services**        | **Citizen's Charter**      | Department Heads          | `data/services.json`            |
 
 ### 2.2 Integration Workflows
@@ -74,7 +74,7 @@ This section defines the architectural modularity required to allow LGUs to sele
 
 ### 3.1 Stack Comparison Matrix
 
-| Feature         | **BetterSolano A (Lightweight)** | **BetterSolano B (React/TS)**              |
+| Feature         | **BetterCamNorte A (Lightweight)** | **BetterCamNorte B (React/TS)**              |
 | :-------------- | :------------------------------- | :----------------------------------------- |
 | **Core Tech**   | Vanilla JS, Bootstrap 5, Leaflet | React, TypeScript, Tailwind                |
 | **Data Store**  | Static JSON Fetching             | Typed JSON Imports / Context API           |
@@ -130,7 +130,7 @@ All new repositories must initialize with the following template:
 
 ### 3. Content Approvers (Gatekeepers)
 
-- **Designation:** [e.g., Information Officer / Mayor's Chief of Staff]
+- **Designation:** [e.g., Information Officer / Provincial Governor's Chief of Staff]
 - **Responsibility:** Verifies that the data on the staging site matches the official hard copies before production deployment.
 
 ## Change Management Log

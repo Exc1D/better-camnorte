@@ -12,20 +12,20 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: { default: 'BetterSolano.org | Official Portal', template: '%s | BetterSolano.org' },
-  description: 'BetterSolano.org - Your digital gateway to LGU Solano services.',
-  keywords: ['BetterSolano', 'Solano Nueva Vizcaya', 'LGU Solano', 'municipal services'],
+  title: { default: 'BetterCamNorte | Official Portal', template: '%s | BetterCamNorte' },
+  description: 'BetterCamNorte - Your digital gateway to Camarines Norte Provincial Government services.',
+  keywords: ['BetterCamNorte', 'Camarines Norte', 'Camarines Norte Provincial Government', 'government services'],
   authors: [{ name: 'Ramon Logan Jr.' }],
   openGraph: {
     type: 'website',
     locale: 'en_PH',
-    url: 'https://bettersolano.org/',
-    siteName: 'BetterSolano.org',
-    title: 'BetterSolano.org | Official Portal',
-    description: 'Empowering the people of Solano with transparent access to services.',
+    url: 'https://bettercamnorte.org/',
+    siteName: 'BetterCamNorte',
+    title: 'BetterCamNorte | Official Portal',
+    description: 'Empowering the people of Camarines Norte with transparent access to services.',
     images: [
       {
-        url: 'https://bettersolano.org/assets/images/banners/opengraph.png',
+        url: 'https://bettercamnorte.org/assets/images/banners/opengraph.png',
         width: 1200,
         height: 630,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'BetterSolano',
+    title: 'BetterCamNorte',
   },
 };
 

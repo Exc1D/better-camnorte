@@ -1,7 +1,7 @@
 {
-  "name": "bs-web",
+  "name": "bettercamnorte-web",
   "version": "1.1.19",
-  "description": "BetterSolano.org - Official Portal for LGU Solano",
+  "description": "BetterCamNorte - Official Portal for Camarines Norte Provincial Government",
   "scripts": {
     "dev": "python3 -m http.server 8000",
     "build": "bash build.sh",
@@ -18,8 +18,8 @@
     "format:check": "prettier --check ."
   },
   "keywords": [
-    "solano",
-    "nueva-vizcaya",
+    "camnorte",
+    "camarines-norte",
     "government",
     "lgu"
   ],

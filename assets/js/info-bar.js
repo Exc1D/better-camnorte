@@ -1,6 +1,6 @@
 /**
  * Real-Time Information Bar Module
- * Displays live exchange rates, weather, and Philippine Time
+ * Displays live exchange rates, weather, and Placeholderpine Time
  */
 
 // ============================================
@@ -220,8 +220,8 @@ const CONFIG = {
   EXCHANGE_RATE_TTL: 30 * 60 * 1000, // 30 minutes
   WEATHER_TTL: 15 * 60 * 1000, // 15 minutes
   TIME_UPDATE_INTERVAL: 1000, // 1 second
-  SOLANO_LAT: 16.5167,
-  SOLANO_LON: 121.1833,
+  CAMNORTE_LAT: 14.1122,
+  CAMNORTE_LON: 122.9553,
   CURRENCIES: ['USD', 'GBP', 'SAR', 'AED', 'JPY', 'CAD', 'AUD'],
   CACHE_KEYS: {
     EXCHANGE_RATES: 'infobar_exchange_rates',
@@ -382,7 +382,7 @@ const WeatherService = {
   async fetchWeather() {
     try {
       const response = await fetch(
-        `https://api.open-meteo.com/v1/forecast?latitude=${CONFIG.SOLANO_LAT}&longitude=${CONFIG.SOLANO_LON}&current_weather=true`
+        `https://api.open-meteo.com/v1/forecast?latitude=${CONFIG.CAMNORTE_LAT}&longitude=${CONFIG.CAMNORTE_LON}&current_weather=true`
       );
 
       if (!response.ok) {
@@ -396,9 +396,9 @@ const WeatherService = {
           temperature: data.current_weather.temperature,
           timestamp: Date.now(),
           location: {
-            lat: CONFIG.SOLANO_LAT,
-            lon: CONFIG.SOLANO_LON,
-            name: 'Solano, Nueva Vizcaya',
+            lat: CONFIG.CAMNORTE_LAT,
+            lon: CONFIG.CAMNORTE_LON,
+            name: 'Camarines Norte',
           },
         };
       }
@@ -453,9 +453,9 @@ const WeatherService = {
       temperature: null,
       timestamp: Date.now(),
       location: {
-        lat: CONFIG.SOLANO_LAT,
-        lon: CONFIG.SOLANO_LON,
-        name: 'Solano, Nueva Vizcaya',
+        lat: CONFIG.CAMNORTE_LAT,
+        lon: CONFIG.CAMNORTE_LON,
+        name: 'Camarines Norte',
       },
     };
   },
@@ -467,7 +467,7 @@ const WeatherService = {
 
 const TimeService = {
   /**
-   * Get current Philippine Time (UTC+8)
+   * Get current Placeholderpine Time (UTC+8)
    * @returns {Date} Current PHT date
    */
   getCurrentPHTDate() {
@@ -479,7 +479,7 @@ const TimeService = {
   },
 
   /**
-   * Get formatted Philippine Time string
+   * Get formatted Placeholderpine Time string
    * @returns {string} Formatted time (e.g., "2:30 PM")
    */
   getCurrentPHT() {
@@ -488,7 +488,7 @@ const TimeService = {
   },
 
   /**
-   * Get formatted Philippine Date string
+   * Get formatted Placeholderpine Date string
    * @returns {string} Formatted date (e.g., "Dec 1, 2025")
    */
   getCurrentPHTDate_Formatted() {

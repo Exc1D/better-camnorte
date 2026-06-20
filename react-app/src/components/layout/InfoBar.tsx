@@ -47,7 +47,7 @@ export default function InfoBar() {
       .catch(() => {});
 
     fetch(
-      'https://api.open-meteo.com/v1/forecast?latitude=16.5167&longitude=121.1833&current_weather=true'
+      'https://api.open-meteo.com/v1/forecast?latitude=14.1122&longitude=122.9553&current_weather=true'
     )
       .then((r) => r.json())
       .then((data) => {
@@ -68,12 +68,12 @@ export default function InfoBar() {
               <span className="rate-display">{rate}</span>
             </span>
           </div>
-          <div className="info-bar-item info-bar-weather" aria-label="Current weather in Solano">
+          <div className="info-bar-item info-bar-weather" aria-label="Current weather in Camarines Norte">
             <i className="bi bi-thermometer-half" aria-hidden="true" />
-            <span className="weather-location">Solano</span>
+            <span className="weather-location">Camarines Norte</span>
             <span className="weather-temp">{temp}</span>
           </div>
-          <div className="info-bar-item info-bar-datetime" aria-label="Philippine Date and Time">
+          <div className="info-bar-item info-bar-datetime" aria-label="Placeholderpine Date and Time">
             <i className="bi bi-calendar3" aria-hidden="true" />
             <span className="date-value">{dateStr}</span>
             <span className="datetime-separator" aria-hidden="true">

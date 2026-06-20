@@ -1,6 +1,6 @@
 # LGU Synchronization Protocol
 
-**LGU Name:** Municipality of Solano, Nueva Vizcaya
+**LGU Name:** Province of Camarines Norte
 **Last Sync Date:** 2026-02-03
 
 ## Roles & Responsibilities
@@ -18,7 +18,7 @@
 
 ### 3. Content Approvers (Gatekeepers)
 
-- **Designation:** Information Officer / Mayor's Chief of Staff
+- **Designation:** Information Officer / Provincial Governor's Chief of Staff
 - **Responsibility:** Verifies that the data on the staging site matches the official hard copies before production deployment.
 
 ---
@@ -29,12 +29,12 @@ The following hotlines must be verified monthly against official LGU records:
 
 | Service                 | Number         | Source                    |
 | ----------------------- | -------------- | ------------------------- |
-| Police (PNP)            | 0927 400 8033  | LGU Solano Municipal Hall |
-| MSWDO                   | 0916 284 0885  | LGU Solano Municipal Hall |
-| Fire (BFP)              | 0936 062 0305  | LGU Solano Municipal Hall |
-| DILG                    | 0906 188 086   | LGU Solano Municipal Hall |
-| MDRRMO                  | 0926 383 3744  | LGU Solano Municipal Hall |
-| R2TMC                   | 0906 819 5569  | LGU Solano Municipal Hall |
+| Police (PNP)            | 0927 400 8033  | Camarines Norte Provincial Government Municipal Hall |
+| MSWDO                   | 0916 284 0885  | Camarines Norte Provincial Government Municipal Hall |
+| Fire (BFP)              | 0936 062 0305  | Camarines Norte Provincial Government Municipal Hall |
+| DILG                    | 0906 188 086   | Camarines Norte Provincial Government Municipal Hall |
+| MDRRMO                  | 0926 383 3744  | Camarines Norte Provincial Government Municipal Hall |
+| R2TMC                   | 0906 819 5569  | Camarines Norte Provincial Government Municipal Hall |
 | Municipal Hall Landline | (078) 805-3581 | Official records          |
 
 **Last Verified:** [DATE]
@@ -45,7 +45,7 @@ The following hotlines must be verified monthly against official LGU records:
 
 ### Officials Directory
 
-- **Source:** LGU Solano Human Resources / Election results
+- **Source:** Camarines Norte Provincial Government Human Resources / Election results
 - **Frequency:** After every election cycle, or when appointments change
 - **File to update:** `data/officials.json`
 - **Approver:** Information Officer
@@ -59,8 +59,8 @@ The following hotlines must be verified monthly against official LGU records:
 
 ### Legislative Data (Ordinances & Resolutions)
 
-- **Source:** Sangguniang Bayan records
-- **Frequency:** After each Sangguniang Bayan session
+- **Source:** Sangguniang Panlalawigan records
+- **Frequency:** After each Sangguniang Panlalawigan session
 - **Files to update:** `data/ordinances.json`, `data/resolutions.json`
 - **Approver:** SB Secretary
 
@@ -87,7 +87,7 @@ The following hotlines must be verified monthly against official LGU records:
 
 ### Demographics
 
-- **Source:** Philippine Statistics Authority (PSA)
+- **Source:** Placeholderpine Statistics Authority (PSA)
 - **Frequency:** After census releases or official population updates
 - **File to update:** `data/demographics.json`
 - **Approver:** MPDC

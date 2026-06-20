@@ -23,8 +23,8 @@ TRANSLATIONS_JS = 'assets/js/translations.js'
 
 # Words/phrases that should NOT be translated (proper nouns, acronyms, etc.)
 KEEP_AS_IS = {
-    'BLGF Portal', 'CMCI DTI Portal', 'LGU Solano Facebook',
-    'Open Data Philippines', 'PhilHealth', 'GSIS', 'SSS', 'Pag-IBIG',
+    'BLGF Portal', 'CMCI DTI Portal', 'Camarines Norte Provincial Government Facebook',
+    'Open Data Placeholderpines', 'PhilHealth', 'GSIS', 'SSS', 'Pag-IBIG',
     'BFP', 'PNP', 'DILG', 'MDRRMO', 'MSWDO', 'SEEDO', 'MPDO',
     'TB-DOTS', 'BIR', 'DTI', 'SEC', 'DENR', 'DPWH', 'DSWD',
     'PSA', 'NBI', 'CENRO', 'MENRO', 'PENRO', 'TESDA', 'DepEd',
@@ -32,11 +32,11 @@ KEEP_AS_IS = {
     'DAR', 'DICT', 'DOE', 'DOF', 'DOJ', 'DOST', 'DND', 'NEDA',
     'NAPC', 'PCSO', 'PAGASA', 'PHIVOLCS', 'NDRRMC', 'OCD',
     'R2TMC', 'MTOF', 'BPLS', 'RPT', 'CTC', 'RPTA',
-    'Filipizen', 'BetterSolano.org', 'Better Solano',
-    'Abakada.org', 'volunteer@bettersolano.org',
-    'accounting@solano.gov.ph', 'Facebook', 'Google',
-    'Sangguniang Bayan', 'Sangguniang Panlalawigan',
-    'Nueva Vizcaya', 'Solano', 'Bayombong',
+    'Filipizen', 'BetterCamNorte', 'BetterCamNorte',
+    'Abakada.org', 'volunteer@bettercamnorte.org',
+    'accounting@camnorte.gov.ph', 'Facebook', 'Google',
+    'Sangguniang Panlalawigan', 'Sangguniang Panlalawigan',
+    'Camarines Norte', 'Camarines Norte', 'Bayombong',
 }
 
 # Patterns that should be kept as-is (regex)
@@ -100,10 +100,10 @@ FIL_PHRASES = {
     # Government & Municipal
     "Citizen's Charter": "Citizen's Charter",
     "Municipal Hall": "Munisipyo",
-    "Municipal Mayor": "Punong Bayan",
-    "Municipal Vice Mayor": "Bise Punong Bayan",
-    "Mayor's Office": "Opisina ng Punong Bayan",
-    "Vice Mayor's Office": "Opisina ng Bise Punong Bayan",
+    "Provincial Governor": "Punong Bayan",
+    "Provincial Vice Governor": "Bise Punong Bayan",
+    "Governor's Office": "Opisina ng Punong Bayan",
+    "Vice Governor's Office": "Opisina ng Bise Punong Bayan",
     "Municipal Administrator": "Tagapangasiwa ng Munisipyo",
     "Municipal Accountant": "Akawntant ng Munisipyo",
     "Municipal Assessor": "Tagapagtasa ng Munisipyo",
@@ -120,7 +120,7 @@ FIL_PHRASES = {
     "Ground Floor": "Unang Palapag",
     "2nd Floor": "Ikalawang Palapag",
     "3rd Floor": "Ikatlong Palapag",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
     "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
     "Barangay Captain": "Kapitan ng Barangay",
     "Barangay Hall": "Barangay Hall",
@@ -160,7 +160,7 @@ FIL_PHRASES = {
     "Certificate of No Marriage": "Sertipiko ng Walang Kasal",
     "Certified True Copy": "Sertipikadong Tunay na Kopya",
     "Local Civil Registry": "Lokal na Rehistro Sibil",
-    "Philippine Statistics Authority": "Awtoridad ng Estadistika ng Pilipinas",
+    "Placeholderpine Statistics Authority": "Awtoridad ng Estadistika ng Pilipinas",
     "Foundling Certificate": "Sertipiko ng Natagpuang Bata",
     "Out of Town": "Labas ng Bayan",
 
@@ -282,10 +282,10 @@ ILO_PHRASES = {
     # Government & Municipal
     "Citizen's Charter": "Citizen's Charter",
     "Municipal Hall": "Munisipalidad",
-    "Municipal Mayor": "Mayor ti Munisipalidad",
-    "Municipal Vice Mayor": "Bise Mayor ti Munisipalidad",
-    "Mayor's Office": "Opisina ti Mayor",
-    "Vice Mayor's Office": "Opisina ti Bise Mayor",
+    "Provincial Governor": "Provincial Governor ti Munisipalidad",
+    "Provincial Vice Governor": "Bise Provincial Governor ti Munisipalidad",
+    "Governor's Office": "Opisina ti Provincial Governor",
+    "Vice Governor's Office": "Opisina ti Bise Provincial Governor",
     "Municipal Administrator": "Administrador ti Munisipalidad",
     "Municipal Accountant": "Akawntant ti Munisipalidad",
     "Municipal Assessor": "Assessor ti Munisipalidad",
@@ -302,7 +302,7 @@ ILO_PHRASES = {
     "Ground Floor": "Umuna a Kadsaaran",
     "2nd Floor": "Maikadua a Kadsaaran",
     "3rd Floor": "Maikatlo a Kadsaaran",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
     "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
     "Barangay Captain": "Kapitan ti Barangay",
     "Barangay Hall": "Barangay Hall",
@@ -342,7 +342,7 @@ ILO_PHRASES = {
     "Certificate of No Marriage": "Sertipiko ti Awan Kasar",
     "Certified True Copy": "Nasertipikaran a Pudno a Kopia",
     "Local Civil Registry": "Lokal a Sibil a Rehistro",
-    "Philippine Statistics Authority": "Awtoridad ti Estadistika ti Pilipinas",
+    "Placeholderpine Statistics Authority": "Awtoridad ti Estadistika ti Pilipinas",
     "Foundling Certificate": "Sertipiko ti Nasarakan a Ubing",
     "Out of Town": "Ruar ti Ili",
 
@@ -465,18 +465,18 @@ FIL_SENTENCES = {
     # Common footer/sidebar links
     "BLGF Portal": "BLGF Portal",
     "CMCI DTI Portal": "CMCI DTI Portal",
-    "LGU Solano Facebook": "LGU Solano Facebook",
-    "Open Data Philippines": "Open Data Philippines",
-    "Better Solano": "Better Solano",
-    "BFP Solano": "BFP Solano",
+    "Camarines Norte Provincial Government Facebook": "Camarines Norte Provincial Government Facebook",
+    "Open Data Placeholderpines": "Open Data Placeholderpines",
+    "BetterCamNorte": "BetterCamNorte",
+    "BFP Camarines Norte": "BFP Camarines Norte",
 
     # Common service phrases
     "Contact us for assistance with this service.": "Makipag-ugnayan sa amin para sa tulong sa serbisyong ito.",
-    "Municipal Hall, Ground Floor Solano, Nueva Vizcaya 3708": "Munisipyo, Unang Palapag, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, 2nd Floor Solano, Nueva Vizcaya 3708": "Munisipyo, Ikalawang Palapag, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, Ground Floor, Solano, Nueva Vizcaya 3708": "Munisipyo, Unang Palapag, Solano, Nueva Vizcaya 3708",
-    "2nd Floor, Municipal Hall, Solano, Nueva Vizcaya": "Ikalawang Palapag, Munisipyo, Solano, Nueva Vizcaya",
-    "Ground Floor, Municipal Hall, Solano, Nueva Vizcaya": "Unang Palapag, Munisipyo, Solano, Nueva Vizcaya",
+    "Municipal Hall, Ground Floor Camarines Norte 3708": "Munisipyo, Unang Palapag, Camarines Norte 3708",
+    "Municipal Hall, 2nd Floor Camarines Norte 3708": "Munisipyo, Ikalawang Palapag, Camarines Norte 3708",
+    "Municipal Hall, Ground Floor, Camarines Norte 3708": "Munisipyo, Unang Palapag, Camarines Norte 3708",
+    "2nd Floor, Municipal Hall, Camarines Norte": "Ikalawang Palapag, Munisipyo, Camarines Norte",
+    "Ground Floor, Municipal Hall, Camarines Norte": "Unang Palapag, Munisipyo, Camarines Norte",
 
     # Time/duration phrases
     "8AM - 5PM": "8AM - 5PM",
@@ -577,7 +577,7 @@ FIL_SENTENCES = {
     "1st Class": "Unang Klase",
 
     # Offline page
-    "Emergency Hotlines - Solano, Nueva Vizcaya": "Mga Emergency Hotline - Solano, Nueva Vizcaya",
+    "Emergency Hotlines - Camarines Norte": "Mga Emergency Hotline - Camarines Norte",
     "Fire (BFP)": "Sunog (BFP)",
     "Police (PNP)": "Pulis (PNP)",
 
@@ -618,18 +618,18 @@ ILO_SENTENCES = {
     # Common footer/sidebar links
     "BLGF Portal": "BLGF Portal",
     "CMCI DTI Portal": "CMCI DTI Portal",
-    "LGU Solano Facebook": "LGU Solano Facebook",
-    "Open Data Philippines": "Open Data Philippines",
-    "Better Solano": "Better Solano",
-    "BFP Solano": "BFP Solano",
+    "Camarines Norte Provincial Government Facebook": "Camarines Norte Provincial Government Facebook",
+    "Open Data Placeholderpines": "Open Data Placeholderpines",
+    "BetterCamNorte": "BetterCamNorte",
+    "BFP Camarines Norte": "BFP Camarines Norte",
 
     # Common service phrases
     "Contact us for assistance with this service.": "Kontakennakami para iti tulong iti daytoy a serbisio.",
-    "Municipal Hall, Ground Floor Solano, Nueva Vizcaya 3708": "Munisipalidad, Umuna a Kadsaaran, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, 2nd Floor Solano, Nueva Vizcaya 3708": "Munisipalidad, Maikadua a Kadsaaran, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, Ground Floor, Solano, Nueva Vizcaya 3708": "Munisipalidad, Umuna a Kadsaaran, Solano, Nueva Vizcaya 3708",
-    "2nd Floor, Municipal Hall, Solano, Nueva Vizcaya": "Maikadua a Kadsaaran, Munisipalidad, Solano, Nueva Vizcaya",
-    "Ground Floor, Municipal Hall, Solano, Nueva Vizcaya": "Umuna a Kadsaaran, Munisipalidad, Solano, Nueva Vizcaya",
+    "Municipal Hall, Ground Floor Camarines Norte 3708": "Munisipalidad, Umuna a Kadsaaran, Camarines Norte 3708",
+    "Municipal Hall, 2nd Floor Camarines Norte 3708": "Munisipalidad, Maikadua a Kadsaaran, Camarines Norte 3708",
+    "Municipal Hall, Ground Floor, Camarines Norte 3708": "Munisipalidad, Umuna a Kadsaaran, Camarines Norte 3708",
+    "2nd Floor, Municipal Hall, Camarines Norte": "Maikadua a Kadsaaran, Munisipalidad, Camarines Norte",
+    "Ground Floor, Municipal Hall, Camarines Norte": "Umuna a Kadsaaran, Munisipalidad, Camarines Norte",
 
     # Time/duration phrases
     "8AM - 5PM": "8AM - 5PM",
@@ -730,7 +730,7 @@ ILO_SENTENCES = {
     "1st Class": "Umuna a Klase",
 
     # Offline page
-    "Emergency Hotlines - Solano, Nueva Vizcaya": "Dagiti Emergency Hotline - Solano, Nueva Vizcaya",
+    "Emergency Hotlines - Camarines Norte": "Dagiti Emergency Hotline - Camarines Norte",
     "Fire (BFP)": "Apuy (BFP)",
     "Police (PNP)": "Polis (PNP)",
 

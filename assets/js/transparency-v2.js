@@ -49,7 +49,7 @@ let expenditureChart = null;
 let currentQuarter = 'q1';
 
 /**
- * Format number as Philippine Peso in millions
+ * Format number as Placeholderpine Peso in millions
  */
 function formatPeso(value) {
   return `₱${value.toFixed(2)} M`;

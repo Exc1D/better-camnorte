@@ -1,5 +1,5 @@
 #!/bin/bash
-# BetterSolano — Production Build Script
+# BetterCamNorte — Production Build Script
 # Usage:
 #   bash build.sh            — bump patch, build everything
 #   bash build.sh --no-bump  — keep current version, build everything
@@ -22,7 +22,7 @@ done
 
 echo ""
 echo "╔══════════════════════════════════════════╗"
-echo "║   BetterSolano — Production Build        ║"
+echo "║   BetterCamNorte — Production Build        ║"
 echo "╚══════════════════════════════════════════╝"
 
 # ── 1. Version (single source of truth: version.json) ────────────────────────

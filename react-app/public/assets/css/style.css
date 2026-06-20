@@ -1,4 +1,4 @@
-/* Better Solano - Complete Main Stylesheet */
+/* BetterCamNorte - Complete Main Stylesheet */
 :root {
   --color-primary: #0032a0;
   --color-primary-dark: #002170;
@@ -2560,7 +2560,7 @@ h6 {
 }
 
 .cost-badge::before {
-  content: 'Cost to the People of Solano';
+  content: 'Cost to the People of Camarines Norte';
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -6399,7 +6399,7 @@ cklist with Icons - Proper Indentation */
   }
 }
 
-/* Solano Quiz CTA */
+/* Camarines Norte Quiz CTA */
 .quiz-cta-section {
   background:
     radial-gradient(circle, rgba(0, 50, 160, 0.1) 1px, transparent 1px),
@@ -9166,7 +9166,7 @@ a.a11y-contact-item:hover i {
     padding: 4px 8px;
   }
 }
-/* HIV Care Philippines CTA */
+/* HIV Care Placeholderpines CTA */
 .hivcare-cta-section {
   background: radial-gradient(circle, rgba(0, 0, 0, 0.035) 1px, transparent 1px) var(--color-bg-alt);
   background-size: 20px 20px;
