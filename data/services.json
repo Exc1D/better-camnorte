@@ -5,7 +5,7 @@
       "title": "Birth Certificate",
       "category": "Certificates & Vital Records",
       "categoryId": "certificates",
-      "description": "Get a certified copy of birth certificate registered in Solano",
+      "description": "Get a certified copy of birth certificate registered in Camarines Norte",
       "keywords": [
         "birth",
         "certificate",
@@ -94,7 +94,7 @@
       "keywords": ["police", "clearance", "nbi", "criminal", "record"],
       "fee": "Varies",
       "processingTime": "3-5 days",
-      "office": "PNP Solano",
+      "office": "PNP Camarines Norte",
       "url": "certificates.html"
     },
     {
@@ -382,7 +382,7 @@
       "keywords": ["scholarship", "student", "education", "school", "college", "tuition"],
       "fee": "Free",
       "processingTime": "Varies",
-      "office": "Municipal Mayor's Office",
+      "office": "Provincial Governor's Office",
       "url": "education.html"
     },
     {
@@ -529,7 +529,7 @@
       "title": "Business Permits & Licensing Office",
       "category": "Business, Trade & Investment",
       "categoryId": "business",
-      "description": "New permits, renewals, Mayor's clearance, and other business permits",
+      "description": "New permits, renewals, Provincial Governor's clearance, and other business permits",
       "keywords": [
         "BPLS",
         "business permit",
@@ -540,7 +540,7 @@
       ],
       "fee": "Varies",
       "processingTime": "1-5 days",
-      "office": "Mayor's Office - BPLS",
+      "office": "Governor's Office - BPLS",
       "url": "../service-details/business-permits-licensing.html"
     },
     {
@@ -701,7 +701,7 @@
       "title": "General Services Office",
       "category": "Government Services",
       "categoryId": "government",
-      "description": "Property management, vehicle maintenance, and general municipal services",
+      "description": "Property management, vehicle maintenance, and general government services",
       "keywords": ["general services", "MGSO", "property", "vehicle", "maintenance", "supplies"],
       "fee": "Free",
       "processingTime": "Varies",
@@ -746,7 +746,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/billing"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_camnorte/bpls/billing"
     },
     {
       "id": "online-new-business",
@@ -758,7 +758,7 @@
       "fee": "Varies",
       "processingTime": "3-5 days",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/newbusiness"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_camnorte/bpls/newbusiness"
     },
     {
       "id": "online-business-renewal",
@@ -770,7 +770,7 @@
       "fee": "Varies",
       "processingTime": "Same day",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/renewbusiness"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_camnorte/bpls/renewbusiness"
     },
     {
       "id": "online-rpt-billing",
@@ -782,7 +782,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/rptis/billing"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_camnorte/rptis/billing"
     },
     {
       "id": "online-payment-order",
@@ -794,7 +794,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/po/billing"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_camnorte/po/billing"
     }
   ]
 }

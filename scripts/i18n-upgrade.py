@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Enterprise-grade i18n upgrade script for BetterSolano.
+Enterprise-grade i18n upgrade script for BetterCamNorte.
 Phase 1: Scans all HTML files, adds data-i18n attributes to untranslated elements.
 Phase 2: Generates Filipino (fil) and Ilocano (ilo) translation entries.
 Phase 3: Updates translations.js with all new keys.
@@ -205,17 +205,17 @@ FIL_TRANSLATIONS = {
     "Visit Civil Registrar": "Pumunta sa Civil Registrar",
     "Municipal Civil Registrar": "Tagapagrehistro Sibil ng Munisipalidad",
     "Municipal Treasurer": "Ingat-yaman ng Munisipalidad",
-    "Municipal Mayor": "Punong Bayan",
-    "Municipal Vice Mayor": "Bise Punong Bayan",
+    "Provincial Governor": "Punong Bayan",
+    "Provincial Vice Governor": "Bise Punong Bayan",
     "Municipal Hall": "Munisipyo",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
 
     # Government page
     "Elected Officials": "Mga Halal na Opisyal",
     "Executive Branch": "Ehekutibong Sangay",
     "Legislative Branch": "Sangay ng Lehislatura",
-    "Municipal Council": "Konseho ng Munisipalidad",
-    "Sangguniang Bayan Members": "Mga Miyembro ng Sangguniang Bayan",
+    "Provincial Board": "Konseho ng Munisipalidad",
+    "Sangguniang Panlalawigan Members": "Mga Miyembro ng Sangguniang Panlalawigan",
     "Department Heads": "Mga Pinuno ng Departamento",
 
     # Budget/Transparency
@@ -285,7 +285,7 @@ FIL_TRANSLATIONS = {
     "Resources": "Mga Mapagkukunan",
     "Volunteer with us": "Mag-volunteer sa amin",
     "Contribute code with us": "Mag-ambag ng code sa amin",
-    "Solano Quiz": "Solano Quiz",
+    "Camarines Norte Quiz": "Camarines Norte Quiz",
 
     # Common descriptive text
     "Phone": "Telepono",
@@ -415,17 +415,17 @@ ILO_TRANSLATIONS = {
     "Visit Civil Registrar": "Bisitaen ti Civil Registrar",
     "Municipal Civil Registrar": "Civil Registrar ti Munisipalidad",
     "Municipal Treasurer": "Tesorero ti Munisipalidad",
-    "Municipal Mayor": "Mayor ti Munisipalidad",
-    "Municipal Vice Mayor": "Bise Mayor ti Munisipalidad",
+    "Provincial Governor": "Provincial Governor ti Munisipalidad",
+    "Provincial Vice Governor": "Bise Provincial Governor ti Munisipalidad",
     "Municipal Hall": "Munisipio",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
 
     # Government page
     "Elected Officials": "Dagiti Nahalal nga Opisial",
     "Executive Branch": "Ehekutibo a Sanga",
     "Legislative Branch": "Sanga ti Lehislatura",
-    "Municipal Council": "Konseho ti Munisipalidad",
-    "Sangguniang Bayan Members": "Dagiti Kameng ti Sangguniang Bayan",
+    "Provincial Board": "Konseho ti Munisipalidad",
+    "Sangguniang Panlalawigan Members": "Dagiti Kameng ti Sangguniang Panlalawigan",
     "Department Heads": "Dagiti Pangulo ti Departamento",
 
     # Budget/Transparency
@@ -495,7 +495,7 @@ ILO_TRANSLATIONS = {
     "Resources": "Dagiti Rekurso",
     "Volunteer with us": "Ag-volunteer kadakami",
     "Contribute code with us": "Ag-ambag ti code kadakami",
-    "Solano Quiz": "Solano Quiz",
+    "Camarines Norte Quiz": "Camarines Norte Quiz",
 
     # Common descriptive text
     "Phone": "Telepono",
@@ -851,7 +851,7 @@ def update_translations_js(translations_js_path, new_translations, existing):
 def main():
     """Main entry point."""
     print("=" * 60)
-    print("BetterSolano i18n Upgrade Script")
+    print("BetterCamNorte i18n Upgrade Script")
     print("=" * 60)
 
     # Phase 0: Load existing translations

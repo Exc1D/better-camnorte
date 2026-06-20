@@ -2,17 +2,17 @@
 
 ## Summary
 
-We are pleased to announce that a React + TypeScript version of BetterSolano.org is now available on the `react-typescript` branch. This modernized version offers improved developer experience, type safety, and component-based architecture while maintaining full feature parity with the static HTML version.
+We are pleased to announce that a React + TypeScript version of BetterCamNorte is now available on the `react-typescript` branch. This modernized version offers improved developer experience, type safety, and component-based architecture while maintaining full feature parity with the static HTML version.
 
 ## Open Source Availability
 
-This repository is open source under the **MIT License** and **CC BY 4.0** and is freely available for use, modification, redistribution, and publication by any individual or organization that wishes to implement it in their respective local government unit (LGU) across the Philippines.
+This repository is open source under the **MIT License** and **CC BY 4.0** and is freely available for use, modification, redistribution, and publication by any individual or organization that wishes to implement it in their respective local government unit (LGU) across the Placeholderpines.
 
 We encourage other municipalities to adopt and customize this project in support of transparency, accessibility, modernization, and public service delivery to their communities.
 
 ## Background
 
-BetterSolano.org was originally built with static HTML, CSS, and vanilla JavaScript to ensure maximum accessibility and simplicity. As the project has grown and more contributors have joined, we received feedback requesting modern tooling support.
+BetterCamNorte was originally built with static HTML, CSS, and vanilla JavaScript to ensure maximum accessibility and simplicity. As the project has grown and more contributors have joined, we received feedback requesting modern tooling support.
 
 The React + TypeScript version addresses these requests while preserving the static HTML version for contributors who prefer the original approach.
 
@@ -62,11 +62,11 @@ We welcome feedback on both versions. Please:
 
 - Open an issue with the `react` label for React-specific feedback
 - Join the discussion in our Discord community
-- Email volunteer@bettersolano.org with questions
+- Email volunteer@bettercamnorte.org with questions
 
 ## Acknowledgments
 
-## Thank you to all contributors who have helped build BetterSolano.org. Your continued participation, regardless of which version you prefer, is valued and appreciated. Shout out to Gat. @jasontorres for the support!
+## Thank you to all contributors who have helped build BetterCamNorte. Your continued participation, regardless of which version you prefer, is valued and appreciated. Shout out to Gat. @jasontorres for the support!
 
 Ramon Logan Jr.
-BetterSolano.org
+BetterCamNorte

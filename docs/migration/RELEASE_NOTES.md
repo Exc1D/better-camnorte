@@ -6,7 +6,7 @@
 
 ## Overview
 
-This release introduces a React + TypeScript version of BetterSolano.org, providing modern tooling and component-based architecture for contributors who prefer this development approach.
+This release introduces a React + TypeScript version of BetterCamNorte, providing modern tooling and component-based architecture for contributors who prefer this development approach.
 
 ## Technology Stack
 
@@ -24,11 +24,11 @@ This release introduces a React + TypeScript version of BetterSolano.org, provid
 
 All features from the static HTML version are available:
 
-- Municipal Services Directory with search functionality
+- Government Services Directory with search functionality
 - Government Officials directory
 - Budget and Financial Transparency reports
 - Legislative documents (Ordinances and Resolutions)
-- Municipal Statistics and demographic data
+- Provincial Statistics and demographic data
 - Real-time weather and currency information
 - Multi-language support (English, Filipino, Ilocano)
 - WCAG 2.1 accessibility compliance
@@ -76,7 +76,7 @@ Report issues or provide feedback:
 
 - GitHub Issues with `react` label
 - Discord community
-- Email: volunteer@bettersolano.org
+- Email: volunteer@bettercamnorte.org
 
 ## Contributors
 
@@ -85,4 +85,4 @@ Thank you to all contributors who helped develop this version.
 ---
 
 Ramon Logan Jr.
-BetterSolano.org
+BetterCamNorte

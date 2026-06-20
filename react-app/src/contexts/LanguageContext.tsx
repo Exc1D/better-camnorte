@@ -15,15 +15,15 @@ const translations: Record<string, Record<string, string>> = {
     'nav-contact': 'Contact',
 
     // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of LGU Solano Mayor's Office",
+    'appointment-cta-heading': "Enhancing Appointment Services of Camarines Norte Provincial Government Governor's Office",
     'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
     'appointment-schedule-btn': 'Schedule Appointment',
     'appointment-create-btn': 'Create Account',
 
     // Hero Section
-    'hero-welcome': 'Welcome to BetterSolano.org',
+    'hero-welcome': 'Welcome to BetterCamNorte',
     'hero-subtitle':
-      'Access government services, information, and resources for the people of Solano, Nueva Vizcaya.',
+      'Access government services, information, and resources for the people of Camarines Norte.',
     'hero-find-service': 'Find a Service',
 
     // Popular Services
@@ -44,10 +44,10 @@ const translations: Record<string, Record<string, string>> = {
     'section-updates': 'Latest Updates',
     'btn-view-all': 'View All',
 
-    // Municipal Leadership
-    'section-leadership': 'Municipal Leadership',
-    'title-mayor': 'Municipal Mayor',
-    'title-vice-mayor': 'Municipal Vice Mayor',
+    // Provincial Leadership
+    'section-leadership': 'Provincial Leadership',
+    'title-mayor': 'Provincial Governor',
+    'title-vice-mayor': 'Provincial Vice Governor',
     'btn-view-officials': 'View All Officials',
 
     // Contact Section
@@ -60,8 +60,8 @@ const translations: Record<string, Record<string, string>> = {
     'contact-municipal-hall': 'Municipal Hall',
 
     // Services Page
-    'services-title': 'Municipal Services Directory',
-    'services-subtitle': 'Browse all services offered by the Municipality of Solano',
+    'services-title': 'Government Services Directory',
+    'services-subtitle': 'Browse all services offered by the Province of Camarines Norte',
     'life-events-title': 'Browse by Life Event',
     'life-events-subtitle': "Find services based on what's happening in your life",
     'life-starting-business': 'Starting a Business',
@@ -100,7 +100,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // FAQ Page
     'faq-title': 'Frequently Asked Questions',
-    'faq-subtitle': 'Find answers to common questions about municipal services',
+    'faq-subtitle': 'Find answers to common questions about government services',
     'faq-general': 'General Questions',
     'faq-certificates': 'Certificates & Documents',
     'faq-business': 'Business & Permits',
@@ -151,11 +151,11 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-hospitals': 'Major Hospitals',
     'health-stat-bhs': 'Barangay Health Stations',
     'health-stat-mho': 'Municipal Health Office',
-    'health-section-hospitals': 'Hospitals in Solano',
+    'health-section-hospitals': 'Hospitals in Camarines Norte',
     'health-section-mho': 'Municipal Health Office',
     'health-section-bhs': 'Barangay Health Stations',
-    'health-bhs-subtitle': '22 Barangay Health Stations/Centers serving all barangays of Solano',
-    'health-mho-title': 'Solano Municipal Health Office',
+    'health-bhs-subtitle': '22 Barangay Health Stations/Centers serving all barangays of Camarines Norte',
+    'health-mho-title': 'Camarines Norte Provincial Health Office',
     'health-mho-desc':
       'The Municipal Health Office provides primary healthcare services including a lying-in facility and laboratory services. It serves as the main public health center for the municipality.',
     'health-service-lying-in': 'Lying-in Facility',
@@ -167,7 +167,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited private hospital providing comprehensive medical services.',
-    'health-national-highway-solano': 'National Highway, Solano',
+    'health-national-highway-camnorte': 'National Highway, Camarines Norte',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Services Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
@@ -201,7 +201,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-hivcare-cta-eyebrow': 'Official DOH-Sourced Directory',
     'health-hivcare-cta-heading': 'Find HIV Treatment & Care Facilities Near You',
     'health-hivcare-cta-desc':
-      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Philippines, sourced from DOH Circular No. 2026-0065.',
+      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Placeholderpines, sourced from DOH Circular No. 2026-0065.',
     'health-hivcare-cta-btn': 'Find HIV Care Facilities',
     'health-hivcare-cta-stat-facilities': 'Facilities Nationwide',
     'health-hivcare-cta-stat-mobile': 'Mobile-Friendly Search',
@@ -223,11 +223,11 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page
     'ord-page-title': 'Ordinance Framework',
-    'ord-page-desc': 'Municipal ordinances enacted by the Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'Provincial ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte',
     'ord-page-badge': 'Legislative',
     'ord-what-is': 'What is an Ordinance?',
     'ord-what-is-p1':
-      'A municipal ordinance is a local law enacted by the Sangguniang Bayan (Municipal Council) that governs the municipality and its residents. Ordinances have the force and effect of law within the territorial jurisdiction of the municipality.',
+      'A municipal ordinance is a local law enacted by the Sangguniang Panlalawigan (Provincial Board) that governs the municipality and its residents. Ordinances have the force and effect of law within the territorial jurisdiction of the municipality.',
     'ord-what-is-p2':
       'Ordinances may cover various subjects including but not limited to: taxation, business regulations, public safety, environmental protection, traffic management, and zoning.',
     'ord-categories-title': 'Ordinance Categories',
@@ -238,7 +238,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-traffic': 'Traffic & Transportation',
     'ord-cat-zoning': 'Zoning & Land Use',
     'ord-2025-title': '2025 Ordinances',
-    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Bayan ng Solano in 2025',
+    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
     'ord-table-number': 'Ordinance No.',
     'ord-table-title': 'Title',
     'ord-table-date': 'Session Date',
@@ -246,13 +246,13 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page
     'reso-page-title': 'Resolution Framework',
-    'reso-page-desc': 'Resolutions passed by the Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte',
     'reso-page-badge': 'Legislative',
     'reso-what-is': 'What is a Resolution?',
     'reso-what-is-p1':
-      'A resolution is a formal expression of the opinion or will of the Sangguniang Bayan. Unlike ordinances, resolutions do not have the force and effect of law but serve as official statements of the legislative body.',
+      'A resolution is a formal expression of the opinion or will of the Sangguniang Panlalawigan. Unlike ordinances, resolutions do not have the force and effect of law but serve as official statements of the legislative body.',
     'reso-what-is-p2':
-      'Resolutions are commonly used for: commendations, requests to higher government agencies, expressions of support or opposition, and administrative matters of the Sangguniang Bayan.',
+      'Resolutions are commonly used for: commendations, requests to higher government agencies, expressions of support or opposition, and administrative matters of the Sangguniang Panlalawigan.',
     'reso-types-title': 'Types of Resolutions',
     'reso-type-commendation': 'Commendation',
     'reso-type-request': 'Request/Appeal',
@@ -261,9 +261,9 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-authorization': 'Authorization',
     'reso-type-appropriation': 'Appropriation',
     'reso-2026-title': '2026 Resolutions',
-    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Solano in 2026',
+    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2026',
     'reso-2025-title': '2025 Resolutions',
-    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Solano in 2025',
+    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
     'reso-table-number': 'Resolution No.',
     'reso-table-title': 'Title',
     'reso-table-date': 'Session Date',
@@ -271,7 +271,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page
     'biz-page-title': 'Business Services',
-    'biz-page-desc': 'Permits, licenses, and support for businesses in Solano',
+    'biz-page-desc': 'Permits, licenses, and support for businesses in Camarines Norte',
     'biz-page-badge': 'Business',
     'biz-permit-new': 'Business Permit (New)',
     'biz-permit-new-desc': "Apply for a new mayor's permit for your business",
@@ -376,11 +376,11 @@ const translations: Record<string, Record<string, string>> = {
     'hero-real-property-tax': 'Real Property Tax',
 
     // Homepage - Popular Services
-    'popular-services-subtitle': 'Quick access to frequently requested municipal services',
+    'popular-services-subtitle': 'Quick access to frequently requested government services',
     'popular-browse-directory': 'Browse complete directory',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Solano at a Glance',
+    'stats-at-a-glance': 'Camarines Norte at a Glance',
     'stats-view-statistics': 'View Statistics',
     'stats-population-label': 'Population',
     'stats-population-source': '2024 Census',
@@ -389,15 +389,15 @@ const translations: Record<string, Record<string, string>> = {
     'stats-municipality-label': 'Municipality',
     'stats-municipality-source': 'Income Classification',
     'stats-land-area-label': 'Land Area',
-    'stats-land-area-source': 'Total Municipal Area',
+    'stats-land-area-source': 'Total Provincial Area',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Weather and Map of Solano',
+    'weather-map-title': 'Weather and Map of Camarines Norte',
     'weather-mainly-clear': 'Mainly clear',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Camarines Norte',
 
     // Homepage - History
-    'history-title': 'Brief History of Solano',
+    'history-title': 'Brief History of Camarines Norte',
     'history-1760':
       'The original name of the town was Bintauan, then a Gaddang settlement that is now a barangay of Villaverde.',
     'history-1767':
@@ -409,12 +409,12 @@ const translations: Record<string, Record<string, string>> = {
     'history-1853':
       'The first Ilocanos arrived, brought by Don Diego Lumicao, a former gobernadorcillo.',
     'history-1889':
-      'Renamed Solano in honor of Governor General Ramon Solano y Llanderal. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.',
+      'Renamed Camarines Norte in honor of Governor General Ramon Camarines Norte y Llanderal. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.',
     'history-1957':
-      "The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as Villaverde. Solano's land area was reduced to 13,980 hectares.",
+      "The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as Villaverde. Camarines Norte's land area was reduced to 13,980 hectares.",
     'history-once-largest-title': 'Once the Largest',
     'history-once-largest-desc':
-      'Solano was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
+      'Camarines Norte was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
     'history-urban-planning-title': 'Urban Planning',
     'history-urban-planning-desc':
       'The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.',
@@ -428,40 +428,40 @@ const translations: Record<string, Record<string, string>> = {
       'Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged.',
     'news-market-title': 'New Public Market Wing Opens',
     'news-market-desc':
-      'The renovated wing of the Solano Public Market is now open to vendors and the public.',
+      'The renovated wing of the Camarines Norte Public Market is now open to vendors and the public.',
     'news-power-title': 'Scheduled Power Interruption',
     'news-power-desc': 'Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'How well do you know Solano, Nueva Vizcaya?',
+    'quiz-title': 'Camarines Norte Quiz',
+    'quiz-subtitle': 'How well do you know Camarines Norte?',
     'quiz-description':
-      "Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Nueva Vizcaya's most prominent localities.",
+      "Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Camarines Norte's most prominent localities.",
     'quiz-take': 'Take the Quiz',
 
     // Footer
     'footer-tagline':
-      'Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.',
+      'Empowering the people of Camarines Norte with transparent access to the services, programs, and public funds of Camarines Norte Provincial Government.',
     'footer-quick-links': 'Quick Links',
     'footer-resources': 'Resources',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-camnorte-quiz': 'Camarines Norte Quiz',
     'footer-sitemap': 'Sitemap',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Terms of Use',
     'footer-privacy': 'Privacy Policy',
     'footer-accessibility': 'Accessibility',
     'footer-faq': 'FAQ',
-    'footer-open-data': 'Open Data Philippines',
+    'footer-open-data': 'Open Data Placeholderpines',
     'footer-foi': 'Freedom of Information',
-    'footer-lgu-portal': 'Official LGU Solano Portal',
-    'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-portal': 'Official Camarines Norte Provincial Government Portal',
+    'footer-sb': 'Sangguniang Panlalawigan',
+    'footer-lgu-facebook': 'Camarines Norte Provincial Government Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Cost to the People of Solano =',
+    'footer-cost': 'Cost to the People of Camarines Norte =',
     'footer-volunteer': 'Volunteer with us',
     'footer-contribute': 'Contribute code with us',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'BetterCamNorte',
     'footer-copyright-disclaimer':
       'All public information sourced from official government portals.',
     'footer-skip-to-main': 'Skip to main content',
@@ -478,15 +478,15 @@ const translations: Record<string, Record<string, string>> = {
 
     // Appointment CTA
     'appointment-cta-heading':
-      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Solano',
+      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng Camarines Norte Provincial Government',
     'appointment-cta-subtitle': 'Walang pila. Walang pabalik-balik. Mahusay na appointment lang.',
     'appointment-schedule-btn': 'Mag-iskedyul ng Appointment',
     'appointment-create-btn': 'Gumawa ng Account',
 
     // Hero Section
-    'hero-welcome': 'Maligayang Pagdating sa BetterSolano.org',
+    'hero-welcome': 'Maligayang Pagdating sa BetterCamNorte',
     'hero-subtitle':
-      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Solano, Nueva Vizcaya.',
+      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Camarines Norte.',
     'hero-find-service': 'Maghanap ng Serbisyo',
 
     // Popular Services
@@ -507,7 +507,7 @@ const translations: Record<string, Record<string, string>> = {
     'section-updates': 'Pinakabagong mga Update',
     'btn-view-all': 'Tingnan Lahat',
 
-    // Municipal Leadership
+    // Provincial Leadership
     'section-leadership': 'Pamunuan ng Munisipalidad',
     'title-mayor': 'Punong Bayan',
     'title-vice-mayor': 'Bise Punong Bayan',
@@ -524,7 +524,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     'services-title': 'Direktoryo ng Serbisyong Munisipal',
-    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Solano',
+    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Camarines Norte',
     'life-events-title': 'Maghanap Ayon sa Pangyayari sa Buhay',
     'life-events-subtitle': 'Hanapin ang mga serbisyo batay sa nangyayari sa iyong buhay',
     'life-starting-business': 'Magsimula ng Negosyo',
@@ -620,12 +620,12 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-hospitals': 'Mga Pangunahing Ospital',
     'health-stat-bhs': 'Mga Barangay Health Station',
     'health-stat-mho': 'Opisina ng Kalusugan ng Munisipalidad',
-    'health-section-hospitals': 'Mga Ospital sa Solano',
+    'health-section-hospitals': 'Mga Ospital sa Camarines Norte',
     'health-section-mho': 'Opisina ng Kalusugan ng Munisipalidad',
     'health-section-bhs': 'Mga Barangay Health Station',
     'health-bhs-subtitle':
-      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Solano',
-    'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Solano',
+      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Camarines Norte',
+    'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Camarines Norte',
     'health-mho-desc':
       'Ang Municipal Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',
     'health-service-lying-in': 'Lying-in Facility',
@@ -637,7 +637,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ng komprehensibong mga serbisyong medikal.',
-    'health-national-highway-solano': 'Pambansa Highway, Solano',
+    'health-national-highway-camnorte': 'Pambansa Highway, Camarines Norte',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Mga serbisyo Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
@@ -671,7 +671,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-hivcare-cta-eyebrow': 'Opisyal na Direktoryo mula sa DOH',
     'health-hivcare-cta-heading': 'Hanapin ang Pasilidad para sa Paggamot at Pangangalaga sa HIV',
     'health-hivcare-cta-desc':
-      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Philippines, sourced from DOH Circular No. 2026-0065.',
+      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Placeholderpines, sourced from DOH Circular No. 2026-0065.',
     'health-hivcare-cta-btn': 'Find HIV Care Facilities',
     'health-hivcare-cta-stat-facilities': 'Pasilidad sa Buong Bansa',
     'health-hivcare-cta-stat-mobile': 'Mobile-Friendly na Paghahanap',
@@ -693,11 +693,11 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page - Filipino
     'ord-page-title': 'Balangkas ng Ordinansa',
-    'ord-page-desc': 'Mga ordinansang ipinasa ng Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'Mga ordinansang ipinasa ng Sangguniang Panlalawigan ng Camarines Norte',
     'ord-page-badge': 'Lehislatura',
     'ord-what-is': 'Ano ang Ordinansa?',
     'ord-what-is-p1':
-      'Ang munisipal na ordinansa ay lokal na batas na ipinasa ng Sangguniang Bayan (Konseho ng Munisipalidad) na namamahala sa munisipalidad at mga residente nito. Ang mga ordinansa ay may bisa at epekto ng batas sa saklaw ng munisipalidad.',
+      'Ang munisipal na ordinansa ay lokal na batas na ipinasa ng Sangguniang Panlalawigan (Konseho ng Munisipalidad) na namamahala sa munisipalidad at mga residente nito. Ang mga ordinansa ay may bisa at epekto ng batas sa saklaw ng munisipalidad.',
     'ord-what-is-p2':
       "Ang mga ordinansa ay maaaring sumasaklaw sa iba't ibang paksa kabilang ngunit hindi limitado sa: pagbubuwis, regulasyon sa negosyo, kaligtasang pampubliko, proteksyon sa kapaligiran, pamamahala ng trapiko, at zoning.",
     'ord-categories-title': 'Mga Kategorya ng Ordinansa',
@@ -709,7 +709,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-zoning': 'Zoning at Paggamit ng Lupa',
     'ord-2025-title': 'Mga Ordinansa ng 2025',
     'ord-2025-subtitle':
-      'Mga opisyal na ordinansang ipinasa ng Sangguniang Bayan ng Solano sa 2025',
+      'Mga opisyal na ordinansang ipinasa ng Sangguniang Panlalawigan ng Camarines Norte sa 2025',
     'ord-table-number': 'Numero ng Ordinansa',
     'ord-table-title': 'Pamagat',
     'ord-table-date': 'Petsa ng Sesyon',
@@ -717,13 +717,13 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page - Filipino
     'reso-page-title': 'Balangkas ng Resolusyon',
-    'reso-page-desc': 'Mga resolusyong ipinasa ng Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Mga resolusyong ipinasa ng Sangguniang Panlalawigan ng Camarines Norte',
     'reso-page-badge': 'Lehislatura',
     'reso-what-is': 'Ano ang Resolusyon?',
     'reso-what-is-p1':
-      'Ang resolusyon ay pormal na pagpapahayag ng opinyon o kalooban ng Sangguniang Bayan. Hindi tulad ng mga ordinansa, ang mga resolusyon ay walang bisa at epekto ng batas ngunit nagsisilbing opisyal na pahayag ng lehislatura.',
+      'Ang resolusyon ay pormal na pagpapahayag ng opinyon o kalooban ng Sangguniang Panlalawigan. Hindi tulad ng mga ordinansa, ang mga resolusyon ay walang bisa at epekto ng batas ngunit nagsisilbing opisyal na pahayag ng lehislatura.',
     'reso-what-is-p2':
-      'Ang mga resolusyon ay karaniwang ginagamit para sa: mga pagpupugay, mga kahilingan sa mas mataas na ahensya ng pamahalaan, mga pagpapahayag ng suporta o pagtutol, at mga administratibong bagay ng Sangguniang Bayan.',
+      'Ang mga resolusyon ay karaniwang ginagamit para sa: mga pagpupugay, mga kahilingan sa mas mataas na ahensya ng pamahalaan, mga pagpapahayag ng suporta o pagtutol, at mga administratibong bagay ng Sangguniang Panlalawigan.',
     'reso-types-title': 'Mga Uri ng Resolusyon',
     'reso-type-commendation': 'Pagpupugay',
     'reso-type-request': 'Kahilingan/Apela',
@@ -733,10 +733,10 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-appropriation': 'Apropriyasyon',
     'reso-2026-title': 'Mga Resolusyon ng 2026',
     'reso-2026-subtitle':
-      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Solano sa 2026',
+      'Mga opisyal na resolusyong ipinasa ng Sangguniang Panlalawigan ng Camarines Norte sa 2026',
     'reso-2025-title': 'Mga Resolusyon ng 2025',
     'reso-2025-subtitle':
-      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Solano sa 2025',
+      'Mga opisyal na resolusyong ipinasa ng Sangguniang Panlalawigan ng Camarines Norte sa 2025',
     'reso-table-number': 'Numero ng Resolusyon',
     'reso-table-title': 'Pamagat',
     'reso-table-date': 'Petsa ng Sesyon',
@@ -744,7 +744,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page - Filipino
     'biz-page-title': 'Serbisyo sa Negosyo',
-    'biz-page-desc': 'Mga permit, lisensya, at suporta para sa mga negosyo sa Solano',
+    'biz-page-desc': 'Mga permit, lisensya, at suporta para sa mga negosyo sa Camarines Norte',
     'biz-page-badge': 'Negosyo',
     'biz-permit-new': 'Permit ng Negosyo (Bago)',
     'biz-permit-new-desc': "Mag-apply ng bagong mayor's permit para sa iyong negosyo",
@@ -854,7 +854,7 @@ const translations: Record<string, Record<string, string>> = {
     'popular-browse-directory': 'Tingnan ang kumpletong direktoryo',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Isang Tingin sa Solano',
+    'stats-at-a-glance': 'Isang Tingin sa Camarines Norte',
     'stats-view-statistics': 'Tingnan ang Estadistika',
     'stats-population-label': 'Populasyon',
     'stats-population-source': '2024 Senso',
@@ -866,12 +866,12 @@ const translations: Record<string, Record<string, string>> = {
     'stats-land-area-source': 'Kabuuang Lawak ng Munisipalidad',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Panahon at Mapa ng Solano',
+    'weather-map-title': 'Panahon at Mapa ng Camarines Norte',
     'weather-mainly-clear': 'Halos maaliwalas',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Camarines Norte',
 
     // Homepage - History
-    'history-title': 'Maikling Kasaysayan ng Solano',
+    'history-title': 'Maikling Kasaysayan ng Camarines Norte',
     'history-1760':
       'Ang orihinal na pangalan ng bayan ay Bintauan, isang pamayanan ng Gaddang na ngayon ay barangay ng Villaverde.',
     'history-1767':
@@ -883,12 +883,12 @@ const translations: Record<string, Record<string, string>> = {
     'history-1853':
       'Dumating ang mga unang Ilocano, dinala ni Don Diego Lumicao, isang dating gobernadorcillo.',
     'history-1889':
-      'Pinalitan ang pangalan ng Solano bilang parangal kay Gobernador Heneral Ramon Solano y Llanderal. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.',
+      'Pinalitan ang pangalan ng Camarines Norte bilang parangal kay Gobernador Heneral Ramon Camarines Norte y Llanderal. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.',
     'history-1957':
-      'Ang mga baryo ng Ibung at Bintawan ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Solano ay nabawasan sa 13,980 ektarya.',
+      'Ang mga baryo ng Ibung at Bintawan ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Camarines Norte ay nabawasan sa 13,980 ektarya.',
     'history-once-largest-title': 'Dating Pinakamalaki',
     'history-once-largest-desc':
-      'Ang Solano ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Bintawan upang maging Quezon at Villaverde.',
+      'Ang Camarines Norte ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Bintawan upang maging Quezon at Villaverde.',
     'history-urban-planning-title': 'Pagpaplano ng Lungsod',
     'history-urban-planning-desc':
       'Ang muling pagbuo noong 1889 ay lumikha ng grid na may 100 parisukat na bloke, bawat isa ay may kabuuang lawak na isang ektarya, na may mga kalye na patungo sa hilaga-timog at silangan-kanluran.',
@@ -902,41 +902,41 @@ const translations: Record<string, Record<string, string>> = {
       'Ang deadline para sa pag-renew ng permit sa negosyo ay Enero 20, 2025. Hinihikayat ang maagang pag-renew.',
     'news-market-title': 'Bagong Wing ng Pampublikong Palengke Bukas Na',
     'news-market-desc':
-      'Ang na-renovate na wing ng Pampublikong Palengke ng Solano ay bukas na sa mga nagtitinda at publiko.',
+      'Ang na-renovate na wing ng Pampublikong Palengke ng Camarines Norte ay bukas na sa mga nagtitinda at publiko.',
     'news-power-title': 'Nakaiskedyul na Pagkaputol ng Kuryente',
     'news-power-desc':
       'Maintenance na nakaiskedyul para sa Barangay Osmeña sa Dis 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'Gaano mo kakilala ang Solano, Nueva Vizcaya?',
+    'quiz-title': 'Camarines Norte Quiz',
+    'quiz-subtitle': 'Gaano mo kakilala ang Camarines Norte?',
     'quiz-description':
-      'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Nueva Vizcaya.',
+      'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Camarines Norte.',
     'quiz-take': 'Subukin ang Quiz',
 
     // Footer
     'footer-tagline':
-      'Pagbibigay-kapangyarihan sa mga tao ng Solano na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Solano.',
+      'Pagbibigay-kapangyarihan sa mga tao ng Camarines Norte na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng Camarines Norte Provincial Government.',
     'footer-quick-links': 'Mga Mabilisang Link',
     'footer-resources': 'Mga Mapagkukunan',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-camnorte-quiz': 'Camarines Norte Quiz',
     'footer-sitemap': 'Mapa ng Site',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Mga Tuntunin ng Paggamit',
     'footer-privacy': 'Patakaran sa Privacy',
     'footer-accessibility': 'Aksesibilidad',
     'footer-faq': 'FAQ',
-    'footer-open-data': 'Open Data Philippines',
+    'footer-open-data': 'Open Data Placeholderpines',
     'footer-foi': 'Kalayaan sa Impormasyon',
-    'footer-lgu-portal': 'Opisyal na Portal ng LGU Solano',
-    'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'footer-sb': 'Sangguniang Panlalawigan',
+    'footer-lgu-facebook': 'Camarines Norte Provincial Government Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Gastos sa mga Tao ng Solano =',
+    'footer-cost': 'Gastos sa mga Tao ng Camarines Norte =',
     'footer-volunteer': 'Mag-volunteer sa amin',
     'footer-contribute': 'Mag-ambag ng code sa amin',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'BetterCamNorte',
     'footer-copyright-disclaimer':
       'Lahat ng pampublikong impormasyon ay mula sa mga opisyal na portal ng pamahalaan.',
     'footer-skip-to-main': 'Lumaktaw sa pangunahing nilalaman',
@@ -953,15 +953,15 @@ const translations: Record<string, Record<string, string>> = {
 
     // Appointment CTA
     'appointment-cta-heading':
-      'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Solano',
+      'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti Camarines Norte Provincial Government',
     'appointment-cta-subtitle': 'Awan pila. Awan agpapasubli. Nasayaat nga appointment laeng.',
     'appointment-schedule-btn': 'Ag-iskedyul ti Appointment',
     'appointment-create-btn': 'Agaramid ti Account',
 
     // Hero Section
-    'hero-welcome': 'Naragsak nga Isasangbay iti BetterSolano.org',
+    'hero-welcome': 'Naragsak nga Isasangbay iti BetterCamNorte',
     'hero-subtitle':
-      'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Solano, Nueva Vizcaya.',
+      'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Camarines Norte.',
     'hero-find-service': 'Agsapul ti Serbisyo',
 
     // Popular Services
@@ -982,10 +982,10 @@ const translations: Record<string, Record<string, string>> = {
     'section-updates': 'Kabarbaro nga Update',
     'btn-view-all': 'Kitaen Amin',
 
-    // Municipal Leadership
+    // Provincial Leadership
     'section-leadership': 'Panguluan ti Munisipalidad',
-    'title-mayor': 'Mayor ti Munisipalidad',
-    'title-vice-mayor': 'Bise Mayor ti Munisipalidad',
+    'title-mayor': 'Provincial Governor ti Munisipalidad',
+    'title-vice-mayor': 'Bise Provincial Governor ti Munisipalidad',
     'btn-view-officials': 'Kitaen Amin nga Opisyal',
 
     // Contact Section
@@ -999,7 +999,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     'services-title': 'Direktorio ti Serbisyo ti Munisipalidad',
-    'services-subtitle': 'Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Solano',
+    'services-subtitle': 'Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Camarines Norte',
     'life-events-title': 'Agsapul Segun iti Pasamak iti Biag',
     'life-events-subtitle': 'Biroken dagiti serbisyo segun iti mapasamak iti biagmo',
     'life-starting-business': 'Mangrugi ti Negosyo',
@@ -1095,12 +1095,12 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-hospitals': 'Dagiti Kangrunaan nga Ospital',
     'health-stat-bhs': 'Dagiti Barangay Health Station',
     'health-stat-mho': 'Opisina ti Salun-at ti Munisipalidad',
-    'health-section-hospitals': 'Dagiti Ospital idiay Solano',
+    'health-section-hospitals': 'Dagiti Ospital idiay Camarines Norte',
     'health-section-mho': 'Opisina ti Salun-at ti Munisipalidad',
     'health-section-bhs': 'Dagiti Barangay Health Station',
     'health-bhs-subtitle':
-      '22 a Barangay Health Stations/Centers a mangserserbisio iti amin a barangay ti Solano',
-    'health-mho-title': 'Opisina ti Salun-at ti Munisipalidad ti Solano',
+      '22 a Barangay Health Stations/Centers a mangserserbisio iti amin a barangay ti Camarines Norte',
+    'health-mho-title': 'Opisina ti Salun-at ti Munisipalidad ti Camarines Norte',
     'health-mho-desc':
       'Ti Municipal Health Office ket mangted ti kangrunaan a serbisio ti salun-at a mairaman ti lying-in facility ken serbisio ti laboratorio. Daytoy ti kangrunaan a public health center ti munisipalidad.',
     'health-service-lying-in': 'Lying-in Facility',
@@ -1112,7 +1112,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ti komprehensibong dagiti serbisyong medikal.',
-    'health-national-highway-solano': 'Nailian Highway, Solano',
+    'health-national-highway-camnorte': 'Nailian Highway, Camarines Norte',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Dagiti serbisio Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
@@ -1147,7 +1147,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-hivcare-cta-heading':
       'Birukem ti Pasilidad para iti Panangagas ken Panangaywan iti HIV',
     'health-hivcare-cta-desc':
-      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Philippines, sourced from DOH Circular No. 2026-0065.',
+      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Placeholderpines, sourced from DOH Circular No. 2026-0065.',
     'health-hivcare-cta-btn': 'Find HIV Care Facilities',
     'health-hivcare-cta-stat-facilities': 'Pasilidad iti Intero a Pagilian',
     'health-hivcare-cta-stat-mobile': 'Mobile-Friendly a Panagbirok',
@@ -1169,11 +1169,11 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page - Ilocano
     'ord-page-title': 'Balangkas ti Ordinansa',
-    'ord-page-desc': 'Dagiti ordinansa a naipasa ti Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'Dagiti ordinansa a naipasa ti Sangguniang Panlalawigan ng Camarines Norte',
     'ord-page-badge': 'Lehislatura',
     'ord-what-is': 'Ania ti Ordinansa?',
     'ord-what-is-p1':
-      'Ti munisipal nga ordinansa ket lokal a linteg a naipasa ti Sangguniang Bayan (Konseho ti Munisipalidad) a mangituray ti munisipalidad ken dagiti residente na. Dagiti ordinansa ket addaan ti pigsa ken epekto ti linteg iti saklaw ti munisipalidad.',
+      'Ti munisipal nga ordinansa ket lokal a linteg a naipasa ti Sangguniang Panlalawigan (Konseho ti Munisipalidad) a mangituray ti munisipalidad ken dagiti residente na. Dagiti ordinansa ket addaan ti pigsa ken epekto ti linteg iti saklaw ti munisipalidad.',
     'ord-what-is-p2':
       'Dagiti ordinansa ket mabalin a manakup kadagiti nadumaduma a paksa a mairaman ngem saan a limitado iti: panagbuwis, regulasion ti negosio, kaligtasan pampubliko, proteksion ti aglawlaw, panagtaripato ti trapiko, ken zoning.',
     'ord-categories-title': 'Dagiti Kategorya ti Ordinansa',
@@ -1185,7 +1185,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-zoning': 'Zoning ken Panagusar ti Daga',
     'ord-2025-title': 'Dagiti Ordinansa ti 2025',
     'ord-2025-subtitle':
-      'Dagiti opisial nga ordinansa a naipasa ti Sangguniang Bayan ng Solano iti 2025',
+      'Dagiti opisial nga ordinansa a naipasa ti Sangguniang Panlalawigan ng Camarines Norte iti 2025',
     'ord-table-number': 'Numero ti Ordinansa',
     'ord-table-title': 'Titulo',
     'ord-table-date': 'Petsa ti Sesion',
@@ -1193,13 +1193,13 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page - Ilocano
     'reso-page-title': 'Balangkas ti Resolusion',
-    'reso-page-desc': 'Dagiti resolusion a naipasa ti Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Dagiti resolusion a naipasa ti Sangguniang Panlalawigan ng Camarines Norte',
     'reso-page-badge': 'Lehislatura',
     'reso-what-is': 'Ania ti Resolusion?',
     'reso-what-is-p1':
-      'Ti resolusion ket pormal a panangibaga ti opinion wenno pagayatan ti Sangguniang Bayan. Saan a kas kadagiti ordinansa, dagiti resolusion ket awan ti pigsa ken epekto ti linteg ngem agserbida a kas opisial a pahayag ti lehislatura.',
+      'Ti resolusion ket pormal a panangibaga ti opinion wenno pagayatan ti Sangguniang Panlalawigan. Saan a kas kadagiti ordinansa, dagiti resolusion ket awan ti pigsa ken epekto ti linteg ngem agserbida a kas opisial a pahayag ti lehislatura.',
     'reso-what-is-p2':
-      'Dagiti resolusion ket kadawyan a mausar para iti: panangpadayaw, dawat kadagiti nangatngato nga ahensya ti gobierno, panangibaga ti suporta wenno supiat, ken dagiti administratibo a banag ti Sangguniang Bayan.',
+      'Dagiti resolusion ket kadawyan a mausar para iti: panangpadayaw, dawat kadagiti nangatngato nga ahensya ti gobierno, panangibaga ti suporta wenno supiat, ken dagiti administratibo a banag ti Sangguniang Panlalawigan.',
     'reso-types-title': 'Dagiti Kita ti Resolusion',
     'reso-type-commendation': 'Panangpadayaw',
     'reso-type-request': 'Dawat/Apela',
@@ -1209,10 +1209,10 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-appropriation': 'Apropriyasion',
     'reso-2026-title': 'Dagiti Resolusion ti 2026',
     'reso-2026-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Solano iti 2026',
+      'Dagiti opisial a resolusion a naipasa ti Sangguniang Panlalawigan ng Camarines Norte iti 2026',
     'reso-2025-title': 'Dagiti Resolusion ti 2025',
     'reso-2025-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Solano iti 2025',
+      'Dagiti opisial a resolusion a naipasa ti Sangguniang Panlalawigan ng Camarines Norte iti 2025',
     'reso-table-number': 'Numero ti Resolusion',
     'reso-table-title': 'Titulo',
     'reso-table-date': 'Petsa ti Sesion',
@@ -1220,7 +1220,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page - Ilocano
     'biz-page-title': 'Serbisio ti Negosio',
-    'biz-page-desc': 'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Solano',
+    'biz-page-desc': 'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Camarines Norte',
     'biz-page-badge': 'Negosio',
     'biz-permit-new': 'Permit ti Negosio (Baro)',
     'biz-permit-new-desc': "Agaplikar ti baro a mayor's permit para iti negosio",
@@ -1333,7 +1333,7 @@ const translations: Record<string, Record<string, string>> = {
     'popular-browse-directory': 'Kitaen ti kompleto a direktorio',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Maysa a Panagkita iti Solano',
+    'stats-at-a-glance': 'Maysa a Panagkita iti Camarines Norte',
     'stats-view-statistics': 'Kitaen ti Estadistika',
     'stats-population-label': 'Populasion',
     'stats-population-source': '2024 a Senso',
@@ -1345,12 +1345,12 @@ const translations: Record<string, Record<string, string>> = {
     'stats-land-area-source': 'Dagup a Kalawa ti Munisipalidad',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Tiempo ken Mapa ti Solano',
+    'weather-map-title': 'Tiempo ken Mapa ti Camarines Norte',
     'weather-mainly-clear': 'Kaaduan a nalawag',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Camarines Norte',
 
     // Homepage - History
-    'history-title': 'Ababa a Pakasaritaan ti Solano',
+    'history-title': 'Ababa a Pakasaritaan ti Camarines Norte',
     'history-1760':
       'Ti orihinal a nagan ti ili ket Bintauan, maysa a pagnaedanan ti Gaddang a ita ket barangay ti Villaverde.',
     'history-1767':
@@ -1362,12 +1362,12 @@ const translations: Record<string, Record<string, string>> = {
     'history-1853':
       'Dimteng dagiti umuna nga Ilocano, inyeg ni Don Diego Lumicao, maysa a dati a gobernadorcillo.',
     'history-1889':
-      'Nabaliwan ti nagan iti Solano tapno padayawan ni Gobernador Heneral Ramon Solano y Llanderal. Ti ili ket naipasayaat manen babaen ni Padre Juan Villaverde nga addaan 14 a magkakahanay a nalawa a kalsada, tunggal maysa ket 20 metro ti kalawa na, a mangbukel iti 100 a kuadrado a bloke.',
+      'Nabaliwan ti nagan iti Camarines Norte tapno padayawan ni Gobernador Heneral Ramon Camarines Norte y Llanderal. Ti ili ket naipasayaat manen babaen ni Padre Juan Villaverde nga addaan 14 a magkakahanay a nalawa a kalsada, tunggal maysa ket 20 metro ti kalawa na, a mangbukel iti 100 a kuadrado a bloke.',
     'history-1957':
-      'Dagiti baryo ti Ibung ken Bintawan ket naisina tapno mangbukel iti ili ti Ibung, a nabaliwan ti nagan iti Villaverde. Ti kalawa ti daga ti Solano ket nabassitan iti 13,980 ektarya.',
+      'Dagiti baryo ti Ibung ken Bintawan ket naisina tapno mangbukel iti ili ti Ibung, a nabaliwan ti nagan iti Villaverde. Ti kalawa ti daga ti Camarines Norte ket nabassitan iti 13,980 ektarya.',
     'history-once-largest-title': 'Idi Kadakkelan',
     'history-once-largest-desc':
-      'Ti Solano ti kadakkelan a munisipalidad iti probinsia agingga a naisina ti Caliat ken Bintawan tapno agbalin a Quezon ken Villaverde.',
+      'Ti Camarines Norte ti kadakkelan a munisipalidad iti probinsia agingga a naisina ti Caliat ken Bintawan tapno agbalin a Quezon ken Villaverde.',
     'history-urban-planning-title': 'Panagplano ti Ili',
     'history-urban-planning-desc':
       'Ti panagpasayaat idi 1889 ket nangaramid iti grid a 100 a kuadrado a bloke, tunggal maysa ket addaan dagup a kalawa a maysa nga ektarya, nga addaan kadagiti kalsada a mapan iti amianan-abagatan ken daya-laud.',
@@ -1381,41 +1381,41 @@ const translations: Record<string, Record<string, string>> = {
       'Ti deadline para iti panag-renew ti permit ti negosio ket Enero 20, 2025. Maparegta ti nasapa a panag-renew.',
     'news-market-title': 'Baro a Wing ti Pampubliko a Tiendaan Nalukat',
     'news-market-desc':
-      'Ti na-renovate a wing ti Pampubliko a Tiendaan ti Solano ket nalukat kadagiti aglaklako ken publiko.',
+      'Ti na-renovate a wing ti Pampubliko a Tiendaan ti Camarines Norte ket nalukat kadagiti aglaklako ken publiko.',
     'news-power-title': 'Naiskedyul a Pannakaputol ti Kuryente',
     'news-power-desc':
       'Maintenance a naiskedyul para iti Barangay Osmeña iti Dis 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'Kasano ti pannakaammom iti Solano, Nueva Vizcaya?',
+    'quiz-title': 'Camarines Norte Quiz',
+    'quiz-subtitle': 'Kasano ti pannakaammom iti Camarines Norte?',
     'quiz-description':
-      'Evaluaren ti pannakaammom iti tawid, kultural a pagbigbigan, ken heograpiko a kapatgan ti munisipalidad babaen ti maysa nga interactive a panagsubok ti pannakaammo a naidisinio tapno ipakita ti maysa kadagiti kalatakan a lokalidad ti Nueva Vizcaya.',
+      'Evaluaren ti pannakaammom iti tawid, kultural a pagbigbigan, ken heograpiko a kapatgan ti munisipalidad babaen ti maysa nga interactive a panagsubok ti pannakaammo a naidisinio tapno ipakita ti maysa kadagiti kalatakan a lokalidad ti Camarines Norte.',
     'quiz-take': 'Subokan ti Quiz',
 
     // Footer
     'footer-tagline':
-      'Panangted ti bileg kadagiti umili ti Solano nga addaan ti transparente a panag-akses kadagiti serbisio, programa, ken pampubliko a pondo ti LGU Solano.',
+      'Panangted ti bileg kadagiti umili ti Camarines Norte nga addaan ti transparente a panag-akses kadagiti serbisio, programa, ken pampubliko a pondo ti Camarines Norte Provincial Government.',
     'footer-quick-links': 'Dagiti Napartak a Silpo',
     'footer-resources': 'Dagiti Rekurso',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-camnorte-quiz': 'Camarines Norte Quiz',
     'footer-sitemap': 'Mapa ti Site',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Dagiti Kondision ti Panagusar',
     'footer-privacy': 'Pagannurotan ti Pagkapribado',
     'footer-accessibility': 'Aksesibilidad',
     'footer-faq': 'FAQ',
-    'footer-open-data': 'Open Data Philippines',
+    'footer-open-data': 'Open Data Placeholderpines',
     'footer-foi': 'Wayawaya ti Impormasion',
-    'footer-lgu-portal': 'Opisial a Portal ti LGU Solano',
-    'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-portal': 'Opisial a Portal ti Camarines Norte Provincial Government',
+    'footer-sb': 'Sangguniang Panlalawigan',
+    'footer-lgu-facebook': 'Camarines Norte Provincial Government Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Gastos kadagiti Umili ti Solano =',
+    'footer-cost': 'Gastos kadagiti Umili ti Camarines Norte =',
     'footer-volunteer': 'Ag-volunteer kadakami',
     'footer-contribute': 'Ag-ambag ti code kadakami',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'BetterCamNorte',
     'footer-copyright-disclaimer':
       'Amin a pampubliko nga impormasion ket nagtaud kadagiti opisial a portal ti gobierno.',
     'footer-skip-to-main': 'Lumaktaw iti kangrunaan a linaon',
@@ -1437,7 +1437,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // Load saved language from localStorage
-    const savedLang = localStorage.getItem('bettersolano_lang') as Language;
+    const savedLang = localStorage.getItem('bettercamnorte_lang') as Language;
     if (savedLang && ['en', 'fil', 'ilo'].includes(savedLang)) {
       setLanguageState(savedLang);
     }
@@ -1445,7 +1445,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('bettersolano_lang', lang);
+    localStorage.setItem('bettercamnorte_lang', lang);
   };
 
   const t = (key: string): string => {

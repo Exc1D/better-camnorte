@@ -1,10 +1,10 @@
-# Contributing to BetterSolano.org
+# Contributing to BetterCamNorte
 
-Thank you for your interest in contributing to BetterSolano.org! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Solano, your contributions are welcome.
+Thank you for your interest in contributing to BetterCamNorte! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Camarines Norte, your contributions are welcome.
 
 ## Choosing a Version
 
-BetterSolano.org has two versions. Choose based on your preference:
+BetterCamNorte has two versions. Choose based on your preference:
 
 | Version            | Branch             | Best For                                                          |
 | ------------------ | ------------------ | ----------------------------------------------------------------- |
@@ -29,8 +29,8 @@ For detailed differences and migration guidance, see [MIGRATION.md](MIGRATION.md
 #### Setup
 
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
-cd bettersolano
+git clone https://github.com/BetterCamNorte/bettercamnorte.git
+cd bettercamnorte
 npm install
 npm run dev
 ```
@@ -48,8 +48,8 @@ Open http://localhost:8000 in your browser.
 #### Setup
 
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
-cd bettersolano
+git clone https://github.com/BetterCamNorte/bettercamnorte.git
+cd bettercamnorte
 git checkout react-typescript
 cd react-app
 npm install
@@ -62,7 +62,7 @@ Open http://localhost:3000 in your browser.
 
 ### Reporting Bugs
 
-1. Check existing [issues](https://github.com/BetterSolano/bettersolano/issues) to avoid duplicates
+1. Check existing [issues](https://github.com/BetterCamNorte/bettercamnorte/issues) to avoid duplicates
 2. Create a new issue with:
    - Clear, descriptive title
    - Steps to reproduce
@@ -183,9 +183,9 @@ Pull requests are reviewed for:
 ## Community
 
 - **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
-- **Facebook:** [@bettersolano.org](https://www.facebook.com/bettersolano.org)
-- **LinkedIn:** [Connect with us](https://www.linkedin.com/company/bettersolano)
-- **Email:** volunteer@bettersolano.org
+- **Facebook:** [@bettercamnorte.org](https://www.facebook.com/bettercamnorte.org)
+- **LinkedIn:** [Connect with us](https://www.linkedin.com/company/bettercamnorte)
+- **Email:** volunteer@bettercamnorte.org
 
 ## Recognition
 
@@ -197,4 +197,4 @@ Feel free to open an issue or reach out on Discord. We're happy to help!
 
 ---
 
-Thank you for helping make government information accessible to the people of Solano.
+Thank you for helping make government information accessible to the people of Camarines Norte.

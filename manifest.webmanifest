@@ -1,7 +1,7 @@
 {
-  "name": "BetterSolano.org - LGU Solano Portal",
-  "short_name": "BetterSolano",
-  "description": "Access government services, emergency hotlines, and transparency data for Solano, Nueva Vizcaya.",
+  "name": "BetterCamNorte - Camarines Norte Provincial Government Portal",
+  "short_name": "BetterCamNorte",
+  "description": "Access government services, emergency hotlines, and transparency data for Camarines Norte.",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",

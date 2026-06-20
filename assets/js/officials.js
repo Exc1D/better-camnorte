@@ -21,27 +21,27 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderOfficials(data) {
     let html = '';
 
-    // Mayor & Vice Mayor
+    // Provincial Governor & Provincial Vice Governor
     html += '<div class="grid grid-2 mb-5">';
 
-    // Mayor
+    // Provincial Governor
     if (data.mayor) {
-      html += createOfficialCard(data.mayor, 'Mayor');
+      html += createOfficialCard(data.mayor, 'Provincial Governor');
     }
 
-    // Vice Mayor
+    // Provincial Vice Governor
     if (data.vice_mayor) {
-      html += createOfficialCard(data.vice_mayor, 'Vice Mayor');
+      html += createOfficialCard(data.vice_mayor, 'Provincial Vice Governor');
     }
 
     html += '</div>';
 
     // Councilors
     if (data.councilors && data.councilors.length > 0) {
-      html += '<h3 class="text-center mt-5 mb-4">Sangguniang Bayan Members</h3>';
+      html += '<h3 class="text-center mt-5 mb-4">Sangguniang Panlalawigan Members</h3>';
       html += '<div class="grid grid-4">';
       data.councilors.forEach((councilor) => {
-        html += createOfficialCard(councilor, 'SB Member');
+        html += createOfficialCard(councilor, 'Provincial Board Member');
       });
       html += '</div>';
     }
