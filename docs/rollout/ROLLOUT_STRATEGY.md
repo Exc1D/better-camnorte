@@ -27,7 +27,7 @@ Adherence to the [Kapwa Design Values](https://github.com/bettergovph/kapwa/wiki
 
 ### 1.2 Low Bandwidth Optimization & WCAG 2.1 AA
 
-Given the mobile data context in the Placeholderpines (prepaid metering, fluctuating 3G/4G signals), the following technical constraints apply:
+Given the mobile data context in the Philippines (prepaid metering, fluctuating 3G/4G signals), the following technical constraints apply:
 
 - **Asset Weight:** The initial page load (First Contentful Paint) must be under 300KB (gzipped).
 - **Image Handling:**

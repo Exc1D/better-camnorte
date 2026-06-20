@@ -13,36 +13,26 @@ const COLORS = {
   info: '#0077BE',
 };
 
-// Barangay data (2024 Census)
+// Municipality population data from PSA PSGC 2024 POPCEN.
 const barangayData = [
-  { name: 'Roxas', pop: 9088 },
-  { name: 'Quirino', pop: 6572 },
-  { name: 'Osmeña', pop: 6403 },
-  { name: 'Quezon', pop: 5758 },
-  { name: 'Curifang', pop: 4885 },
-  { name: 'Bagahabag', pop: 4731 },
-  { name: 'Uddiawan', pop: 4217 },
-  { name: 'Bascaran', pop: 3845 },
-  { name: 'Aggub', pop: 3101 },
-  { name: 'San Luis', pop: 2668 },
-  { name: 'Communal', pop: 2586 },
-  { name: 'Lactawan', pop: 2109 },
-  { name: 'San Juan', pop: 1965 },
-  { name: 'Concepcion', pop: 1954 },
-  { name: 'Dadap', pop: 1409 },
-  { name: 'Wacal', pop: 1398 },
-  { name: 'Bangaan', pop: 1284 },
-  { name: 'Tucal', pop: 1244 },
-  { name: 'Bangar', pop: 1146 },
-  { name: 'Pilar D. Galima', pop: 1146 },
-  { name: 'Poblacion North', pop: 970 },
-  { name: 'Poblacion South', pop: 817 },
+  { name: 'Labo', pop: 108319 },
+  { name: 'Daet', pop: 106465 },
+  { name: 'Jose Panganiban', pop: 60626 },
+  { name: 'Paracale', pop: 58391 },
+  { name: 'Mercedes', pop: 53702 },
+  { name: 'Vinzons', pop: 45173 },
+  { name: 'Basud', pop: 43388 },
+  { name: 'Santa Elena', pop: 42585 },
+  { name: 'Capalonga', pop: 32800 },
+  { name: 'Talisay', pop: 26371 },
+  { name: 'San Lorenzo Ruiz', pop: 15072 },
+  { name: 'San Vicente', pop: 11774 },
 ];
 
-// Historical data
+// Province totals from 2020 Census and 2024 POPCEN.
 const historicalData = {
-  years: [1990, 1995, 2000, 2007, 2010, 2015, 2020, 2024],
-  populations: [38006, 42857, 47288, 53004, 56831, 62649, 65896, 69296],
+  years: [2020, 2024],
+  populations: [629699, 604666],
 };
 
 // Chart instances

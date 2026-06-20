@@ -24,7 +24,7 @@ TRANSLATIONS_JS = 'assets/js/translations.js'
 # Words/phrases that should NOT be translated (proper nouns, acronyms, etc.)
 KEEP_AS_IS = {
     'BLGF Portal', 'CMCI DTI Portal', 'Camarines Norte Provincial Government Facebook',
-    'Open Data Placeholderpines', 'PhilHealth', 'GSIS', 'SSS', 'Pag-IBIG',
+    'Open Data Philippines', 'PhilHealth', 'GSIS', 'SSS', 'Pag-IBIG',
     'BFP', 'PNP', 'DILG', 'MDRRMO', 'MSWDO', 'SEEDO', 'MPDO',
     'TB-DOTS', 'BIR', 'DTI', 'SEC', 'DENR', 'DPWH', 'DSWD',
     'PSA', 'NBI', 'CENRO', 'MENRO', 'PENRO', 'TESDA', 'DepEd',
@@ -160,7 +160,7 @@ FIL_PHRASES = {
     "Certificate of No Marriage": "Sertipiko ng Walang Kasal",
     "Certified True Copy": "Sertipikadong Tunay na Kopya",
     "Local Civil Registry": "Lokal na Rehistro Sibil",
-    "Placeholderpine Statistics Authority": "Awtoridad ng Estadistika ng Pilipinas",
+    "Philippine Statistics Authority": "Awtoridad ng Estadistika ng Pilipinas",
     "Foundling Certificate": "Sertipiko ng Natagpuang Bata",
     "Out of Town": "Labas ng Bayan",
 
@@ -342,7 +342,7 @@ ILO_PHRASES = {
     "Certificate of No Marriage": "Sertipiko ti Awan Kasar",
     "Certified True Copy": "Nasertipikaran a Pudno a Kopia",
     "Local Civil Registry": "Lokal a Sibil a Rehistro",
-    "Placeholderpine Statistics Authority": "Awtoridad ti Estadistika ti Pilipinas",
+    "Philippine Statistics Authority": "Awtoridad ti Estadistika ti Pilipinas",
     "Foundling Certificate": "Sertipiko ti Nasarakan a Ubing",
     "Out of Town": "Ruar ti Ili",
 
@@ -466,7 +466,7 @@ FIL_SENTENCES = {
     "BLGF Portal": "BLGF Portal",
     "CMCI DTI Portal": "CMCI DTI Portal",
     "Camarines Norte Provincial Government Facebook": "Camarines Norte Provincial Government Facebook",
-    "Open Data Placeholderpines": "Open Data Placeholderpines",
+    "Open Data Philippines": "Open Data Philippines",
     "BetterCamNorte": "BetterCamNorte",
     "BFP Camarines Norte": "BFP Camarines Norte",
 
@@ -565,10 +565,10 @@ FIL_SENTENCES = {
 
     # Statistics
     "2021 City and Municipal Level Poverty Estimates": "2021 Mga Tantiya ng Kahirapan sa Antas ng Lungsod at Munisipyo",
-    "2024 Census of Population": "2024 Senso ng Populasyon",
+    "2024 POPCEN population by municipality": "2024 POPCEN ng Populasyon",
 
     # Education
-    "22 schools": "22 paaralan",
+    "Schools data pending": "22 paaralan",
     "6 schools": "6 na paaralan",
     "7 institutions": "7 institusyon",
 
@@ -619,7 +619,7 @@ ILO_SENTENCES = {
     "BLGF Portal": "BLGF Portal",
     "CMCI DTI Portal": "CMCI DTI Portal",
     "Camarines Norte Provincial Government Facebook": "Camarines Norte Provincial Government Facebook",
-    "Open Data Placeholderpines": "Open Data Placeholderpines",
+    "Open Data Philippines": "Open Data Philippines",
     "BetterCamNorte": "BetterCamNorte",
     "BFP Camarines Norte": "BFP Camarines Norte",
 
@@ -718,10 +718,10 @@ ILO_SENTENCES = {
 
     # Statistics
     "2021 City and Municipal Level Poverty Estimates": "2021 Dagiti Tantia ti Kinapanglaw iti Lebel ti Siudad ken Munisipalidad",
-    "2024 Census of Population": "2024 Senso ti Populasion",
+    "2024 POPCEN population by municipality": "2024 POPCEN ti Populasion",
 
     # Education
-    "22 schools": "22 nga eskuelaan",
+    "Schools data pending": "22 nga eskuelaan",
     "6 schools": "6 nga eskuelaan",
     "7 institutions": "7 nga institusion",
 

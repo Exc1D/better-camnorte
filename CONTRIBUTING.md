@@ -183,7 +183,7 @@ Pull requests are reviewed for:
 ## Community
 
 - **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
-- **Facebook:** [@bettercamnorte.org](https://www.facebook.com/bettercamnorte.org)
+- **Facebook:** [@piocamnorte](https://www.facebook.com/piocamnorte)
 - **LinkedIn:** [Connect with us](https://www.linkedin.com/company/bettercamnorte)
 - **Email:** volunteer@bettercamnorte.org
 

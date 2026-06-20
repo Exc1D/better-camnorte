@@ -6,7 +6,7 @@ We are pleased to announce that a React + TypeScript version of BetterCamNorte i
 
 ## Open Source Availability
 
-This repository is open source under the **MIT License** and **CC BY 4.0** and is freely available for use, modification, redistribution, and publication by any individual or organization that wishes to implement it in their respective local government unit (LGU) across the Placeholderpines.
+This repository is open source under the **MIT License** and **CC BY 4.0** and is freely available for use, modification, redistribution, and publication by any individual or organization that wishes to implement it in their respective local government unit (LGU) across the Philippines.
 
 We encourage other municipalities to adopt and customize this project in support of transparency, accessibility, modernization, and public service delivery to their communities.
 

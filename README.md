@@ -1,6 +1,6 @@
 # BetterCamNorte
 
-A civic-tech initiative providing transparent access to government services, programs, and public funds of LGU Camarines Norte, Placeholderpines.
+A civic-tech initiative providing transparent access to government services, programs, and public funds of LGU Camarines Norte, Philippines.
 
 ![Version](https://img.shields.io/badge/version-1.1.15-green)
 ![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
@@ -24,7 +24,7 @@ Both versions are actively maintained. New contributors may choose either versio
 
 ## Open Source for LGUs
 
-This repository is open source under the **MIT License** and **CC BY 4.0** and is freely available for use, modification, redistribution, and publication by any individual or organization that wishes to implement it in their respective local government unit (LGU) across the Placeholderpines.
+This repository is open source under the **MIT License** and **CC BY 4.0** and is freely available for use, modification, redistribution, and publication by any individual or organization that wishes to implement it in their respective local government unit (LGU) across the Philippines.
 
 We encourage adoption by other municipalities in support of:
 
@@ -82,7 +82,7 @@ Visit the live website: [https://bettercamnorte.org](https://bettercamnorte.org)
 | **Provincial Statistics**         | Demographics, economic data, and competitive index rankings                                                                                                                                                       |
 | **Appointment Services**         | Online appointment scheduling integration with the Governor's Office (OASYS), featuring branded Lottie animation                                                                                                     |
 | **Camarines Norte Quiz**                  | Interactive quiz about Camarines Norte history and culture, linked from homepage CTA and footer across all pages                                                                                                           |
-| **Real-time Information**        | Live weather updates, currency exchange rates, and Placeholderpine time                                                                                                                                                |
+| **Real-time Information**        | Live weather updates, currency exchange rates, and Philippine time                                                                                                                                                |
 | **Emergency Hotline Marquee**    | Clickable scrolling marquee for emergency contacts on tablet and mobile viewports, with pause-on-hover/focus accessibility                                                                                        |
 | **Progressive Web App**          | Installable PWA with "Install App" prompt, seamless auto-updates via skipWaiting (no manual refresh), versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation |
 | **Auto Version Management**      | Dynamic version display from `version.json`, auto-bumped on every git commit via pre-commit hook, synced across all 51+ HTML files, `package.json`, and React app                                                 |
@@ -241,7 +241,7 @@ bettercamnorte/
 ├── government/           # Government directory pages
 ├── legislative/          # Legislative framework pages
 ├── budget/               # Budget transparency page
-├── statistics/           # Municipal statistics page
+├── statistics/           # Provincial statistics page
 ├── news/                 # News and announcements page
 ├── contact/              # Contact information page
 ├── faq/                  # Frequently asked questions
@@ -315,7 +315,7 @@ bettercamnorte/
 #### React App Sync
 
 - Created `HotlineBar.tsx` component with tablet/mobile marquee matching static site behavior
-- Created `InfoBar.tsx` component with live exchange rates, weather, and Placeholderpine time
+- Created `InfoBar.tsx` component with live exchange rates, weather, and Philippine time
 - Created `SearchAutocomplete.tsx` component with service search dropdown
 - Created `PWAManager.tsx` component handling install prompt and seamless SW updates
 - Updated `Footer.tsx` to dynamically fetch version from `/version.json` instead of hardcoded value
@@ -435,7 +435,7 @@ All public information is sourced from official government portals:
 | Camarines Norte Provincial Government Official Website        | [camnorte.gov.ph](https://camnorte.gov.ph/)                                   | Services, Officials       |
 | Sangguniang Panlalawigan ng Camarines Norte        | [sangguniangbayan.camnorte.gov.ph](https://sangguniangbayan.camnorte.gov.ph/) | Ordinances, Resolutions   |
 | Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/)                                       | Budget, Financial Reports |
-| Placeholderpine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)                                         | Demographics, Census      |
+| Philippine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)                                         | Demographics, Census      |
 | DTI CMCI Portal                    | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/)                               | Competitive Index         |
 
 ## License
@@ -455,14 +455,14 @@ See [LICENSE](LICENSE) for full details.
 | -------- | ------------------------------------------------------------------------- |
 | Website  | [bettercamnorte.org](https://bettercamnorte.org)                              |
 | Email    | volunteer@bettercamnorte.org                                                |
-| Facebook | [@bettercamnorte.org](https://www.facebook.com/bettercamnorte.org)            |
+| Facebook | [@piocamnorte](https://www.facebook.com/piocamnorte)            |
 | LinkedIn | [BetterCamNorte](https://www.linkedin.com/company/bettercamnorte/)            |
 | Discord  | [Join Community](https://discord.com/invite/qeSu7RJkjQ)                   |
 | GitHub   | [BetterCamNorte/bettercamnorte](https://github.com/BetterCamNorte/bettercamnorte) |
 
 ## Acknowledgments
 
-- [BetterGov.ph](https://bettergov.ph) for the civic-tech initiative in the Placeholderpines
+- [BetterGov.ph](https://bettergov.ph) for the civic-tech initiative in the Philippines
 - [Abakada.org](https://abakada.org) for supporting civic technology efforts
 - Camarines Norte Provincial Government for public data availability and transparency
 - All volunteers and contributors who dedicate their time

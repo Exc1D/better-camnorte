@@ -19,9 +19,9 @@ var PRECACHE_URLS = [
   '/assets/js/main.js',
   '/assets/js/translations.js',
   '/assets/js/info-bar.js',
-  '/assets/images/logo/better-camnorte-logo.svg',
-  '/assets/images/logo/better-camnorte-logo-white.svg',
-  '/assets/images/logo/favicon.svg',
+  '/assets/images/logo/camnorte-logo.png',
+  '/assets/images/logo/camnorte-logo.png',
+  '/assets/images/logo/camnorte-logo.png',
   '/assets/images/logo/favicon.ico',
   '/manifest.webmanifest',
 ];
@@ -238,8 +238,8 @@ self.addEventListener('push', function (event) {
   event.waitUntil(
     self.registration.showNotification(data.title || 'BetterCamNorte', {
       body: data.body || '',
-      icon: '/assets/images/logo/favicon.svg',
-      badge: '/assets/images/logo/favicon.svg',
+      icon: '/assets/images/logo/camnorte-logo.png',
+      badge: '/assets/images/logo/camnorte-logo.png',
       tag: data.tag || 'bettercamnorte-notification',
       data: { url: data.url || '/' },
     })

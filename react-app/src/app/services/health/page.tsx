@@ -115,7 +115,7 @@ export default function HealthPage() {
               <span className="health-stat-label">{t('health-stat-hospitals')}</span>
             </div>
             <div className="health-stat-card">
-              <span className="health-stat-num">22</span>
+              <span className="health-stat-num">TBD</span>
               <span className="health-stat-label">{t('health-stat-bhs')}</span>
             </div>
             <div className="health-stat-card">
@@ -300,8 +300,8 @@ export default function HealthPage() {
         </div>
       </section>
 
-      {/* HIV Care Placeholderpines CTA */}
-      <section className="section hivcare-cta-section" aria-label="HIV Care Placeholderpines facility directory">
+      {/* HIV Care Philippines CTA */}
+      <section className="section hivcare-cta-section" aria-label="HIV Care Philippines facility directory">
         <div className="container">
           <div className="hivcare-cta-card">
             <span className="hivcare-cta-eyebrow">
@@ -310,7 +310,7 @@ export default function HealthPage() {
             </span>
             <img
               src="/assets/images/logo/hivcareph-logo.svg"
-              alt="HIV Care Placeholderpines"
+              alt="HIV Care Philippines"
               className="hivcare-cta-logo"
               width={168}
               height={50}

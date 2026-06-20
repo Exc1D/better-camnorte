@@ -123,10 +123,11 @@ export default function Header() {
         <div className="logo-container">
           <Link href="/">
             <img
-              src="/assets/images/logo/better-camnorte-logo.svg"
+              src="/assets/images/logo/camnorte-logo.png"
               alt="BetterCamNorte Logo"
               className="logo-img"
             />
+            <span className="brand-wordmark">Better CamNorte</span>
           </Link>
         </div>
 

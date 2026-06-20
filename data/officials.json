@@ -1,54 +1,84 @@
 {
   "mayor": {
-    "name": "Governor Placeholder",
+    "name": "Governor Ricarte \"Dong\" R. Padilla",
     "title": "Provincial Governor",
-    "image": "assets/images/officials/governor-placeholder.jpg"
+    "image": "assets/images/logo/camnorte-logo.png"
   },
   "vice_mayor": {
-    "name": "Vice Governor Placeholder",
+    "name": "Vice Governor Joseph V. Ascutia",
     "title": "Provincial Vice Governor",
-    "image": "assets/images/officials/vice-governor-placeholder.jpg"
+    "image": "assets/images/logo/camnorte-logo.png"
   },
   "councilors": [
     {
-      "name": "Provincial Board Member Placeholder 1",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-1.jpg"
+      "name": "Hon. Jhon Carlo V. Delima",
+      "title": "1st Board Member, 1st District",
+      "image": "assets/images/logo/camnorte-logo.png"
     },
     {
-      "name": "Provincial Board Member Placeholder 2",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-2.jpg"
+      "name": "Hon. Winifredo B. Oco",
+      "title": "2nd Board Member, 1st District",
+      "image": "assets/images/logo/camnorte-logo.png"
     },
     {
-      "name": "Provincial Board Member Placeholder 3",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-3.jpg"
+      "name": "Hon. Arthur Michael Canlas",
+      "title": "3rd Board Member, 1st District",
+      "image": "assets/images/logo/camnorte-logo.png"
     },
     {
-      "name": "Provincial Board Member Placeholder 4",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-4.jpg"
+      "name": "Hon. Junjun Enova",
+      "title": "4th Board Member, 1st District",
+      "image": "assets/images/logo/camnorte-logo.png"
     },
     {
-      "name": "Provincial Board Member Placeholder 5",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-5.jpg"
+      "name": "Hon. Teresita Malubay",
+      "title": "5th Board Member, 1st District",
+      "image": "assets/images/logo/camnorte-logo.png"
     },
     {
-      "name": "Provincial Board Member Placeholder 6",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-6.jpg"
+      "name": "Hon. Dennis L. Riel",
+      "title": "1st Board Member, 2nd District",
+      "image": "assets/images/logo/camnorte-logo.png"
     },
     {
-      "name": "Provincial Board Member Placeholder 7",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-7.jpg"
+      "name": "Hon. Arnulfo Balane",
+      "title": "2nd Board Member, 2nd District",
+      "image": "assets/images/logo/camnorte-logo.png"
     },
     {
-      "name": "Provincial Board Member Placeholder 8",
-      "title": "Provincial Board Member",
-      "image": "assets/images/officials/board-member-placeholder-8.jpg"
+      "name": "Hon. Jonah G. Pimentel",
+      "title": "3rd Board Member, 2nd District",
+      "image": "assets/images/logo/camnorte-logo.png"
+    },
+    {
+      "name": "Hon. Rodolfo V. Gache",
+      "title": "4th Board Member, 2nd District",
+      "image": "assets/images/logo/camnorte-logo.png"
+    },
+    {
+      "name": "Hon. Renee Herrera",
+      "title": "5th Board Member, 2nd District",
+      "image": "assets/images/logo/camnorte-logo.png"
+    },
+    {
+      "name": "Hon. Rey Kenneth N. Oning",
+      "title": "PCL President",
+      "image": "assets/images/logo/camnorte-logo.png"
+    },
+    {
+      "name": "Hon. Mary Joy P. Carranza",
+      "title": "SK President",
+      "image": "assets/images/logo/camnorte-logo.png"
+    },
+    {
+      "name": "Hon. Ricky S. Noblesala",
+      "title": "IP Representative",
+      "image": "assets/images/logo/camnorte-logo.png"
+    },
+    {
+      "name": "Hon. Rebecca Padilla",
+      "title": "ABC President",
+      "image": "assets/images/logo/camnorte-logo.png"
     }
   ]
 }

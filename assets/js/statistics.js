@@ -42,36 +42,26 @@ function getChartColors(count) {
   return colors;
 }
 
-// Barangay population data (2024 Census) - Source: PSA, July 1, 2024
+// Municipality population data from PSA PSGC 2024 POPCEN.
 const barangayData = [
-  { name: 'Roxas', population: 9088, classification: 'Urban' },
-  { name: 'Quirino', population: 6572, classification: 'Urban' },
-  { name: 'Osmeña', population: 6403, classification: 'Urban' },
-  { name: 'Quezon', population: 5758, classification: 'Urban' },
-  { name: 'Curifang', population: 4885, classification: 'Rural' },
-  { name: 'Bagahabag', population: 4731, classification: 'Rural' },
-  { name: 'Uddiawan', population: 4217, classification: 'Rural' },
-  { name: 'Bascaran', population: 3845, classification: 'Rural' },
-  { name: 'Aggub', population: 3101, classification: 'Rural' },
-  { name: 'San Luis', population: 2668, classification: 'Rural' },
-  { name: 'Communal', population: 2586, classification: 'Rural' },
-  { name: 'Lactawan', population: 2109, classification: 'Rural' },
-  { name: 'Concepcion', population: 1954, classification: 'Rural' },
-  { name: 'San Juan', population: 1965, classification: 'Rural' },
-  { name: 'Wacal', population: 1398, classification: 'Rural' },
-  { name: 'Dadap', population: 1409, classification: 'Rural' },
-  { name: 'Tucal', population: 1244, classification: 'Rural' },
-  { name: 'Bangaan', population: 1284, classification: 'Rural' },
-  { name: 'Bangar', population: 1146, classification: 'Rural' },
-  { name: 'Pilar D. Galima', population: 1146, classification: 'Rural' },
-  { name: 'Poblacion North', population: 970, classification: 'Urban' },
-  { name: 'Poblacion South', population: 817, classification: 'Urban' },
+  { name: 'Labo', population: 108319, classification: 'Municipality' },
+  { name: 'Daet', population: 106465, classification: 'Capital' },
+  { name: 'Jose Panganiban', population: 60626, classification: 'Municipality' },
+  { name: 'Paracale', population: 58391, classification: 'Municipality' },
+  { name: 'Mercedes', population: 53702, classification: 'Municipality' },
+  { name: 'Vinzons', population: 45173, classification: 'Municipality' },
+  { name: 'Basud', population: 43388, classification: 'Municipality' },
+  { name: 'Santa Elena', population: 42585, classification: 'Municipality' },
+  { name: 'Capalonga', population: 32800, classification: 'Municipality' },
+  { name: 'Talisay', population: 26371, classification: 'Municipality' },
+  { name: 'San Lorenzo Ruiz', population: 15072, classification: 'Municipality' },
+  { name: 'San Vicente', population: 11774, classification: 'Municipality' },
 ];
 
-// Historical population data (Census years)
+// Province totals from 2020 Census and 2024 POPCEN.
 const historicalData = {
-  years: [1990, 1995, 2000, 2007, 2010, 2015, 2020, 2024],
-  populations: [38500, 43200, 48100, 52800, 56400, 60500, 65287, 69296],
+  years: [2020, 2024],
+  populations: [629699, 604666],
 };
 
 // Economic indicators data
@@ -79,14 +69,14 @@ const economicData = {
   registeredBusinesses: 1200,
   agriculturalLand: 8500, // hectares
   incomeClass: '1st Class',
-  landArea: 162.7, // km²
+  landArea: 2277.93, // km²
 };
 
 // Chart instances storage
 let chartInstances = {};
 
 /**
- * Create population by barangay bar chart
+ * Create population by municipality bar chart
  * @param {string} canvasId - Canvas element ID
  * @returns {Chart} Chart.js instance
  */
@@ -299,7 +289,7 @@ function hideChartLoading(containerId) {
  * Initialize all charts on the statistics page
  */
 function initializeCharts() {
-  // Population by Barangay chart
+  // Population by Municipality chart
   if (document.getElementById('populationBarChart')) {
     showChartLoading('populationChartContainer');
     createPopulationBarChart('populationBarChart');
