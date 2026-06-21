@@ -73,7 +73,7 @@ export default function InfoBar() {
             <span className="weather-location">Camarines Norte</span>
             <span className="weather-temp">{temp}</span>
           </div>
-          <div className="info-bar-item info-bar-datetime" aria-label="Placeholderpine Date and Time">
+          <div className="info-bar-item info-bar-datetime" aria-label="Philippine Date and Time">
             <i className="bi bi-calendar3" aria-hidden="true" />
             <span className="date-value">{dateStr}</span>
             <span className="datetime-separator" aria-hidden="true">

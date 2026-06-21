@@ -4,7 +4,7 @@
  */
 
 /**
- * Formats a numeric value as Placeholderpine Peso in millions
+ * Formats a numeric value as Philippine Peso in millions
  * @param {number} value - The numeric value in millions
  * @returns {string} Formatted string like "₱123.45 M" or "₱0.00 M"
  */
@@ -39,7 +39,7 @@ function formatPesoMillions(value) {
 }
 
 /**
- * Formats a numeric value as Placeholderpine Peso (not in millions)
+ * Formats a numeric value as Philippine Peso (not in millions)
  * @param {number} value - The numeric value
  * @returns {string} Formatted string like "₱123,456.78"
  */

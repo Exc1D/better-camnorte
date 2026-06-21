@@ -87,7 +87,7 @@ The following hotlines must be verified monthly against official LGU records:
 
 ### Demographics
 
-- **Source:** Placeholderpine Statistics Authority (PSA)
+- **Source:** Philippine Statistics Authority (PSA)
 - **Frequency:** After census releases or official population updates
 - **File to update:** `data/demographics.json`
 - **Approver:** MPDC

@@ -102,7 +102,7 @@ const SRE_DATA = {
 };
 
 /**
- * Format a numeric value as Placeholderpine Peso in millions
+ * Format a numeric value as Philippine Peso in millions
  * @param {number} value - The value in millions
  * @returns {string} Formatted string like "₱123.45 M"
  */

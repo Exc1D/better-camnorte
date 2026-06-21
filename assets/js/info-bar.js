@@ -1,6 +1,6 @@
 /**
  * Real-Time Information Bar Module
- * Displays live exchange rates, weather, and Placeholderpine Time
+ * Displays live exchange rates, weather, and Philippine Time
  */
 
 // ============================================
@@ -467,7 +467,7 @@ const WeatherService = {
 
 const TimeService = {
   /**
-   * Get current Placeholderpine Time (UTC+8)
+   * Get current Philippine Time (UTC+8)
    * @returns {Date} Current PHT date
    */
   getCurrentPHTDate() {
@@ -479,7 +479,7 @@ const TimeService = {
   },
 
   /**
-   * Get formatted Placeholderpine Time string
+   * Get formatted Philippine Time string
    * @returns {string} Formatted time (e.g., "2:30 PM")
    */
   getCurrentPHT() {
@@ -488,7 +488,7 @@ const TimeService = {
   },
 
   /**
-   * Get formatted Placeholderpine Date string
+   * Get formatted Philippine Date string
    * @returns {string} Formatted date (e.g., "Dec 1, 2025")
    */
   getCurrentPHTDate_Formatted() {

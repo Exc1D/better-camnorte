@@ -13,15 +13,15 @@
   "categories": ["government", "utilities"],
   "icons": [
     {
-      "src": "/assets/images/logo/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/assets/images/logo/camnorte-logo.png",
+      "sizes": "4096x4096",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/images/logo/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/assets/images/logo/camnorte-logo.png",
+      "sizes": "4096x4096",
+      "type": "image/png",
       "purpose": "maskable"
     },
     {
@@ -35,25 +35,25 @@
       "name": "Services",
       "short_name": "Services",
       "url": "/services/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/camnorte-logo.png", "sizes": "4096x4096" }]
     },
     {
       "name": "Contact & Hotlines",
       "short_name": "Contact",
       "url": "/contact/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/camnorte-logo.png", "sizes": "4096x4096" }]
     },
     {
       "name": "Government",
       "short_name": "Government",
       "url": "/government/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/camnorte-logo.png", "sizes": "4096x4096" }]
     },
     {
       "name": "Transparency",
       "short_name": "Budget",
       "url": "/budget/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/camnorte-logo.png", "sizes": "4096x4096" }]
     }
   ],
   "prefer_related_applications": false

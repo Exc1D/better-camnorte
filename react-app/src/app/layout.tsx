@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: { card: 'summary_large_image' },
-  icons: { icon: '/assets/images/logo/favicon.svg', apple: '/assets/images/logo/favicon.svg' },
+  icons: { icon: '/assets/images/logo/camnorte-logo.png', apple: '/assets/images/logo/camnorte-logo.png' },
   manifest: '/manifest.webmanifest',
   appleWebApp: {
     capable: true,

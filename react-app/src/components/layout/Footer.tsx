@@ -23,14 +23,15 @@ export default function Footer() {
         <div className="footer-main-new">
           <div className="footer-brand">
             <img
-              src="/assets/images/logo/better-camnorte-logo-white.svg"
+              src="/assets/images/logo/camnorte-logo.png"
               alt="BetterCamNorte logo"
               className="footer-logo"
             />
+            <span className="footer-wordmark">Better CamNorte</span>
             <p className="footer-tagline">{t('footer-tagline')}</p>
             <div className="footer-social-new">
               <a
-                href="https://www.facebook.com/bettercamnorte.org"
+                href="https://www.facebook.com/piocamnorte"
                 className="footer-social-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,7 +122,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/OfficialLguCamarines NorteFanpage/"
+                  href="https://www.facebook.com/piocamnorte"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -179,11 +180,11 @@ export default function Footer() {
                 href="https://hivcareph.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="HIV Care Placeholderpines"
+                aria-label="HIV Care Philippines"
               >
                 <img
                   src="/assets/images/logo/hiv-care-logo-footer.svg"
-                  alt="HIV Care Placeholderpines"
+                  alt="HIV Care Philippines"
                   className="footer-partner-logo"
                   width="120"
                   height="28"

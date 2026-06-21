@@ -184,7 +184,7 @@ export default function HomePage() {
                 <i className="bi bi-people-fill"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">69,296</span>
+                <span className="home-stat-card-value">604,666</span>
                 <span className="home-stat-card-label">{t('stats-population-label')}</span>
                 <span className="home-stat-card-source">{t('stats-population-source')}</span>
               </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
                 <i className="bi bi-geo-alt-fill"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">22</span>
+                <span className="home-stat-card-value">282</span>
                 <span className="home-stat-card-label">{t('stats-barangays-label')}</span>
                 <span className="home-stat-card-source">{t('stats-barangays-source')}</span>
               </div>
@@ -214,7 +214,7 @@ export default function HomePage() {
                 <i className="bi bi-rulers"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">162.70 km²</span>
+                <span className="home-stat-card-value">2,277.93 km²</span>
                 <span className="home-stat-card-label">{t('stats-land-area-label')}</span>
                 <span className="home-stat-card-source">{t('stats-land-area-source')}</span>
               </div>
@@ -302,49 +302,49 @@ export default function HomePage() {
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1760</span>
-                  <p>{t('history-1760')}</p>
+            <p>{t('history-1760')}</p>
                 </div>
               </div>
               <div className="timeline-item" data-year="1767">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1767</span>
-                  <p>{t('history-1767')}</p>
+            <p>{t('history-1767')}</p>
                 </div>
               </div>
               <div className="timeline-item" data-year="1768">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1768</span>
-                  <p>{t('history-1768')}</p>
+            <p>{t('history-1768')}</p>
                 </div>
               </div>
               <div className="timeline-item" data-year="1851">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1851</span>
-                  <p>{t('history-1851')}</p>
+            <p>{t('history-1851')}</p>
                 </div>
               </div>
               <div className="timeline-item" data-year="1853">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1853</span>
-                  <p>{t('history-1853')}</p>
+            <p>{t('history-1853')}</p>
                 </div>
               </div>
               <div className="timeline-item" data-year="1889">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1889</span>
-                  <p>{t('history-1889')}</p>
+            <p>{t('history-1889')}</p>
                 </div>
               </div>
               <div className="timeline-item" data-year="1957">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <span className="timeline-year">1957</span>
-                  <p>{t('history-1957')}</p>
+            <p>{t('history-1957')}</p>
                 </div>
               </div>
             </div>
@@ -636,25 +636,25 @@ export default function HomePage() {
           <div className="home-leadership-grid">
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-mayor')}</div>
-              <h3>Governor Placeholder</h3>
+              <h3>Governor Ricarte R. Padilla</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:governor@bettercamnorte.local">
-                  <i className="bi bi-envelope"></i> governor@bettercamnorte.local
+                <a href="mailto:pgcamarinesnorte@gmail.com">
+                  <i className="bi bi-envelope"></i> pgcamarinesnorte@gmail.com
                 </a>
-                <a href="tel:0783265002">
-                  <i className="bi bi-telephone"></i> Contact number placeholder
+                <a href="https://camsnorte.com/">
+                  <i className="bi bi-geo-alt"></i> Provincial Capitol, Brgy III, Daet
                 </a>
               </div>
             </div>
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-vice-mayor')}</div>
-              <h3>Vice Governor Placeholder</h3>
+              <h3>Vice Governor Joseph V. Ascutia</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:vicegovernor@bettercamnorte.local">
-                  <i className="bi bi-envelope"></i> vicegovernor@bettercamnorte.local
+                <a href="mailto:pgcamarinesnorte@gmail.com">
+                  <i className="bi bi-envelope"></i> pgcamarinesnorte@gmail.com
                 </a>
-                <a href="tel:0783265003">
-                  <i className="bi bi-telephone"></i> Contact number placeholder
+                <a href="https://camsnorte.com/">
+                  <i className="bi bi-geo-alt"></i> Provincial Capitol, Brgy III, Daet
                 </a>
               </div>
             </div>

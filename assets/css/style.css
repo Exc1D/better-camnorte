@@ -246,9 +246,29 @@ p {
   padding: 4px 0;
 }
 
+.logo-container a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
 .logo-img {
   height: 48px;
   width: auto;
+}
+
+.brand-wordmark,
+.footer-wordmark {
+  color: var(--color-primary);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brand-wordmark {
+  font-size: 1.25rem;
 }
 
 .logo-text {
@@ -2545,6 +2565,13 @@ h6 {
 .footer-logo {
   height: 80px;
   width: auto;
+}
+
+.footer-wordmark {
+  color: #f5f7fb;
+  display: block;
+  font-size: 1.35rem;
+  margin-top: 10px;
 }
 
 .footer-tagline {
@@ -6769,7 +6796,7 @@ cklist with Icons - Proper Indentation */
   }
 }
 
-/* HIV Care Placeholderpines CTA */
+/* HIV Care Philippines CTA */
 .hivcare-cta-section {
   background: radial-gradient(circle, rgba(0, 0, 0, 0.035) 1px, transparent 1px) var(--color-bg-alt);
   background-size: 20px 20px;
