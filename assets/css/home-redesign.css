@@ -1,0 +1,520 @@
+/* ==========================================================================
+   Home redesign — "Bantayog, the star of the show" × Sustainable Dev Goals
+   The hero is a horizon poster: a light "sky" over a deep institutional
+   "ground", with the white obelisk standing on the seam between them. That
+   seam is the 17 SDG colours — the foundation the province is built on. The
+   wordmark is oversized and architectural; the monument overlaps it. Pure CSS,
+   no WebGL. Typography is Source Sans 3, the UN's accessible SDG web face.
+   Each section below is coded to an official SDG colour via --sdg.
+   ========================================================================== */
+
+:root {
+  /* Monument-derived accents (the hero star) */
+  --gold: #e0a431;
+  --gold-soft: #f3c969;
+  --gold-deep: #a9760f;
+  --maroon: #7a1f2b;
+  --navy: #002170;
+
+  /* Official SDG palette */
+  --sdg-1: #e5243b;
+  --sdg-2: #dda63a;
+  --sdg-3: #4c9f38;
+  --sdg-4: #c5192d;
+  --sdg-5: #ff3a21;
+  --sdg-6: #26bde2;
+  --sdg-7: #fcc30b;
+  --sdg-8: #a21942;
+  --sdg-9: #fd6925;
+  --sdg-10: #dd1367;
+  --sdg-11: #fd9d24;
+  --sdg-12: #bf8b2e;
+  --sdg-13: #3f7e44;
+  --sdg-14: #0a97d9;
+  --sdg-15: #56c02b;
+  --sdg-16: #00689d;
+  --sdg-17: #19486a;
+  --sdg: var(--sdg-16); /* default section accent */
+
+  /* The 17 goals as a single crisp ribbon (the horizon seam, the eyebrow flag) */
+  --sdg-ribbon: linear-gradient(
+    90deg,
+    var(--sdg-1) 0 5.88%, var(--sdg-2) 5.88% 11.76%, var(--sdg-3) 11.76% 17.65%,
+    var(--sdg-4) 17.65% 23.53%, var(--sdg-5) 23.53% 29.41%, var(--sdg-6) 29.41% 35.29%,
+    var(--sdg-7) 35.29% 41.18%, var(--sdg-8) 41.18% 47.06%, var(--sdg-9) 47.06% 52.94%,
+    var(--sdg-10) 52.94% 58.82%, var(--sdg-11) 58.82% 64.71%, var(--sdg-12) 64.71% 70.59%,
+    var(--sdg-13) 70.59% 76.47%, var(--sdg-14) 76.47% 82.35%, var(--sdg-15) 82.35% 88.24%,
+    var(--sdg-16) 88.24% 94.12%, var(--sdg-17) 94.12% 100%
+  );
+
+  --ink: oklch(0.32 0.04 264);
+  --ink-soft: oklch(0.48 0.03 264);
+  --display: 'Source Sans 3', 'Inter', system-ui, sans-serif;
+  --serif: var(--display); /* legacy aliases now resolve to the SDG face */
+  --wide: var(--display);
+  --font-main: 'Source Sans 3', 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+/* Per-section SDG colour coding (spread across the goal palette) */
+.appointment-cta-section {
+  --sdg: var(--sdg-16);
+}
+.section:has(.home-services-grid) {
+  --sdg: var(--sdg-9);
+}
+.home-stats-v2 {
+  --sdg: var(--sdg-11);
+}
+.weather-map-section {
+  --sdg: var(--sdg-13);
+}
+.history-section {
+  --sdg: var(--sdg-8);
+}
+.home-fb-section {
+  --sdg: var(--sdg-10);
+}
+.home-leadership-section {
+  --sdg: var(--sdg-17);
+}
+.section:has(.home-contact-v2-grid) {
+  --sdg: var(--sdg-6);
+}
+.quiz-cta-section {
+  --sdg: var(--sdg-4);
+}
+
+/* ==========================================================================
+   HERO — the horizon poster
+   ========================================================================== */
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-height: 92svh;
+  color: var(--ink);
+  overflow: hidden;
+  background: linear-gradient(180deg, oklch(0.99 0.006 264) 0%, oklch(0.962 0.013 264) 100%);
+  padding-top: clamp(64px, 6vh, 104px);
+}
+
+/* SKY: the light upper field grows to fill; the wordmark + monument sit at its
+   foot, so the seam (and the navy ground with search/CTAs) land within view. */
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: clamp(300px, 40vh, 440px);
+  padding-bottom: clamp(8px, 2vh, 24px);
+}
+
+.hero__sky {
+  position: relative;
+  z-index: 1;
+  max-width: 70%;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  margin: 0 0 clamp(16px, 2.6vw, 28px);
+  font-family: var(--display);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.hero__flag {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--sdg-ribbon);
+  box-shadow: 0 2px 8px oklch(0.4 0.1 264 / 0.18);
+}
+
+/* The wordmark: enormous, tight, set like a monument inscription */
+.hero__title {
+  margin: 0;
+  line-height: 0.8;
+}
+.hero__title-line {
+  display: block;
+}
+.hero__title-line--serif {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(3.4rem, 15.5vw, 15rem);
+  letter-spacing: -0.055em;
+  color: var(--navy);
+  white-space: nowrap; /* "Bantayog" never breaks mid-name; tail tucks behind the monument */
+}
+.hero__title-line--sans {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(0.92rem, 2.3vw, 1.85rem);
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  margin-top: clamp(10px, 1.4vw, 20px);
+  padding-left: 0.32em;
+}
+
+/* THE MONUMENT: stands on the horizon seam, rises up over the wordmark */
+.hero__monument {
+  position: absolute;
+  z-index: 3;
+  right: clamp(-6px, 3vw, 56px);
+  bottom: -2px; /* base meets the seam (top of .hero__earth) */
+  height: clamp(280px, 46vh, 440px); /* sized by viewport height: never hits the navbar */
+  width: auto;
+  filter: drop-shadow(0 24px 30px oklch(0.26 0.05 264 / 0.32));
+  pointer-events: none;
+}
+
+/* GROUND: the deep institutional band the province stands on */
+.hero__earth {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: var(--navy);
+  color: oklch(0.95 0.012 255);
+  padding: clamp(26px, 3.4vw, 44px) 0 clamp(30px, 4vw, 48px);
+}
+/* the horizon seam: the 17 goals, crisp and full-width */
+.hero__earth::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 12px;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 calc(5.882% - 2px), oklch(1 0 0 / 0.3) calc(5.882% - 2px) 5.882%),
+    var(--sdg-ribbon);
+}
+.hero__earth-inner {
+  position: relative;
+  max-width: var(--max-width);
+}
+
+.hero__horizon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  font-family: var(--display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: oklch(0.82 0.05 250);
+}
+.hero__horizon-star {
+  color: var(--gold-soft);
+  font-size: 0.92em;
+}
+
+.hero__lede {
+  max-width: 47ch;
+  margin: 0 0 22px;
+  font-size: clamp(1.04rem, 1.4vw, 1.24rem);
+  line-height: 1.6;
+  color: oklch(0.9 0.022 252);
+}
+
+/* Search on the dark ground: a bright, confident field */
+.hero__search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(560px, 100%);
+  padding: 6px 6px 6px 20px;
+  margin: 0 0 20px;
+  border-radius: 999px;
+  background: oklch(0.99 0.004 255 / 0.98);
+  border: 1px solid oklch(1 0 0 / 0.28);
+  box-shadow: 0 20px 42px oklch(0.15 0.04 264 / 0.45);
+}
+.hero__search:focus-within {
+  border-color: var(--gold);
+  box-shadow: 0 20px 46px oklch(0.15 0.06 264 / 0.55);
+}
+.hero__search-icon {
+  color: oklch(0.55 0.02 264);
+}
+.hero__search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  padding: 12px 0;
+  outline: none;
+}
+.hero__search-input::placeholder {
+  color: oklch(0.6 0.02 264);
+}
+.hero__search-btn {
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.1rem;
+  background: var(--color-primary, #0032a0);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.hero__search-btn:hover {
+  transform: scale(1.06);
+  background: #0a3fbf;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0 0 20px;
+}
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+.hero__btn--primary {
+  color: #2a1d04;
+  background: var(--gold);
+  box-shadow: 0 14px 30px oklch(0.55 0.12 80 / 0.34);
+}
+.hero__btn--primary:hover {
+  transform: translateY(-2px);
+  background: var(--gold-soft);
+  box-shadow: 0 18px 38px oklch(0.55 0.12 80 / 0.46);
+}
+.hero__btn--primary i {
+  transition: transform 0.18s ease;
+}
+.hero__btn--primary:hover i {
+  transform: translateX(4px);
+}
+.hero__btn--ghost {
+  color: oklch(0.96 0.01 255);
+  border: 1px solid oklch(1 0 0 / 0.34);
+}
+.hero__btn--ghost:hover {
+  background: oklch(1 0 0 / 0.1);
+}
+
+.hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  font-size: 0.86rem;
+  color: oklch(0.84 0.02 252);
+}
+.hero__tags > span {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: oklch(0.72 0.04 250);
+}
+.hero__tags a {
+  color: oklch(0.96 0.01 255);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.hero__tags a:hover {
+  color: var(--gold-soft);
+  border-color: var(--gold);
+}
+
+/* Entrance: one calm, staggered rise (no perpetual motion) */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.hero__eyebrow {
+  animation: hero-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both 0.05s;
+}
+.hero__title-line--serif {
+  animation: hero-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both 0.14s;
+}
+.hero__title-line--sans {
+  animation: hero-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both 0.26s;
+}
+.hero__monument {
+  animation: hero-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both 0.2s;
+}
+.hero__earth-inner > * {
+  animation: hero-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both 0.34s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__eyebrow,
+  .hero__title-line--serif,
+  .hero__title-line--sans,
+  .hero__monument,
+  .hero__earth-inner > * {
+    animation: none;
+  }
+}
+
+/* ---- Responsive: a clean stack — wordmark on top, monument centred below,
+   both standing on the seam. Legibility beats the overlap on small screens. -- */
+@media (max-width: 860px) {
+  .hero {
+    padding-top: clamp(70px, 9vh, 104px);
+  }
+  .hero__inner {
+    justify-content: flex-start;
+    min-height: 0;
+    padding-bottom: clamp(220px, 66vw, 360px); /* lower band reserved for the monument */
+  }
+  .hero__sky {
+    max-width: 100%;
+  }
+  .hero__title-line--serif {
+    font-size: clamp(2.9rem, 16vw, 5.6rem);
+  }
+  .hero__title-line--sans {
+    font-size: clamp(0.78rem, 3.4vw, 1.2rem);
+    letter-spacing: 0.28em;
+  }
+  .hero__monument {
+    right: 50%;
+    transform: translateX(50%);
+    height: auto;
+    width: clamp(180px, 52vw, 280px);
+    animation: none; /* the transform carries the centring; skip the rise */
+  }
+}
+
+/* ==========================================================================
+   VISUAL RHYMING + SDG section coding — carried down the page
+   ========================================================================== */
+.home-section-header h2,
+.home-stats-v2-header h2,
+.appointment-cta-heading {
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.home-section-header h2,
+.home-stats-v2-header h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+  position: relative;
+  padding-left: 30px;
+}
+.home-section-header h2::before,
+.home-stats-v2-header h2::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  color: var(--sdg);
+  font-size: 0.58em;
+}
+.home-section-link {
+  color: var(--sdg);
+  font-weight: 700;
+}
+.home-section-link:hover {
+  filter: brightness(0.82);
+}
+
+/* History header already carries an icon — drop the star, colour the icon */
+.history-section .home-stats-v2-header h2 {
+  padding-left: 0;
+}
+.history-section .home-stats-v2-header h2::before {
+  content: none;
+}
+.history-section .home-stats-v2-header h2 i {
+  color: var(--sdg) !important;
+}
+
+/* Cards: settled depth + an SDG chevron (the obelisk top), repeated */
+.home-service-card,
+.home-stat-card,
+.history-card,
+.map-card {
+  position: relative;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+.home-service-card:hover,
+.home-stat-card:hover,
+.history-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px oklch(0.32 0.05 264 / 0.14);
+  border-color: color-mix(in srgb, var(--sdg) 55%, transparent);
+}
+.home-service-card::after,
+.home-stat-card::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 12px;
+  height: 12px;
+  background: var(--sdg);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+.home-service-card:hover::after,
+.home-stat-card:hover::after {
+  opacity: 0.9;
+}
+
+/* Monumental stat numbers */
+.home-stat-card-value {
+  font-family: var(--display);
+  font-weight: 900;
+}
+
+/* Appointment CTA: SDG underline accent */
+.appointment-cta-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.appointment-cta-heading::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 14px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--sdg), color-mix(in srgb, var(--sdg) 35%, #fff));
+}
