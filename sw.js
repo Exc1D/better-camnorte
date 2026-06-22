@@ -3,7 +3,7 @@
  * Enterprise-grade PWA with versioned caching, runtime strategies, and offline resilience.
  */
 
-var CACHE_VERSION = 'v3';
+var CACHE_VERSION = 'v5';
 var STATIC_CACHE = 'bettercamnorte-static-' + CACHE_VERSION;
 var RUNTIME_CACHE = 'bettercamnorte-runtime-' + CACHE_VERSION;
 var OFFLINE_URL = '/offline.html';
@@ -19,6 +19,9 @@ var PRECACHE_URLS = [
   '/assets/js/main.js',
   '/assets/js/translations.js',
   '/assets/js/info-bar.js',
+  '/assets/js/vendor/gsap.min.js',
+  '/assets/js/vendor/ScrollTrigger.min.js',
+  '/assets/js/vendor/three.module.js',
   '/assets/images/logo/camnorte-logo.png',
   '/assets/images/logo/favicon.ico',
   '/manifest.webmanifest',

@@ -3,7 +3,7 @@
   --color-primary: #0032a0;
   --color-primary-dark: #002170;
   --color-secondary: #003d82;
-  --color-accent: #f77f00;
+  --color-accent: #fd6925; /* official SDG 9 orange (was #f77f00) */
   --color-success: #06a77d;
   --color-danger: #d62828;
   --color-info: #0077be;
@@ -12,7 +12,7 @@
   --color-text: #1a1a1a;
   --color-text-light: #666666;
   --color-white: #ffffff;
-  --font-main: 'Inter', sans-serif;
+  --font-main: 'Source Sans 3', 'Inter', system-ui, sans-serif;
   --line-height-body: 1.6;
   --line-height-heading: 1.2;
   --spacing-xs: 8px;
@@ -24,6 +24,26 @@
   --border-radius: 8px;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Official Sustainable Development Goal palette — the site's accent identity */
+  --sdg-1: #e5243b;
+  --sdg-2: #dda63a;
+  --sdg-3: #4c9f38;
+  --sdg-4: #c5192d;
+  --sdg-5: #ff3a21;
+  --sdg-6: #26bde2;
+  --sdg-7: #fcc30b;
+  --sdg-8: #a21942;
+  --sdg-9: #fd6925;
+  --sdg-10: #dd1367;
+  --sdg-11: #fd9d24;
+  --sdg-12: #bf8b2e;
+  --sdg-13: #3f7e44;
+  --sdg-14: #0a97d9;
+  --sdg-15: #56c02b;
+  --sdg-16: #00689d;
+  --sdg-17: #19486a;
+  --sdg: var(--sdg-16); /* default section accent, overridden per area */
 }
 
 * {
@@ -2075,29 +2095,31 @@ body.mobile-menu-open {
 
 /* Councilor Cards - Government Page */
 .councilor-card {
+  --cat: var(--color-primary);
+
   background: var(--color-white);
   border-radius: 10px;
   border: 1px solid #e5e7eb;
-  border-left: 3px solid var(--color-primary);
+  border: 1px solid color-mix(in srgb, var(--cat) 32%, #e5e7eb);
   padding: var(--spacing-md);
   transition: all 0.2s ease;
 }
 
 .councilor-card:hover {
-  border-color: var(--color-primary);
+  border-color: var(--cat);
   box-shadow: 0 4px 12px rgba(0, 50, 160, 0.08);
 }
 
 .councilor-card--liga {
-  border-left-color: var(--color-success);
+  --cat: var(--color-success);
 }
 
 .councilor-card--sk {
-  border-left-color: var(--color-accent);
+  --cat: var(--color-accent);
 }
 
 .councilor-card--ipmr {
-  border-left-color: #8b4513;
+  --cat: #8b4513;
 }
 
 .councilor-name {
@@ -2330,7 +2352,8 @@ a.dept-card-link-wrap .dept-card-contacts span i {
   padding: var(--spacing-md);
   background: var(--color-white);
   border-radius: var(--border-radius);
-  border-left: 4px solid var(--color-primary);
+  border: 1px solid rgba(0, 50, 160, 0.22);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 22%, transparent);
 }
 
 .barangay-item h4 {
@@ -10062,4 +10085,190 @@ a.a11y-contact-item:hover i {
   .vol-popup-body {
     padding: 20px 20px 24px;
   }
+}
+
+/* ==========================================================================
+   SITE-WIDE REDESIGN — Source Sans 3 + SDG identity on every page
+   The homepage reveals the SDG colour wheel behind the monument; every other
+   page carries that identity as a band of the 17 goals under its header, with
+   Source Sans 3 headings and an SDG star. Scoped to shared page chrome so all
+   ~50 subpages inherit it from this one stylesheet.
+   ========================================================================== */
+
+/* Page header: a lit brand field, banded by the 17 SDG colours (the wheel,
+   unrolled) — the through-line back to the homepage aureole. */
+.page-header {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(40px, 7vh, 72px) 0 calc(clamp(40px, 7vh, 72px) + 6px);
+  background:
+    radial-gradient(60% 120% at 80% -10%, rgba(255, 255, 255, 0.18), transparent 60%),
+    radial-gradient(55% 120% at 8% 112%, rgba(0, 0, 0, 0.22), transparent 60%),
+    linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+.page-header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--sdg-1), var(--sdg-2), var(--sdg-3), var(--sdg-4), var(--sdg-5),
+    var(--sdg-6), var(--sdg-7), var(--sdg-8), var(--sdg-9), var(--sdg-10),
+    var(--sdg-11), var(--sdg-12), var(--sdg-13), var(--sdg-14), var(--sdg-15),
+    var(--sdg-16), var(--sdg-17)
+  );
+}
+.page-header h1 {
+  font-weight: 900;
+  font-size: clamp(2rem, 4.2vw, 3.1rem);
+  letter-spacing: -0.02em;
+  line-height: 1.06;
+}
+.page-header-badge {
+  gap: 8px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* Section headings: Source Sans 3 weight + the homepage's SDG star, carried
+   site-wide. The star only leads titles that don't already lead with an icon. */
+.section-title,
+.section-header h3,
+.service-category-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.section-title:not(:has(i))::before,
+.service-category-title:not(:has(i))::before {
+  content: '★';
+  color: var(--sdg);
+  font-size: 0.62em;
+  margin-right: 0.5em;
+  vertical-align: 0.08em;
+}
+/* icon-led section titles take the area's SDG hue (set per-area in main.js) */
+.section-title i {
+  color: var(--sdg);
+}
+
+/* =========================================================================
+   SDG festivity motion — shared across all pages. Progressive enhancement:
+   every hidden state below is gated on html.sdg-motion, a class main.js adds
+   ONLY when motion is allowed. No JS or prefers-reduced-motion => the page is
+   fully visible and static. Tres Mares vocabulary (line-mask headings, clip
+   reveals, parallax, counters) recoloured into the 17 SDG hues.
+   ========================================================================= */
+
+/* Shared 17-colour ribbon */
+:root {
+  --sdg-ribbon: linear-gradient(90deg,
+    #E5243B 0 5.88%, #DDA63A 5.88% 11.76%, #4C9F38 11.76% 17.64%,
+    #C5192D 17.64% 23.52%, #FF3A21 23.52% 29.41%, #26BDE2 29.41% 35.29%,
+    #FCC30B 35.29% 41.17%, #A21942 41.17% 47.05%, #FD6925 47.05% 52.94%,
+    #DD1367 52.94% 58.82%, #FD9D24 58.82% 64.70%, #BF8B2E 64.70% 70.58%,
+    #3F7E44 70.58% 76.47%, #0A97D9 76.47% 82.35%, #56C02B 82.35% 88.23%,
+    #00689D 88.23% 94.11%, #19486A 94.11% 100%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* ease shared by the whole system: warm exponential out, ~0.6s */
+  html.sdg-motion .sdg-reveal,
+  html.sdg-motion .sdg-reveal-group > *:not(.sdg-mask) {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  html.sdg-motion .sdg-reveal-group > *:not(.sdg-mask) { transform: translateY(15px); }
+  html.sdg-motion .sdg-reveal.is-in,
+  html.sdg-motion .sdg-reveal-group.is-in > *:not(.sdg-mask) {
+    opacity: 1;
+    transform: none;
+  }
+  /* internal stagger for header blocks */
+  html.sdg-motion .sdg-reveal-group.is-in > *:nth-child(2) { transition-delay: 0.07s; }
+  html.sdg-motion .sdg-reveal-group.is-in > *:nth-child(3) { transition-delay: 0.14s; }
+  html.sdg-motion .sdg-reveal-group.is-in > *:nth-child(4) { transition-delay: 0.21s; }
+  html.sdg-motion .sdg-reveal-group.is-in > *:nth-child(n + 5) { transition-delay: 0.28s; }
+
+  /* line-mask heading: text rises out from behind a clip */
+  html.sdg-motion .sdg-mask { position: relative; }
+  html.sdg-motion .sdg-mask .sdg-clip { display: block; overflow: hidden; }
+  html.sdg-motion .sdg-mask .sdg-inner {
+    display: inline-block;
+    transform: translateY(115%);
+    transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+  }
+  html.sdg-motion .sdg-mask.is-in .sdg-inner { transform: none; }
+  /* SDG underline wipes in beneath the heading (area hue) */
+  html.sdg-motion .sdg-mask::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: clamp(48px, 12%, 96px);
+    margin-top: 0.55rem;
+    border-radius: 4px;
+    background: var(--sdg, #00689d);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+  }
+  html.sdg-motion .sdg-mask.is-in::after { transform: scaleX(1); }
+  /* centred headings get a centred underline */
+  html.sdg-motion .page-header .sdg-mask::after,
+  html.sdg-motion .section-header .sdg-mask::after,
+  html.sdg-motion .home-section-header .sdg-mask::after { margin-left: auto; margin-right: auto; }
+
+  /* 17-colour ribbon seam draws across section headers (pseudo: collision-free) */
+  html.sdg-motion .section-header.sdg-reveal-group::before,
+  html.sdg-motion .home-section-header.sdg-reveal-group::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: clamp(120px, 22%, 240px);
+    margin: 0 auto 1.1rem;
+    border-radius: 3px;
+    background: var(--sdg-ribbon);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  html.sdg-motion .section-header.sdg-reveal-group.is-in::before,
+  html.sdg-motion .home-section-header.sdg-reveal-group.is-in::before { transform: scaleX(1); }
+
+  html.sdg-motion [data-parallax] { will-change: transform; }
+}
+
+/* count-up figures carry an SDG hue + tabular digits so width does not jump */
+.sdg-count { color: var(--sdg, #00689d); font-variant-numeric: tabular-nums; }
+
+/* playful SDG hover micro-delight — cards lift into their festive hue,
+   content links bloom the area hue (underline kept, so colour is never the
+   sole link signal). Applied to a JS-added class to avoid specificity wars. */
+.sdg-card {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.28s ease, border-color 0.28s ease;
+}
+@media (hover: hover) {
+  .sdg-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 44px -26px var(--sdg, #00689d);
+    border-color: var(--sdg, #00689d);
+  }
+  :where(p, li, td, dd) a:not(.btn):not([class*="button"]):hover {
+    color: var(--sdg, #00689d);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sdg-card { transition: box-shadow 0.2s ease, border-color 0.2s ease; }
+  .sdg-card:hover { transform: none; }
 }
