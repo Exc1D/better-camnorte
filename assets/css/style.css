@@ -40,6 +40,34 @@
   --serif: var(--display);
   --wide: var(--display);
 
+  /* === Phase 5b: neutral scale, type scale, section spacing === */
+  --n-0: #ffffff;
+  --n-50: #f8f9fa;
+  --n-100: #f0f2f5;
+  --n-200: #e5e7eb;
+  --n-300: #cbd2da;
+  --n-400: #9aa3ad;
+  --n-500: #6b7280;
+  --n-600: #4b5563;
+  --n-700: #374151;
+  --n-800: #1f2733;
+  --n-900: #141a22;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.95rem;
+  --text-3xl: 2.5rem;
+  --text-display: clamp(3rem, 9vw, 7rem);
+
+  --weight-body: 400;
+  --weight-head: 600;
+  --weight-display: 800;
+
+  --spacing-2xl: 64px;
+  --spacing-3xl: 96px;
+
   /* Official Sustainable Development Goal palette — the site's accent identity */
   --sdg-1: #e5243b;
   --sdg-2: #dda63a;
