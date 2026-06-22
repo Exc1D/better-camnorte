@@ -110,9 +110,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
 
-    <!-- Leaflet Map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -158,11 +155,6 @@
         "author": {
           "@type": "Person",
           "name": "Ramon Logan Jr"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://bettercamnorte.org/services/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
         }
       }
     </script>
@@ -170,12 +162,6 @@
     <link rel="stylesheet" href="assets/css/accessibility.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/home-redesign.css" />
-    <!-- Arm the hero entrance before first paint (skipped when motion is reduced) -->
-    <script>
-      if (window.matchMedia && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        document.documentElement.classList.add('hero-anim');
-      }
-    </script>
   </head>
 
   <body>
@@ -234,43 +220,7 @@
         <nav class="main-nav" aria-label="Main Navigation">
           <ul>
             <li><a href="/" class="active" data-i18n="nav-home">Home</a></li>
-            <li class="has-dropdown">
-              <a
-                href="services/"
-                data-i18n="nav-services"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Services</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="services/certificates" data-i18n="home-certificates">Certificates</a>
-                </li>
-                <li><a href="services/business" data-i18n="home-business">Business</a></li>
-                <li>
-                  <a href="services/tax-payments" data-i18n="home-tax-payments">Tax Payments</a>
-                </li>
-                <li>
-                  <a href="services/social-services" data-i18n="home-social-services"
-                    >Social Services</a
-                  >
-                </li>
-                <li><a href="services/health" data-i18n="home-health">Health</a></li>
-                <li><a href="services/agriculture" data-i18n="home-agriculture">Agriculture</a></li>
-                <li>
-                  <a href="services/infrastructure" data-i18n="home-infrastructure"
-                    >Infrastructure</a
-                  >
-                </li>
-                <li><a href="services/education" data-i18n="home-education">Education</a></li>
-                <li>
-                  <a href="services/public-safety" data-i18n="home-public-safety">Public Safety</a>
-                </li>
-                <li><a href="services/environment" data-i18n="home-environment">Environment</a></li>
-              </ul>
-            </li>
             <li><a href="government/" data-i18n="nav-government">Government</a></li>
-            <li><a href="statistics/" data-i18n="nav-statistics">Statistics</a></li>
             <li class="has-dropdown">
               <a
                 href="legislative/"
@@ -328,38 +278,10 @@
       </div>
     </header>
 
-    <!-- Real-Time Info Bar -->
-    <div class="info-bar" role="complementary" aria-label="Real-time information">
-      <div class="container">
-        <div class="info-bar-inner" aria-live="polite" aria-atomic="false">
-          <div class="info-bar-item info-bar-rates" aria-label="Exchange rates">
-            <i class="bi bi-currency-exchange" aria-hidden="true"></i>
-            <span class="rate-rotator">
-              <span class="rate-display">1 USD = ₱ --</span>
-            </span>
-          </div>
-          <div class="info-bar-item info-bar-weather" aria-label="Current weather in Camarines Norte">
-            <i class="bi bi-thermometer-half" aria-hidden="true"></i>
-            <span class="weather-location">Camarines Norte</span>
-            <span class="weather-temp">--°C</span>
-          </div>
-          <div class="info-bar-item info-bar-datetime" aria-label="Philippine Date and Time">
-            <i class="bi bi-calendar3" aria-hidden="true"></i>
-            <span class="date-value">--- --, ----</span>
-            <span class="datetime-separator" aria-hidden="true">•</span>
-            <i class="bi bi-clock" aria-hidden="true"></i>
-            <span class="time-value">--:-- --</span>
-            <span class="time-label">PHT</span>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <main id="main-content">
       <!-- Hero Section — Bantayog, the star of the show -->
       <section class="hero" id="hero">
-        <!-- Three.js constellation of the 17 goals, drifting behind the monument -->
-        <canvas class="hero__field" aria-hidden="true"></canvas>
         <div class="hero__inner container">
           <div class="hero__sky">
             <p class="hero__eyebrow" data-i18n="hero-eyebrow">
@@ -395,25 +317,10 @@
               Camarines Norte.
             </p>
 
-            <form class="hero__search" role="search" action="services/">
-              <i class="bi bi-search hero__search-icon" aria-hidden="true"></i>
-              <input
-                type="search"
-                id="hero-search"
-                name="q"
-                class="service-search-input hero__search-input"
-                placeholder="Search a service: birth certificate, business permit…"
-                aria-label="Search services"
-                autocomplete="off"
-              />
-              <button type="submit" class="hero__search-btn" aria-label="Search">
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </form>
 
             <div class="hero__actions">
-              <a href="services/" class="hero__btn hero__btn--primary">
-                <span data-i18n="home-browse-services">Browse Services</span>
+              <a href="budget/" class="hero__btn hero__btn--primary">
+                <span data-i18n="nav-transparency">Transparency</span>
                 <i class="bi bi-arrow-right" aria-hidden="true"></i>
               </a>
               <a href="contact/" class="hero__btn hero__btn--ghost" data-i18n="home-contact-us"
@@ -421,18 +328,6 @@
               >
             </div>
 
-            <div class="hero__tags">
-              <span data-i18n="home-popular">Popular</span>
-              <a href="service-details/birth-certificate" data-i18n="home-birth-certificate"
-                >Birth Certificate</a
-              >
-              <a href="service-details/business-permits-licensing" data-i18n="home-business-permit"
-                >Business Permit</a
-              >
-              <a href="service-details/municipal-treasurer" data-i18n="home-real-property-tax"
-                >Real Property Tax</a
-              >
-            </div>
           </div>
         </div>
       </section>
@@ -480,63 +375,23 @@
         </div>
       </section>
 
-      <!-- Quick Access Services -->
+      <!-- Government services live on the official LGU site (see redesign Principle 1) -->
       <section class="section home-services-section">
         <div class="container">
           <div class="home-section-header">
-            <h2 data-i18n="section-popular">Popular Services</h2>
-            <p data-i18n="home-quick-access-to-frequently-requested-municipal">
-              Quick access to frequently requested government services
+            <h2>Looking for a government service?</h2>
+            <p>
+              Requirements, fees, and processing times for provincial services are published in the
+              official Citizen's Charter of Camarines Norte.
             </p>
-          </div>
-          <div class="home-services-grid">
-            <a href="services/certificates" class="home-service-card">
-              <div class="home-service-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
-              <div class="home-service-content">
-                <h3 data-i18n="service-certificates">Certificates</h3>
-                <p data-i18n="service-certificates-desc">Birth, marriage, death certificates</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/business" class="home-service-card">
-              <div class="home-service-icon"><i class="bi bi-shop"></i></div>
-              <div class="home-service-content">
-                <h3 data-i18n="service-business">Business Permits</h3>
-                <p data-i18n="service-business-desc">New permits and renewals</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/tax-payments" class="home-service-card">
-              <div class="home-service-icon"><i class="bi bi-cash-coin"></i></div>
-              <div class="home-service-content">
-                <h3 data-i18n="service-tax">Tax Payments</h3>
-                <p data-i18n="service-tax-desc">Property and business taxes</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/social-services" class="home-service-card">
-              <div class="home-service-icon"><i class="bi bi-people-fill"></i></div>
-              <div class="home-service-content">
-                <h3 data-i18n="service-social">Social Services</h3>
-                <p data-i18n="service-social-desc">Senior citizen & PWD services</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/health" class="home-service-card">
-              <div class="home-service-icon"><i class="bi bi-heart-pulse-fill"></i></div>
-              <div class="home-service-content">
-                <h3 data-i18n="service-health">Health Services</h3>
-                <p data-i18n="service-health-desc">Medical assistance & programs</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/" class="home-service-card home-service-card--all">
-              <div class="home-service-icon"><i class="bi bi-grid-fill"></i></div>
-              <div class="home-service-content">
-                <h3 data-i18n="btn-view-all-services">View All Services</h3>
-                <p data-i18n="home-browse-complete-directory">Browse complete directory</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
+            <a
+              href="https://camsnorte.com/citizens-charter/"
+              class="home-section-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Official Citizen's Charter</span>
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -595,18 +450,13 @@
         </div>
       </section>
 
-      <!-- Weather & Location Section -->
+      <!-- Location Section -->
       <section class="section weather-map-section">
         <div class="container">
           <div class="home-stats-v2-header">
-            <h2 data-i18n="home-weather-and-map-of-camnorte">Weather and Map of Camarines Norte</h2>
+            <h2 data-i18n="home-weather-and-map-of-camnorte">Map of Camarines Norte</h2>
           </div>
           <div class="weather-map-grid">
-            <div class="weather-column">
-              <div id="weather-container" aria-live="polite">
-                <!-- Weather content loaded dynamically -->
-              </div>
-            </div>
             <div class="map-column">
               <div class="map-card">
                 <div
@@ -1445,49 +1295,11 @@
       type="module"
     ></script>
     <script defer src="assets/js/translations.js"></script>
-    <script defer src="assets/js/info-bar.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script defer src="assets/js/version.js"></script>
     <script defer src="assets/js/search.js"></script>
     <script defer src="assets/js/news.js"></script>
     <script defer src="assets/js/fb-feed.js?v=1.2.0"></script>
     <script defer src="assets/js/volunteer-popup.js?v=1.2.1"></script>
-    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script defer src="assets/js/weather-map.js?v=1.6.4"></script>
-
-    <!-- Hero: Three.js constellation + GSAP cinematic load (home page only) -->
-    <script src="assets/js/vendor/gsap.min.js"></script>
-    <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "./assets/js/vendor/three.module.js"
-        }
-      }
-    </script>
-    <script type="module" src="assets/js/home-hero.js"></script>
-
-
-    <!-- Failsafe: Ensure weather section renders even if scripts hang -->
-    <!-- Note: map failsafe removed — OSM iframe is now inlined in the HTML and always visible. -->
-    <script>
-      (function () {
-        setTimeout(function () {
-          var weatherContainer = document.getElementById('weather-container');
-          if (weatherContainer && !weatherContainer.getAttribute('data-weather-loaded')) {
-            console.warn('Weather failsafe: API timeout, using fallback data');
-            if (typeof window.WeatherMapInit === 'function') {
-              console.log('Weather failsafe: Attempting manual initialization');
-              window.WeatherMapInit();
-            } else {
-              console.warn('Weather failsafe: Scripts not loaded, showing static fallback');
-              weatherContainer.innerHTML =
-                '<div class="weather-widget" role="region" aria-label="Current weather in Camarines Norte"><div class="weather-current"><div class="weather-current-icon"><i class="bi bi-cloud-sun-fill"></i></div><div class="weather-current-info"><div class="weather-current-temp">29°C</div><div class="weather-current-condition">Mainly clear</div><div class="weather-current-location"><i class="bi bi-geo-alt"></i> Camarines Norte</div></div></div><div class="weather-stats"><div class="weather-stat"><i class="bi bi-droplet"></i><span>65%</span></div><div class="weather-stat"><i class="bi bi-wind"></i><span>12 km/h</span></div></div><div class="weather-hourly"><div class="weather-hour"><span class="weather-hour-time">1 PM</span><i class="bi bi-cloud-sun-fill"></i><span class="weather-hour-temp">26°</span></div><div class="weather-hour"><span class="weather-hour-time">2 PM</span><i class="bi bi-cloud-sun-fill"></i><span class="weather-hour-temp">27°</span></div><div class="weather-hour"><span class="weather-hour-time">3 PM</span><i class="bi bi-sun-fill"></i><span class="weather-hour-temp">28°</span></div><div class="weather-hour"><span class="weather-hour-time">4 PM</span><i class="bi bi-sun-fill"></i><span class="weather-hour-temp">29°</span></div></div></div>';
-              weatherContainer.setAttribute('data-weather-loaded', 'failsafe');
-            }
-          }
-        }, 15000);
-      })();
-    </script>
   </body>
 </html>

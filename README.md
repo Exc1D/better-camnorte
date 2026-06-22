@@ -1,6 +1,6 @@
 # BetterCamNorte
 
-A civic-tech initiative providing transparent access to government services, programs, and public funds of LGU Camarines Norte, Philippines.
+A civic-tech transparency watchdog for the people of Camarines Norte, Philippines — showing where the provincial government's public funds go, and who is accountable for them.
 
 ![Version](https://img.shields.io/badge/version-1.1.15-green)
 ![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
@@ -57,7 +57,6 @@ Visit the live website: [https://bettercamnorte.org](https://bettercamnorte.org)
 | **Charts**          | Chart.js (Canvas-based)                                                |
 | **Animations**      | Lottie (dotlottie-player web component)                                |
 | **Data Format**     | JSON                                                                   |
-| **APIs**            | Open-Meteo (Weather), ExchangeRate API (Currency)                      |
 | **Build Tools**     | Node.js, npm, Bash, Babel (@babel/preset-env)                          |
 | **Minification**    | html-minifier-terser, clean-css-cli, terser                            |
 | **Code Formatting** | Prettier (auto-format on commit via git pre-commit hook)               |
@@ -75,14 +74,12 @@ Visit the live website: [https://bettercamnorte.org](https://bettercamnorte.org)
 
 | Feature                          | Description                                                                                                                                                                                                       |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Government Services Directory** | Comprehensive guide to all LGU services with requirements, fees, and processing times                                                                                                                             |
 | **Government Officials**         | Directory of elected officials and department heads with contact information                                                                                                                                      |
 | **Budget Transparency**          | Financial reports, income/expenditure breakdowns, and infrastructure projects                                                                                                                                     |
 | **Legislative Documents**        | Searchable database of ordinances and resolutions from Sangguniang Panlalawigan                                                                                                                                          |
 | **Provincial Statistics**         | Demographics, economic data, and competitive index rankings                                                                                                                                                       |
 | **Appointment Services**         | Online appointment scheduling integration with the Governor's Office (OASYS), featuring branded Lottie animation                                                                                                     |
 | **Camarines Norte Quiz**                  | Interactive quiz about Camarines Norte history and culture, linked from homepage CTA and footer across all pages                                                                                                           |
-| **Real-time Information**        | Live weather updates, currency exchange rates, and Philippine time                                                                                                                                                |
 | **Emergency Hotline Marquee**    | Clickable scrolling marquee for emergency contacts on tablet and mobile viewports, with pause-on-hover/focus accessibility                                                                                        |
 | **Progressive Web App**          | Installable PWA with "Install App" prompt, seamless auto-updates via skipWaiting (no manual refresh), versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation |
 | **Auto Version Management**      | Dynamic version display from `version.json`, auto-bumped on every git commit via pre-commit hook, synced across all 51+ HTML files, `package.json`, and React app                                                 |
