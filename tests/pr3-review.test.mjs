@@ -22,8 +22,16 @@ assert.match(html, /id="hero-search"[\s\S]*?name="q"/);
 assert.doesNotMatch(html, /cdnjs\.cloudflare\.com\/ajax\/libs\/gsap|unpkg\.com\/three@/);
 assert.match(reactCss, /--font-main: 'Source Sans 3', sans-serif;/);
 assert.match(sw, /\/assets\/js\/vendor\/three\.module\.js/);
-read('assets/js/vendor/gsap.min.js');
-read('assets/js/vendor/ScrollTrigger.min.js');
-read('assets/js/vendor/three.module.js');
+for (const path of [
+  'assets/js/vendor/gsap.min.js',
+  'assets/js/vendor/ScrollTrigger.min.js',
+  'assets/js/vendor/three.module.js',
+]) {
+  try {
+    read(path);
+  } catch (error) {
+    throw new Error(`Failed to load vendor file: ${path}`, { cause: error });
+  }
+}
 
 console.log('PR #3 review regression checks passed');

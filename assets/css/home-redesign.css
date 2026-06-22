@@ -16,9 +16,7 @@
   --maroon: #7a1f2b;
   --navy: #002170;
 
-  --ink: #303746;
   --ink: oklch(0.32 0.04 264);
-  --ink-soft: #667085;
   --ink-soft: oklch(0.48 0.03 264);
   --display: 'Source Sans 3', 'Inter', system-ui, sans-serif;
   --serif: var(--display); /* legacy aliases now resolve to the SDG face */
