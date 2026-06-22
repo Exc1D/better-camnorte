@@ -67,28 +67,30 @@ remaining phases._
 
 ## Phase 3 — Stand up the system · _System of record · ADR-0003_ · _look preserved_
 
-- [~] Introduce Eleventy; build the base layout + nav/header/footer partials. **Foothold proven.**
-      Added `@11ty/eleventy` (v3) + `eleventy.config.js` (input `src/`, output `_site/`). Built
-      `src/_includes/base.njk` (verbatim head + body shell), `chrome-top.njk` / `chrome-bottom.njk`
-      (skip-link, hotline bar, header, footer, popup, scripts — sliced verbatim from the homepage),
-      and a single `nav.njk`. Migrated the homepage (`src/index.njk` extends the base, content = its
-      `<main>`). Verified: the rendered `_site/index.html` is byte-identical to the live homepage
-      except the two **intended** nav changes below. Excluded `src/` + `eleventy.config.js` +
-      `_site/` from `build.sh` / `copy-dist.js` so the templates never leak into `dist/`.
-      - **Nav reorder landed here** (the Phase 1 deferral): one shared `nav.njk` now leads with the
+- [x] Introduce Eleventy; build the shared nav/header partials and migrate every page. **Done.**
+      `@11ty/eleventy` (v3) + `eleventy.config.js` (input `src/`, output `_site/`, `assets/`
+      passthrough so `_site` / `eleventy --serve` is self-contained). All 18 chrome-bearing pages
+      live in `src/` as standalone `.njk`; each one's `<header class="site-header">…</header>` is now
+      a single `{% include "header.njk" %}` (which pulls in the shared `nav.njk`). Head, `<main>`,
+      footer and scripts are left byte-identical — verified: every rendered page is byte-for-byte
+      identical to the old hand-authored page **outside the header region**. The foothold
+      `base.njk` / `chrome-top.njk` / `chrome-bottom.njk` were dropped in favour of this
+      include-injection (smaller diff, no layout indirection). `build.sh` runs `eleventy --output=dist`
+      after the asset copy; `src/` + `eleventy.config.js` + `_site/` stay out of `dist/`.
+      - **Nav reorder landed here** (the Phase 1 deferral): one shared `nav.njk` leads with the
         watchdog core — **Home · Transparency · Government · Legislative · Contact** — using
-        **root-relative paths** (`/budget/`, `/government/`, …) that are correct on every page,
-        killing the 4-path-variant drift. No Projects/DPWH item: no such page exists yet (ponytail —
-        no dead links); add it when a projects page lands. Officials stay under Government.
-      - **Still to do:** wire `eleventy` into `build.sh` (compile `src/` → `dist/` before minify) and
-        migrate the remaining ~50 pages page-by-page onto the base layout, generalising the head
-        slots (title/description/canonical/OG/JSON-LD) as each page moves over.
+        **root-relative paths** (`/budget/`, `/government/`, …) correct on every page, killing the
+        4-path-variant drift, the 18 page-namespaced i18n key sets, and the empty-`href` logo bug on
+        subpages. No Projects/DPWH item: no such page exists yet (ponytail — no dead links); add it
+        when a projects page lands. Officials stay under Government.
 - [ ] Define CSS custom-property tokens (neutral scale, provincial primary, SDG accent set, type,
       spacing, radius) — values matching the **current** look for now. _Deferred:_ tokens earn their
       place when something reads them (the Phase 5 restyle), not before — defining unread tokens now
       is speculation. Introduce them as the restyle flips values.
-- [ ] Migrate pages to templates page-by-page; repeated pages (officials, news, projects) render from
-      one template + `data/*.json`. Verify each page renders identically to today.
+- [~] Migrate pages to templates page-by-page. **Done for chrome** (header unified across all 18; each
+      verified byte-identical outside the header). _Deferred:_ folding repeated pages (officials, news,
+      projects) into one template + `data/*.json` is Phase 4 work — the data gains `source`/`as_of`
+      there anyway, so splitting it out earns its place then, not now.
 
 ## Phase 4 — Provenance · _Sourced & dated_
 

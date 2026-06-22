@@ -79,6 +79,12 @@ else
 fi
 echo "  Legacy files copied."
 
+# ── 3b. Render Eleventy page templates (src/ → dist/) ─────────────────────────
+echo ""
+echo "▶ [3b/6] Rendering Eleventy templates..."
+npx --yes @11ty/eleventy --output=dist
+echo "  Templates rendered."
+
 # ── 4. Build React app and merge health page ──────────────────────────────────
 echo ""
 echo "▶ [4/6] React app build..."

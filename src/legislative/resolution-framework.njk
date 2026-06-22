@@ -1,3 +1,6 @@
+---
+permalink: /legislative/resolution-framework.html
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,23 +18,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Latest news, updates, and announcements from LGU Camarines Norte. Stay informed about municipal programs, events, and community developments."
+      content="Browse resolutions passed by the Sangguniang Panlalawigan of Camarines Norte. Access municipal resolutions, council decisions, and legislative records from Camarines Norte Provincial Government."
     />
     <meta name="author" content="Ramon Logan Jr." />
     <meta
       name="keywords"
-      content="Camarines Norte news, LGU updates, municipal announcements, Camarines Norte, community news, government updates, local news, municipality announcements"
+      content="Camarines Norte resolutions, municipal resolutions, Sangguniang Panlalawigan, council resolutions, LGU Camarines Norte resolutions, legislative records, municipal council"
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://bettercamnorte.org/news/" />
+    <link rel="canonical" href="https://bettercamnorte.org/legislative/resolution-framework" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bettercamnorte.org/news/" />
-    <meta property="og:title" content="News & Updates | BetterCamNorte" />
+    <meta property="og:url" content="https://bettercamnorte.org/legislative/resolution-framework" />
+    <meta property="og:title" content="Resolution Framework | BetterCamNorte" />
     <meta
       property="og:description"
-      content="Latest news, updates, and announcements from LGU Camarines Norte. Stay informed about municipal programs, events, and community developments."
+      content="Browse resolutions passed by the Sangguniang Panlalawigan of Camarines Norte. Access municipal resolutions, council decisions, and legislative records from Camarines Norte Provincial Government."
     />
     <meta
       property="og:image"
@@ -49,17 +52,17 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://bettercamnorte.org/news/" />
-    <meta name="twitter:title" content="News & Updates | BetterCamNorte" />
+    <meta name="twitter:url" content="https://bettercamnorte.org/legislative/resolution-framework" />
+    <meta name="twitter:title" content="Resolution Framework | BetterCamNorte" />
     <meta
       name="twitter:description"
-      content="Latest news, updates, and announcements from LGU Camarines Norte. Stay informed about municipal programs, events, and community developments."
+      content="Browse resolutions passed by the Sangguniang Panlalawigan of Camarines Norte. Access municipal resolutions, council decisions, and legislative records from Camarines Norte Provincial Government."
     />
     <meta
       name="twitter:image"
       content="https://bettercamnorte.org/assets/images/banners/opengraph.png"
     />
-    <title>News & Updates | BetterCamNorte</title>
+    <title>Resolution Framework | BetterCamNorte</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/images/logo/camnorte-logo.png" />
@@ -91,7 +94,7 @@
   </head>
 
   <body>
-    <a href="#main-content" class="skip-link" data-i18n="news-skip-to-main-content"
+    <a href="#main-content" class="skip-link" data-i18n="reso-skip-to-main-content"
       >Skip to main content</a
     >
 
@@ -130,68 +133,18 @@
     </div>
 
     <!-- Header -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="logo-container">
-          <a href="../">
-            <img
-              src="../assets/images/logo/camnorte-logo.png"
-              alt="Province of Camarines Norte Logo"
-              class="logo-img"
-            />
-            <span class="brand-wordmark">Better CamNorte</span>          </a>
-        </div>
-
-        <nav class="main-nav" aria-label="Main Navigation">
-          <ul>
-            <li><a href="../" data-i18n="nav-home">Home</a></li>
-            <li><a href="../government/" data-i18n="nav-government">Government</a></li>
-            <li class="has-dropdown">
-              <a
-                href="../legislative/"
-                data-i18n="nav-legislative"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Legislative</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="../legislative/ordinance-framework" data-i18n="news-ordinance-framework"
-                    >Ordinance Framework</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="../legislative/resolution-framework"
-                    data-i18n="news-resolution-framework"
-                    >Resolution Framework</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a href="../budget/" data-i18n="nav-transparency">Transparency</a></li>
-            <li><a href="../contact/" data-i18n="nav-contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="header-actions">
-          <div class="lang-selector">
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="en">EN</button>
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="fil">FIL</button>
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="ilo">ILO</button>
-          </div>
-        </div>
-      </div>
-    </header>
+    {% include "header.njk" %}
 
 
     <main id="main-content">
       <!-- Breadcrumbs -->
       <div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="../" data-i18n="news-home">Home</a>
+          <a href="../" data-i18n="reso-home">Home</a>
           <span>/</span>
-          <span aria-current="page">News</span>
+          <a href="/" data-i18n="reso-legislative">Legislative</a>
+          <span>/</span>
+          <span aria-current="page">Resolution Framework</span>
         </nav>
       </div>
 
@@ -200,76 +153,168 @@
         <div class="container">
           <div class="page-header-content">
             <span class="page-header-badge"
-              ><i class="bi bi-newspaper"></i> <span data-i18n="news-news">News</span></span
+              ><i class="bi bi-file-earmark-text"></i>
+              <span data-i18n="reso-page-badge">Legislative</span></span
             >
-            <h1 data-i18n="news-news-updates">News & Updates</h1>
-            <p
-              class="page-header-desc"
-              data-i18n="news-stay-informed-about-the-latest-happenings-in"
-            >
-              Stay informed about the latest happenings in Camarines Norte
+            <h1 data-i18n="reso-page-title">Resolution Framework</h1>
+            <p class="page-header-desc" data-i18n="reso-page-desc">
+              Resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte
             </p>
           </div>
         </div>
       </section>
 
-      <!-- News List -->
+      <!-- About Resolutions -->
       <section class="section">
         <div class="container">
-          <div class="news-card-grid" id="news-grid" role="feed" aria-label="News articles">
-            <!-- Dynamic content loaded by news.js -->
-            <article class="news-card" aria-label="Loading">
-              <div class="news-card-header">
-                <span class="badge badge-info" data-i18n="news-loading">Loading</span>
-                <span class="news-card-date">...</span>
-              </div>
-              <div class="news-card-body">
-                <h3 class="news-card-title" data-i18n="news-loading-news">Loading news...</h3>
-                <p class="news-card-desc" data-i18n="news-fetching-news-and-updates-from-camnorte">
-                  Fetching news and updates from Camarines Norte.
-                </p>
-              </div>
-            </article>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="bi bi-info-circle"></i></div>
+            <div class="info-card-content">
+              <h3 data-i18n="reso-what-is">What is a Resolution?</h3>
+              <p data-i18n="reso-what-is-p1">
+                A resolution is a formal expression of the opinion or will of the Sangguniang Panlalawigan.
+                Unlike ordinances, resolutions do not have the force and effect of law but serve as
+                official statements of the legislative body.
+              </p>
+              <p data-i18n="reso-what-is-p2">
+                Resolutions are commonly used for: commendations, requests to higher government
+                agencies, expressions of support or opposition, and administrative matters of the
+                Sangguniang Panlalawigan.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!--
-        Live feed from the official Camarines Norte Provincial Government Facebook Page (auto-updating,
-        no API token required). REPLACE the page URL in BOTH places below
-        (the iframe `href=` value and the fallback link) with the exact
-        official page URL, e.g. https://www.facebook.com/YourPageName
-      -->
-      <section class="section fb-feed-section" aria-label="Facebook updates">
+      <!-- Resolution Types -->
+      <section class="section" style="background: var(--color-bg-alt)">
         <div class="container">
-          <div class="fb-feed-head">
-            <h2>From our Facebook Page</h2>
-            <p>The latest posts published by the Official Camarines Norte Provincial Government Facebook Page.</p>
+          <div class="text-center" style="margin-bottom: var(--spacing-lg)">
+            <h2
+              style="font-size: 1.5rem; margin-bottom: var(--spacing-xs)"
+              data-i18n="reso-types-title"
+            >
+              Types of Resolutions
+            </h2>
           </div>
-          <div class="fb-feed-embed">
-            <iframe
-              title="Latest posts from the Official Camarines Norte Provincial Government Facebook Page"
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOfficialLGUCamarines Norte&tabs=timeline&width=500&height=720&small_header=false&adapt_container_width=true&hide_cover=false&show_facecount=true"
-              width="500"
-              height="720"
-              scrolling="no"
-              frameborder="0"
-              allowfullscreen="true"
-              loading="lazy"
-              allow="encrypted-media; clipboard-write; web-share"
-            ></iframe>
+          <div class="grid grid-3" style="gap: var(--spacing-sm)">
+            <div class="category-tag">
+              <i class="bi bi-award"></i>
+              <span data-i18n="reso-type-commendation">Commendation</span>
+            </div>
+            <div class="category-tag">
+              <i class="bi bi-envelope-paper"></i>
+              <span data-i18n="reso-type-request">Request/Appeal</span>
+            </div>
+            <div class="category-tag">
+              <i class="bi bi-hand-thumbs-up"></i>
+              <span data-i18n="reso-type-support">Support/Endorsement</span>
+            </div>
+            <div class="category-tag">
+              <i class="bi bi-exclamation-circle"></i>
+              <span data-i18n="reso-type-condolence">Condolence</span>
+            </div>
+            <div class="category-tag">
+              <i class="bi bi-clipboard-check"></i>
+              <span data-i18n="reso-type-authorization">Authorization</span>
+            </div>
+            <div class="category-tag">
+              <i class="bi bi-cash-stack"></i>
+              <span data-i18n="reso-type-appropriation">Appropriation</span>
+            </div>
           </div>
-          <p class="fb-feed-fallback">
-            Can't see the feed?
+        </div>
+      </section>
+
+      <!-- 2026 Resolutions Table -->
+      <section class="section">
+        <div class="container">
+          <div class="text-center" style="margin-bottom: var(--spacing-lg)">
+            <h2
+              style="font-size: 1.5rem; margin-bottom: var(--spacing-xs)"
+              data-i18n="reso-2026-title"
+            >
+              2026 Resolutions
+            </h2>
+            <p style="color: var(--color-text-light)" data-i18n="reso-2026-subtitle">
+              Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2026
+            </p>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table resolution-table" id="resolution-table-2026">
+              <caption class="sr-only">
+                List of 2026 Resolutions from Sangguniang Panlalawigan ng Camarines Norte
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col" data-i18n="reso-table-number">Resolution No.</th>
+                  <th scope="col" data-i18n="reso-table-title">Title</th>
+                  <th scope="col" data-i18n="reso-table-date">Session Date</th>
+                </tr>
+              </thead>
+              <tbody id="resolution-table-body-2026">
+                <!-- Dynamically populated by resolutions.js -->
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center" style="margin-top: var(--spacing-lg)">
             <a
-              href="https://www.facebook.com/OfficialLGUCamarines Norte"
+              href="https://sangguniangbayan.camnorte.gov.ph/index.php?page=legislative_framework_reso"
               target="_blank"
               rel="noopener noreferrer"
+              class="btn btn-primary"
+              ><i class="bi bi-box-arrow-up-right"></i>
+              <span data-i18n="reso-view-all-resolutions-on-sb-website"
+                >View All Resolutions on SB Website</span
+              ></a
             >
-              Visit the Official Camarines Norte Provincial Government Facebook Page
-              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
-            </a>
-          </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2025 Resolutions Table -->
+      <section class="section">
+        <div class="container">
+          <div class="text-center" style="margin-bottom: var(--spacing-lg)">
+            <h2
+              style="font-size: 1.5rem; margin-bottom: var(--spacing-xs)"
+              data-i18n="reso-2025-title"
+            >
+              2025 Resolutions
+            </h2>
+            <p style="color: var(--color-text-light)" data-i18n="reso-2025-subtitle">
+              Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2025
+            </p>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table resolution-table" id="resolution-table">
+              <caption class="sr-only">
+                List of 2025 Resolutions from Sangguniang Panlalawigan ng Camarines Norte
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col" data-i18n="reso-table-number">Resolution No.</th>
+                  <th scope="col" data-i18n="reso-table-title">Title</th>
+                  <th scope="col" data-i18n="reso-table-date">Session Date</th>
+                </tr>
+              </thead>
+              <tbody id="resolution-table-body">
+                <!-- Dynamically populated by resolutions.js -->
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center" style="margin-top: var(--spacing-lg)">
+            <a
+              href="https://sangguniangbayan.camnorte.gov.ph/index.php?page=legislative_framework_reso"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              ><i class="bi bi-box-arrow-up-right"></i>
+              <span data-i18n="reso-view-all-resolutions-on-sb-website"
+                >View All Resolutions on SB Website</span
+              ></a
+            >
+          </div>
         </div>
       </section>
     </main>
@@ -286,7 +331,7 @@
             <span class="footer-wordmark">Better CamNorte</span>
             <p
               class="footer-tagline"
-              data-i18n="news-empowering-the-people-of-camnorte-with-transparent"
+              data-i18n="reso-empowering-the-people-of-camnorte-with-transparent"
             >
               Empowering the people of Camarines Norte with transparent access to the services, programs, and
               public funds of Camarines Norte Provincial Government.
@@ -319,42 +364,42 @@
             </div>
           </div>
           <div class="footer-column">
-            <h4 data-i18n="news-quick-links">Quick Links</h4>
+            <h4 data-i18n="reso-quick-links">Quick Links</h4>
             <ul class="footer-links-new">
               <li>
                 <a
                   href="https://quiz.bettercamnorte.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-camnorte-quiz"
+                  data-i18n="reso-camnorte-quiz"
                   >Camarines Norte Quiz</a
                 >
               </li>
-              <li><a href="../sitemap/" data-i18n="news-sitemap">Sitemap</a></li>
+              <li><a href="../sitemap/" data-i18n="reso-sitemap">Sitemap</a></li>
               <li>
                 <a
                   href="https://camnorte.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-citizens-charter"
+                  data-i18n="reso-citizens-charter"
                   >Citizen's Charter</a
                 >
               </li>
-              <li><a href="../terms/" data-i18n="news-terms-of-use">Terms of Use</a></li>
-              <li><a href="../privacy/" data-i18n="news-privacy-policy">Privacy Policy</a></li>
-              <li><a href="../accessibility/" data-i18n="news-accessibility">Accessibility</a></li>
+              <li><a href="../terms/" data-i18n="reso-terms-of-use">Terms of Use</a></li>
+              <li><a href="../privacy/" data-i18n="reso-privacy-policy">Privacy Policy</a></li>
+              <li><a href="../accessibility/" data-i18n="reso-accessibility">Accessibility</a></li>
               <li><a href="../faq/">FAQ</a></li>
             </ul>
           </div>
           <div class="footer-column">
-            <h4 data-i18n="news-resources">Resources</h4>
+            <h4 data-i18n="reso-resources">Resources</h4>
             <ul class="footer-links-new">
               <li>
                 <a
                   href="https://data.gov.ph"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-open-data-philippines"
+                  data-i18n="reso-open-data-philippines"
                   >Open Data Philippines</a
                 >
               </li>
@@ -363,7 +408,7 @@
                   href="https://www.foi.gov.ph/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-freedom-of-information"
+                  data-i18n="reso-freedom-of-information"
                   >Freedom of Information</a
                 >
               </li>
@@ -372,7 +417,7 @@
                   href="https://camnorte.gov.ph/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-official-lgu-camnorte-portal"
+                  data-i18n="reso-official-lgu-camnorte-portal"
                   >Official Camarines Norte Provincial Government Portal</a
                 >
               </li>
@@ -381,7 +426,7 @@
                   href="https://sangguniangbayan.camnorte.gov.ph/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-sangguniang-bayan"
+                  data-i18n="reso-sangguniang-bayan"
                   >Sangguniang Panlalawigan</a
                 >
               </li>
@@ -390,7 +435,7 @@
                   href="https://www.facebook.com/piocamnorte"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-lgu-camnorte-facebook"
+                  data-i18n="reso-lgu-camnorte-facebook"
                   >Camarines Norte Provincial Government Facebook</a
                 >
               </li>
@@ -399,7 +444,7 @@
                   href="https://blgf.gov.ph/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-blgf-portal"
+                  data-i18n="reso-blgf-portal"
                   >BLGF Portal</a
                 >
               </li>
@@ -408,7 +453,7 @@
                   href="https://cmci.dti.gov.ph/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  data-i18n="news-cmci-dti-portal"
+                  data-i18n="reso-cmci-dti-portal"
                   >CMCI DTI Portal</a
                 >
               </li>
@@ -424,7 +469,7 @@
             </div>
             <a href="mailto:volunteer@bettercamnorte.org" class="footer-contribute"
               ><i class="bi bi-envelope-heart"></i>
-              <span data-i18n="news-volunteer-with-us">Volunteer with us</span></a
+              <span data-i18n="reso-volunteer-with-us">Volunteer with us</span></a
             >
             <a
               href="https://github.com/BetterCamNorte/bettercamnorte"
@@ -432,7 +477,7 @@
               target="_blank"
               rel="noopener noreferrer"
               ><i class="bi bi-github"></i>
-              <span data-i18n="news-contribute-code-with-us">Contribute code with us</span></a
+              <span data-i18n="reso-contribute-code-with-us">Contribute code with us</span></a
             >
             <div class="footer-partners">
               <a
@@ -493,6 +538,6 @@
     <script defer src="../assets/js/translations.js"></script>
     <script defer src="../assets/js/main.js"></script>
     <script defer src="../assets/js/version.js"></script>
-    <script defer src="../assets/js/news.js"></script>
+    <script defer src="../assets/js/resolutions.js"></script>
   </body>
 </html>

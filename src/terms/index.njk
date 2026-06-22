@@ -116,58 +116,7 @@
     </div>
 
     <!-- Header -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="logo-container">
-          <a href="../">
-            <img
-              src="../assets/images/logo/camnorte-logo.png"
-              alt="BetterCamNorte Logo"
-              class="logo-img"
-            />
-            <span class="brand-wordmark">Better CamNorte</span>
-          </a>
-        </div>
-        <nav class="main-nav" aria-label="Main Navigation">
-          <ul>
-            <li><a href="../" data-i18n="terms-home">Home</a></li>
-            <li><a href="../government/" data-i18n="terms-government">Government</a></li>
-            <li class="has-dropdown">
-              <a href="../legislative/" data-i18n="terms-legislative" aria-haspopup="true" aria-expanded="false">Legislative</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="../legislative/ordinance-framework" data-i18n="terms-ordinance-framework"
-                    >Ordinance Framework</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="../legislative/resolution-framework"
-                    data-i18n="terms-resolution-framework"
-                    >Resolution Framework</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a href="../budget/" data-i18n="terms-transparency">Transparency</a></li>
-            <li><a href="../contact/" data-i18n="terms-contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <div class="lang-selector">
-            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="en">
-              EN
-            </button>
-            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="fil">
-              FIL
-            </button>
-            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="ilo">
-              ILO
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+    {% include "header.njk" %}
 
 
     <main id="main-content">
