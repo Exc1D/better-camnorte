@@ -15,21 +15,7 @@
         <li><a href="/statistics/" data-i18n="nav-statistics">Statistics</a></li>
       </ul>
     </li>
-    <li class="has-dropdown">
-      <a
-        href="/government/"
-        data-i18n="nav-government"
-        aria-haspopup="true"
-        aria-expanded="false"
-        {% if "/government" in page.url %}class="active"{% endif %}
-        >Government</a
-      >
-      <ul class="dropdown-menu">
-        <li>
-          <a href="/government/officials" data-i18n="nav-officials">Officials</a>
-        </li>
-      </ul>
-    </li>
+    <li><a href="/government/"{% if "/government" in page.url %} class="active"{% endif %} data-i18n="nav-government">Government</a></li>
     <li class="has-dropdown">
       <a
         href="/legislative/"

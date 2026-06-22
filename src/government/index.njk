@@ -273,144 +273,39 @@
             </p>
           </div>
 
-          <!-- Councilors Grid -->
+          <!-- Councilors Grid · presided over by Vice Governor Joseph V. Ascutia -->
+          {% set spMembers = [
+            { name: "Hon. Jhon Carlo V. Delima", role: "Board Member · 1st District" },
+            { name: "Hon. Winifredo B. Oco", role: "Board Member · 1st District" },
+            { name: "Hon. Arthur Michael Canlas", role: "Board Member · 1st District" },
+            { name: "Hon. Junjun Enova", role: "Board Member · 1st District" },
+            { name: "Hon. Teresita Malubay", role: "Board Member · 1st District" },
+            { name: "Hon. Dennis L. Riel", role: "Board Member · 2nd District" },
+            { name: "Hon. Arnulfo Balane", role: "Board Member · 2nd District" },
+            { name: "Hon. Jonah G. Pimentel", role: "Board Member · 2nd District" },
+            { name: "Hon. Rodolfo V. Gache", role: "Board Member · 2nd District" },
+            { name: "Hon. Renee Herrera", role: "Board Member · 2nd District" },
+            { name: "Hon. Rey Kenneth N. Oning", role: "Ex-Officio · PCL President" },
+            { name: "Hon. Mary Joy P. Carranza", role: "Ex-Officio · SK Federation President", variant: "sk" },
+            { name: "Hon. Ricky S. Noblesala", role: "Ex-Officio · IP Representative", variant: "ipmr" },
+            { name: "Hon. Rebecca Padilla", role: "Ex-Officio · ABC / Liga ng mga Barangay President", variant: "liga" }
+          ] %}
           <div class="grid grid-3" style="gap: var(--spacing-md)">
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-thomas-dave-c-santos">
-                Hon. Jhon Carlo V. Delima
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-entrepreneurship-economic-development-historical"
-              >
-                Entrepreneurship & Economic Development, Historical Records & Preservation of
-                Heritage, Culture and the Arts
-              </p>
+            {% for m in spMembers %}
+            <div class="councilor-card{% if m.variant %} councilor-card--{{ m.variant }}{% endif %}">
+              <h4 class="councilor-name">{{ m.name }}</h4>
+              <span class="councilor-badge{% if m.variant %} councilor-badge--{{ m.variant }}{% endif %}">{{ m.role }}</span>
             </div>
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-edwin-clifford-f-tito-od">
-                Hon. Winifredo B. Oco
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-health-sanitation-finance-appropriation-and-budget"
-              >
-                Health & Sanitation, Finance Appropriation and Budget
-              </p>
-            </div>
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-michael-dl-tiongson-lpt">
-                Hon. Arthur Michael Canlas
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-education-science-technology-transportation"
-              >
-                Education, Science & Technology, Transportation, Commerce, Trade & Industry
-              </p>
-            </div>
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-walter-d-savedra-sr">
-                Hon. Junjun Enova
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-cooperative-development-senior-citizens-and"
-              >
-                Cooperative Development, Senior Citizens and Disability Affairs
-              </p>
-            </div>
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-atty-jerome-g-marcos">
-                Hon. Teresita Malubay
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-legal-good-governance-justice-human-rights"
-              >
-                Legal, Good Governance, Justice, Human Rights, Environmental Management
-              </p>
-            </div>
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-roland-m-carub-jd">
-                Hon. Dennis L. Riel
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-agriculture-aquaculture-food-security-overseas"
-              >
-                Agriculture, Aquaculture & Food Security, Overseas Filipino Workers Affairs
-              </p>
-            </div>
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-joseph-t-alindada">
-                Hon. Arnulfo Balane
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-games-entertainment-amusement-internal-affairs"
-              >
-                Games, Entertainment & Amusement, Internal Affairs
-              </p>
-            </div>
-            <div class="councilor-card">
-              <h4 class="councilor-name" data-i18n="gov-hon-luisito-l-lannu">
-                Hon. Jonah G. Pimentel
-              </h4>
-              <span class="councilor-badge" data-i18n="gov-sb-member">Provincial Board Member</span>
-            <p
-                class="councilor-committees"
-                data-i18n="gov-public-safety-peace-order-family-women-children"
-              >
-                Public Safety, Peace & Order, Family, Women, Children & Social Services
-              </p>
-            </div>
-            <div class="councilor-card councilor-card--liga">
-              <h4 class="councilor-name" data-i18n="gov-hon-melchor-e-marzo">
-                Hon. Rodolfo V. Gache
-              </h4>
-              <span
-                class="councilor-badge councilor-badge--liga"
-                data-i18n="gov-liga-ng-mga-barangay-president"
-                >Liga ng mga Barangay President</span
-              >
-              <p class="councilor-committees" data-i18n="gov-barangay-affairs-tourism">
-                Barangay Affairs, Tourism
-              </p>
-            </div>
-            <div class="councilor-card councilor-card--sk">
-              <h4 class="councilor-name" data-i18n="gov-hon-isaac-r-divina">
-                Hon. Renee Herrera
-              </h4>
-              <span
-                class="councilor-badge councilor-badge--sk"
-                data-i18n="gov-sk-federation-president"
-                >SK Federation President</span
-              >
-              <p
-                class="councilor-committees"
-                data-i18n="gov-youth-sports-development-legislative-drafting"
-              >
-                Youth & Sports Development, Legislative Drafting
-              </p>
-            </div>
-            <div class="councilor-card councilor-card--ipmr">
-              <h4 class="councilor-name" data-i18n="gov-hon-ipmr-leon-g-dumani">
-                Hon. Rey Kenneth N. Oning
-              </h4>
-              <span class="councilor-badge councilor-badge--ipmr">IPMR</span>
-            <p class="councilor-committees" data-i18n="gov-indigenous-people-affairs">
-                Indigenous People Affairs
-              </p>
-            </div>
+            {% endfor %}
           </div>
+          <p class="text-center" style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light)">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            Source:
+            <a href="https://camsnorte.com/the-sanggunian/" target="_blank" rel="noopener noreferrer"
+              >Sangguniang Panlalawigan ng Camarines Norte</a
+            >
+            — as of June 2026
+          </p>
         </div>
       </section>
 
