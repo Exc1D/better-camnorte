@@ -67,9 +67,26 @@ remaining phases._
 
 ## Phase 3 — Stand up the system · _System of record · ADR-0003_ · _look preserved_
 
-- [ ] Introduce Eleventy; build the base layout + nav/header/footer partials.
+- [~] Introduce Eleventy; build the base layout + nav/header/footer partials. **Foothold proven.**
+      Added `@11ty/eleventy` (v3) + `eleventy.config.js` (input `src/`, output `_site/`). Built
+      `src/_includes/base.njk` (verbatim head + body shell), `chrome-top.njk` / `chrome-bottom.njk`
+      (skip-link, hotline bar, header, footer, popup, scripts — sliced verbatim from the homepage),
+      and a single `nav.njk`. Migrated the homepage (`src/index.njk` extends the base, content = its
+      `<main>`). Verified: the rendered `_site/index.html` is byte-identical to the live homepage
+      except the two **intended** nav changes below. Excluded `src/` + `eleventy.config.js` +
+      `_site/` from `build.sh` / `copy-dist.js` so the templates never leak into `dist/`.
+      - **Nav reorder landed here** (the Phase 1 deferral): one shared `nav.njk` now leads with the
+        watchdog core — **Home · Transparency · Government · Legislative · Contact** — using
+        **root-relative paths** (`/budget/`, `/government/`, …) that are correct on every page,
+        killing the 4-path-variant drift. No Projects/DPWH item: no such page exists yet (ponytail —
+        no dead links); add it when a projects page lands. Officials stay under Government.
+      - **Still to do:** wire `eleventy` into `build.sh` (compile `src/` → `dist/` before minify) and
+        migrate the remaining ~50 pages page-by-page onto the base layout, generalising the head
+        slots (title/description/canonical/OG/JSON-LD) as each page moves over.
 - [ ] Define CSS custom-property tokens (neutral scale, provincial primary, SDG accent set, type,
-      spacing, radius) — values matching the **current** look for now.
+      spacing, radius) — values matching the **current** look for now. _Deferred:_ tokens earn their
+      place when something reads them (the Phase 5 restyle), not before — defining unread tokens now
+      is speculation. Introduce them as the restyle flips values.
 - [ ] Migrate pages to templates page-by-page; repeated pages (officials, news, projects) render from
       one template + `data/*.json`. Verify each page renders identically to today.
 

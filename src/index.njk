@@ -1,0 +1,733 @@
+{% extends "base.njk" %}
+{% block content %}
+    <main id="main-content">
+      <!-- Hero Section — Bantayog, the star of the show -->
+      <section class="hero" id="hero">
+        <div class="hero__inner container">
+          <div class="hero__sky">
+            <p class="hero__eyebrow" data-i18n="hero-eyebrow">
+              <span class="hero__flag" aria-hidden="true"></span>
+              Camarines Norte Provincial Government
+            </p>
+            <h1 class="hero__title">
+              <span class="hero__title-line hero__title-line--serif">Bantayog</span>
+              <span class="hero__title-line hero__title-line--sans">ng Camarines Norte</span>
+            </h1>
+          </div>
+
+          <!-- The monument stands on the horizon, rising from ground into sky -->
+          <img
+            class="hero__monument"
+            src="assets/images/banners/bantayog.png"
+            alt="The provincial monument to José Rizal, a symbol of Camarines Norte"
+            width="480"
+            height="600"
+            fetchpriority="high"
+          />
+        </div>
+
+        <!-- GROUND: the institutional band the province stands on -->
+        <div class="hero__earth">
+          <div class="hero__earth-inner container">
+            <p class="hero__horizon-label">
+              <span class="hero__horizon-star" aria-hidden="true">★</span>
+              Seventeen goals, one province
+            </p>
+            <p class="hero__lede" data-i18n="hero-subtitle">
+              Government services, information, and resources, built around the people of
+              Camarines Norte.
+            </p>
+
+
+            <div class="hero__actions">
+              <a href="budget/" class="hero__btn hero__btn--primary">
+                <span data-i18n="nav-transparency">Transparency</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="contact/" class="hero__btn hero__btn--ghost" data-i18n="home-contact-us"
+                >Contact Us</a
+              >
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Appointment Services CTA -->
+      <section class="appointment-cta-section" aria-label="Governor's Office Appointment Services">
+        <div class="container">
+          <div class="appointment-cta-inner">
+            <div class="appointment-cta-animation" aria-hidden="true">
+              <dotlottie-player
+                src="assets/animation/ramonloganjr-booking.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+            <div class="appointment-cta-content">
+              <h2 class="appointment-cta-heading" data-i18n="appointment-cta-heading">
+                Enhancing Appointment Services of Camarines Norte Provincial Government Governor's Office
+              </h2>
+              <p class="appointment-cta-subtitle" data-i18n="appointment-cta-subtitle">
+                No lines. No back-and-forth. Just efficient appointments.
+              </p>
+              <div class="appointment-cta-actions">
+                <a
+                  href="https://camnortemayorsoffice-oasys.com/user/auth/login.php"
+                  class="appointment-cta-btn appointment-cta-btn--primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="bi bi-calendar-check" aria-hidden="true"></i>
+                  <span data-i18n="home-schedule-appointment">Schedule Appointment</span></a
+                >
+                <a
+                  href="https://camnortemayorsoffice-oasys.com/user/auth/register.php"
+                  class="appointment-cta-btn appointment-cta-btn--outline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="bi bi-person-plus" aria-hidden="true"></i>
+                  <span data-i18n="home-create-account">Create Account</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Government services live on the official LGU site (see redesign Principle 1) -->
+      <section class="section home-services-section">
+        <div class="container">
+          <div class="home-section-header">
+            <h2>Looking for a government service?</h2>
+            <p>
+              Requirements, fees, and processing times for provincial services are published in the
+              official Citizen's Charter of Camarines Norte.
+            </p>
+            <a
+              href="https://camsnorte.com/citizens-charter/"
+              class="home-section-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Official Citizen's Charter</span>
+              <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Stats -->
+      <section class="home-stats-v2">
+        <div class="container">
+          <div class="home-stats-v2-header">
+            <h2 data-i18n="home-camnorte-at-a-glance">Camarines Norte at a Glance</h2>
+            <a href="statistics/" class="home-section-link"
+              ><i class="bi bi-arrow-right"></i>
+              <span data-i18n="home-view-statistics">View Statistics</span></a
+            >
+          </div>
+          <div class="home-stats-v2-grid">
+            <a href="statistics/" class="home-stat-card">
+              <div class="home-stat-card-icon"><i class="bi bi-people-fill"></i></div>
+              <div class="home-stat-card-content">
+                <span class="home-stat-card-value" data-count="604666">604,666</span>
+                <span class="home-stat-card-label" data-i18n="home-population">Population</span>
+                <span class="home-stat-card-source" data-i18n="home-2024-census">2024 POPCEN</span>
+              </div>
+            </a>
+            <a href="government/" class="home-stat-card">
+              <div class="home-stat-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="home-stat-card-content">
+                <span class="home-stat-card-value">282</span>
+                <span class="home-stat-card-label" data-i18n="home-barangays">Barangays</span>
+                <span class="home-stat-card-source" data-i18n="home-administrative-units"
+                  >Administrative Units</span
+                >
+              </div>
+            </a>
+            <a href="budget/" class="home-stat-card">
+              <div class="home-stat-card-icon"><i class="bi bi-award-fill"></i></div>
+              <div class="home-stat-card-content">
+                <span class="home-stat-card-value" data-i18n="home-1st-class">1st Class</span>
+                <span class="home-stat-card-label" data-i18n="home-municipality">Municipality</span>
+                <span class="home-stat-card-source" data-i18n="home-income-classification"
+                  >Income Classification</span
+                >
+              </div>
+            </a>
+            <a href="statistics/" class="home-stat-card">
+              <div class="home-stat-card-icon"><i class="bi bi-rulers"></i></div>
+              <div class="home-stat-card-content">
+                <span class="home-stat-card-value" data-i18n="home-227793-km">2,277.93 km²</span>
+                <span class="home-stat-card-label" data-i18n="home-land-area">Land Area</span>
+                <span class="home-stat-card-source" data-i18n="home-total-municipal-area"
+                  >Total Provincial Area</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section class="section weather-map-section">
+        <div class="container">
+          <div class="home-stats-v2-header">
+            <h2 data-i18n="home-weather-and-map-of-camnorte">Map of Camarines Norte</h2>
+          </div>
+          <div class="weather-map-grid">
+            <div class="map-column">
+              <div class="map-card">
+                <div
+                  id="map-container"
+                  role="application"
+                  aria-label="Interactive map of Camarines Norte"
+                  data-map-loaded="iframe"
+                >
+                  <iframe
+                    id="osm-embed"
+                    class="map-iframe"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=122.9353%2C14.0972%2C122.9753%2C14.1272&layer=mapnik&marker=14.1122%2C122.9553"
+                    title="Map of Camarines Norte"
+                    loading="lazy"
+                    aria-label="OpenStreetMap showing Camarines Norte Provincial Capitol, Camarines Norte"
+                  ></iframe>
+                </div>
+                <p class="map-attribution">
+                  <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                  <span data-i18n="home-camnorte-municipal-hall-camarines-norte-3708"
+                    >Camarines Norte Provincial Capitol, Camarines Norte 3708</span
+                  >
+                </p>
+                <p class="sr-only" data-i18n="home-interactive-map-showing-the-location-of-camnorte">
+                  Interactive map showing the location of Camarines Norte Provincial Capitol in Camarines Norte,
+                  Philippines. The map is centered at coordinates 14.1122°N, 122.9553°E. Use the
+                  plus and minus buttons or keyboard arrows to navigate the map.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brief History of Camarines Norte Section -->
+      <section class="section history-section">
+        <div class="container">
+          <div class="home-stats-v2-header">
+            <h2>
+              <i class="bi bi-book" aria-hidden="true"></i>
+              <span data-i18n="home-brief-history-of-camnorte">Brief History of Camarines Norte</span>
+            </h2>
+          </div>
+          <div class="history-content">
+            <div class="history-timeline">
+              <div class="timeline-item" data-year="1760">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">1760</span>
+            <p data-i18n="home-history-1760">
+                    The original name of the town was <strong>Bintauan</strong>, then a Gaddang
+                    settlement that is now a barangay of Villaverde.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item" data-year="1767">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">1767</span>
+            <p data-i18n="home-history-1767">
+                    The town was formally founded by <strong>Father Alejandro Vidal</strong>, a
+                    Dominican priest who led a Spanish mission.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item" data-year="1768">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">1768</span>
+            <p data-i18n="home-history-1768">
+                    Named <strong>Lungabang</strong>, from the Gaddang word for cave,
+                    <em>lungab</em>. Later changed to Lumabang by the Spaniards.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item" data-year="1851">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">1851</span>
+            <p data-i18n="home-governor-general-antonio-urbiztondo-declared">
+                    Governor General Antonio Urbiztondo declared Lumabang a barrio of Bayombong for
+                    insufficient inhabitants and revenue.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item" data-year="1853">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">1853</span>
+            <p data-i18n="home-history-1853">
+                    The first <strong>Ilocanos arrived</strong>, brought by Don Diego Lumicao, a
+                    former gobernadorcillo.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item" data-year="1889">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">1889</span>
+            <p data-i18n="home-history-1889">
+                    Renamed <strong>Camarines Norte</strong> in honor of Governor General
+                    <strong>Ramon Camarines Norte y Llanderal</strong>. The town was redeveloped by Father
+                    Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100
+                    square blocks.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item" data-year="1957">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">1957</span>
+            <p data-i18n="home-history-1957">
+                    The barrios of Ibung and Bintawan were separated to form the town of Ibung,
+                    later renamed as <strong>Villaverde</strong>. Camarines Norte's land area was reduced to
+                    <strong>13,980 hectares</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="history-summary">
+              <div class="history-card">
+                <div class="history-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="history-card-content">
+                  <h4 data-i18n="home-once-the-largest">Once the Largest</h4>
+                  <p data-i18n="home-camnorte-was-the-largest-municipality-in-the">
+                    Camarines Norte was the largest municipality in the province until Caliat and Bintawan
+                    were separated to become Quezon and Villaverde respectively.
+                  </p>
+                </div>
+              </div>
+              <div class="history-card">
+                <div class="history-card-icon"><i class="bi bi-grid-3x3"></i></div>
+                <div class="history-card-content">
+                  <h4 data-i18n="home-urban-planning">Urban Planning</h4>
+                  <p data-i18n="home-the-1889-redevelopment-created-a-grid-of-100">
+                    The 1889 redevelopment created a grid of 100 square blocks, each with an
+                    aggregate area of one hectare, with streets running north-south and east-west.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .history-section {
+            background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+          }
+          .history-section .home-stats-v2-header h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          .history-section .home-stats-v2-header h2 i {
+            color: var(--color-primary);
+          }
+          .history-content {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 32px;
+            align-items: start;
+          }
+          .history-timeline {
+            position: relative;
+            padding-left: 28px;
+          }
+          .history-timeline::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: linear-gradient(
+              180deg,
+              var(--color-primary) 0%,
+              rgba(0, 50, 160, 0.2) 100%
+            );
+            border-radius: 2px;
+          }
+          .timeline-item {
+            position: relative;
+            padding-bottom: 20px;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease forwards;
+          }
+          .timeline-item:nth-child(1) {
+            animation-delay: 0.1s;
+          }
+          .timeline-item:nth-child(2) {
+            animation-delay: 0.2s;
+          }
+          .timeline-item:nth-child(3) {
+            animation-delay: 0.3s;
+          }
+          .timeline-item:nth-child(4) {
+            animation-delay: 0.4s;
+          }
+          .timeline-item:nth-child(5) {
+            animation-delay: 0.5s;
+          }
+          .timeline-item:nth-child(6) {
+            animation-delay: 0.6s;
+          }
+          .timeline-item:nth-child(7) {
+            animation-delay: 0.7s;
+          }
+          .timeline-item:last-child {
+            padding-bottom: 0;
+          }
+          .timeline-marker {
+            position: absolute;
+            left: -28px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: var(--color-bg);
+            border: 3px solid var(--color-primary);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            z-index: 1;
+          }
+          .timeline-item:hover .timeline-marker {
+            background: var(--color-primary);
+            transform: scale(1.2);
+            box-shadow: 0 0 0 4px rgba(0, 50, 160, 0.15);
+          }
+          .timeline-content {
+            background: var(--color-bg);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 10px;
+            padding: 16px 18px;
+            transition: all 0.3s ease;
+          }
+          .timeline-item:hover .timeline-content {
+            border-color: var(--color-primary);
+            box-shadow: 0 4px 16px rgba(0, 50, 160, 0.1);
+            transform: translateX(4px);
+          }
+          .timeline-year {
+            display: inline-block;
+            background: var(--color-primary);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 8px;
+          }
+          .timeline-content p {
+            font-size: 0.875rem;
+            color: var(--color-text);
+            margin: 0;
+            line-height: 1.6;
+          }
+          .timeline-content p strong {
+            color: var(--color-primary);
+          }
+          .timeline-content p em {
+            font-style: italic;
+            color: var(--color-text-light);
+          }
+          .history-summary {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: sticky;
+            top: 100px;
+          }
+          .history-card {
+            background: var(--color-bg);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+          }
+          .history-card:hover {
+            border-color: var(--color-primary);
+            box-shadow: 0 4px 16px rgba(0, 50, 160, 0.1);
+            transform: translateY(-2px);
+          }
+          .history-card-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(
+              135deg,
+              var(--color-primary) 0%,
+              var(--color-secondary) 100%
+            );
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+          }
+          .history-card-icon i {
+            color: white;
+            font-size: 1.25rem;
+          }
+          .history-card-content h4 {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin: 0 0 6px 0;
+          }
+          .history-card-content p {
+            font-size: 0.8125rem;
+            color: var(--color-text-light);
+            margin: 0;
+            line-height: 1.5;
+          }
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(16px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @media (max-width: 900px) {
+            .history-content {
+              grid-template-columns: 1fr;
+            }
+            .history-summary {
+              position: static;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+            .history-card {
+              flex: 1 1 280px;
+            }
+          }
+          @media (max-width: 575px) {
+            .history-summary {
+              flex-direction: column;
+            }
+            .history-card {
+              flex: 1 1 100%;
+            }
+          }
+        </style>
+      </section>
+
+      <!-- Latest Updates -->
+      <section class="section home-fb-section">
+        <div class="container">
+          <div class="home-section-header">
+            <h2 data-i18n="section-updates">Latest Updates</h2>
+            <a href="news/" class="home-section-link"
+              ><i class="bi bi-arrow-right"></i> <span data-i18n="home-view-all">View All</span></a
+            >
+          </div>
+          <!--
+            Live feed from the official Camarines Norte Provincial Government Facebook Page (auto-updating,
+            no API token required). REPLACE the page URL in BOTH places below
+            (the iframe `href=` value and the CTA/fallback links) with the exact
+            official page URL, e.g. https://www.facebook.com/YourPageName
+          -->
+          <div class="home-fb">
+            <div class="home-fb-intro">
+              <span class="home-fb-eyebrow">
+                <i class="bi bi-facebook" aria-hidden="true"></i> Official Facebook Page
+              </span>
+              <h3 class="home-fb-title">Real-time updates, straight from our page</h3>
+              <p class="home-fb-text">
+                Follow the Official Camarines Norte Provincial Government Facebook Page for the latest announcements,
+                advisories, events, and community updates as they happen.
+              </p>
+              <ul class="home-fb-points">
+                <li>
+                  <i class="bi bi-megaphone" aria-hidden="true"></i> Official announcements &amp;
+                  advisories
+                </li>
+                <li>
+                  <i class="bi bi-calendar-event" aria-hidden="true"></i> Events &amp; community
+                  programs
+                </li>
+                <li>
+                  <i class="bi bi-broadcast" aria-hidden="true"></i> Posted in real time, as it
+                  happens
+                </li>
+              </ul>
+              <a
+                class="home-fb-cta"
+                href="https://www.facebook.com/OfficialLGUCamarines Norte"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-facebook" aria-hidden="true"></i> Visit our Facebook Page
+              </a>
+            </div>
+
+            <div class="home-fb-feed">
+              <div class="fb-plugin-wrap">
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOfficialLGUCamarines Norte%2F&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+                  width="500"
+                  height="700"
+                  class="fb-page-plugin"
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  title="Camarines Norte Provincial Government Official Facebook Page — Live Updates"
+                ></iframe>
+              </div>
+              <p class="home-fb-fallback">
+                Can't see the feed?
+                <a
+                  href="https://www.facebook.com/OfficialLGUCamarines Norte/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open it on Facebook</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Provincial Leadership -->
+      <section class="section home-leadership-section">
+        <div class="container">
+          <div class="home-section-header">
+            <h2 data-i18n="section-leadership">Provincial Leadership</h2>
+            <a href="government/" class="home-section-link"
+              ><i class="bi bi-arrow-right"></i>
+              <span data-i18n="home-view-all-officials">View All Officials</span></a
+            >
+          </div>
+          <div class="home-leadership-grid">
+            <div class="home-leader-card">
+              <div class="home-leader-badge" data-i18n="title-mayor">Provincial Governor</div>
+              <h3 data-i18n="home-hon-philip-a-dacayo">Governor Ricarte R. Padilla</h3>
+              <div class="home-leader-contacts">
+                <a href="mailto:pgcamarinesnorte@gmail.com"
+                  ><i class="bi bi-envelope"></i>
+                  <span data-i18n="home-mayorcamnortegovph">pgcamarinesnorte@gmail.com</span></a
+                >
+                <a href="https://camsnorte.com/"><i class="bi bi-telephone"></i> Provincial Capitol, Brgy III, Daet</a>
+              </div>
+            </div>
+            <div class="home-leader-card">
+              <div class="home-leader-badge" data-i18n="title-vice-mayor">Provincial Vice Governor</div>
+              <h3 data-i18n="home-hon-eduardo-d-tiongson">Vice Governor Joseph V. Ascutia</h3>
+              <div class="home-leader-contacts">
+                <a href="mailto:pgcamarinesnorte@gmail.com"
+                  ><i class="bi bi-envelope"></i>
+                  <span data-i18n="home-vicemayorcamnortegovph">pgcamarinesnorte@gmail.com</span></a
+                >
+                <a href="https://camsnorte.com/"><i class="bi bi-telephone"></i> Provincial Capitol, Brgy III, Daet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section home-contact-section">
+        <div class="container">
+          <div class="home-section-header">
+            <h2 data-i18n="section-contact">Contact Information</h2>
+            <a href="contact/" class="home-section-link"
+              ><i class="bi bi-arrow-right"></i> <span data-i18n="home-view-all">View All</span></a
+            >
+          </div>
+          <div class="home-contact-v2-grid">
+            <a href="tel:0788053581" class="home-contact-v2-card">
+              <div class="home-contact-v2-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div class="home-contact-v2-content">
+                <h3 data-i18n="contact-phone">Phone</h3>
+                <p class="home-contact-v2-value">(078) 805-3581</p>
+                <span class="home-contact-v2-note" data-i18n="contact-hours"
+                  >Mon-Fri: 8:00 AM - 5:00 PM</span
+                >
+              </div>
+            </a>
+            <a href="mailto:lgucamnortenv@gmail.com" class="home-contact-v2-card">
+              <div class="home-contact-v2-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div class="home-contact-v2-content">
+                <h3 data-i18n="contact-email">Email</h3>
+                <p class="home-contact-v2-value" data-i18n="home-lgucamnortenvgmailcom">
+                  lgucamnortenv@gmail.com
+                </p>
+                <span class="home-contact-v2-note" data-i18n="contact-response"
+                  >We'll respond within 24 hours</span
+                >
+              </div>
+            </a>
+            <div class="home-contact-v2-card">
+              <div class="home-contact-v2-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="home-contact-v2-content">
+                <h3 data-i18n="contact-address">Address</h3>
+                <p class="home-contact-v2-value" data-i18n="contact-municipal-hall">
+                  Municipal Hall
+                </p>
+                <span class="home-contact-v2-note" data-i18n="home-camnorte-camarines-norte-3708"
+                  >Camarines Norte 3708</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Camarines Norte Quiz CTA -->
+      <section class="quiz-cta-section" aria-label="Camarines Norte Quiz">
+        <div class="container">
+          <div class="quiz-cta-inner">
+            <div class="quiz-cta-animation" aria-hidden="true">
+              <dotlottie-player
+                src="assets/animation/ramonloganjr-exam.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+            <div class="quiz-cta-content">
+              <h2 class="quiz-cta-heading" data-i18n="home-camnorte-quiz">Camarines Norte Quiz</h2>
+              <p
+                class="quiz-cta-subtitle"
+                data-i18n="home-how-well-do-you-know-camnorte-camarines-norte"
+              >
+                How well do you know Camarines Norte?
+              </p>
+              <p
+                class="quiz-cta-description"
+                data-i18n="home-evaluate-your-familiarity-with-the-municipalitys"
+              >
+                Evaluate your familiarity with the municipality's heritage, cultural identity, and
+                geographic significance through an interactive knowledge assessment designed to
+                showcase one of Camarines Norte's most prominent localities.
+              </p>
+              <a
+                href="https://quiz.bettercamnorte.org/"
+                class="quiz-cta-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
+                <span data-i18n="home-take-the-quiz">Take the Quiz</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+{% endblock %}

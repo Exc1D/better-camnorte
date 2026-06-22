@@ -51,6 +51,9 @@ if command -v rsync &>/dev/null; then
     rsync -a \
         --exclude='node_modules' \
         --exclude='dist' \
+        --exclude='_site' \
+        --exclude='src' \
+        --exclude='eleventy.config.js' \
         --exclude='.git' \
         --exclude='.vscode' \
         --exclude='.DS_Store' \

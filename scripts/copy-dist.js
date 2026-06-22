@@ -10,6 +10,9 @@ const path = require('path');
 const EXCLUDED = new Set([
   'node_modules',
   'dist',
+  '_site',
+  'src',
+  'eleventy.config.js',
   '.git',
   '.vscode',
   '.DS_Store',
