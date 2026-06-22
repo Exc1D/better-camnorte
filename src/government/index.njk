@@ -201,7 +201,7 @@
             <div class="executive-card">
               <div class="executive-card-header">
                 <span class="executive-badge" data-i18n="title-mayor">Provincial Governor</span>
-                <h4 class="executive-name" data-i18n="gov-hon-philip-a-dacayo">
+                <h4 class="executive-name">
                   Governor Ricarte R. Padilla
                 </h4>
               </div>
@@ -223,7 +223,7 @@
                 <span class="executive-badge" data-i18n="title-vice-mayor"
                   >Provincial Vice Governor</span
                 >
-                <h4 class="executive-name" data-i18n="gov-hon-eduardo-d-tiongson">
+                <h4 class="executive-name">
                   Vice Governor Joseph V. Ascutia
                 </h4>
               </div>
@@ -273,31 +273,51 @@
             </p>
           </div>
 
-          <!-- Councilors Grid · presided over by Vice Governor Joseph V. Ascutia -->
-          {% set spMembers = [
-            { name: "Hon. Jhon Carlo V. Delima", role: "Board Member · 1st District" },
-            { name: "Hon. Winifredo B. Oco", role: "Board Member · 1st District" },
-            { name: "Hon. Arthur Michael Canlas", role: "Board Member · 1st District" },
-            { name: "Hon. Junjun Enova", role: "Board Member · 1st District" },
-            { name: "Hon. Teresita Malubay", role: "Board Member · 1st District" },
-            { name: "Hon. Dennis L. Riel", role: "Board Member · 2nd District" },
-            { name: "Hon. Arnulfo Balane", role: "Board Member · 2nd District" },
-            { name: "Hon. Jonah G. Pimentel", role: "Board Member · 2nd District" },
-            { name: "Hon. Rodolfo V. Gache", role: "Board Member · 2nd District" },
-            { name: "Hon. Renee Herrera", role: "Board Member · 2nd District" },
-            { name: "Hon. Rey Kenneth N. Oning", role: "Ex-Officio · PCL President" },
-            { name: "Hon. Mary Joy P. Carranza", role: "Ex-Officio · SK Federation President", variant: "sk" },
-            { name: "Hon. Ricky S. Noblesala", role: "Ex-Officio · IP Representative", variant: "ipmr" },
-            { name: "Hon. Rebecca Padilla", role: "Ex-Officio · ABC / Liga ng mga Barangay President", variant: "liga" }
+          <!-- Roster grouped by district · presided over by Vice Governor Joseph V. Ascutia -->
+          {% set spGroups = [
+            { title: "1st District", members: [
+              { name: "Hon. Jhon Carlo V. Delima", photo: "delima.jpg" },
+              { name: "Hon. Winifredo B. Oco", photo: "oco.png" },
+              { name: "Hon. Arthur Michael Canlas", photo: "canlas.jpg" },
+              { name: "Hon. Junjun Enova", photo: "enova.jpg" },
+              { name: "Hon. Teresita Malubay", photo: "malubay.jpg" }
+            ] },
+            { title: "2nd District", members: [
+              { name: "Hon. Dennis L. Riel", photo: "riel.jpg" },
+              { name: "Hon. Arnulfo Balane", photo: "balane.jpg" },
+              { name: "Hon. Jonah G. Pimentel", photo: "pimentel.jpg" },
+              { name: "Hon. Rodolfo V. Gache", photo: "gache.jpg" },
+              { name: "Hon. Renee Herrera", photo: "herrera.jpg" }
+            ] },
+            { title: "Ex-Officio Members", members: [
+              { name: "Hon. Rey Kenneth N. Oning", role: "PCL President", photo: "oning.png" },
+              { name: "Hon. Mary Joy P. Carranza", role: "SK Federation President", photo: "carranza.jpg", variant: "sk" },
+              { name: "Hon. Ricky S. Noblesala", role: "IP Representative", photo: "noblesala.jpg", variant: "ipmr" },
+              { name: "Hon. Rebecca Padilla", role: "ABC / Liga ng mga Barangay President", photo: "padilla.jpg", variant: "liga" }
+            ] }
           ] %}
+          {% for g in spGroups %}
+          <h4 class="councilor-group-title text-center" style="margin: var(--spacing-lg) 0 var(--spacing-sm); color: var(--color-primary)">
+            {{ g.title }}
+          </h4>
           <div class="grid grid-3" style="gap: var(--spacing-md)">
-            {% for m in spMembers %}
+            {% for m in g.members %}
             <div class="councilor-card{% if m.variant %} councilor-card--{{ m.variant }}{% endif %}">
+              <img
+                class="councilor-photo"
+                src="../assets/images/officials/{{ m.photo }}"
+                alt="{{ m.name }}"
+                width="96"
+                height="96"
+                loading="lazy"
+                style="width: 96px; height: 96px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto var(--spacing-xs)"
+              />
               <h4 class="councilor-name">{{ m.name }}</h4>
-              <span class="councilor-badge{% if m.variant %} councilor-badge--{{ m.variant }}{% endif %}">{{ m.role }}</span>
+              <span class="councilor-badge{% if m.variant %} councilor-badge--{{ m.variant }}{% endif %}">{{ m.role or "Board Member" }}</span>
             </div>
             {% endfor %}
           </div>
+          {% endfor %}
           <p class="text-center" style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light)">
             <i class="bi bi-info-circle" aria-hidden="true"></i>
             Source:
