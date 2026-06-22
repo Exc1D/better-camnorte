@@ -38,6 +38,14 @@ fi
 
 VERSION=$(node -e "console.log(require('./version.json').version)")
 
+# ── 1b. Provenance gate (web-principle #2: every figure sourced & dated) ──────
+# Warning-only for now — the missing source_url/as_of values are the LGU's to
+# supply, not the build's to invent. Swap to `--strict` to make it build-failing
+# once the figure datasets carry real provenance.
+echo ""
+echo "▶ [1b] Provenance check..."
+node scripts/check-provenance.js || true
+
 # ── 2. Clean dist ────────────────────────────────────────────────────────────
 echo ""
 echo "▶ [2/6] Cleaning dist/..."

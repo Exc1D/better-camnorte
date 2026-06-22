@@ -94,9 +94,26 @@ remaining phases._
 
 ## Phase 4 — Provenance · _Sourced & dated_
 
-- [ ] Add `source` (with link) and `as_of` to every `data/*.json` entry.
-- [ ] Render citations next to every figure via the template.
-- [ ] Add a build check that fails on a missing `source` or `as_of`.
+- [x] **Build check** (`scripts/check-provenance.js`, wired into `build.sh` step 1b). Encodes
+      principle #2 as an enforceable rule: any *fetched* dataset that renders figures
+      (`dpwh-projects`, `fiscal_transparency`, `demographics`) must declare a top-level `source`,
+      `source_url`, and `as_of` (empty drafts are skipped, so they trip the gate the moment they're
+      populated); `news.json` items each warn if they lack a source `url`. **Warning-only for now** —
+      flip to `--strict` (build-failing) once real provenance lands. The gate's report *is* the
+      actionable debt list; it does not invent values.
+- [~] Add `source` + `as_of` to the figure datasets. **Declared the schema, did not fabricate
+      values.** `dpwh-projects.json` now carries `source` = "DPWH — Camarines Norte District
+      Engineering Office" (the real agency, already in the file) with `source_url`/`as_of` left
+      `null` + a `_provenance_note`: those two values are the LGU's to supply (official DPWH list URL
+      + snapshot date). **Still open:** dpwh `source_url`/`as_of`; the 3 `news.json` items have no
+      source `url`; `fiscal_transparency` + `demographics` are empty drafts awaiting official data.
+- [ ] Render citations next to every figure. **Reframed:** the plan assumed Eleventy templates render
+      the figures, but they're rendered client-side by JS (`assets/js/*.js` `fetch()` the data). And
+      the statistics page's figures (CMCI etc.) are **hard-coded in `statistics-new.js`**, bypassing
+      the data layer entirely (`data/competitive-index.json` is a dead duplicate). _Decision needed:_
+      pull those hard-coded JS figures into sourced data files (true single source of truth) before
+      rendering citations, or render citations only for the already-fetched datasets. Citation
+      rendering also waits on the real `source_url`/`as_of` values above.
 
 ## Phase 5 — Restyle · _Performance · Colour · Accessibility_
 
