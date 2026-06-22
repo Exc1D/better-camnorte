@@ -52,10 +52,10 @@ const translations = {
 
     // Hero Section
     'hero-welcome': 'Welcome to BetterCamNorte',
-    'hero-eyebrow': 'Following the money · Cost to the people: ₱0',
+    'hero-eyebrow': 'See where the money goes · Cost to the people: ₱0',
     'hero-subtitle':
-      'An independent watchdog tracking how Camarines Norte spends public money — every figure sourced and dated.',
-    'hero-cta-primary': 'See the money',
+      'An independent watchdog showing how Camarines Norte spends public money — every figure sourced and dated.',
+    'hero-cta-primary': 'Explore the budget',
     'hero-cta-secondary': 'How we source this',
     'hero-browse': 'Browse Services',
     'hero-contact': 'Contact Us',
@@ -6509,10 +6509,10 @@ const translations = {
     'breadcrumb-privacy': 'Patakaran sa Pagkapribado',
     'breadcrumb-terms': 'Mga Tuntunin ng Paggamit',
     'hero-welcome': 'Maligayang Pagdating sa BetterCamNorte',
-    'hero-eyebrow': 'Sinusundan ang pera · Halaga sa mamamayan: ₱0',
+    'hero-eyebrow': 'Tingnan kung saan napupunta ang pera · Halaga sa mamamayan: ₱0',
     'hero-subtitle':
-      'Isang malayang bantay na sinusubaybayan kung paano ginagastos ng Camarines Norte ang pondo ng publiko — bawat datos may pinagmulan at petsa.',
-    'hero-cta-primary': 'Tingnan ang pera',
+      'Isang malayang bantay na nagpapakita kung paano ginagastos ng Camarines Norte ang pondo ng publiko — bawat datos may pinagmulan at petsa.',
+    'hero-cta-primary': 'Tingnan ang badyet',
     'hero-cta-secondary': 'Paano namin ito pinagkukunan',
     'hero-browse': 'Tingnan ang mga Serbisyo',
     'hero-contact': 'Makipag-ugnayan sa Amin',

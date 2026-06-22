@@ -188,79 +188,46 @@ permalink: /government/officials.html
       </section>
       <section class="section bg-alt">
         <div class="container">
-          <h3 class="text-center" data-i18n="officials-sangguniang-bayan-members">
-            Sangguniang Panlalawigan Members
-          </h3>
+          <h3 class="text-center">Sangguniang Panlalawigan Members</h3>
+          <p class="lead text-center">
+            Presided over by Vice Governor Joseph V. Ascutia.
+          </p>
+          {% set spMembers = [
+            { name: "Hon. Jhon Carlo V. Delima", role: "Board Member · 1st District" },
+            { name: "Hon. Winifredo B. Oco", role: "Board Member · 1st District" },
+            { name: "Hon. Arthur Michael Canlas", role: "Board Member · 1st District" },
+            { name: "Hon. Junjun Enova", role: "Board Member · 1st District" },
+            { name: "Hon. Teresita Malubay", role: "Board Member · 1st District" },
+            { name: "Hon. Dennis L. Riel", role: "Board Member · 2nd District" },
+            { name: "Hon. Arnulfo Balane", role: "Board Member · 2nd District" },
+            { name: "Hon. Jonah G. Pimentel", role: "Board Member · 2nd District" },
+            { name: "Hon. Rodolfo V. Gache", role: "Board Member · 2nd District" },
+            { name: "Hon. Renee Herrera", role: "Board Member · 2nd District" },
+            { name: "Hon. Rey Kenneth N. Oning", role: "Ex-Officio · PCL President" },
+            { name: "Hon. Mary Joy P. Carranza", role: "Ex-Officio · SK Federation President" },
+            { name: "Hon. Ricky S. Noblesala", role: "Ex-Officio · IP Representative" },
+            { name: "Hon. Rebecca Padilla", role: "Ex-Officio · ABC President" }
+          ] %}
           <div class="grid grid-4">
+            {% for m in spMembers %}
             <div class="councilor-card card text-center">
               <i
                 class="bi bi-person-badge"
                 style="font-size: 3rem; color: var(--color-primary)"
               ></i>
-              <h4 data-i18n="officials-hon-thomas-dave-c-santos">Hon. Jhon Carlo V. Delima</h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
+              <h4>{{ m.name }}</h4>
+              <p class="badge badge-info">{{ m.role }}</p>
             </div>
-            <div class="councilor-card card text-center">
-              <i
-                class="bi bi-person-badge"
-                style="font-size: 3rem; color: var(--color-primary)"
-              ></i>
-              <h4 data-i18n="officials-hon-edwin-clifford-f-tito-od">
-                Hon. Winifredo B. Oco
-              </h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
-            </div>
-            <div class="councilor-card card text-center">
-              <i
-                class="bi bi-person-badge"
-                style="font-size: 3rem; color: var(--color-primary)"
-              ></i>
-              <h4 data-i18n="officials-hon-michael-dl-tiongson-lpt">
-                Hon. Arthur Michael Canlas
-              </h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
-            </div>
-            <div class="councilor-card card text-center">
-              <i
-                class="bi bi-person-badge"
-                style="font-size: 3rem; color: var(--color-primary)"
-              ></i>
-              <h4 data-i18n="officials-hon-walter-d-savedra-sr">Hon. Junjun Enova</h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
-            </div>
-            <div class="councilor-card card text-center">
-              <i
-                class="bi bi-person-badge"
-                style="font-size: 3rem; color: var(--color-primary)"
-              ></i>
-              <h4 data-i18n="officials-hon-atty-jerome-g-marcos">Hon. Teresita Malubay</h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
-            </div>
-            <div class="councilor-card card text-center">
-              <i
-                class="bi bi-person-badge"
-                style="font-size: 3rem; color: var(--color-primary)"
-              ></i>
-              <h4 data-i18n="officials-hon-roland-m-carub-jd">Hon. Dennis L. Riel</h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
-            </div>
-            <div class="councilor-card card text-center">
-              <i
-                class="bi bi-person-badge"
-                style="font-size: 3rem; color: var(--color-primary)"
-              ></i>
-              <h4 data-i18n="officials-hon-joseph-t-alindada">Hon. Arnulfo Balane</h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
-            </div>
-            <div class="councilor-card card text-center">
-              <i
-                class="bi bi-person-badge"
-                style="font-size: 3rem; color: var(--color-primary)"
-              ></i>
-              <h4 data-i18n="officials-hon-luisito-l-lannu">Hon. Jonah G. Pimentel</h4>
-              <p class="badge badge-info" data-i18n="officials-sb-member">Provincial Board Member</p>
-            </div>
+            {% endfor %}
           </div>
+          <p class="text-center" style="margin-top: 20px; font-size: 0.875rem; color: var(--ink-soft)">
+            <i class="bi bi-info-circle" aria-hidden="true"></i>
+            Source:
+            <a href="https://camsnorte.com/the-sanggunian/" target="_blank" rel="noopener noreferrer"
+              >Sangguniang Panlalawigan ng Camarines Norte</a
+            >
+            — as of June 2026
+          </p>
         </div>
       </section>
     </main>
