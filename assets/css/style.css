@@ -1,4 +1,6 @@
 /* BetterCamNorte - Complete Main Stylesheet */
+/* === DESIGN TOKENS — single source of truth (Phase 5a). All custom properties
+   live here; home-redesign.css consumes them, it no longer redefines them. === */
 :root {
   --color-primary: #0032a0;
   --color-primary-dark: #002170;
@@ -24,6 +26,19 @@
   --border-radius: 8px;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Folded from home-redesign.css (Phase 5a) — values unchanged.
+     --navy is identical to --color-primary-dark; --display to --font-main. */
+  --navy: #002170;
+  --gold: #e0a431;
+  --gold-soft: #f3c969;
+  --gold-deep: #a9760f;
+  --maroon: #7a1f2b;
+  --ink: oklch(0.32 0.04 264);
+  --ink-soft: oklch(0.48 0.03 264);
+  --display: 'Source Sans 3', 'Inter', system-ui, sans-serif;
+  --serif: var(--display);
+  --wide: var(--display);
 
   /* Official Sustainable Development Goal palette — the site's accent identity */
   --sdg-1: #e5243b;

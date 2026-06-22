@@ -8,20 +8,8 @@
    Each section below is coded to an official SDG colour via --sdg.
    ========================================================================== */
 
-:root {
-  /* Monument-derived accents (the hero star) */
-  --gold: #e0a431;
-  --gold-soft: #f3c969;
-  --gold-deep: #a9760f;
-  --maroon: #7a1f2b;
-  --navy: #002170;
-
-  --ink: oklch(0.32 0.04 264);
-  --ink-soft: oklch(0.48 0.03 264);
-  --display: 'Source Sans 3', 'Inter', system-ui, sans-serif;
-  --serif: var(--display); /* legacy aliases now resolve to the SDG face */
-  --wide: var(--display);
-}
+/* Design tokens moved to style.css's :root (Phase 5a, single source of truth).
+   This file now only consumes them and maps SDG colours per section. */
 
 /* Per-section SDG colour coding (spread across the goal palette) */
 .appointment-cta-section {
