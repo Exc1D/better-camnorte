@@ -128,7 +128,10 @@ remaining phases._
 
 ## Phase 5 — Restyle · _Performance · Colour · Accessibility_
 
-- [ ] Apply the new visual design by updating tokens (neutral base + SDG accents in named slots only).
+- [x] Apply the new visual design by updating tokens (neutral base + SDG accents in named slots only).
+      _5a consolidated the tokens; 5b applied them — neutral chrome (hotline, skip-link), watchdog
+      hero with the one contained gold stat-accent, sourced ₱409.5M/63-DPWH chip linking to /budget/#dpwh,
+      Ilocano dropped, volunteer modal removed. Homepage/flagship bodies left as-is (already v2/v5 redesign)._
 - [ ] Promote performance to a build-failing gate: Lighthouse mobile ≥ 0.9, first-party JS
       ≤ ~50 KB gz/page, LCP ≤ 2.5 s on slow 4G; keep the accessibility gate (≥ 0.9, WCAG 2.1 AA).
 - [ ] Verify SDG accents meet AA contrast in every slot.
