@@ -50,6 +50,7 @@ function revealHero() {
     root.classList.remove('hero-anim'); // unhide whatever the <head> armed
     return;
   }
+  const compact = window.matchMedia('(max-width: 860px)').matches;
   root.classList.add('hero-played');
 
   const targets = [
@@ -73,7 +74,7 @@ function revealHero() {
     },
   });
 
-  tl.to('.hero__earth', { '--seam': 1, duration: 1.0, ease: 'power2.inOut' }, 0.1)
+  tl.fromTo('.hero__earth', { '--seam': 0 }, { '--seam': 1, duration: 1.0, ease: 'power2.inOut' }, 0.1)
     .fromTo('.hero__eyebrow', { y: 14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, 0.25)
     .fromTo(
       '.hero__title-line--serif',
@@ -89,8 +90,10 @@ function revealHero() {
     )
     .fromTo(
       '.hero__monument',
-      { y: 64, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.15, ease: 'power3.out' },
+      compact ? { opacity: 0 } : { y: 64, opacity: 0 },
+      compact
+        ? { opacity: 1, duration: 0.8, ease: 'power3.out' }
+        : { y: 0, opacity: 1, duration: 1.15, ease: 'power3.out' },
       0.28
     )
     .fromTo(
@@ -105,7 +108,8 @@ function revealHero() {
 // Subtle, alive: the monument leans a hair toward the cursor once it has landed
 function startMonumentParallax() {
   const gsap = window.gsap;
-  if (reduced || !gsap || !monument) return;
+  const canParallax = window.matchMedia('(min-width: 861px) and (pointer: fine)').matches;
+  if (reduced || !gsap || !monument || !canParallax) return;
   const xTo = gsap.quickTo(monument, 'x', { duration: 0.7, ease: 'power3' });
   const rTo = gsap.quickTo(monument, 'rotation', { duration: 0.9, ease: 'power3' });
   gsap.ticker.add(() => {
@@ -272,13 +276,16 @@ function initField(THREE) {
     computeBounds();
   }
   resize();
-  new ResizeObserver(resize).observe(hero);
+  if ('ResizeObserver' in window) new ResizeObserver(resize).observe(hero);
+  else window.addEventListener('resize', resize);
 
   // Pause when the hero is off-screen or the tab is hidden
   let onScreen = true;
-  new IntersectionObserver((es) => {
-    onScreen = es[0].isIntersecting;
-  }).observe(hero);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver((es) => {
+      onScreen = es[0].isIntersecting;
+    }).observe(hero);
+  }
 
   let last = performance.now();
   let px = 0;
@@ -340,4 +347,3 @@ function discTexture(THREE) {
   tex.needsUpdate = true;
   return tex;
 }
-

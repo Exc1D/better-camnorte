@@ -591,7 +591,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // Heavier GSAP/Three choreography stays on the homepage hero (home-hero.js).
 // ===========================================================================
 (function () {
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
+
+  var mainScriptURL = document.currentScript && document.currentScript.src;
 
   document.documentElement.classList.add('sdg-motion');
 
@@ -637,6 +640,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var suf = raw.slice(m.index + m[0].length);
     el.classList.add('sdg-count');
     if (!el.style.getPropertyValue('--sdg')) el.style.setProperty('--sdg', nextSDG());
+    el.textContent = pre + fmt(0, dec) + suf;
     var co = new IntersectionObserver(function (es) {
       if (!es[0].isIntersecting) return;
       co.disconnect();
@@ -668,13 +672,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. cards lift in and pick up a festive cycling hue for hover
     [].forEach.call(document.querySelectorAll(
-      '[class*="-card"]:not([class*="-cards"]), .home-service-card, .history-card, ' +
+      '[class*="-card"]:not([class*="-card-"]):not([class*="-cards"]), ' +
       '.map-card, .feature, .service-item, .news-item'), function (c) {
       if (c.closest('.hero') || c.classList.contains('sdg-reveal')) return;
       c.classList.add('sdg-reveal', 'sdg-card');
       c.style.setProperty('--sdg', nextSDG());
       var p = c.parentNode;
-      if (p) { p.__sdgN = p.__sdgN || 0; c.style.transitionDelay = Math.min(p.__sdgN++ * 70, 350) + 'ms'; }
+      if (p) {
+        p.__sdgN = p.__sdgN || 0;
+        c.style.transitionDelay = Math.min(p.__sdgN++ * 70, 350) + 'ms';
+        c.addEventListener('transitionend', function clearDelay(e) {
+          if (e.propertyName !== 'opacity' && e.propertyName !== 'transform') return;
+          c.style.removeProperty('transition-delay');
+          c.removeEventListener('transitionend', clearDelay);
+        });
+      }
       io.observe(c);
     });
 
@@ -682,14 +694,12 @@ document.addEventListener('DOMContentLoaded', () => {
     [].forEach.call(document.querySelectorAll('[data-count]'), countUp);
 
     // 5. smooth scroll + parallax — desktop, fine pointer only
-    if (matchMedia('(min-width: 861px) and (pointer: fine)').matches) loadLenis();
+    if (window.matchMedia && window.matchMedia('(min-width: 861px) and (pointer: fine)').matches) loadLenis();
   }
 
   function loadLenis() {
-    var self = document.querySelector('script[src*="assets/js/main.js"]');
-    var base = self ? self.src.replace(/main\.js(\?.*)?$/, '') : 'assets/js/';
     var s = document.createElement('script');
-    s.src = base + 'vendor/lenis.min.js';
+    s.src = mainScriptURL ? new URL('vendor/lenis.min.js', mainScriptURL).href : '/assets/js/vendor/lenis.min.js';
     s.defer = true;
     s.onload = initLenis;
     document.head.appendChild(s);
@@ -704,7 +714,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!a) return;
       var href = a.getAttribute('href');
       if (href.length < 2) return;
-      var tgt = document.querySelector(href);
+      var tgt = document.getElementById(href.slice(1));
       if (tgt) { e.preventDefault(); lenis.scrollTo(tgt, { offset: -110 }); }
     });
 

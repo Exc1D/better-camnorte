@@ -172,7 +172,7 @@
     <link rel="stylesheet" href="assets/css/home-redesign.css" />
     <!-- Arm the hero entrance before first paint (skipped when motion is reduced) -->
     <script>
-      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      if (window.matchMedia && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         document.documentElement.classList.add('hero-anim');
       }
     </script>
@@ -395,11 +395,12 @@
               Camarines Norte.
             </p>
 
-            <form class="hero__search" role="search">
+            <form class="hero__search" role="search" action="services/">
               <i class="bi bi-search hero__search-icon" aria-hidden="true"></i>
               <input
                 type="search"
                 id="hero-search"
+                name="q"
                 class="service-search-input hero__search-input"
                 placeholder="Search a service: birth certificate, business permit…"
                 aria-label="Search services"
@@ -480,7 +481,7 @@
       </section>
 
       <!-- Quick Access Services -->
-      <section class="section">
+      <section class="section home-services-section">
         <div class="container">
           <div class="home-section-header">
             <h2 data-i18n="section-popular">Popular Services</h2>
@@ -1068,7 +1069,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="section">
+      <section class="section home-contact-section">
         <div class="container">
           <div class="home-section-header">
             <h2 data-i18n="section-contact">Contact Information</h2>
@@ -1455,12 +1456,12 @@
     <script defer src="assets/js/weather-map.js?v=1.6.4"></script>
 
     <!-- Hero: Three.js constellation + GSAP cinematic load (home page only) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+          "three": "./assets/js/vendor/three.module.js"
         }
       }
     </script>

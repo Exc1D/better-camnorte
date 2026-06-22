@@ -2096,8 +2096,10 @@ body.mobile-menu-open {
 /* Councilor Cards - Government Page */
 .councilor-card {
   --cat: var(--color-primary);
+
   background: var(--color-white);
   border-radius: 10px;
+  border: 1px solid #e5e7eb;
   border: 1px solid color-mix(in srgb, var(--cat) 32%, #e5e7eb);
   padding: var(--spacing-md);
   transition: all 0.2s ease;
@@ -2350,6 +2352,7 @@ a.dept-card-link-wrap .dept-card-contacts span i {
   padding: var(--spacing-md);
   background: var(--color-white);
   border-radius: var(--border-radius);
+  border: 1px solid rgba(0, 50, 160, 0.22);
   border: 1px solid color-mix(in srgb, var(--color-primary) 22%, transparent);
 }
 
@@ -10163,7 +10166,7 @@ a.a11y-contact-item:hover i {
    reveals, parallax, counters) recoloured into the 17 SDG hues.
    ========================================================================= */
 
-/* 17-colour ribbon, available site-wide (homepage redefines it identically) */
+/* Shared 17-colour ribbon */
 :root {
   --sdg-ribbon: linear-gradient(90deg,
     #E5243B 0 5.88%, #DDA63A 5.88% 11.76%, #4C9F38 11.76% 17.64%,
