@@ -2145,6 +2145,7 @@ body.mobile-menu-open {
   border: 1px solid #e5e7eb;
   border: 1px solid color-mix(in srgb, var(--cat) 32%, #e5e7eb);
   padding: var(--spacing-md);
+  text-align: center;
   transition: all 0.2s ease;
 }
 
