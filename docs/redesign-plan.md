@@ -107,13 +107,24 @@ remaining phases._
       `null` + a `_provenance_note`: those two values are the LGU's to supply (official DPWH list URL
       + snapshot date). **Still open:** dpwh `source_url`/`as_of`; the 3 `news.json` items have no
       source `url`; `fiscal_transparency` + `demographics` are empty drafts awaiting official data.
-- [ ] Render citations next to every figure. **Reframed:** the plan assumed Eleventy templates render
-      the figures, but they're rendered client-side by JS (`assets/js/*.js` `fetch()` the data). And
-      the statistics page's figures (CMCI etc.) are **hard-coded in `statistics-new.js`**, bypassing
-      the data layer entirely (`data/competitive-index.json` is a dead duplicate). _Decision needed:_
-      pull those hard-coded JS figures into sourced data files (true single source of truth) before
-      rendering citations, or render citations only for the already-fetched datasets. Citation
-      rendering also waits on the real `source_url`/`as_of` values above.
+- [x] **Single source of truth for the statistics figures.** They were hard-coded in
+      `statistics-new.js` (`barangayData`, `historicalData`, `cmciData`), bypassing the data layer
+      (`data/competitive-index.json` was a dead duplicate). Moved all three verbatim into
+      `data/statistics.json` (verified byte-identical to the old constants) with per-section
+      provenance harvested from the page's *existing* citation links — `population`: PSA
+      (`psa.gov.ph`, as_of 2024), `cmci`: DTI CMCI (`cmci.dti.gov.ph`, as_of 2024). `statistics-new.js`
+      now `fetch()`es the file on load; deleted `competitive-index.json`; the gate covers the new file
+      via a `SECTIONED_DATASETS` check. Verified in-browser: all charts (CMCI 5×9, population ×12,
+      historical 2020/2024) render from the fetched data, no console errors. Citations already render
+      from the template's `p.data-source` links, so no new rendering was needed.
+      - **Note:** the visible citation links live in the template while the gate's provenance lives in
+        the data file — a small, deliberate duplication (static citations don't vanish if a fetch
+        fails). Deriving citations from the fetched provenance is a Phase 5 nicety, not worth a
+        new failure mode now.
+- [ ] **Remaining provenance debt** (the gate reports it on every build): `dpwh-projects` needs a real
+      `source_url` + `as_of`; the 3 `news.json` items need source `url`s; `fiscal_transparency` +
+      `demographics` await official data. These values are the LGU's to supply — flip the gate to
+      `--strict` once they land.
 
 ## Phase 5 — Restyle · _Performance · Colour · Accessibility_
 

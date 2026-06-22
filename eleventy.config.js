@@ -3,5 +3,6 @@
 // for local preview; the production build re-copies them via rsync anyway.
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("data"); // pages fetch /data/*.json client-side
   return { dir: { input: "src", includes: "_includes", output: "_site" } };
 };

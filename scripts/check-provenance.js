@@ -28,21 +28,43 @@ const FIGURE_DATASETS = {
   "demographics.json": "barangays",
 };
 
+// Files that hold several independently-sourced figure sets, each carrying its own
+// provenance. Map: file -> { section: arrayKeyThatHoldsTheFigures }.
+const SECTIONED_DATASETS = {
+  "statistics.json": { population: "municipalities", cmci: "years" },
+};
+
 const DATE_RE = /^\d{4}(-\d{2}(-\d{2})?)?$/; // YYYY | YYYY-MM | YYYY-MM-DD
+
+// The three rules, shared by flat and sectioned datasets.
+function fieldProblems(obj) {
+  const problems = [];
+  const srcName = typeof obj.source === "string" ? obj.source : obj.source && obj.source.name;
+  if (!srcName || !String(srcName).trim()) problems.push("missing `source` (name of the issuing body)");
+  if (!obj.source_url || !/^https?:\/\//.test(obj.source_url))
+    problems.push("missing `source_url` (link to the official source)");
+  if (!obj.as_of || !DATE_RE.test(obj.as_of))
+    problems.push("missing/invalid `as_of` (YYYY[-MM[-DD]] the figures are current as of)");
+  return problems;
+}
 
 // Pure core so it's testable. Returns [] when clean, else array of problem strings.
 function lint(name, json, figuresKey) {
   const figures = Array.isArray(json[figuresKey]) ? json[figuresKey] : [];
   if (figures.length === 0) return []; // empty draft — nothing on display yet
-  const problems = [];
-  const srcName =
-    typeof json.source === "string" ? json.source : json.source && json.source.name;
-  if (!srcName || !String(srcName).trim()) problems.push("missing `source` (name of the issuing body)");
-  if (!json.source_url || !/^https?:\/\//.test(json.source_url))
-    problems.push("missing `source_url` (link to the official source)");
-  if (!json.as_of || !DATE_RE.test(json.as_of))
-    problems.push("missing/invalid `as_of` (YYYY[-MM[-DD]] the figures are current as of)");
-  return problems.map((p) => `${name} [${figures.length} figures]: ${p}`);
+  return fieldProblems(json).map((p) => `${name} [${figures.length} figures]: ${p}`);
+}
+
+// Each named section is checked independently; empty sections are skipped.
+function lintSections(name, json, sections) {
+  const out = [];
+  for (const [section, figuresKey] of Object.entries(sections)) {
+    const obj = json[section];
+    const figures = obj && Array.isArray(obj[figuresKey]) ? obj[figuresKey] : [];
+    if (!obj || figures.length === 0) continue;
+    out.push(...fieldProblems(obj).map((p) => `${name} › ${section}: ${p}`));
+  }
+  return out;
 }
 
 // news items each carry their own source link — soft rule (warn, never block).
@@ -59,6 +81,11 @@ function run({ strict }) {
     const p = path.join(dataDir, file);
     if (!fs.existsSync(p)) continue;
     errors.push(...lint(file, JSON.parse(fs.readFileSync(p, "utf8")), key));
+  }
+  for (const [file, sections] of Object.entries(SECTIONED_DATASETS)) {
+    const p = path.join(dataDir, file);
+    if (!fs.existsSync(p)) continue;
+    errors.push(...lintSections(file, JSON.parse(fs.readFileSync(p, "utf8")), sections));
   }
   const warnings = [];
   const newsPath = path.join(dataDir, "news.json");
@@ -96,6 +123,17 @@ function selftest() {
   );
   // news soft rule
   assert.strictEqual(lintNews({ news: [{ id: "a", url: null }, { id: "b", url: "https://b" }] }).length, 1);
+  // sectioned: one clean section, one empty (skipped), one with a gap
+  const sec = lintSections(
+    "s.json",
+    {
+      ok: { source: "A", source_url: "https://a", as_of: "2024", rows: [1] },
+      empty: { rows: [] },
+      bad: { source: "B", as_of: "2024", rows: [1] },
+    },
+    { ok: "rows", empty: "rows", bad: "rows" }
+  );
+  assert.strictEqual(sec.length, 1); // only `bad` (missing source_url)
   console.log("selftest OK");
 }
 
