@@ -196,7 +196,7 @@
           </div>
 
           <!-- Executive Cards -->
-          <div class="grid grid-2" style="gap: var(--spacing-lg)">
+          <div style="max-width: 460px; margin: 0 auto">
             <!-- Provincial Governor Card -->
             <div class="executive-card">
               <div class="executive-card-header">
@@ -219,37 +219,6 @@
                   <a href="mailto:pgcamarinesnorte@gmail.com"
                     ><i class="bi bi-envelope"></i>
                     <span data-i18n="gov-mayorcamnortegovph">pgcamarinesnorte@gmail.com</span></a
-                  >
-                  <a href="https://camsnorte.com/"><i class="bi bi-telephone"></i> Provincial Capitol, Brgy III, Daet</a>
-                  <span><i class="bi bi-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Provincial Vice Governor Card -->
-            <div class="executive-card">
-              <div class="executive-card-header">
-                <img
-                  class="executive-photo"
-                  src="../assets/images/officials/ascutia.png"
-                  alt="Vice Governor Joseph V. Ascutia"
-                  width="88"
-                  height="88"
-                  loading="lazy"
-                  style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto var(--spacing-sm); border: 3px solid rgba(255, 255, 255, 0.85)"
-                />
-                <span class="executive-badge" data-i18n="title-vice-mayor"
-                  >Provincial Vice Governor</span
-                >
-                <h4 class="executive-name">
-                  Vice Governor Joseph V. Ascutia
-                </h4>
-              </div>
-              <div class="executive-card-body">
-                <div class="executive-contacts">
-                  <a href="mailto:pgcamarinesnorte@gmail.com"
-                    ><i class="bi bi-envelope"></i>
-                    <span data-i18n="gov-vicemayorcamnortegovph">pgcamarinesnorte@gmail.com</span></a
                   >
                   <a href="https://camsnorte.com/"><i class="bi bi-telephone"></i> Provincial Capitol, Brgy III, Daet</a>
                   <span><i class="bi bi-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</span>
@@ -291,6 +260,37 @@
             </p>
           </div>
 
+          <!-- Presiding Officer · Vice Governor -->
+          <div style="max-width: 460px; margin: 0 auto var(--spacing-xl)">
+            <div class="executive-card">
+              <div class="executive-card-header">
+                <img
+                  class="executive-photo"
+                  src="../assets/images/officials/ascutia.png"
+                  alt="Vice Governor Joseph V. Ascutia"
+                  width="88"
+                  height="88"
+                  loading="lazy"
+                  style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto var(--spacing-sm); border: 3px solid rgba(255, 255, 255, 0.85)"
+                />
+                <span class="executive-badge">Presiding Officer · Vice Governor</span>
+                <h4 class="executive-name">
+                  Vice Governor Joseph V. Ascutia
+                </h4>
+              </div>
+              <div class="executive-card-body">
+                <div class="executive-contacts">
+                  <a href="mailto:pgcamarinesnorte@gmail.com"
+                    ><i class="bi bi-envelope"></i>
+                    <span data-i18n="gov-vicemayorcamnortegovph">pgcamarinesnorte@gmail.com</span></a
+                  >
+                  <a href="https://camsnorte.com/"><i class="bi bi-telephone"></i> Provincial Capitol, Brgy III, Daet</a>
+                  <span><i class="bi bi-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Roster grouped by district · presided over by Vice Governor Joseph V. Ascutia -->
           {% set spGroups = [
             { title: "1st District", members: [
@@ -318,7 +318,7 @@
           <h4 class="councilor-group-title text-center" style="margin: var(--spacing-lg) 0 var(--spacing-sm); color: var(--color-primary)">
             {{ g.title }}
           </h4>
-          <div class="grid grid-3" style="gap: var(--spacing-md)">
+          <div class="councilor-grid">
             {% for m in g.members %}
             <div class="councilor-card{% if m.variant %} councilor-card--{{ m.variant }}{% endif %}">
               <img

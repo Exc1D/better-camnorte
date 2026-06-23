@@ -2137,6 +2137,19 @@ body.mobile-menu-open {
 }
 
 /* Councilor Cards - Government Page */
+/* Centered flex grid so an incomplete last row centers instead of left-aligning */
+.councilor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.councilor-grid .councilor-card {
+  flex: 0 1 calc((100% - 2 * var(--spacing-md)) / 3);
+  min-width: 220px;
+}
+
 .councilor-card {
   --cat: var(--color-primary);
 
