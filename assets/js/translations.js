@@ -28,7 +28,6 @@ const translations = {
     'stats-subtitle': 'Data and statistics about Camarines Norte',
     'stats-demographics': 'Demographics Overview',
     'stats-economic': 'Economic Indicators',
-    'stats-barangay': 'Population by Municipality',
     'stats-population': 'Population',
     'stats-land-area': 'Land Area',
     'stats-density': 'Population Density',
@@ -109,7 +108,7 @@ const translations = {
     'contact-visit': 'Visit Us',
     'contact-hours': 'Mon-Fri: 8:00 AM - 5:00 PM',
     'contact-response': "We'll respond within 24 hours",
-    'contact-municipal-hall': 'Municipal Hall',
+    'contact-municipal-hall': 'Provincial Capitol',
     'contact-location': 'Location',
     'contact-directions': 'Get Directions',
 
@@ -216,16 +215,12 @@ const translations = {
     'cert-marriage-desc': 'Register or request certified true copy of marriage certificate',
     'cert-death': 'Death Certificate',
     'cert-death-desc': 'Register death certificate and obtain burial/transfer permit',
-    'cert-brgy-clearance': 'Barangay Clearance',
-    'cert-brgy-clearance-desc': 'Certificate of residence from your barangay',
-    'cert-brgy-id': 'Barangay ID',
-    'cert-brgy-id-desc': 'Official barangay identification card',
     'cert-police-clearance': 'Police Clearance',
-    'cert-police-clearance-desc': 'Police clearance coordination through municipal office',
+    'cert-police-clearance-desc': 'Police clearance coordination through provincial office',
 
     // Certificates Page - Section Titles
     'cert-offices-title': 'Responsible Offices',
-    'cert-office-mcr': 'Municipal Civil Registrar',
+    'cert-office-mcr': 'Provincial Civil Registrar',
     'cert-office-mcr-desc':
       'Birth, death, marriage registration, corrections, and certified copies',
     'cert-office-hrm': 'Human Resource Management',
@@ -261,15 +256,12 @@ const translations = {
     'health-medicine-desc': 'Financial assistance for medicines through MSWDO',
     'health-stat-facilities': 'Total Health Facilities',
     'health-stat-hospitals': 'Major Hospitals',
-    'health-stat-bhs': 'Barangay Health Stations',
-    'health-stat-mho': 'Municipal Health Office',
+    'health-stat-mho': 'Provincial Health Office',
     'health-section-hospitals': 'Hospitals in Camarines Norte',
-    'health-section-mho': 'Municipal Health Office',
-    'health-section-bhs': 'Barangay Health Stations',
-    'health-bhs-subtitle': 'Barangay Health Stations/Centers serving Camarines Norte communities',
+    'health-section-mho': 'Provincial Health Office',
     'health-mho-title': 'Camarines Norte Provincial Health Office',
     'health-mho-desc':
-      'The Municipal Health Office provides primary healthcare services including a lying-in facility and laboratory services. It serves as the main public health center for the municipality.',
+      'The Provincial Health Office provides primary healthcare services including a lying-in facility and laboratory services. It serves as the main public health center for the municipality.',
     'health-service-lying-in': 'Lying-in Facility',
     'health-service-laboratory': 'Laboratory Services',
     'health-service-immunization': 'Immunization',
@@ -287,7 +279,7 @@ const translations = {
     'agri-equipment-desc': 'Equipment rental and assistance',
     'agri-livelihood': 'Livelihood Programs',
     'agri-livelihood-desc': 'Training and support for farmers',
-    'agri-office-mao': 'Municipal Agriculture Office',
+    'agri-office-mao': 'Provincial Agriculture Office',
     'agri-office-mao-desc':
       'RSBSA registration, certifications, rice/corn programs, livestock, fishery services',
 
@@ -297,7 +289,7 @@ const translations = {
     'ord-page-badge': 'Legislative',
     'ord-what-is': 'What is an Ordinance?',
     'ord-what-is-p1':
-      'A municipal ordinance is a local law enacted by the Sangguniang Panlalawigan (Provincial Board) that governs the municipality and its residents. Ordinances have the force and effect of law within the territorial jurisdiction of the municipality.',
+      'A provincial ordinance is a local law enacted by the Sangguniang Panlalawigan (Provincial Board) that governs the municipality and its residents. Ordinances have the force and effect of law within the territorial jurisdiction of the municipality.',
     'ord-what-is-p2':
       'Ordinances may cover various subjects including but not limited to: taxation, business regulations, public safety, environmental protection, traffic management, and zoning.',
     'ord-categories-title': 'Ordinance Categories',
@@ -377,7 +369,7 @@ const translations = {
     'tax-rpt-billing': 'Real Property Tax Billing & Payment',
     'tax-rpt-billing-desc': 'View and pay your real property tax (amilyar) online',
     'tax-payment-order': 'Online Payment Order',
-    'tax-payment-order-desc': 'Process payment orders for various municipal fees',
+    'tax-payment-order-desc': 'Process payment orders for various provincial fees',
     'label-based-on-value': 'Based on assessed value',
 
     // Social Services Page
@@ -449,16 +441,14 @@ const translations = {
     'gov-sb-members': 'Sangguniang Panlalawigan Members',
     'gov-sb-subtitle': 'Provincial Board members serving the people of Camarines Norte',
     'gov-departments': 'Department Heads & Key Offices',
-    'gov-dept-subtitle': 'Municipal offices providing services to citizens',
-    'gov-barangays': 'Barangays of Camarines Norte',
-    'gov-barangays-count': '282 Barangays serving our community',
+    'gov-dept-subtitle': 'Provincial offices providing services to citizens',
     'gov-organizational-chart': 'Organizational Chart',
     'gov-term': 'Term',
 
     // Budget Page
     'budget-title': 'Budget & Financial Transparency',
-    'budget-subtitle': 'Tracking municipal finances and projects for accountability',
-    'budget-overview': '2025 Municipal Budget Overview',
+    'budget-subtitle': 'Tracking provincial finances and projects for accountability',
+    'budget-overview': '2025 Provincial Budget Overview',
     'budget-total': 'Total Budget',
     'budget-personnel': 'Personnel Services',
     'budget-operations': 'Operations',
@@ -785,7 +775,7 @@ const translations = {
     'acct-financial-statements': 'Financial Statements',
     'acct-forward-to-municipal-mayor-for-approval': 'Forward to Provincial Governor for approval',
     'acct-forward-to-municipal-treasurer-for-signature-and':
-      'Forward to Municipal Treasurer for signature and release',
+      'Forward to Provincial Treasurer for signature and release',
     'acct-freedom-of-information': 'Freedom of Information',
     'acct-gather-and-consolidate-financial-data-from-all':
       'Gather and consolidate financial data from all funds',
@@ -804,11 +794,11 @@ const translations = {
     'acct-location': 'Location',
     'acct-mary-jane-c-salvador': 'Mary Jane C. Salvador',
     'acct-mun-accounting': 'Mun. Accounting',
-    'acct-municipal-accountant': 'Municipal Accountant',
-    'acct-municipal-accounting-office': 'Municipal Accounting Office',
+    'acct-municipal-accountant': 'Provincial Accountant',
+    'acct-municipal-accounting-office': 'Provincial Accounting Office',
     'acct-municipal-accounting-office-municipal-hall-camnorte':
-      'Municipal Accounting Office, Municipal Hall, Camarines Norte',
-    'acct-municipal-hall': 'Municipal Hall',
+      'Provincial Accounting Office, Provincial Capitol, Camarines Norte',
+    'acct-municipal-hall': 'Provincial Capitol',
     'acct-obligation-request-obr': 'Obligation Request (ObR)',
     'acct-office': 'Office',
     'acct-office-information': 'Office Information',
@@ -851,7 +841,7 @@ const translations = {
     'acct-processing-of-checks-for-approved-disbursements':
       'Processing of checks for approved disbursements and payments',
     'acct-processing-of-salaries-wages-and-other':
-      'Processing of salaries, wages, and other compensation for municipal employees',
+      'Processing of salaries, wages, and other compensation for provincial employees',
     'acct-processing-time-may-vary-depending-on-document':
       'Processing time may vary depending on document completeness',
     'acct-public-safety': 'Public Safety',
@@ -893,7 +883,7 @@ const translations = {
     'acct-tax-payments-2': 'Tax & Payments',
     'acct-terms-of-use': 'Terms of Use',
     'acct-the-municipal-accounting-office-preaudits':
-      'The Municipal Accounting Office pre-audits disbursement vouchers to ensure compliance with accounting and auditing rules and regulations',
+      'The Provincial Accounting Office pre-audits disbursement vouchers to ensure compliance with accounting and auditing rules and regulations',
     'acct-total-processing-time': 'Total Processing Time',
     'acct-transparency': 'Transparency',
     'acct-trial-balance': 'Trial Balance',
@@ -1013,9 +1003,9 @@ const translations = {
       "List of all properties declared under a person's name.",
     'assessor-location': 'Location',
     'assessor-mortgage-annotation': 'Mortgage Annotation',
-    'assessor-municipal-assessors-office': "Municipal Assessor's Office",
+    'assessor-municipal-assessors-office': "Provincial Assessor's Office",
     'assessor-municipal-hall-ground-floor-camnorte-camarines-norte':
-      'Municipal Hall, Ground Floor Camarines Norte 3708',
+      'Provincial Capitol, Ground Floor Camarines Norte 3708',
     'assessor-new-owner': 'New Owner',
     'assessor-new-tax-declaration': 'New Tax Declaration',
     'assessor-new-tax-declaration-is-issued-reflecting-the':
@@ -1102,7 +1092,6 @@ const translations = {
     'bc-agriculture': 'Agriculture',
     'bc-appointment': 'Appointment',
     'bc-authorization-letter-signed-by-the-owner': 'Authorization letter signed by the owner',
-    'bc-barangay-clearance': 'Barangay Clearance',
     'bc-birth-certificate-local-copy': 'Birth Certificate (Local Copy)',
     'bc-blgf-portal': 'BLGF Portal',
     'bc-bring-valid-governmentissued-id-if-representative':
@@ -1136,7 +1125,7 @@ const translations = {
     'bc-freedom-of-information': 'Freedom of Information',
     'bc-frequently-asked-questions': 'Frequently Asked Questions',
     'bc-go-to-the-local-civil-registrar-office-at-2nd':
-      'Go to the Local Civil Registrar Office at 2nd Floor, Municipal Hall. Office hours: Mon-Fri, 8AM-5PM.',
+      'Go to the Local Civil Registrar Office at 2nd Floor, Provincial Capitol. Office hours: Mon-Fri, 8AM-5PM.',
     'bc-government': 'Government',
     'bc-health': 'Health',
     'bc-home': 'Home',
@@ -1147,7 +1136,7 @@ const translations = {
     'bc-local-civil-registrar': 'Local Civil Registrar',
     'bc-marriage-certificate': 'Marriage Certificate',
     'bc-municipal-hall-2nd-floor-camnorte-camarines-norte':
-      'Municipal Hall, 2nd Floor Camarines Norte',
+      'Provincial Capitol, 2nd Floor Camarines Norte',
     'bc-need-help': 'Need Help?',
     'bc-office-information': 'Office Information',
     'bc-official-certified-copy-of-birth-certificate':
@@ -1157,7 +1146,7 @@ const translations = {
     'bc-ordinance-framework': 'Ordinance Framework',
     'bc-ownerrepresentative': 'Owner/Representative',
     'bc-pay-150-per-certified-copy-at-the-municipal':
-      "Pay ₱150 per certified copy at the Municipal Treasurer's Office (same building).",
+      "Pay ₱150 per certified copy at the Provincial Treasurer's Office (same building).",
     'bc-pay-the-fee': 'Pay the Fee',
     'bc-payment-150-cash-per-copy': 'Payment: ₱150 cash per copy',
     'bc-prepare-documents': 'Prepare Documents',
@@ -1270,9 +1259,6 @@ const translations = {
       'Application for new business permit for businesses operating in Camarines Norte',
     'bpl-application-form-all-requirements': 'Application form, all requirements',
     'bpl-assessment-sheet': 'Assessment sheet',
-    'bpl-barangay-business-clearance': 'Barangay Business Clearance',
-    'bpl-barangay-business-clearance-current-year': 'Barangay Business Clearance (current year)',
-    'bpl-barangay-clearance': 'Barangay Clearance',
     'bpl-bir-certificate-of-closure': 'BIR Certificate of Closure',
     'bpl-blgf-portal': 'BLGF Portal',
     'bpl-bpls-head': 'BPLS Head',
@@ -1286,7 +1272,7 @@ const translations = {
     'bpl-business-permit-services': 'Business Permit Services',
     'bpl-business-permits-licensing-section': 'Business Permits & Licensing Section',
     'bpl-business-permits-licensing-section-municipal-hall':
-      'Business Permits & Licensing Section, Municipal Hall, Camarines Norte',
+      'Business Permits & Licensing Section, Provincial Capitol, Camarines Norte',
     'bpl-cda-registration-for-cooperatives': 'CDA Registration (for cooperatives)',
     'bpl-certificates': 'Certificates',
     'bpl-citizens-charter': "Citizen's Charter",
@@ -1353,9 +1339,8 @@ const translations = {
       "Provincial Governor's clearance for various purposes including employment, travel, and other transactions",
     'bpl-mayors-clearance-other-purposes': "Governor's Clearance (Other purposes)",
     'bpl-mayors-office-bpls': "Governor's Office - BPLS",
-    'bpl-municipal-hall': 'Municipal Hall',
+    'bpl-municipal-hall': 'Provincial Capitol',
     'bpl-nbi-clearance': 'NBI Clearance',
-    'bpl-new-barangay-clearance': 'New Barangay Clearance',
     'bpl-new-business-permit': 'New Business Permit',
     'bpl-new-business-permits-renewals-mayors-clearance':
       "New business permits, renewals, Provincial Governor's clearance, and other business-related permits",
@@ -1737,10 +1722,10 @@ const translations = {
     'cr-marriage-certificate-services': 'Marriage Certificate Services',
     'cr-marriage-license-application': 'Marriage License Application',
     'cr-marriage-license-requirements': 'Marriage License Requirements',
-    'cr-municipal-civil-registrar': 'Municipal Civil Registrar',
-    'cr-municipal-civil-registrars-office': "Municipal Civil Registrar's Office",
+    'cr-municipal-civil-registrar': 'Provincial Civil Registrar',
+    'cr-municipal-civil-registrars-office': "Provincial Civil Registrar's Office",
     'cr-municipal-hall-ground-floor-camnorte-camarines-norte':
-      'Municipal Hall, Ground Floor Camarines Norte 3708',
+      'Provincial Capitol, Ground Floor Camarines Norte 3708',
     'cr-office-hours': 'Office Hours',
     'cr-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
     'cr-open-data-philippines': 'Open Data Philippines',
@@ -1875,8 +1860,8 @@ const translations = {
     'dc-mho-certification-of-cause-of-death': 'MHO Certification of Cause of Death',
     'dc-mto-collection-officer': 'MTO Collection Officer',
     'dc-municipal-hall-2nd-floor-camnorte-camarines-norte':
-      'Municipal Hall, 2nd Floor Camarines Norte',
-    'dc-municipal-health-officer': 'Municipal Health Officer',
+      'Provincial Capitol, 2nd Floor Camarines Norte',
+    'dc-municipal-health-officer': 'Provincial Health Officer',
     'dc-need-help': 'Need Help?',
     'dc-office-information': 'Office Information',
     'dc-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
@@ -2023,7 +2008,6 @@ const translations = {
     'eng-architectural-permit': 'Architectural Permit',
     'eng-architectural-plans': 'Architectural Plans',
     'eng-blgf-portal': 'BLGF Portal',
-    'eng-brgy-clearance-zoning-clearance': 'Brgy. Clearance & Zoning Clearance',
     'eng-building-permit': 'Building Permit',
     'eng-building-permit-issuance-construction-permits-and':
       'Building permit issuance, construction permits, and engineering services',
@@ -2076,10 +2060,10 @@ const translations = {
     'eng-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
     'eng-mechanical-permit': 'Mechanical Permit',
     'eng-mun-engineering': 'Mun. Engineering',
-    'eng-municipal-engineer': 'Municipal Engineer',
-    'eng-municipal-engineering-office': 'Municipal Engineering Office',
+    'eng-municipal-engineer': 'Provincial Engineer',
+    'eng-municipal-engineering-office': 'Provincial Engineering Office',
     'eng-municipal-engineering-office-municipal-hall-camnorte':
-      'Municipal Engineering Office, Municipal Hall, Camarines Norte',
+      'Provincial Engineering Office, Provincial Capitol, Camarines Norte',
     'eng-office': 'Office',
     'eng-office-information': 'Office Information',
     'eng-office-personnel': 'Office Personnel',
@@ -2087,7 +2071,7 @@ const translations = {
     'eng-open-data-philippines': 'Open Data Philippines',
     'eng-ordinance-framework': 'Ordinance Framework',
     'eng-pay-building-permit-fee-and-other-fees-at-the':
-      "Pay building permit fee and other fees at the Municipal Treasurer's Office",
+      "Pay building permit fee and other fees at the Provincial Treasurer's Office",
     'eng-pay-fees-at-treasurers-office': "Pay Fees at Treasurer's Office",
     'eng-permit-becomes-null-and-void-if-work-does-not':
       'Permit becomes null and void if work does not commence within 1 year',
@@ -2131,7 +2115,7 @@ const translations = {
     'eng-types-of-permits-available': 'Types of Permits Available',
     'eng-validity': 'Validity',
     'eng-various-permit-types-issued-by-the-municipal':
-      'Various permit types issued by the Municipal Engineering Office',
+      'Various permit types issued by the Provincial Engineering Office',
     'eng-volunteer-with-us': 'Volunteer with us',
     'eng-zoning-clearance-must-be-secured-from-the-zoning':
       'Zoning clearance must be secured from the Zoning Administrator',
@@ -2324,7 +2308,7 @@ const translations = {
     'faq-currently-most-services-require-inperson':
       'Currently, most services require in-person applications. However, we are working on implementing online services for select transactions. Check individual service pages for updates.',
     'faq-currently-we-accept-cash-payments-at-the':
-      "Currently, we accept cash payments at the Municipal Treasurer's Office. We are working on implementing online payment options for taxes and fees.",
+      "Currently, we accept cash payments at the Provincial Treasurer's Office. We are working on implementing online payment options for taxes and fees.",
     'faq-dti-registration-for-sole-proprietorship-or-sec':
       'DTI Registration (for sole proprietorship) or SEC Registration (for corporation)',
     'faq-education': 'Education',
@@ -2335,13 +2319,13 @@ const translations = {
       'For birth certificates registered in Camarines Norte, it typically takes 15-30 minutes while you wait, provided the record is readily available.',
     'faq-freedom-of-information': 'Freedom of Information',
     'faq-go-to-the-municipal-social-welfare-and':
-      'Go to the Municipal Social Welfare and Development Office (MSWDO) with:',
+      'Go to the Provincial Social Welfare and Development Office (MSWDO) with:',
     'faq-government-directory': 'Government Directory',
     'faq-health': 'Health',
     'faq-hellopinascom': 'HelloPinas.com',
     'faq-home': 'Home',
     'faq-how-can-i-contact-a-specific-municipal-office':
-      'How can I contact a specific municipal office?',
+      'How can I contact a specific provincial office?',
     'faq-how-can-i-pay-my-real-property-tax': 'How can I pay my real property tax?',
     'faq-how-do-i-apply-for-a-senior-citizen-id': 'How do I apply for a Senior Citizen ID?',
     'faq-how-long-does-it-take-to-get-a-birth-certificate':
@@ -2375,16 +2359,16 @@ const translations = {
     'faq-terms-of-use': 'Terms of Use',
     'faq-the-id-is-issued-for-free': 'The ID is issued for free.',
     'faq-the-municipal-hall-is-open-monday-to-friday-800':
-      'The Municipal Hall is open Monday to Friday, 8:00 AM to 5:00 PM, with a lunch break from 12:00 PM to 1:00 PM. We are closed on weekends and national/local holidays.',
+      'The Provincial Capitol is open Monday to Friday, 8:00 AM to 5:00 PM, with a lunch break from 12:00 PM to 1:00 PM. We are closed on weekends and national/local holidays.',
     'faq-to-start-a-new-business-youll-need': "To start a new business, you'll need:",
     'faq-valid-id-of-both-you-and-the-representative':
       'Valid ID of both you and the representative',
     'faq-visit-the-municipal-treasurers-office-at-the':
-      "Visit the Municipal Treasurer's Office at the Municipal Hall with your Tax Declaration or latest Official Receipt. Payment is in cash. Property taxes are due quarterly, but you may pay annually to avail of discounts.",
+      "Visit the Provincial Treasurer's Office at the Provincial Capitol with your Tax Declaration or latest Official Receipt. Payment is in cash. Property taxes are due quarterly, but you may pay annually to avail of discounts.",
     'faq-volunteer-with-us': 'Volunteer with us',
     'faq-volunteerbettercamnorteorg': 'volunteer@bettercamnorte.org',
     'faq-what-are-the-office-hours-of-the-municipal-hall':
-      'What are the office hours of the Municipal Hall?',
+      'What are the office hours of the Provincial Capitol?',
     'faq-what-benefits-do-senior-citizens-receive': 'What benefits do senior citizens receive?',
     'faq-what-do-i-need-to-start-a-new-business-in-camnorte':
       'What do I need to start a new business in Camarines Norte?',
@@ -2398,7 +2382,6 @@ const translations = {
     'faq-yes-but-they-must-bring': 'Yes, but they must bring:',
     'gov-accessibility': 'Accessibility',
     'gov-accountingcamnortegovph': 'accounting@camnorte.gov.ph',
-    'gov-aggub': 'Aggub',
     'gov-agricultural-loans-crop-insurance-fertilizer':
       'Agricultural loans, crop insurance, fertilizer assistance',
     'gov-agriculture': 'Agriculture',
@@ -2406,12 +2389,6 @@ const translations = {
       'Agriculture, Aquaculture & Food Security, Overseas Filipino Workers Affairs',
     'gov-agricamnortegovph': 'agri@camnorte.gov.ph',
     'gov-assessorcamnortegovph': 'assessor@camnorte.gov.ph',
-    'gov-bagahabag': 'Bagahabag',
-    'gov-bangaan': 'Bangaan',
-    'gov-bangar': 'Bangar',
-    'gov-barangay-affairs-tourism': 'Barangay Affairs, Tourism',
-    'gov-barangay-units': 'Barangay Units',
-    'gov-bascaran': 'Bascaran',
     'gov-birth-death-marriage-certificates-cenomar': 'Birth, death, marriage certificates, CENOMAR',
     'gov-blgf-portal': 'BLGF Portal',
     'gov-bplscamnortegovph': 'bpls@camnorte.gov.ph',
@@ -2428,13 +2405,9 @@ const translations = {
     'gov-citizens-charter': "Citizen's Charter",
     'gov-civilregcamnortegovph': 'civilreg@camnorte.gov.ph',
     'gov-cmci-dti-portal': 'CMCI DTI Portal',
-    'gov-communal': 'Communal',
-    'gov-concepcion': 'Concepcion',
     'gov-contribute-code-with-us': 'Contribute code with us',
     'gov-cooperative-development-senior-citizens-and':
       'Cooperative Development, Senior Citizens and Disability Affairs',
-    'gov-curifang': 'Curifang',
-    'gov-dadap': 'Dadap',
     'gov-development-planning-project-monitoring-zoning':
       'Development planning, project monitoring, zoning',
     'gov-disaster-preparedness-emergency-response-risk':
@@ -2468,34 +2441,10 @@ const translations = {
     'gov-infrastructure': 'Infrastructure',
     'gov-job-placement-employment-assistance-career':
       'Job placement, employment assistance, career guidance',
-    'gov-kap-angelito-de-leon-tiongson': 'Kap. Angelito De Leon Tiongson',
-    'gov-kap-danilo-estacio-domingo': 'Kap. Danilo Estacio Domingo',
-    'gov-kap-dexter-yaranon-ruiz': 'Kap. Dexter Yaranon Ruiz',
-    'gov-kap-eduardo-abu-bangad-sr': 'Kap. Eduardo Abu Bangad Sr.',
-    'gov-kap-edwin-bungan-dacayo': 'Kap. Edwin Bungan Tiongson',
-    'gov-kap-elmer-zabala-lingayu': 'Kap. Elmer Zabala Lingayu',
-    'gov-kap-ernesto-domingo-ramones-jr': 'Kap. Ernesto Domingo Ramones Jr.',
-    'gov-kap-federico-vienes-asuncion': 'Kap. Federico Vienes Asuncion',
-    'gov-kap-felix-caramat-tolentino-sr': 'Kap. Felix Caramat Tolentino Sr.',
-    'gov-kap-isidro-baliza-prado': 'Kap. Isidro Baliza Prado',
-    'gov-kap-janette-quines-cristobal': 'Kap. Janette Quines Cristobal',
-    'gov-kap-jenny-gomez-marquez': 'Kap. Jenny Gomez Marquez',
-    'gov-kap-jessie-concepcion-delos-reyes': 'Kap. Jessie Concepcion Delos Reyes',
-    'gov-kap-luis-amangi-castillo': 'Kap. Luis Amangi Castillo',
-    'gov-kap-melchor-esmedina-marzo': 'Kap. Melchor Esmedina Marzo',
-    'gov-kap-nardo-eustaquio-ramel': 'Kap. Nardo Eustaquio Ramel',
-    'gov-kap-renaldo-ginom-nabadaw': 'Kap. Renaldo Gin-Om Nabad-Aw',
-    'gov-kap-roberto-ojastro-dizon': 'Kap. Roberto Ojastro Dizon',
-    'gov-kap-rudy-eugenio-paranis': 'Kap. Rudy Eugenio Paranis',
-    'gov-kap-sherwin-elevazo-vicente': 'Kap. Sherwin Elevazo Vicente',
-    'gov-kap-victor-tubay-adalin-jr': 'Kap. Victor Tubay Adalin Jr.',
-    'gov-kap-walter-dalupang-savedra-sr': 'Kap. Walter Dalupang Savedra Sr.',
-    'gov-lactawan': 'Lactawan',
     'gov-legal-good-governance-justice-human-rights':
       'Legal, Good Governance, Justice, Human Rights, Environmental Management',
     'gov-legislative-branch': 'Legislative Branch',
     'gov-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'gov-liga-ng-mga-barangay-president': 'Liga ng mga Barangay President',
     'gov-market-clearance-entrance-fees-vendor-services-ctc':
       'Market clearance, entrance fees, vendor services, CTC',
     'gov-mayorcamnortegovph': 'pgcamarinesnorte@gmail.com',
@@ -2503,26 +2452,22 @@ const translations = {
     'gov-mhocamnortegovph': 'mho@camnorte.gov.ph',
     'gov-mpdocamnortegovph': 'mpdo@camnorte.gov.ph',
     'gov-mswdocamnortegovph': 'mswdo@camnorte.gov.ph',
-    'gov-municipal-accounting-office': 'Municipal Accounting Office',
-    'gov-municipal-agriculture-office': 'Municipal Agriculture Office',
-    'gov-municipal-assessors-office': "Municipal Assessor's Office",
-    'gov-municipal-budget-office': 'Municipal Budget Office',
-    'gov-municipal-civil-registrar': 'Municipal Civil Registrar',
-    'gov-municipal-engineering-office': 'Municipal Engineering Office',
-    'gov-municipal-general-services-office': 'Municipal General Services Office',
-    'gov-municipal-health-office': 'Municipal Health Office',
-    'gov-municipal-offices': 'Municipal Offices',
-    'gov-municipal-planning-development': 'Municipal Planning & Development',
-    'gov-municipal-treasurers-office': "Municipal Treasurer's Office",
+    'gov-municipal-accounting-office': 'Provincial Accounting Office',
+    'gov-municipal-agriculture-office': 'Provincial Agriculture Office',
+    'gov-municipal-assessors-office': "Provincial Assessor's Office",
+    'gov-municipal-budget-office': 'Provincial Budget Office',
+    'gov-municipal-civil-registrar': 'Provincial Civil Registrar',
+    'gov-municipal-engineering-office': 'Provincial Engineering Office',
+    'gov-municipal-general-services-office': 'Provincial General Services Office',
+    'gov-municipal-health-office': 'Provincial Health Office',
+    'gov-municipal-offices': 'Provincial Offices',
+    'gov-municipal-planning-development': 'Provincial Planning & Development',
+    'gov-municipal-treasurers-office': "Provincial Treasurer's Office",
     'gov-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
     'gov-open-data-philippines': 'Open Data Philippines',
     'gov-ordinance-framework': 'Ordinance Framework',
-    'gov-osmea': 'Osmeña',
     'gov-personnel-services-recruitment-employee-records':
       'Personnel services, recruitment, employee records',
-    'gov-pilar-d-galima': 'Pilar D. Galima',
-    'gov-poblacion-north': 'Poblacion North',
-    'gov-poblacion-south': 'Poblacion South',
     'gov-privacy-policy': 'Privacy Policy',
     'gov-property-assessment-tax-declarations-land-records':
       'Property assessment, tax declarations, land records',
@@ -2531,14 +2476,9 @@ const translations = {
     'gov-public-safety': 'Public Safety',
     'gov-public-safety-peace-order-family-women-children':
       'Public Safety, Peace & Order, Family, Women, Children & Social Services',
-    'gov-quezon': 'Quezon',
     'gov-quick-links': 'Quick Links',
-    'gov-quirino': 'Quirino',
     'gov-resolution-framework': 'Resolution Framework',
     'gov-resources': 'Resources',
-    'gov-roxas': 'Roxas',
-    'gov-san-juan': 'San Juan',
-    'gov-san-luis': 'San Luis',
     'gov-sangguniang-bayan': 'Sangguniang Panlalawigan',
     'gov-sb-member': 'Provincial Board Member',
     'gov-seedo-public-market': 'SEEDO – Public Market',
@@ -2556,15 +2496,12 @@ const translations = {
     'gov-the-executive-officials-leading-camnortes-governance':
       "The executive officials leading Camarines Norte's governance",
     'gov-treasurercamnortegovph': 'treasurer@camnorte.gov.ph',
-    'gov-tucal': 'Tucal',
-    'gov-uddiawan': 'Uddiawan',
     'gov-vaccination-health-certificates-medical-assistance':
       'Vaccination, health certificates, medical assistance',
     'gov-vicemayorcamnortegovph': 'pgcamarinesnorte@gmail.com',
     'gov-view-job-vacancies': 'View Job Vacancies',
     'gov-view-services': 'View Services',
     'gov-volunteer-with-us': 'Volunteer with us',
-    'gov-wacal': 'Wacal',
     'gov-youth-sports-development-legislative-drafting':
       'Youth & Sports Development, Legislative Drafting',
     'gs-1-day': '1 day',
@@ -2605,7 +2542,7 @@ const translations = {
     'gs-collection-officer': 'Collection Officer',
     'gs-compactor': 'Compactor',
     'gs-construction-and-agricultural-equipment-for':
-      'Construction and agricultural equipment for municipal projects',
+      'Construction and agricultural equipment for provincial projects',
     'gs-contribute-code-with-us': 'Contribute code with us',
     'gs-delivery-and-inspection': 'Delivery and Inspection',
     'gs-department-head': 'Department Head',
@@ -2624,8 +2561,6 @@ const translations = {
     'gs-emtdriver': 'EMT/Driver',
     'gs-environment': 'Environment',
     'gs-equipment': 'Equipment',
-    'gs-equipment-rental-is-subject-to-availability-and':
-      'Equipment rental is subject to availability and approval. Priority is given to municipal projects and barangay requests. Fuel costs are shouldered by the requesting party.',
     'gs-executive-assistant': 'Executive Assistant',
     'gs-free-emergency': 'Free (Emergency)',
     'gs-freedom-of-information': 'Freedom of Information',
@@ -2655,14 +2590,14 @@ const translations = {
     'gs-mayors-permit': "Governor's Permit",
     'gs-motorcycle': 'Motorcycle',
     'gs-multiple-units': 'Multiple Units',
-    'gs-municipal-accounting': 'Municipal Accounting',
-    'gs-municipal-engineering': 'Municipal Engineering',
-    'gs-municipal-general-services-office': 'Municipal General Services Office',
+    'gs-municipal-accounting': 'Provincial Accounting',
+    'gs-municipal-engineering': 'Provincial Engineering',
+    'gs-municipal-general-services-office': 'Provincial General Services Office',
     'gs-municipal-hall-ground-floor-camnorte-camarines-norte':
-      'Municipal Hall, Ground Floor Camarines Norte 3708',
-    'gs-municipal-treasurer': 'Municipal Treasurer',
+      'Provincial Capitol, Ground Floor Camarines Norte 3708',
+    'gs-municipal-treasurer': 'Provincial Treasurer',
     'gs-municipal-vehicles-available-for-official-use-and':
-      'Municipal vehicles available for official use and public rental',
+      'Provincial vehicles available for official use and public rental',
     'gs-name': 'Name',
     'gs-note': 'Note:',
     'gs-office-hours': 'Office Hours',
@@ -2722,9 +2657,9 @@ const translations = {
     'gs-tax-payments': 'Tax Payments',
     'gs-terms-of-use': 'Terms of Use',
     'gs-the-gso-assists-in-the-procurement-process-for':
-      'The GSO assists in the procurement process for municipal supplies, equipment, and services in accordance with RA 9184 (Government Procurement Reform Act).',
+      'The GSO assists in the procurement process for provincial supplies, equipment, and services in accordance with RA 9184 (Government Procurement Reform Act).',
     'gs-the-municipal-general-services-office-manages-and':
-      'The Municipal General Services Office manages and maintains municipal vehicles available for official government use and rental services for constituents with valid purposes.',
+      'The Provincial General Services Office manages and maintains provincial vehicles available for official government use and rental services for constituents with valid purposes.',
     'gs-time': 'Time',
     'gs-time-frame': 'Time Frame',
     'gs-varies': 'Varies',
@@ -2748,7 +2683,6 @@ const translations = {
     'health-bagahabag-bhs': 'Bagahabag BHS',
     'health-bangaan-bhs': 'Bangaan BHS',
     'health-bangar-bhs': 'Bangar BHS',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
     'health-blgf-portal': 'BLGF Portal',
     'health-buenavista-bhs': 'Buenavista BHS',
     'health-business': 'Business',
@@ -2823,7 +2757,7 @@ const translations = {
     'home-accessibility': 'Accessibility',
     'home-administrative-units': 'Administrative Units',
     'home-agriculture': 'Agriculture',
-    'home-barangays': 'Barangays',
+    'home-barangays': 'Municipalities',
     'home-bintauan': 'Bintauan',
     'home-birth-certificate': 'Birth Certificate',
     'home-blgf-portal': 'BLGF Portal',
@@ -2982,7 +2916,7 @@ const translations = {
     'hrm-hrmo-staff': 'HRMO Staff',
     'hrm-human-resource-management-section': 'Human Resource Management Section',
     'hrm-human-resource-management-section-mayors-office':
-      "Human Resource Management Section, Governor's Office, Municipal Hall, Camarines Norte",
+      "Human Resource Management Section, Governor's Office, Provincial Capitol, Camarines Norte",
     'hrm-important-notes': 'Important Notes',
     'hrm-infrastructure': 'Infrastructure',
     'hrm-issuance-of-certificate-of-employment': 'Issuance of Certificate of Employment',
@@ -3004,7 +2938,7 @@ const translations = {
     'hrm-mayors-office-hrms': "Governor's Office - HRMS",
     'hrm-medical-certificate-for-sick-leave-exceeding-5':
       'Medical certificate (for sick leave exceeding 5 days)',
-    'hrm-municipal-hall': 'Municipal Hall',
+    'hrm-municipal-hall': 'Provincial Capitol',
     'hrm-municipal-mayor': 'Provincial Governor',
     'hrm-no-pending-case': 'No Pending Case',
     'hrm-office': 'Office',
@@ -3104,9 +3038,9 @@ const translations = {
     'infra-home': 'Home',
     'infra-infrastructure': 'Infrastructure',
     'infra-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'infra-municipal-engineering-office': 'Municipal Engineering Office',
-    'infra-municipal-general-services-office': 'Municipal General Services Office',
-    'infra-municipal-planning-development': 'Municipal Planning & Development',
+    'infra-municipal-engineering-office': 'Provincial Engineering Office',
+    'infra-municipal-general-services-office': 'Provincial General Services Office',
+    'infra-municipal-planning-development': 'Provincial Planning & Development',
     'infra-occupancy-permit': 'Occupancy Permit',
     'infra-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
     'infra-open-data-philippines': 'Open Data Philippines',
@@ -3265,7 +3199,6 @@ const translations = {
     'magri-aquaculture-inputs': 'Aquaculture Inputs',
     'magri-artificial-insemination': 'Artificial Insemination',
     'magri-available': 'Available',
-    'magri-barangay-certification': 'Barangay Certification',
     'magri-benefits': 'Benefits',
     'magri-blgf-portal': 'BLGF Portal',
     'magri-business': 'Business',
@@ -3363,15 +3296,15 @@ const translations = {
     'magri-market-linkage': 'Market Linkage',
     'magri-mechanization-support': 'Mechanization Support',
     'magri-mun-agriculture': 'Mun. Agriculture',
-    'magri-municipal-agriculture-office': 'Municipal Agriculture Office',
+    'magri-municipal-agriculture-office': 'Provincial Agriculture Office',
     'magri-municipal-agriculture-office-municipal-hall':
-      'Municipal Agriculture Office, Municipal Hall, Camarines Norte',
-    'magri-municipal-hall': 'Municipal Hall',
+      'Provincial Agriculture Office, Provincial Capitol, Camarines Norte',
+    'magri-municipal-hall': 'Provincial Capitol',
     'magri-no-payment-required': 'No Payment Required',
     'magri-office': 'Office',
     'magri-office-information': 'Office Information',
     'magri-official-certifications-issued-by-the-municipal':
-      'Official certifications issued by the Municipal Agriculture Office',
+      'Official certifications issued by the Provincial Agriculture Office',
     'magri-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
     'magri-official-production-records-for-loan-and':
       'Official production records for loan and insurance purposes',
@@ -3479,7 +3412,7 @@ const translations = {
     'market-any-individual-or-stallholder-may-file-a-formal':
       'Any individual or stallholder may file a formal complaint against violations of the Public Market Code',
     'market-as-assessed': 'As assessed',
-    'market-as-deputized-by-the-municipal-treasurer': 'As deputized by the Municipal Treasurer',
+    'market-as-deputized-by-the-municipal-treasurer': 'As deputized by the Provincial Treasurer',
     'market-based-on-quantity': 'Based on quantity',
     'market-based-on-volume': 'Based on volume',
     'market-based-on-weight': 'Based on weight',
@@ -3571,7 +3504,7 @@ const translations = {
     'market-ordinance-framework': 'Ordinance Framework',
     'market-other-merchandise': 'Other Merchandise',
     'market-pay-clearance-fee-to-the-municipal-treasurers':
-      "Pay clearance fee to the Municipal Treasurer's Office",
+      "Pay clearance fee to the Provincial Treasurer's Office",
     'market-pay-ctc-fee': 'Pay CTC fee',
     'market-pay-entrance-fee-and-get-cash-ticket-at-the':
       'Pay entrance fee and get cash ticket at the gate/entrance of the Public Market',
@@ -3638,20 +3571,13 @@ const translations = {
     'mbudget-administrative-officer-ii': 'Administrative Officer II',
     'mbudget-administrative-officer-v': 'Administrative Officer V',
     'mbudget-agriculture': 'Agriculture',
-    'mbudget-annual-barangay-budget': 'Annual Barangay Budget',
     'mbudget-annual-sef-budget': 'Annual SEF Budget',
     'mbudget-approximately-15-minutes-for-complete-processing':
       'Approximately 15 minutes for complete processing',
     'mbudget-assign-account-code': 'Assign account Code',
     'mbudget-assign-obr-number': 'Assign ObR Number',
-    'mbudget-barangay-budget': 'Barangay Budget',
-    'mbudget-barangay-budgets-must-be-submitted-within-10-days':
-      'Barangay budgets must be submitted within 10 days of approval',
-    'mbudget-barangay-development-plan-and-barangay-annual':
-      'Barangay Development Plan and Barangay Annual Investment Plan',
     'mbudget-blgf-portal': 'BLGF Portal',
     'mbudget-budget': 'Budget',
-    'mbudget-budget-message-of-the-punong-barangay': 'Budget Message of the Punong Barangay',
     'mbudget-budget-of-expenditures-and-sources-of-financing':
       'Budget of Expenditures and Sources of Financing',
     'mbudget-budget-office-services': 'Budget Office Services',
@@ -3694,16 +3620,14 @@ const translations = {
     'mbudget-marcial-l-ramos-cpa': 'Marcial L. Ramos, CPA',
     'mbudget-melisa-claire-leal': 'Melisa Claire Leal',
     'mbudget-mun-budget': 'Mun. Budget',
-    'mbudget-municipal-budget-office': 'Municipal Budget Office',
+    'mbudget-municipal-budget-office': 'Provincial Budget Office',
     'mbudget-municipal-budget-office-municipal-hall-camnorte':
-      'Municipal Budget Office, Municipal Hall, Camarines Norte',
-    'mbudget-municipal-budget-officer': 'Municipal Budget Officer',
-    'mbudget-municipal-hall': 'Municipal Hall',
+      'Provincial Budget Office, Provincial Capitol, Camarines Norte',
+    'mbudget-municipal-budget-officer': 'Provincial Budget Officer',
+    'mbudget-municipal-hall': 'Provincial Capitol',
     'mbudget-obligation-request': 'Obligation Request',
-    'mbudget-obligation-request-processing-barangay-budget':
-      'Obligation request processing, barangay budget review, and SEF budget preparation',
     'mbudget-obr-duly-signed-by-the-municipal-budget-officer':
-      'ObR duly signed by the Municipal Budget Officer',
+      'ObR duly signed by the Provincial Budget Officer',
     'mbudget-obr-with-assigned-account-code': 'ObR with assigned account code',
     'mbudget-office': 'Office',
     'mbudget-office-information': 'Office Information',
@@ -3716,8 +3640,6 @@ const translations = {
     'mbudget-posting-of-processed-obr-at-the-logbook': 'Posting of processed ObR at the logbook',
     'mbudget-preparation-and-implementation-of-special':
       'Preparation and Implementation of Special Education Fund Budget',
-    'mbudget-preparation-review-and-endorsement-of-barangay':
-      'Preparation, Review and Endorsement of Barangay Budget',
     'mbudget-privacy-policy': 'Privacy Policy',
     'mbudget-processing-of-obligation-request': 'Processing of Obligation Request',
     'mbudget-processing-time-may-vary-depending-on-document':
@@ -3729,12 +3651,11 @@ const translations = {
     'mbudget-release-of-obr': 'Release of ObR',
     'mbudget-resolution-framework': 'Resolution Framework',
     'mbudget-resources': 'Resources',
-    'mbudget-review-and-evaluation-of-barangay-budget': 'Review and evaluation of Barangay Budget',
     'mbudget-review-and-evaluation-of-sef-budget': 'Review and evaluation of SEF Budget',
     'mbudget-sangguniang-bayan': 'Sangguniang Panlalawigan',
     'mbudget-sef-budget': 'SEF Budget',
     'mbudget-sef-budgets-require-municipal-school-board':
-      'SEF budgets require Municipal School Board approval',
+      'SEF budgets require Provincial School Board approval',
     'mbudget-select-a-service-to-view-the-detailed-process':
       'Select a service to view the detailed process',
     'mbudget-services': 'Services',
@@ -3743,8 +3664,6 @@ const translations = {
     'mbudget-social-services': 'Social Services',
     'mbudget-statistics': 'Statistics',
     'mbudget-step': 'Step',
-    'mbudget-submit-barangay-budget-for-review-and-evaluation':
-      'Submit Barangay Budget for review and evaluation',
     'mbudget-submit-obligation-request': 'Submit Obligation Request',
     'mbudget-submit-sef-budget-for-review-and-evaluation':
       'Submit SEF Budget for review and evaluation',
@@ -3753,20 +3672,14 @@ const translations = {
     'mbudget-terms-of-use': 'Terms of Use',
     'mbudget-the-authorized-expenditure-program-for-the-budget':
       'The Authorized Expenditure Program for the Budget Year or Appropriation Ordinance',
-    'mbudget-the-municipal-budget-office-assists-barangays-in':
-      'The Municipal Budget Office assists barangays in the preparation of their Annual Budget. It conducts training whenever necessary and ensures compliance with statutory, contractual obligations and budgetary requirements prior to the review and approval of the Sangguniang Panlalawigan.',
     'mbudget-the-municipal-budget-office-assists-the-different':
-      'The Municipal Budget Office assists the different schools in the preparation of SEF Annual Budget. It assists the Municipal School Board in the conduct of budget hearings and deliberations of budget proposals. It ensures compliance with statutory, contractual obligations and budgetary requirements prior to the review and approval by the Municipal School Board (MSB).',
+      'The Provincial Budget Office assists the different schools in the preparation of SEF Annual Budget. It assists the Provincial School Board in the conduct of budget hearings and deliberations of budget proposals. It ensures compliance with statutory, contractual obligations and budgetary requirements prior to the review and approval by the Provincial School Board (MSB).',
     'mbudget-the-municipal-budget-office-processes':
-      'The Municipal Budget Office processes disbursement vouchers particularly the integral part of Obligation Request (ObR) to ensure the existence of appropriation',
+      'The Provincial Budget Office processes disbursement vouchers particularly the integral part of Obligation Request (ObR) to ensure the existence of appropriation',
     'mbudget-total-processing-time': 'Total Processing Time',
-    'mbudget-transmittal-letter-of-the-barangay-secretary':
-      'Transmittal letter of the Barangay Secretary',
     'mbudget-transmittal-letter-of-the-sef-secretary': 'Transmittal letter of the SEF Secretary',
     'mbudget-transparency': 'Transparency',
     'mbudget-volunteer-with-us': 'Volunteer with us',
-    'mbudget-within-ten-days-10-from-the-approval-of-the':
-      'Within ten days (10) from the approval of the Barangay Budget, copies of their Annual Budget shall be furnished to the Sangguniang Panlalawigan for review through the Municipal Budget Office.',
     'mc-10-days': '10 Days',
     'mc-10-days-5-hours-and-10-minutes': '10 days, 5 hours and 10 minutes',
     'mc-10-minutes': '10 minutes',
@@ -3874,7 +3787,7 @@ const translations = {
     'mc-mswdo-staff': 'MSWDO Staff',
     'mc-mto-collection-officer': 'MTO Collection Officer',
     'mc-municipal-hall-2nd-floor-camnorte-camarines-norte':
-      'Municipal Hall, 2nd Floor Camarines Norte',
+      'Provincial Capitol, 2nd Floor Camarines Norte',
     'mc-nationwide': 'Nationwide',
     'mc-need-help': 'Need Help?',
     'mc-office-information': 'Office Information',
@@ -4051,11 +3964,11 @@ const translations = {
     'mcr-medical-certificate-for-sex-correction': 'Medical Certificate (for sex correction)',
     'mcr-medical-certificate-if-attended-by-physician':
       'Medical Certificate (if attended by physician)',
-    'mcr-municipal-civil-registrar': 'Municipal Civil Registrar',
-    'mcr-municipal-civil-registrars-office': "Municipal Civil Registrar's Office",
+    'mcr-municipal-civil-registrar': 'Provincial Civil Registrar',
+    'mcr-municipal-civil-registrars-office': "Provincial Civil Registrar's Office",
     'mcr-municipal-civil-registrars-office-2nd-floor':
-      "Municipal Civil Registrar's Office, 2nd Floor, Municipal Hall, Camarines Norte",
-    'mcr-municipal-hall-2f': 'Municipal Hall, 2F',
+      "Provincial Civil Registrar's Office, 2nd Floor, Provincial Capitol, Camarines Norte",
+    'mcr-municipal-hall-2f': 'Provincial Capitol, 2F',
     'mcr-nbipolice-clearance': 'NBI/Police Clearance',
     'mcr-negative-certification-from-psa': 'Negative Certification from PSA',
     'mcr-newspaper-publication': 'Newspaper Publication',
@@ -4208,14 +4121,14 @@ const translations = {
     'mgs-maintenance': 'Maintenance',
     'mgs-maintenance-staff': 'Maintenance Staff',
     'mgs-management-and-maintenance-of-municipal-vehicles':
-      'Management and maintenance of municipal vehicles and heavy equipment',
+      'Management and maintenance of provincial vehicles and heavy equipment',
     'mgs-management-and-monitoring-of-municipal-utility':
-      'Management and monitoring of municipal utility accounts including electricity, water, and telephone services',
+      'Management and monitoring of provincial utility accounts including electricity, water, and telephone services',
     'mgs-motorcycles': 'Motorcycles',
-    'mgs-municipal-general-services-office': 'Municipal General Services Office',
+    'mgs-municipal-general-services-office': 'Provincial General Services Office',
     'mgs-municipal-general-services-office-municipal-hall':
-      'Municipal General Services Office, Municipal Hall, Camarines Norte',
-    'mgs-municipal-hall': 'Municipal Hall',
+      'Provincial General Services Office, Provincial Capitol, Camarines Norte',
+    'mgs-municipal-hall': 'Provincial Capitol',
     'mgs-none': 'None',
     'mgs-office': 'Office',
     'mgs-office-information': 'Office Information',
@@ -4277,7 +4190,7 @@ const translations = {
     'mgs-telephone': 'Telephone',
     'mgs-terms-of-use': 'Terms of Use',
     'mgs-the-municipal-general-services-office-takes':
-      'The Municipal General Services Office takes custody of all properties, real or personal, owned by the municipality and those granted to it in the form of donation, reparation, assistance and counterpart of joint projects.',
+      'The Provincial General Services Office takes custody of all properties, real or personal, owned by the municipality and those granted to it in the form of donation, reparation, assistance and counterpart of joint projects.',
     'mgs-transparency': 'Transparency',
     'mgs-utility-management-functions': 'Utility Management Functions',
     'mgs-utility-services': 'Utility Services',
@@ -4292,7 +4205,7 @@ const translations = {
     'mgs-water': 'Water',
     'mpdo-12-days': '1-2 Days',
     'mpdo-2nd-floor-municipal-hall-camnorte-camarines-norte':
-      '2nd Floor, Municipal Hall, Camarines Norte',
+      '2nd Floor, Provincial Capitol, Camarines Norte',
     'mpdo-30-days': '30+ Days',
     'mpdo-510-days': '5-10 Days',
     'mpdo-8am-5pm': '8AM - 5PM',
@@ -4309,7 +4222,6 @@ const translations = {
     'mpdo-application-form-for-zoning-certification': 'Application Form for Zoning Certification',
     'mpdo-application-forms-and-documents-for-mpdo-services':
       'Application forms and documents for MPDO services',
-    'mpdo-barangay-clearance': 'Barangay Clearance',
     'mpdo-based-on-area': 'Based on Area',
     'mpdo-based-on-floor-area': 'Based on floor area',
     'mpdo-based-on-floor-area-and-type': 'Based on floor area and type',
@@ -4367,8 +4279,8 @@ const translations = {
     'mpdo-locational-clearance-is-required-before-building':
       'Locational clearance is required before building permit',
     'mpdo-lot-plan-with-technical-description': 'Lot Plan with Technical Description',
-    'mpdo-municipal-hall': 'Municipal Hall',
-    'mpdo-municipal-planning-and-development-office': 'Municipal Planning and Development Office',
+    'mpdo-municipal-hall': 'Provincial Capitol',
+    'mpdo-municipal-planning-and-development-office': 'Provincial Planning and Development Office',
     'mpdo-office': 'Office',
     'mpdo-office-information': 'Office Information',
     'mpdo-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
@@ -4426,7 +4338,6 @@ const translations = {
     'mswdo-13-days': '1-3 Days',
     'mswdo-1530-days': '15-30 Days',
     'mswdo-2-tracks': '2 Tracks',
-    'mswdo-22-barangays': '282 Barangays',
     'mswdo-34-years': '3-4 Years',
     'mswdo-4ps-members': '4Ps Members',
     'mswdo-60-years': '60 Years+',
@@ -4547,8 +4458,8 @@ const translations = {
     'mswdo-mswdo-head': 'MSWDO Head',
     'mswdo-mswdocamnortegovph': 'mswdo@camnorte.gov.ph',
     'mswdo-municipal-social-welfare-and-development-office':
-      'Municipal Social Welfare and Development Office',
-    'mswdo-municipal-social-welfare-officer': 'Municipal Social Welfare Officer',
+      'Provincial Social Welfare and Development Office',
+    'mswdo-municipal-social-welfare-officer': 'Provincial Social Welfare Officer',
     'mswdo-no-pension-from-government-or-private-agencies':
       'No pension from government or private agencies',
     'mswdo-no-permanent-source-of-income': 'No permanent source of income',
@@ -4695,8 +4606,6 @@ const translations = {
       'Assistance to Persons with Disability (PWD)',
     'mswdosvc-assistance-to-senior-citizens': 'Assistance to Senior Citizens',
     'mswdosvc-assistance-to-women': 'Assistance to Women',
-    'mswdosvc-barangay-certificate': 'Barangay Certificate',
-    'mswdosvc-barangay-certificate-of-indigency': 'Barangay Certificate of Indigency',
     'mswdosvc-birth-certificate-or-any-valid-id-showing-date-of':
       'Birth Certificate or any valid ID showing date of birth',
     'mswdosvc-birth-certificate-photocopy': 'Birth Certificate (photocopy)',
@@ -4788,11 +4697,11 @@ const translations = {
       'Medical Certificate/Hospital Bill (for medical assistance)',
     'mswdosvc-mswdo-head': 'MSWDO Head',
     'mswdosvc-mswdo-office-2nd-floor-municipal-hall-camnorte':
-      'MSWDO Office, 2nd Floor, Municipal Hall, Camarines Norte',
+      'MSWDO Office, 2nd Floor, Provincial Capitol, Camarines Norte',
     'mswdosvc-mswdo-services': 'MSWDO Services',
-    'mswdosvc-municipal-hall-2nd-floor': 'Municipal Hall, 2nd Floor',
+    'mswdosvc-municipal-hall-2nd-floor': 'Provincial Capitol, 2nd Floor',
     'mswdosvc-municipal-social-welfare-development-office':
-      'Municipal Social Welfare & Development Office',
+      'Provincial Social Welfare & Development Office',
     'mswdosvc-office': 'Office',
     'mswdosvc-office-head-social-welfare-officer': 'Office Head / Social Welfare Officer',
     'mswdosvc-office-information': 'Office Information',
@@ -4938,7 +4847,7 @@ const translations = {
     'news-volunteer-with-us': 'Volunteer with us',
     'offline-emergency-hotlines-camnorte-camarines-norte': 'Emergency Hotlines - Camarines Norte',
     'offline-fire-bfp': 'Fire (BFP)',
-    'offline-municipal-hall': 'Municipal Hall',
+    'offline-municipal-hall': 'Provincial Capitol',
     'offline-police-pnp': 'Police (PNP)',
     'offline-r2tmc': 'R2TMC',
     'offline-skip-to-main-content': 'Skip to main content',
@@ -5162,7 +5071,6 @@ const translations = {
     'propdec-assessment-details': 'Assessment Details',
     'propdec-assessment-level-percentage': 'Assessment Level Percentage',
     'propdec-assessment-summary': 'Assessment Summary',
-    'propdec-barangay': 'Barangay',
     'propdec-blgf-portal': 'BLGF Portal',
     'propdec-brand-and-model': 'Brand and Model',
     'propdec-building-declaration': 'Building Declaration',
@@ -5212,7 +5120,7 @@ const translations = {
     'propdec-freedom-of-information': 'Freedom of Information',
     'propdec-full-name-of-owner': 'Full Name of Owner',
     'propdec-government': 'Government',
-    'propdec-ground-floor-municipal-hall-camnorte': 'Ground Floor, Municipal Hall, Camarines Norte',
+    'propdec-ground-floor-municipal-hall-camnorte': 'Ground Floor, Provincial Capitol, Camarines Norte',
     'propdec-handles-property-assessment-tax-declaration-and':
       'Handles property assessment, tax declaration, and real property records.',
     'propdec-health': 'Health',
@@ -5232,9 +5140,9 @@ const translations = {
     'propdec-location': 'Location',
     'propdec-machinery-declaration': 'Machinery Declaration',
     'propdec-market-value-per-unit-area': 'Market Value per Unit Area',
-    'propdec-municipal-assessor': 'Municipal Assessor',
-    'propdec-municipal-assessors-office': "Municipal Assessor's Office",
-    'propdec-municipal-hall': 'Municipal Hall',
+    'propdec-municipal-assessor': 'Provincial Assessor',
+    'propdec-municipal-assessors-office': "Provincial Assessor's Office",
+    'propdec-municipal-hall': 'Provincial Capitol',
     'propdec-municipality': 'Municipality',
     'propdec-number-of-storeys-and-floor-area': 'Number of Storeys and Floor Area',
     'propdec-occupancy-permit': 'Occupancy Permit',
@@ -5441,7 +5349,7 @@ const translations = {
     'sitemap-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
     'sitemap-local-civil-registrar': 'Local Civil Registrar',
     'sitemap-main-navigation': 'Main Navigation',
-    'sitemap-municipal-offices': 'Municipal Offices',
+    'sitemap-municipal-offices': 'Provincial Offices',
     'sitemap-navigate-all-pages-and-services-of-better-camnorte':
       'Navigate all pages and services of BetterCamNorte',
     'sitemap-navigation': 'Navigation',
@@ -5514,9 +5422,9 @@ const translations = {
     'slaughter-business': 'Business',
     'slaughter-butcher': 'Butcher',
     'slaughter-carabao-slaughter-requires-special-permit-from':
-      'Carabao slaughter requires special permit from the Municipal Agriculturist',
+      'Carabao slaughter requires special permit from the Provincial Agriculturist',
     'slaughter-carabao-slaughter-requires-special-permit-from-2':
-      'Carabao slaughter requires special permit from Municipal Agriculturist',
+      'Carabao slaughter requires special permit from Provincial Agriculturist',
     'slaughter-carabao-slaughter-service-with-antemortem-and':
       'Carabao slaughter service with ante-mortem and post-mortem inspection',
     'slaughter-category': 'Category',
@@ -5560,7 +5468,7 @@ const translations = {
       'Meat Inspection Certificate is required for meat transport',
     'slaughter-meat-inspector': 'Meat Inspector',
     'slaughter-medium': 'Medium',
-    'slaughter-municipal-slaughterhouse': 'Municipal Slaughterhouse',
+    'slaughter-municipal-slaughterhouse': 'Provincial Slaughterhouse',
     'slaughter-office': 'Office',
     'slaughter-office-head': 'Office Head',
     'slaughter-office-information': 'Office Information',
@@ -5612,7 +5520,7 @@ const translations = {
     'slaughter-slaughter-of-hog-2': 'Slaughter of hog',
     'slaughter-slaughter-operations': 'Slaughter Operations',
     'slaughter-slaughter-permit-from-the-municipal-agriculturist':
-      'Slaughter permit from the Municipal Agriculturist',
+      'Slaughter permit from the Provincial Agriculturist',
     'slaughter-slaughterhouse-services': 'Slaughterhouse Services',
     'slaughter-slaughterhouse-services-including-hog-cattle-goat':
       'Slaughterhouse services including hog, cattle, goat, and carabao slaughter with meat inspection',
@@ -5736,7 +5644,7 @@ const translations = {
     'stats-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
     'stats-local-4055': 'Local 40.55%',
     'stats-municipal-data': 'Provincial Data',
-    'stats-municipal-income': 'Municipal Income',
+    'stats-municipal-income': 'Provincial Income',
     'stats-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
     'stats-ordinance-framework': 'Ordinance Framework',
     'stats-osmea': 'Osmeña',
@@ -5835,12 +5743,10 @@ const translations = {
     'tax-home': 'Home',
     'tax-infrastructure': 'Infrastructure',
     'tax-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'tax-municipal-accounting-office': 'Municipal Accounting Office',
-    'tax-municipal-assessors-office': "Municipal Assessor's Office",
-    'tax-municipal-budget-office': 'Municipal Budget Office',
-    'tax-municipal-treasurers-office': "Municipal Treasurer's Office",
-    'tax-obligation-requests-barangay-budget-review-and':
-      'Obligation requests, barangay budget review, and SEF budget preparation',
+    'tax-municipal-accounting-office': 'Provincial Accounting Office',
+    'tax-municipal-assessors-office': "Provincial Assessor's Office",
+    'tax-municipal-budget-office': 'Provincial Budget Office',
+    'tax-municipal-treasurers-office': "Provincial Treasurer's Office",
     'tax-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
     'tax-online-payment-order': 'Online Payment Order',
     'tax-open-data-philippines': 'Open Data Philippines',
@@ -5849,7 +5755,7 @@ const translations = {
       'Pre-audit of disbursements, payroll, check issuance, and financial reporting',
     'tax-privacy-policy': 'Privacy Policy',
     'tax-process-payment-orders-for-various-municipal-fees':
-      'Process payment orders for various municipal fees',
+      'Process payment orders for various provincial fees',
     'tax-property-declaration-tax-assessment-and-land':
       'Property declaration, tax assessment, and land records',
     'tax-public-safety': 'Public Safety',
@@ -6072,7 +5978,7 @@ const translations = {
     'treas-accessibility': 'Accessibility',
     'treas-additional': 'Additional:',
     'treas-additional-services-offered-by-the-municipal':
-      "Additional services offered by the Municipal Treasurer's Office",
+      "Additional services offered by the Provincial Treasurer's Office",
     'treas-after-deadline': 'After deadline',
     'treas-agriculture': 'Agriculture',
     'treas-annual': 'Annual',
@@ -6100,7 +6006,7 @@ const translations = {
     'treas-citizens-charter': "Citizen's Charter",
     'treas-cmci-dti-portal': 'CMCI DTI Portal',
     'treas-collection-of-various-municipal-fees-and-charges':
-      'Collection of various municipal fees and charges',
+      'Collection of various provincial fees and charges',
     'treas-community-tax-certificate-cedula': 'Community Tax Certificate (Cedula)',
     'treas-contact': 'Contact',
     'treas-contribute-code-with-us': 'Contribute code with us',
@@ -6122,7 +6028,7 @@ const translations = {
     'treas-freedom-of-information': 'Freedom of Information',
     'treas-government': 'Government',
     'treas-ground-floor-municipal-hall-camnorte-camarines-norte':
-      'Ground Floor, Municipal Hall, Camarines Norte',
+      'Ground Floor, Provincial Capitol, Camarines Norte',
     'treas-health': 'Health',
     'treas-home': 'Home',
     'treas-hours': 'Hours',
@@ -6147,9 +6053,9 @@ const translations = {
     'treas-march-31': 'March 31',
     'treas-maximum-72-36-months': 'Maximum 72% (36 months)',
     'treas-mayors-permit-fee': "Governor's Permit Fee",
-    'treas-municipal-hall': 'Municipal Hall',
-    'treas-municipal-treasurer': 'Municipal Treasurer',
-    'treas-municipal-treasurers-office': "Municipal Treasurer's Office",
+    'treas-municipal-hall': 'Provincial Capitol',
+    'treas-municipal-treasurer': 'Provincial Treasurer',
+    'treas-municipal-treasurers-office': "Provincial Treasurer's Office",
     'treas-no-discountpenalty': 'No discount/penalty',
     'treas-office': 'Office',
     'treas-office-information': 'Office Information',
@@ -6256,11 +6162,11 @@ const translations = {
     'tricycle-inspection-of-tricycle-unit': 'Inspection of Tricycle Unit',
     'tricycle-legislative': 'Legislative',
     'tricycle-mayors-approval': "Provincial Governor's Approval",
-    'tricycle-municipal-hall-camnorte-camarines-norte': 'Municipal Hall, Camarines Norte',
+    'tricycle-municipal-hall-camnorte-camarines-norte': 'Provincial Capitol, Camarines Norte',
     'tricycle-municipal-mayor-approves-the-application-form':
       'Provincial Governor approves the application form',
     'tricycle-municipal-treasurers-office-collects-the-fees':
-      "Municipal Treasurer's Office collects the fees",
+      "Provincial Treasurer's Office collects the fees",
     'tricycle-office': 'Office',
     'tricycle-office-hours': 'Office Hours',
     'tricycle-official-signing': 'Official Signing',
@@ -6293,7 +6199,7 @@ const translations = {
     'tricycle-review-determination': 'Review & Determination',
     'tricycle-sangguniang-bayan-members-approve-the-mtof':
       'Sangguniang Panlalawigan Members approve the MTOF',
-    'tricycle-sangguniang-bayan-municipal-hall': 'Sangguniang Panlalawigan, Municipal Hall',
+    'tricycle-sangguniang-bayan-municipal-hall': 'Sangguniang Panlalawigan, Provincial Capitol',
     'tricycle-sb-members-approval': 'Provincial Board Members Approval',
     'tricycle-services': 'Services',
     'tricycle-sitemap': 'Sitemap',
@@ -6324,7 +6230,6 @@ const translations = {
     // === Keys from React app ===
     'env-recycling': 'Recycling Program',
     'env-recycling-desc': 'Segregation and recycling initiatives',
-    'health-bhw': 'Barangay Health Workers',
     'health-dental': 'Dental Services',
     'health-dental-desc': 'Basic dental care and extraction',
     'health-hospitals-title': 'Hospitals in the Area',
@@ -6422,7 +6327,6 @@ const translations = {
     'stats-subtitle': 'Datos at estadistika tungkol sa Camarines Norte',
     'stats-demographics': 'Pangkalahatang-ideya ng Demograpiya',
     'stats-economic': 'Mga Tagapagpahiwatig ng Ekonomiya',
-    'stats-barangay': 'Populasyon Ayon sa Barangay',
     'stats-population': 'Populasyon',
     'stats-land-area': 'Lawak ng Lupa',
     'stats-density': 'Densidad ng Populasyon',
@@ -6595,10 +6499,6 @@ const translations = {
     'cert-death': 'Sertipiko ng Kamatayan',
     'cert-death-desc':
       'Magrehistro ng sertipiko ng kamatayan at kumuha ng permit para sa libing/paglipat',
-    'cert-brgy-clearance': 'Barangay Clearance',
-    'cert-brgy-clearance-desc': 'Sertipiko ng paninirahan mula sa iyong barangay',
-    'cert-brgy-id': 'Barangay ID',
-    'cert-brgy-id-desc': 'Opisyal na identification card ng barangay',
     'cert-police-clearance': 'Police Clearance',
     'cert-police-clearance-desc':
       'Koordinasyon sa police clearance sa pamamagitan ng munisipal na opisina',
@@ -6635,15 +6535,12 @@ const translations = {
     'health-medicine-desc': 'Tulong pinansyal para sa gamot sa pamamagitan ng MSWDO',
     'health-stat-facilities': 'Kabuuang Pasilidad sa Kalusugan',
     'health-stat-hospitals': 'Mga Pangunahing Ospital',
-    'health-stat-bhs': 'Mga Barangay Health Station',
     'health-stat-mho': 'Opisina ng Kalusugan ng Munisipalidad',
     'health-section-hospitals': 'Mga Ospital sa Camarines Norte',
     'health-section-mho': 'Opisina ng Kalusugan ng Munisipalidad',
-    'health-section-bhs': 'Mga Barangay Health Station',
-    'health-bhs-subtitle': '22 Barangay Health Stations/Centers na naglilingkod sa mga nakalistang barangay ng Camarines Norte',
     'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Camarines Norte',
     'health-mho-desc':
-      'Ang Municipal Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',
+      'Ang Provincial Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',
     'health-service-lying-in': 'Lying-in Facility',
     'health-service-laboratory': 'Serbisyo sa Laboratoryo',
     'health-service-immunization': 'Immunisasyon',
@@ -6805,8 +6702,6 @@ const translations = {
     'gov-sb-subtitle': 'Mga Konsehal na naglilingkod sa mga tao ng Camarines Norte',
     'gov-departments': 'Mga Pinuno ng Departamento at Pangunahing Opisina',
     'gov-dept-subtitle': 'Mga opisina ng munisipalidad na nagbibigay ng serbisyo sa mga mamamayan',
-    'gov-barangays': 'Mga Barangay ng Camarines Norte',
-    'gov-barangays-count': '282 barangays na naglilingkod sa ating komunidad',
     'gov-organizational-chart': 'Tsart ng Organisasyon',
     'gov-term': 'Termino',
     'budget-title': 'Badyet at Transparensiya sa Pananalapi',
@@ -7439,7 +7334,6 @@ const translations = {
     'bc-agriculture': 'Agrikultura',
     'bc-appointment': 'Appointment',
     'bc-authorization-letter-signed-by-the-owner': 'Liham ng awtorisasyon na nilagdaan ng may-ari',
-    'bc-barangay-clearance': 'Barangay Clearance',
     'bc-birth-certificate-local-copy': 'Sertipiko ng Kapanganakan (Lokal na Kopya)',
     'bc-blgf-portal': 'BLGF Portal',
     'bc-bring-valid-governmentissued-id-if-representative':
@@ -7611,10 +7505,6 @@ const translations = {
       'Aplikasyon para sa bagong permiso sa negosyo para sa mga negosyong nag-ooperate sa Camarines Norte',
     'bpl-application-form-all-requirements': 'Aplikasyon form, all mga kinakailangan',
     'bpl-assessment-sheet': 'Pagtatasa sheet',
-    'bpl-barangay-business-clearance': 'Business Clearance ng Barangay',
-    'bpl-barangay-business-clearance-current-year':
-      'Barangay Business Clearance (kasalukuyang taon)',
-    'bpl-barangay-clearance': 'Barangay Clearance',
     'bpl-bir-certificate-of-closure': 'BIR Certificate ng Pagsasara',
     'bpl-blgf-portal': 'BLGF Portal',
     'bpl-bpls-head': 'BPLS Pinuno',
@@ -7698,7 +7588,6 @@ const translations = {
     'bpl-mayors-office-bpls': 'Opisina ng Punong Bayan - BPLS',
     'bpl-municipal-hall': 'Munisipyo',
     'bpl-nbi-clearance': 'NBI Clearance',
-    'bpl-new-barangay-clearance': 'Bago Barangay Clearance',
     'bpl-new-business-permit': 'Bago Permiso sa Negosyo',
     'bpl-new-business-permits-renewals-mayors-clearance':
       "Bagong permiso sa negosyos, mga pag-renew, Provincial Governor's clearance, sa iba pang business-related mga permiso",
@@ -8373,7 +8262,6 @@ const translations = {
     'eng-architectural-permit': 'Permit sa Arkitektura',
     'eng-architectural-plans': 'Mga Plano ng Arkitektura',
     'eng-blgf-portal': 'BLGF Portal',
-    'eng-brgy-clearance-zoning-clearance': 'Brgy. Clearance at Zoning Clearance',
     'eng-building-permit': 'Permit sa Pagtatayo',
     'eng-building-permit-issuance-construction-permits-and':
       'Gusali permiso issuance, construction mga permiso, and engineering mga serbisyo',
@@ -8750,7 +8638,6 @@ const translations = {
     'faq-yes-but-they-must-bring': 'Yes, ngunit sila dapat bring:',
     'gov-accessibility': 'Aksesibilidad',
     'gov-accountingcamnortegovph': 'accounting@camnorte.gov.ph',
-    'gov-aggub': 'Aggub',
     'gov-agricultural-loans-crop-insurance-fertilizer':
       'Mga pautang sa agrikultura, seguro sa pananim, tulong sa pataba',
     'gov-agriculture': 'Agrikultura',
@@ -8758,12 +8645,6 @@ const translations = {
       'Agrikultura, Akwakultura at Seguridad sa Pagkain, Mga Usapin ng mga Overseas Filipino Worker',
     'gov-agricamnortegovph': 'agri@camnorte.gov.ph',
     'gov-assessorcamnortegovph': 'assessor@camnorte.gov.ph',
-    'gov-bagahabag': 'Bagahabag',
-    'gov-bangaan': 'Bangaan',
-    'gov-bangar': 'Bangar',
-    'gov-barangay-affairs-tourism': 'Mga Usapin ng Barangay, Turismo',
-    'gov-barangay-units': 'Mga Yunit ng Barangay',
-    'gov-bascaran': 'Bascaran',
     'gov-birth-death-marriage-certificates-cenomar':
       'Kapanganakan, kamatayan, kasal mga sertipiko, CENOMAR',
     'gov-blgf-portal': 'BLGF Portal',
@@ -8781,13 +8662,9 @@ const translations = {
     'gov-citizens-charter': "Citizen's Charter",
     'gov-civilregcamnortegovph': 'civilreg@camnorte.gov.ph',
     'gov-cmci-dti-portal': 'CMCI DTI Portal',
-    'gov-communal': 'Communal',
-    'gov-concepcion': 'Concepcion',
     'gov-contribute-code-with-us': 'Mag-ambag ng code sa amin',
     'gov-cooperative-development-senior-citizens-and':
       'Cooperative Development, Nakatatanda Mga mamamayan and Disability Affairs',
-    'gov-curifang': 'Curifang',
-    'gov-dadap': 'Dadap',
     'gov-development-planning-project-monitoring-zoning':
       'Pagpaplano ng pagpapaunlad, pagsubaybay sa proyekto, zoning',
     'gov-disaster-preparedness-emergency-response-risk':
@@ -8821,34 +8698,10 @@ const translations = {
     'gov-infrastructure': 'Imprastraktura',
     'gov-job-placement-employment-assistance-career':
       'Paglalagay sa trabaho, tulong sa trabaho, gabay sa karera',
-    'gov-kap-angelito-de-leon-tiongson': 'Kap. Angelito De Leon Tiongson',
-    'gov-kap-danilo-estacio-domingo': 'Kap. Danilo Estacio Domingo',
-    'gov-kap-dexter-yaranon-ruiz': 'Kap. Dexter Yaranon Ruiz',
-    'gov-kap-eduardo-abu-bangad-sr': 'Kap. Eduardo Abu Bangad Sr.',
-    'gov-kap-edwin-bungan-dacayo': 'Kap. Edwin Bungan Tiongson',
-    'gov-kap-elmer-zabala-lingayu': 'Kap. Elmer Zabala Lingayu',
-    'gov-kap-ernesto-domingo-ramones-jr': 'Kap. Ernesto Domingo Ramones Jr.',
-    'gov-kap-federico-vienes-asuncion': 'Kap. Federico Vienes Asuncion',
-    'gov-kap-felix-caramat-tolentino-sr': 'Kap. Felix Caramat Tolentino Sr.',
-    'gov-kap-isidro-baliza-prado': 'Kap. Isidro Baliza Prado',
-    'gov-kap-janette-quines-cristobal': 'Kap. Janette Quines Cristobal',
-    'gov-kap-jenny-gomez-marquez': 'Kap. Jenny Gomez Marquez',
-    'gov-kap-jessie-concepcion-delos-reyes': 'Kap. Jessie Concepcion Delos Reyes',
-    'gov-kap-luis-amangi-castillo': 'Kap. Luis Amangi Castillo',
-    'gov-kap-melchor-esmedina-marzo': 'Kap. Melchor Esmedina Marzo',
-    'gov-kap-nardo-eustaquio-ramel': 'Kap. Nardo Eustaquio Ramel',
-    'gov-kap-renaldo-ginom-nabadaw': 'Kap. Renaldo Gin-Om Nabad-Aw',
-    'gov-kap-roberto-ojastro-dizon': 'Kap. Roberto Ojastro Dizon',
-    'gov-kap-rudy-eugenio-paranis': 'Kap. Rudy Eugenio Paranis',
-    'gov-kap-sherwin-elevazo-vicente': 'Kap. Sherwin Elevazo Vicente',
-    'gov-kap-victor-tubay-adalin-jr': 'Kap. Victor Tubay Adalin Jr.',
-    'gov-kap-walter-dalupang-savedra-sr': 'Kap. Walter Dalupang Savedra Sr.',
-    'gov-lactawan': 'Lactawan',
     'gov-legal-good-governance-justice-human-rights':
       'Legal, Mabuting Pamamahala, Hustisya, Karapatang Pantao, Pamamahala ng Kapaligiran',
     'gov-legislative-branch': 'Sangay ng Lehislatura',
     'gov-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'gov-liga-ng-mga-barangay-president': 'Liga ng mga Barangay President',
     'gov-market-clearance-entrance-fees-vendor-services-ctc':
       'Market clearance, mga bayad sa pagpasok, mga serbisyo sa vendor, CTC',
     'gov-mayorcamnortegovph': 'pgcamarinesnorte@gmail.com',
@@ -8870,12 +8723,8 @@ const translations = {
     'gov-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
     'gov-open-data-philippines': 'Open Data Philippines',
     'gov-ordinance-framework': 'Balangkas ng Ordinansa',
-    'gov-osmea': 'Osmeña',
     'gov-personnel-services-recruitment-employee-records':
       'Tauhan mga serbisyo, recruitment, empleyado mga rekord',
-    'gov-pilar-d-galima': 'Pilar D. Galima',
-    'gov-poblacion-north': 'Poblacion North',
-    'gov-poblacion-south': 'Poblacion South',
     'gov-privacy-policy': 'Patakaran sa Pagkapribado',
     'gov-property-assessment-tax-declarations-land-records':
       'Ari-arian pagtatasa, buwis declarations, lupa mga rekord',
@@ -8884,14 +8733,9 @@ const translations = {
     'gov-public-safety': 'Kaligtasang Pampubliko',
     'gov-public-safety-peace-order-family-women-children':
       'Public Safety, Peace & Order, Pamilya, Mga kababaihan, Mga bata & Social Mga serbisyo',
-    'gov-quezon': 'Quezon',
     'gov-quick-links': 'Mga Mabilisang Link',
-    'gov-quirino': 'Quirino',
     'gov-resolution-framework': 'Balangkas ng Resolusyon',
     'gov-resources': 'Mga Mapagkukunan',
-    'gov-roxas': 'Roxas',
-    'gov-san-juan': 'San Juan',
-    'gov-san-luis': 'San Luis',
     'gov-sangguniang-bayan': 'Sangguniang Panlalawigan',
     'gov-sb-member': 'Miyembro ng SB',
     'gov-seedo-public-market': 'SEEDO – Pamilihang Bayan',
@@ -8909,15 +8753,12 @@ const translations = {
     'gov-the-executive-officials-leading-camnortes-governance':
       "The executive mga opisyal leading Camarines Norte's governance",
     'gov-treasurercamnortegovph': 'treasurer@camnorte.gov.ph',
-    'gov-tucal': 'Tucal',
-    'gov-uddiawan': 'Uddiawan',
     'gov-vaccination-health-certificates-medical-assistance':
       'Vaccination, health mga sertipiko, tulong medikal',
     'gov-vicemayorcamnortegovph': 'pgcamarinesnorte@gmail.com',
     'gov-view-job-vacancies': 'Tingnan Job Vacancies',
     'gov-view-services': 'Tingnan ang mga Serbisyo',
     'gov-volunteer-with-us': 'Mag-volunteer sa amin',
-    'gov-wacal': 'Wacal',
     'gov-youth-sports-development-legislative-drafting':
       'Kabataan & Sports Development, Legislative Drafting',
     'gs-1-day': '1 araw',
@@ -8977,8 +8818,6 @@ const translations = {
     'gs-emtdriver': 'EMT/Driver',
     'gs-environment': 'Kapaligiran',
     'gs-equipment': 'Kagamitan',
-    'gs-equipment-rental-is-subject-to-availability-and':
-      'Equipment rental is subject to availability and pag-apruba. Priority is given to pangmunisipyo projects and barangay mga kahilingan. Fuel mga gastos are shouldered by the requesting party.',
     'gs-executive-assistant': 'Ehekutibong Katulong',
     'gs-free-emergency': 'Libre (Emergency)',
     'gs-freedom-of-information': 'Kalayaan sa Impormasyon',
@@ -9075,7 +8914,7 @@ const translations = {
     'gs-tax-payments': 'Pagbabayad ng Buwis',
     'gs-terms-of-use': 'Mga Tuntunin ng Paggamit',
     'gs-the-gso-assists-in-the-procurement-process-for':
-      'Ang GSO assists sa ang procurement proseso para sa municipal mga suplay, kagamitan, sa mga serbisyo alinsunod sa RA 9184 (Government Procurement Reform Act).',
+      'Ang GSO assists sa ang procurement proseso para sa provincial mga suplay, kagamitan, sa mga serbisyo alinsunod sa RA 9184 (Government Procurement Reform Act).',
     'gs-the-municipal-general-services-office-manages-and':
       'Ang Opisina ng Pangkalahatang Serbisyo ng Munisipyo ay namamahala at nagpapanatili ng mga sasakyan ng munisipyo na magagamit para sa opisyal na paggamit ng pamahalaan at mga serbisyo ng pag-upa para sa mga mamamayan na may balidong layunin.',
     'gs-time': 'Oras',
@@ -9102,7 +8941,6 @@ const translations = {
     'health-bagahabag-bhs': 'Bagahabag BHS',
     'health-bangaan-bhs': 'Bangaan BHS',
     'health-bangar-bhs': 'Bangar BHS',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
     'health-blgf-portal': 'BLGF Portal',
     'health-buenavista-bhs': 'Buenavista BHS',
     'health-business': 'Negosyo',
@@ -9177,7 +9015,7 @@ const translations = {
     'home-accessibility': 'Aksesibilidad',
     'home-administrative-units': 'Mga Yunit ng Administrasyon',
     'home-agriculture': 'Agrikultura',
-    'home-barangays': 'Mga Barangay',
+    'home-barangays': 'Mga Munisipalidad',
     'home-bintauan': 'Bintauan',
     'home-birth-certificate': 'Sertipiko ng Kapanganakan',
     'home-blgf-portal': 'BLGF Portal',
@@ -9623,7 +9461,6 @@ const translations = {
     'magri-aquaculture-inputs': 'Mga Input sa Akwakultura',
     'magri-artificial-insemination': 'Artipisyal na Inseminasyon',
     'magri-available': 'Magagamit',
-    'magri-barangay-certification': 'Sertipikasyon ng Barangay',
     'magri-benefits': 'Mga Benepisyo',
     'magri-blgf-portal': 'BLGF Portal',
     'magri-business': 'Negosyo',
@@ -10007,20 +9844,13 @@ const translations = {
     'mbudget-administrative-officer-ii': 'Administrative Opisyal II',
     'mbudget-administrative-officer-v': 'Administrative Opisyal V',
     'mbudget-agriculture': 'Agrikultura',
-    'mbudget-annual-barangay-budget': 'Taunang Barangay Budget',
     'mbudget-annual-sef-budget': 'Taunang SEF Budget',
     'mbudget-approximately-15-minutes-for-complete-processing':
       'Humigit-kumulang 15 minuto para sa kumpletong pagproseso',
     'mbudget-assign-account-code': 'Magtalaga ng Code ng Account',
     'mbudget-assign-obr-number': 'Magtalaga ng Numero ng ObR',
-    'mbudget-barangay-budget': 'Badyet ng Barangay',
-    'mbudget-barangay-budgets-must-be-submitted-within-10-days':
-      'Ang mga badyet ng barangay ay dapat isumite sa loob ng 10 araw mula sa pag-apruba',
-    'mbudget-barangay-development-plan-and-barangay-annual':
-      'Plano ng Pagpapaunlad ng Barangay at Taunang Plano ng Pamumuhunan ng Barangay',
     'mbudget-blgf-portal': 'BLGF Portal',
     'mbudget-budget': 'Badyet',
-    'mbudget-budget-message-of-the-punong-barangay': 'Mensahe ng Badyet ng Punong Barangay',
     'mbudget-budget-of-expenditures-and-sources-of-financing':
       'Badyet ng mga Gastusin at mga Pinagmulan ng Pananalapi',
     'mbudget-budget-office-services': 'Opisina ng Badyet Mga serbisyo',
@@ -10070,8 +9900,6 @@ const translations = {
     'mbudget-municipal-budget-officer': 'Opisyal ng Badyet ng Munisipalidad',
     'mbudget-municipal-hall': 'Munisipyo',
     'mbudget-obligation-request': 'Kahilingan ng Obligasyon',
-    'mbudget-obligation-request-processing-barangay-budget':
-      'Pagproseso ng obligation request, pagsusuri ng badyet ng barangay, at paghahanda ng badyet ng SEF',
     'mbudget-obr-duly-signed-by-the-municipal-budget-officer':
       'ObR duly signed sa pamamagitan ng ang Opisina ng Badyet ng Munisipyor',
     'mbudget-obr-with-assigned-account-code': 'ObR na may nakatalagang account code',
@@ -10086,8 +9914,6 @@ const translations = {
     'mbudget-posting-of-processed-obr-at-the-logbook': 'Pag-post ng naprosesong ObR sa logbook',
     'mbudget-preparation-and-implementation-of-special':
       'Paghahanda at Pagpapatupad ng Badyet ng Special Education Fund',
-    'mbudget-preparation-review-and-endorsement-of-barangay':
-      'Paghahanda, Pagsusuri at Pag-eendorso ng Badyet ng Barangay',
     'mbudget-privacy-policy': 'Patakaran sa Pagkapribado',
     'mbudget-processing-of-obligation-request': 'Pagproseso ng Obligation Request',
     'mbudget-processing-time-may-vary-depending-on-document':
@@ -10099,8 +9925,6 @@ const translations = {
     'mbudget-release-of-obr': 'Ilabas of ObR',
     'mbudget-resolution-framework': 'Balangkas ng Resolusyon',
     'mbudget-resources': 'Mga Mapagkukunan',
-    'mbudget-review-and-evaluation-of-barangay-budget':
-      'Pagsusuri at ebalwasyon ng Badyet ng Barangay',
     'mbudget-review-and-evaluation-of-sef-budget': 'Pagsusuri at ebalwasyon ng Badyet ng SEF',
     'mbudget-sangguniang-bayan': 'Sangguniang Panlalawigan',
     'mbudget-sef-budget': 'Badyet ng SEF',
@@ -10114,8 +9938,6 @@ const translations = {
     'mbudget-social-services': 'Serbisyong Panlipunan',
     'mbudget-statistics': 'Estadistika',
     'mbudget-step': 'Hakbang',
-    'mbudget-submit-barangay-budget-for-review-and-evaluation':
-      'Submit Barangay Budget para sa suriin sa ebalwasyon',
     'mbudget-submit-obligation-request': 'Isumite Obligation Humiling',
     'mbudget-submit-sef-budget-for-review-and-evaluation':
       'Submit SEF Budget para sa suriin sa ebalwasyon',
@@ -10124,20 +9946,14 @@ const translations = {
     'mbudget-terms-of-use': 'Mga Tuntunin ng Paggamit',
     'mbudget-the-authorized-expenditure-program-for-the-budget':
       'Ang Awtorisadong Programa ng Gastusin para sa Taon ng Badyet o Ordinansa ng Appropriasyon',
-    'mbudget-the-municipal-budget-office-assists-barangays-in':
-      'Ang Opisina ng Badyet ng Munisipyo assists barangays sa ang paghahanda ng kanilang Taunang Budget. It conducts pagsasanay whenever necessary sa ensures pagsunod na maaari statutory, contractual mga obligasyon sa budgetary mga kinakailangan bago ang ang suriin sa pag-apruba ng ang Sangguniang Panlalawigan.',
     'mbudget-the-municipal-budget-office-assists-the-different':
-      "Ang Opisina ng Badyet ng Munisipyo ay tumutulong sa iba't ibang paaralan sa paghahanda ng Taunang Badyet ng SEF. Tinutulungan nito ang Municipal School Board sa pagsasagawa ng mga pagdinig sa badyet at deliberasyon ng mga panukala sa badyet. Tinitiyak nito ang pagsunod sa mga statutory, kontraktwal na obligasyon at mga kinakailangan sa badyet bago ang pagsusuri at pag-apruba ng Municipal School Board (MSB).",
+      "Ang Opisina ng Badyet ng Munisipyo ay tumutulong sa iba't ibang paaralan sa paghahanda ng Taunang Badyet ng SEF. Tinutulungan nito ang Provincial School Board sa pagsasagawa ng mga pagdinig sa badyet at deliberasyon ng mga panukala sa badyet. Tinitiyak nito ang pagsunod sa mga statutory, kontraktwal na obligasyon at mga kinakailangan sa badyet bago ang pagsusuri at pag-apruba ng Provincial School Board (MSB).",
     'mbudget-the-municipal-budget-office-processes':
       'Ang Opisina ng Badyet ng Munisipyo ay nagpoproseso ng mga disbursement voucher lalo na ang mahalagang bahagi ng Obligation Request (ObR) upang matiyak ang pagkakaroon ng appropriasyon',
     'mbudget-total-processing-time': 'Kabuuang Oras ng Pagproseso',
-    'mbudget-transmittal-letter-of-the-barangay-secretary':
-      'Transmittal letter ng Kalihim ng Barangay',
     'mbudget-transmittal-letter-of-the-sef-secretary': 'Transmittal sulat of the SEF Kalihim',
     'mbudget-transparency': 'Transparensiya',
     'mbudget-volunteer-with-us': 'Mag-volunteer sa amin',
-    'mbudget-within-ten-days-10-from-the-approval-of-the':
-      'Within ten days (10) mula sa ang pag-apruba ng ang Barangay Budget, copies ng kanilang Taunang Budget dapat be furnished sa ang Sangguniang Panlalawigan para sa review sa pamamagitan ng ang Opisina ng Badyet ng Munisipyo.',
     'mc-10-days': '10 Araw',
     'mc-10-days-5-hours-and-10-minutes': '10 araw, 5 oras at 10 minuto',
     'mc-10-minutes': '10 minuto',
@@ -10695,7 +10511,6 @@ const translations = {
       'Application Form para sa Zoning Certification',
     'mpdo-application-forms-and-documents-for-mpdo-services':
       'Aplikasyon mga form and mga dokumento for MPDO mga serbisyo',
-    'mpdo-barangay-clearance': 'Barangay Clearance',
     'mpdo-based-on-area': 'Based on Lugar',
     'mpdo-based-on-floor-area': 'Based sa sukat ng sahig',
     'mpdo-based-on-floor-area-and-type': 'Based sa sukat ng sahig sa type',
@@ -10815,7 +10630,6 @@ const translations = {
     'mswdo-13-days': '1-3 Araw',
     'mswdo-1530-days': '15-30 Araw',
     'mswdo-2-tracks': '2 Track',
-    'mswdo-22-barangays': '282 barangays',
     'mswdo-34-years': '3-4 Taon',
     'mswdo-4ps-members': 'Mga Miyembro ng 4Ps',
     'mswdo-60-years': '60 Taon+',
@@ -11086,8 +10900,6 @@ const translations = {
       'Tulong sa mga Taong may Kapansanan (PWD)',
     'mswdosvc-assistance-to-senior-citizens': 'Tulong to Nakatatanda Mga mamamayan',
     'mswdosvc-assistance-to-women': 'Tulong to Mga kababaihan',
-    'mswdosvc-barangay-certificate': 'Sertipiko ng Barangay',
-    'mswdosvc-barangay-certificate-of-indigency': 'Sertipiko ng Karalitaan ng Barangay',
     'mswdosvc-birth-certificate-or-any-valid-id-showing-date-of':
       'Sertipiko ng Kapanganakan or any balido ID showing date of kapanganakan',
     'mswdosvc-birth-certificate-photocopy': 'Sertipiko ng Kapanganakan (photocopy)',
@@ -11564,7 +11376,6 @@ const translations = {
     'propdec-assessment-details': 'Mga Detalye ng Pagtatasa',
     'propdec-assessment-level-percentage': 'Pagtatasa Level Percentage',
     'propdec-assessment-summary': 'Buod ng Pagtatasa',
-    'propdec-barangay': 'Barangay',
     'propdec-blgf-portal': 'BLGF Portal',
     'propdec-brand-and-model': 'Tatak at Modelo',
     'propdec-building-declaration': 'Deklarasyon ng Gusali',
@@ -11919,7 +11730,7 @@ const translations = {
     'slaughter-carabao-slaughter-requires-special-permit-from':
       'Carabao slaughter requires espesyal permiso from the Pangmunisipyo Agriculturist',
     'slaughter-carabao-slaughter-requires-special-permit-from-2':
-      'Ang pagkatay ng kalabaw ay nangangailangan ng espesyal na permiso mula sa Municipal Agriculturist',
+      'Ang pagkatay ng kalabaw ay nangangailangan ng espesyal na permiso mula sa Provincial Agriculturist',
     'slaughter-carabao-slaughter-service-with-antemortem-and':
       'Serbisyo ng pagkatay ng kalabaw na may ante-mortem at post-mortem na inspeksyon',
     'slaughter-category': 'Kategorya',
@@ -12014,7 +11825,7 @@ const translations = {
     'slaughter-slaughter-of-hog-2': 'Pagkatay ng baboy',
     'slaughter-slaughter-operations': 'Mga Operasyon ng Pagkatay',
     'slaughter-slaughter-permit-from-the-municipal-agriculturist':
-      'Permiso sa pagkatay mula sa Municipal Agriculturist',
+      'Permiso sa pagkatay mula sa Provincial Agriculturist',
     'slaughter-slaughterhouse-services': 'Mga Serbisyo ng Katayan',
     'slaughter-slaughterhouse-services-including-hog-cattle-goat':
       'Mga serbisyo ng katayan kabilang ang pagkatay ng baboy, baka, kambing, at kalabaw na may inspeksyon ng karne',
@@ -12244,8 +12055,6 @@ const translations = {
     'tax-municipal-assessors-office': 'Opisina ng Tagapagtasa ng Munisipalidad',
     'tax-municipal-budget-office': 'Opisina ng Badyet ng Munisipalidad',
     'tax-municipal-treasurers-office': 'Opisina ng Ingat-yaman ng Munisipalidad',
-    'tax-obligation-requests-barangay-budget-review-and':
-      'Obligation mga kahilingan, barangay budget suriin, and SEF budget preparation',
     'tax-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
     'tax-online-payment-order': 'Online Pagbabayad Order',
     'tax-open-data-philippines': 'Open Data Philippines',
@@ -12732,7 +12541,6 @@ const translations = {
     'tricycle-volunteer-with-us': 'Mag-volunteer sa amin',
     'env-recycling': 'Programa sa Recycling',
     'env-recycling-desc': 'Segregasyon at mga inisyatiba sa recycling',
-    'health-bhw': 'Mga Manggagawang Pangkalusugan ng Barangay',
     'health-dental': 'Serbisyong Dental',
     'health-dental-desc': 'Basic pangangalaga sa ngipin sa extraction',
     'health-hospitals-title': 'Mga Ospital sa Lugar',
