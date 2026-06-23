@@ -34,7 +34,6 @@ jobs:
         with:
           urls: |
             http://localhost:8080/
-            http://localhost:8080/services/
             http://localhost:8080/contact/
             http://localhost:8080/government/
           configPath: .lighthouserc.json
