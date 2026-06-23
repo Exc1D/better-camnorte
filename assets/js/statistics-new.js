@@ -616,11 +616,16 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('/data/statistics.json')
     .then((r) => r.json())
     .then((d) => {
-      barangayData = d.population.municipalities;
-      historicalData = d.population.historical;
-      cmciData = d.cmci;
+      // Only overwrite a default when the response actually carries that slice —
+      // partial/malformed JSON must not replace a safe default with `undefined`.
+      if (Array.isArray(d?.population?.municipalities)) barangayData = d.population.municipalities;
+      if (d?.population?.historical) historicalData = d.population.historical;
+      if (d?.cmci) cmciData = d.cmci;
     })
-    .catch(() => {}) // page stays usable; data-backed charts simply render empty
+    .catch((err) => {
+      // page stays usable; data-backed charts simply render empty
+      console.error('statistics.json failed to load:', err);
+    })
     .finally(() => {
       initScrollAnimations();
       initCharts();

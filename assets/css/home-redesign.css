@@ -189,7 +189,7 @@
   margin: 0 0 18px;
   font-size: clamp(1.04rem, 1.4vw, 1.24rem);
   line-height: 1.6;
-  color: oklch(0.9 0.022 252);
+  color: var(--hero-text);
 }
 
 /* Sourced stat chip — light on the navy ground; gold is the one contained
@@ -197,7 +197,7 @@
 .hero__stat {
   margin: 0 0 22px;
   font-size: var(--text-base);
-  color: oklch(0.92 0.02 252);
+  color: var(--hero-text-bright);
 }
 .hero__stat a {
   color: inherit;
@@ -216,7 +216,7 @@
   display: block;
   margin-top: 4px;
   font-size: var(--text-sm);
-  color: oklch(0.78 0.03 250);
+  color: var(--hero-text-muted);
 }
 
 /* Search on the dark ground: a bright, confident field */

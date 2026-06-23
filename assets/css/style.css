@@ -36,6 +36,11 @@
   --maroon: #7a1f2b;
   --ink: oklch(0.32 0.04 264);
   --ink-soft: oklch(0.48 0.03 264);
+  /* Hero copy reads on the dark navy ground — kept here with the other text
+     tokens so contrast is tuned in one place. */
+  --hero-text: oklch(0.9 0.022 252);
+  --hero-text-bright: oklch(0.92 0.02 252);
+  --hero-text-muted: oklch(0.78 0.03 250);
   --display: 'Source Sans 3', 'Inter', system-ui, sans-serif;
   --serif: var(--display);
   --wide: var(--display);

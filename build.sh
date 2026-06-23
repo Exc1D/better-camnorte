@@ -115,6 +115,8 @@ if [ "$REACT_BUILD" = true ] && [ -f "react-app/package.json" ]; then
     # Currently: /services/health is the only React-served route in production
     if [ -f "react-app/out/services/health.html" ]; then
         echo "  Merging health page → dist/services/health.html"
+        # services/ no longer ships a legacy index, so the dir won't exist yet
+        mkdir -p dist/services
         cp react-app/out/services/health.html dist/services/health.html
     fi
 

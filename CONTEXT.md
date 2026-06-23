@@ -17,6 +17,6 @@ primary nav (statistics, news). _Boilerplate_ is unavoidable table stakes (conta
 FAQ, accessibility).
 
 **Provenance**:
-The official source and effective date (`as_of`) attached to every published figure. A figure
-without provenance does not ship.
+The official source (`source`), a link to it (`source_url`), and effective date (`as_of`) attached
+to every published figure. A figure without provenance does not ship.
 _Avoid_: citation, reference

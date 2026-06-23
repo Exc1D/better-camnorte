@@ -38,7 +38,7 @@ inherit the new chrome + tokens but keep current body styling until a later pass
 
 Source Sans 3 (already the loaded face). Modular ~1.25 scale:
 
-```
+```css
 --text-sm: 0.875rem; --text-base: 1rem; --text-lg: 1.25rem;
 --text-xl: 1.5rem; --text-2xl: 1.95rem; --text-3xl: 2.5rem;
 --text-display: clamp(3rem, 9vw, 7rem);   /* hero wordmark */

@@ -32,8 +32,10 @@ maintain, not this watchdog's.
       and its JSON-LD `SearchAction`.
 - [x] Rewrite the README mission: drop the "services" lead; describe the site as a public-funds
       transparency watchdog.
-- [~] Redesign primary navigation around the core: **Transparency/Budget · Projects (DPWH) ·
-      Officials · Legislative**. Demote Statistics out of primary nav. **Done:** removed the Services
+- [~] Redesign primary navigation around the core. (Final shared-nav contract settled in Phase 3:
+      **Home · Transparency · Government · Legislative · Contact**, with Officials nested under
+      Government and a Projects/DPWH item deferred until that page exists.) Demote Statistics out of
+      primary nav. **Done:** removed the Services
       dropdown and Statistics item from primary nav on every page. **Deferred to Phase 3:** the
       cosmetic reorder and adding a Projects/DPWH item — the nav is hand-duplicated across 29 pages
       with page-namespaced i18n keys and 4 path variants; the 11ty base layout makes this a
