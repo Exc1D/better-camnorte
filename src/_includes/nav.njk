@@ -1,0 +1,44 @@
+<nav class="main-nav" aria-label="Main Navigation">
+  <ul>
+    <li><a href="/"{% if page.url == "/" %} class="active"{% endif %} data-i18n="nav-home">Home</a></li>
+    <li class="has-dropdown">
+      <a
+        href="/budget/"
+        data-i18n="nav-transparency"
+        aria-haspopup="true"
+        aria-expanded="false"
+        {% if "/budget" in page.url or "/statistics" in page.url %}class="active"{% endif %}
+        >Transparency</a
+      >
+      <ul class="dropdown-menu">
+        <li><a href="/budget/" data-i18n="nav-budget">Budget</a></li>
+        <li><a href="/statistics/" data-i18n="nav-statistics">Statistics</a></li>
+      </ul>
+    </li>
+    <li><a href="/government/"{% if "/government" in page.url %} class="active"{% endif %} data-i18n="nav-government">Government</a></li>
+    <li class="has-dropdown">
+      <a
+        href="/legislative/"
+        data-i18n="nav-legislative"
+        aria-haspopup="true"
+        aria-expanded="false"
+        {% if "/legislative" in page.url %}class="active"{% endif %}
+        >Legislative</a
+      >
+      <ul class="dropdown-menu">
+        <li>
+          <a href="/legislative/ordinance-framework" data-i18n="home-ordinance-framework"
+            >Ordinance Framework</a
+          >
+        </li>
+        <li>
+          <a href="/legislative/resolution-framework" data-i18n="home-resolution-framework"
+            >Resolution Framework</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li><a href="/news/"{% if "/news" in page.url %} class="active"{% endif %} data-i18n="nav-news">News</a></li>
+    <li><a href="/contact/"{% if "/contact" in page.url %} class="active"{% endif %} data-i18n="nav-contact">Contact</a></li>
+  </ul>
+</nav>

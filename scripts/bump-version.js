@@ -79,50 +79,39 @@ try {
   console.warn('Warning: Could not update package.json:', e.message);
 }
 
-// Update all HTML files — replace hardcoded "Ver. X.X.X" in footer
-const htmlDirs = [
-  '.',
-  'accessibility',
-  'budget',
-  'contact',
-  'faq',
-  'government',
-  'legislative',
-  'news',
-  'privacy',
-  'service-details',
-  'services',
-  'sitemap',
-  'statistics',
-  'terms',
-  'transparency',
-];
+// Update page templates — replace hardcoded "Ver. X.X.X" in the footer.
+// Pages are Eleventy templates under src/ (.njk); offline.html remains at root.
+function collectTemplates(dir, acc) {
+  if (!fs.existsSync(dir)) return acc;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, entry.name);
+    if (entry.isDirectory()) collectTemplates(p, acc);
+    else if (/\.(njk|html)$/.test(entry.name)) acc.push(p);
+  }
+  return acc;
+}
+
+const root = path.join(__dirname, '..');
+const templateFiles = collectTemplates(path.join(root, 'src'), []);
+// Root-level standalone pages not migrated to Eleventy (e.g. offline.html).
+for (const f of fs.readdirSync(root)) {
+  if (f.endsWith('.html')) templateFiles.push(path.join(root, f));
+}
 
 let filesUpdated = 0;
 const versionPattern = new RegExp('Ver\\. ' + oldVersion.replace(/\./g, '\\.'), 'g');
 
-htmlDirs.forEach(function (dir) {
-  const dirPath = path.join(__dirname, '..', dir);
-  if (!fs.existsSync(dirPath)) return;
-
-  const files = fs.readdirSync(dirPath).filter(function (f) {
-    return f.endsWith('.html');
-  });
-
-  files.forEach(function (file) {
-    const filePath = path.join(dirPath, file);
-    let content = fs.readFileSync(filePath, 'utf8');
-    if (versionPattern.test(content)) {
-      content = content.replace(versionPattern, 'Ver. ' + newVersion);
-      fs.writeFileSync(filePath, content);
-      filesUpdated++;
-    }
-    // Reset regex lastIndex
-    versionPattern.lastIndex = 0;
-  });
+templateFiles.forEach(function (filePath) {
+  let content = fs.readFileSync(filePath, 'utf8');
+  if (versionPattern.test(content)) {
+    content = content.replace(versionPattern, 'Ver. ' + newVersion);
+    fs.writeFileSync(filePath, content);
+    filesUpdated++;
+  }
+  versionPattern.lastIndex = 0;
 });
 
-console.log('Updated ' + filesUpdated + ' HTML file(s)');
+console.log('Updated ' + filesUpdated + ' page template(s)');
 
 // Sync version.json to react-app/public/ (consumed by React Footer at runtime)
 var reactPublicVersion = path.join(__dirname, '..', 'react-app', 'public', 'version.json');

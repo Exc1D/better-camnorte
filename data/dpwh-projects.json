@@ -1,4 +1,8 @@
 {
+  "source": "DPWH — Camarines Norte District Engineering Office",
+  "source_url": null,
+  "as_of": null,
+  "_provenance_note": "source_url + as_of are the LGU's to supply (the official DPWH project list URL and the date this snapshot is current as of). The provenance gate flags them until filled.",
   "summary": {
     "totalProjects": 63,
     "totalCost": 409494730.55,

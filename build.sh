@@ -38,6 +38,14 @@ fi
 
 VERSION=$(node -e "console.log(require('./version.json').version)")
 
+# ── 1b. Provenance gate (web-principle #2: every figure sourced & dated) ──────
+# Warning-only for now — the missing source_url/as_of values are the LGU's to
+# supply, not the build's to invent. Swap to `--strict` to make it build-failing
+# once the figure datasets carry real provenance.
+echo ""
+echo "▶ [1b] Provenance check..."
+node scripts/check-provenance.js || true
+
 # ── 2. Clean dist ────────────────────────────────────────────────────────────
 echo ""
 echo "▶ [2/6] Cleaning dist/..."
@@ -51,6 +59,9 @@ if command -v rsync &>/dev/null; then
     rsync -a \
         --exclude='node_modules' \
         --exclude='dist' \
+        --exclude='_site' \
+        --exclude='src' \
+        --exclude='eleventy.config.js' \
         --exclude='.git' \
         --exclude='.vscode' \
         --exclude='.DS_Store' \
@@ -76,6 +87,12 @@ else
 fi
 echo "  Legacy files copied."
 
+# ── 3b. Render Eleventy page templates (src/ → dist/) ─────────────────────────
+echo ""
+echo "▶ [3b/6] Rendering Eleventy templates..."
+npx --yes @11ty/eleventy --output=dist
+echo "  Templates rendered."
+
 # ── 4. Build React app and merge health page ──────────────────────────────────
 echo ""
 echo "▶ [4/6] React app build..."
@@ -98,6 +115,8 @@ if [ "$REACT_BUILD" = true ] && [ -f "react-app/package.json" ]; then
     # Currently: /services/health is the only React-served route in production
     if [ -f "react-app/out/services/health.html" ]; then
         echo "  Merging health page → dist/services/health.html"
+        # services/ no longer ships a legacy index, so the dir won't exist yet
+        mkdir -p dist/services
         cp react-app/out/services/health.html dist/services/health.html
     fi
 
