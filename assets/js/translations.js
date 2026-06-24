@@ -65,6 +65,17 @@ const translations = {
     'method-corrections-email': 'Or email',
     'method-corrections-source':
       'Please include a link to the official source so we can verify and cite it.',
+    'health-page-breadcrumb': 'Health services',
+    'health-page-badge': 'Health and wellness',
+    'health-page-title': 'Health services',
+    'health-page-subtitle':
+      'Start with verified public sources for health assistance in Camarines Norte.',
+    'health-page-provider-title': 'Check current requirements with the official provider',
+    'health-page-provider-body':
+      'BetterCamNorte no longer publishes unverified fees, requirements, or turnaround times for vaccination, health certificates, or medical assistance. Those details can change and should come from the responsible government health office.',
+    'health-page-provider-cta': 'Visit the official Camarines Norte provincial portal',
+    'health-page-independent-note':
+      'This page restores the health-search destination while verified service records are being assembled. BetterCamNorte is an independent project, not an official government website.',
 
     // Statistics Page
     'stats-title': 'Provincial Statistics',
@@ -172,6 +183,16 @@ const translations = {
     'footer-resources': 'Resources',
     'footer-volunteer': 'Volunteer with us',
     'footer-contribute': 'Contribute code with us',
+    'footer-logo-alt': 'BetterCamNorte logo',
+    'footer-dpwh-portal': 'DPWH Transparency Portal',
+    'footer-foi': 'Freedom of Information',
+    'footer-open-data': 'Open Data Philippines',
+    'footer-official-portal': 'Official Camarines Norte Provincial Government Portal',
+    'footer-cost-label': 'Cost to the People of Camarines Norte =',
+    'footer-cost-aria': 'Cost to the People of Camarines Norte: Zero Pesos',
+    'footer-disclaimer':
+      'Independent transparency project. All figures sourced from official public records.',
+    'footer-version-label': 'Ver.',
 
     // Services Page
     'services-title': 'Government Services Directory',
@@ -6421,6 +6442,18 @@ const translations = {
     'method-corrections-email': 'O mag-email sa',
     'method-corrections-source':
       'Pakisama ang link ng opisyal na pinagmulan upang ma-verify at maisipi namin ito.',
+    'health-page-breadcrumb': 'Mga serbisyong pangkalusugan',
+    'health-page-badge': 'Kalusugan at kagalingan',
+    'health-page-title': 'Mga serbisyong pangkalusugan',
+    'health-page-subtitle':
+      'Magsimula sa beripikadong pampublikong pinagmulan para sa tulong pangkalusugan sa Camarines Norte.',
+    'health-page-provider-title':
+      'Kumpirmahin ang kasalukuyang mga kinakailangan sa opisyal na tagapagbigay',
+    'health-page-provider-body':
+      'Hindi na naglalathala ang BetterCamNorte ng hindi beripikadong bayarin, kinakailangan, o tagal ng pagproseso para sa bakuna, health certificate, o tulong medikal. Maaaring magbago ang mga detalyeng iyon at dapat manggaling sa responsableng tanggapan ng kalusugan ng pamahalaan.',
+    'health-page-provider-cta': 'Bisitahin ang opisyal na portal ng Lalawigan ng Camarines Norte',
+    'health-page-independent-note':
+      'Ibinalik ng pahinang ito ang destinasyon ng paghahanap sa kalusugan habang kinokompleto ang beripikadong tala ng serbisyo. Ang BetterCamNorte ay isang malayang proyekto, hindi opisyal na website ng pamahalaan.',
     'stats-title': 'Estadistika ng Munisipalidad',
     'stats-subtitle': 'Datos at estadistika tungkol sa Camarines Norte',
     'stats-demographics': 'Pangkalahatang-ideya ng Demograpiya',
@@ -6512,6 +6545,16 @@ const translations = {
     'footer-resources': 'Mga Mapagkukunan',
     'footer-volunteer': 'Mag-volunteer sa amin',
     'footer-contribute': 'Mag-ambag ng code sa amin',
+    'footer-logo-alt': 'Logo ng BetterCamNorte',
+    'footer-dpwh-portal': 'DPWH Transparency Portal',
+    'footer-foi': 'Freedom of Information',
+    'footer-open-data': 'Open Data Philippines',
+    'footer-official-portal': 'Opisyal na Portal ng Pamahalaang Panlalawigan ng Camarines Norte',
+    'footer-cost-label': 'Gastos sa mamamayan ng Camarines Norte =',
+    'footer-cost-aria': 'Gastos sa mamamayan ng Camarines Norte: Zero Pesos',
+    'footer-disclaimer':
+      'Malayang proyekto sa transparency. Lahat ng bilang ay mula sa opisyal na pampublikong tala.',
+    'footer-version-label': 'Bers.',
     'services-title': 'Direktoryo ng Serbisyong Munisipal',
     'services-subtitle':
       'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Camarines Norte',

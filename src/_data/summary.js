@@ -9,8 +9,15 @@ const peso = (n) => '₱' + (n / 1e9).toFixed(1) + 'B';
 const sum = (arr) => arr.reduce((t, p) => t + (Number(p.cost) || 0), 0);
 
 const summarize = (raw) => {
+  raw = raw || {};
   const projects = Array.isArray(raw.projects)
-    ? raw.projects.filter((project) => project && typeof project === 'object')
+    ? raw.projects.filter(
+        (project) =>
+          project &&
+          typeof project.id === 'string' &&
+          typeof project.name === 'string' &&
+          typeof project.officialProvince === 'string'
+      )
     : [];
   const source =
     typeof raw.source === 'string'

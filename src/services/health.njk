@@ -32,7 +32,9 @@ permalink: services/health.html
     <link rel="stylesheet" href="/assets/css/transparency-v2.css" />
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link" data-i18n="budget-skip-to-main-content"
+      >Skip to main content</a
+    >
     {% include "header.njk" %}
 
     <main id="main-content">
@@ -40,7 +42,7 @@ permalink: services/health.html
         <nav class="breadcrumbs" aria-label="Breadcrumb">
           <a href="/" data-i18n="breadcrumb-home">Home</a>
           <span>/</span>
-          <span aria-current="page">Health services</span>
+          <span aria-current="page" data-i18n="health-page-breadcrumb">Health services</span>
         </nav>
       </div>
 
@@ -48,18 +50,23 @@ permalink: services/health.html
         <div class="container">
           <div class="trans-hero-content-v2">
             <span class="trans-hero-badge-v2"
-              ><i class="bi bi-heart-pulse"></i> Health and wellness</span
+              ><i class="bi bi-heart-pulse"></i>
+              <span data-i18n="health-page-badge">Health and wellness</span></span
             >
-            <h1>Health services</h1>
-            <p>Start with verified public sources for health assistance in Camarines Norte.</p>
+            <h1 data-i18n="health-page-title">Health services</h1>
+            <p data-i18n="health-page-subtitle">
+              Start with verified public sources for health assistance in Camarines Norte.
+            </p>
           </div>
         </div>
       </section>
 
       <section class="method-section">
         <div class="container method-prose">
-          <h2>Check current requirements with the official provider</h2>
-          <p>
+          <h2 data-i18n="health-page-provider-title">
+            Check current requirements with the official provider
+          </h2>
+          <p data-i18n="health-page-provider-body">
             BetterCamNorte no longer publishes unverified fees, requirements, or turnaround times
             for vaccination, health certificates, or medical assistance. Those details can change
             and should come from the responsible government health office.
@@ -70,11 +77,13 @@ permalink: services/health.html
               href="https://camnorte.gov.ph/"
               target="_blank"
               rel="noopener noreferrer"
-              >Visit the official Camarines Norte provincial portal
+              ><span data-i18n="health-page-provider-cta"
+                >Visit the official Camarines Norte provincial portal</span
+              >
               <i class="bi bi-box-arrow-up-right"></i
             ></a>
           </p>
-          <p>
+          <p data-i18n="health-page-independent-note">
             This page restores the health-search destination while verified service records are
             being assembled. BetterCamNorte is an independent project, not an official government
             website.

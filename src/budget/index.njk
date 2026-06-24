@@ -136,7 +136,7 @@
       </section>
 
       <!-- ponytail: SRE figures were hard-coded and unsourced; unpublished per provenance rule.
-           Static notice, not data-bound — data/fiscal_transparency.json is an empty draft.
+           Notice copy is static; freshness date comes from the current sourced build summary.
            Rebuild this section from sourced data once BLGF figures land. -->
       <section class="sre-section-v2 animate-on-scroll">
         <div class="container">
@@ -146,12 +146,11 @@
               Provincial fiscal summary — awaiting verified data
             </h2>
             <p data-i18n="budget-fiscal-pending-note">
-              We don't yet have an official, dated source for the province's statement of
-              receipts and expenditures, so we publish nothing here. A figure without a
-              traceable source does not ship. Source: Bureau of Local Government Finance
-              (BLGF).
+              We don't yet have an official, dated source for the province's statement of receipts
+              and expenditures, so we publish nothing here. A figure without a traceable source does
+              not ship. Source: Bureau of Local Government Finance (BLGF).
             </p>
-            <time datetime="2026-06-24">Last checked: 24 June 2026.</time>
+            <time datetime="{{ summary.as_of }}">Last checked: {{ summary.as_of }}.</time>
           </div>
         </div>
       </section>
@@ -405,8 +404,8 @@
               class="footer-tagline"
               data-i18n="budget-empowering-the-people-of-camnorte-with-transparent"
             >
-              Empowering the people of Camarines Norte with transparent access to the services, programs, and
-              public funds of Camarines Norte Provincial Government.
+              Empowering the people of Camarines Norte with transparent access to the services,
+              programs, and public funds of Camarines Norte Provincial Government.
             </p>
             <div class="footer-social-new">
               <a
