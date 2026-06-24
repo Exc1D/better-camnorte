@@ -37,10 +37,25 @@
     });
   }
 
-  // Load version when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadVersion);
-  } else {
+  function loadHomepageHistory() {
+    if (!document.querySelector('.history-section')) return;
+    if (document.querySelector('script[data-history-timeline]')) return;
+
+    const script = document.createElement('script');
+    script.src = '/assets/js/history-timeline.js';
+    script.dataset.historyTimeline = 'true';
+    document.head.appendChild(script);
+  }
+
+  function initialize() {
     loadVersion();
+    loadHomepageHistory();
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialize, { once: true });
+  } else {
+    initialize();
   }
 })();
