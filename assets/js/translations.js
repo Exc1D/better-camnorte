@@ -66,8 +66,6 @@ const translations = {
     'method-corrections-source':
       'Please include a link to the official source so we can verify and cite it.',
     'health-page-breadcrumb': 'Health services',
-    'health-page-badge': 'Health and wellness',
-    'health-page-title': 'Health services',
     'health-page-subtitle':
       'Start with verified public sources for health assistance in Camarines Norte.',
     'health-page-provider-title': 'Check current requirements with the official provider',
@@ -6443,8 +6441,6 @@ const translations = {
     'method-corrections-source':
       'Pakisama ang link ng opisyal na pinagmulan upang ma-verify at maisipi namin ito.',
     'health-page-breadcrumb': 'Mga serbisyong pangkalusugan',
-    'health-page-badge': 'Kalusugan at kagalingan',
-    'health-page-title': 'Mga serbisyong pangkalusugan',
     'health-page-subtitle':
       'Magsimula sa beripikadong pampublikong pinagmulan para sa tulong pangkalusugan sa Camarines Norte.',
     'health-page-provider-title':
