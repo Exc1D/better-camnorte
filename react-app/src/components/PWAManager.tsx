@@ -78,7 +78,11 @@ export default function PWAManager() {
             <span>Install BetterCamNorte for quick access to services.</span>
           </div>
           <div className="pwa-install-actions">
-            <button className="pwa-install-btn" onClick={handleInstall} aria-label="Install BetterCamNorte app">
+            <button
+              className="pwa-install-btn"
+              onClick={handleInstall}
+              aria-label="Install BetterCamNorte app"
+            >
               Install
             </button>
             <button

@@ -31,7 +31,13 @@
     "years": ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
     "pillars": {
       "economicDynamism": {
-        "labels": ["Local Economy Size", "Economy Growth", "Active Establishments", "Safety Compliant", "Employment"],
+        "labels": [
+          "Local Economy Size",
+          "Economy Growth",
+          "Active Establishments",
+          "Safety Compliant",
+          "Employment"
+        ],
         "data": [
           [0.4353, 0.1829, 0.1004, 0.042, 0.0328, 0.0935, 0.0344, 0.0571, 0.0259],
           [0.0847, 0.003, 0.0081, 0.0028, 0.3297, 0.0026, 0.0, 0.0005, 0.0318],
@@ -41,7 +47,13 @@
         ]
       },
       "governmentEfficiency": {
-        "labels": ["Cost of Living", "Cost of Business", "Financial Deepening", "Productivity", "Compliance"],
+        "labels": [
+          "Cost of Living",
+          "Cost of Business",
+          "Financial Deepening",
+          "Productivity",
+          "Compliance"
+        ],
         "data": [
           [2.6667, 1.6216, 1.3889, 1.1508, 0.8621, 0.4063, 1.6635, 1.1905, 1.1919],
           [2.2968, 2.2431, 2.1045, 1.9988, 2.1827, 2.1901, 1.8629, 1.546, 1.5599],
@@ -51,7 +63,13 @@
         ]
       },
       "infrastructure": {
-        "labels": ["Road Network", "Distance to Ports", "Basic Utilities", "Transportation", "IT Capacity"],
+        "labels": [
+          "Road Network",
+          "Distance to Ports",
+          "Basic Utilities",
+          "Transportation",
+          "IT Capacity"
+        ],
         "data": [
           [0.0019, 0.0003, 0.0, 0.009, 0.0021, 0.0235, 0.0015, 0.0016, 0.0016],
           [2.3543, 1.8319, 0.0, 1.6595, 2.4576, 2.4658, 1.3088, 1.562, 1.5281],
@@ -61,7 +79,13 @@
         ]
       },
       "resiliency": {
-        "labels": ["DRR Plan", "Disaster Drill", "Early Warning", "DRRMP Budget", "Risk Assessments"],
+        "labels": [
+          "DRR Plan",
+          "Disaster Drill",
+          "Early Warning",
+          "DRRMP Budget",
+          "Risk Assessments"
+        ],
         "data": [
           [null, 2.5, 0.0, 2.4537, 2.5, 2.4474, 1.9995, 1.9583, 1.9783],
           [null, 2.5, 0.0, 2.25, 2.5, 1.2583, 1.002, 1.0016, 1.0023],
@@ -71,7 +95,13 @@
         ]
       },
       "innovation": {
-        "labels": ["ICT Plan", "R&D Expenditures", "E-BPLS Software", "STEM Graduates", "Innovation Facilities"],
+        "labels": [
+          "ICT Plan",
+          "R&D Expenditures",
+          "E-BPLS Software",
+          "STEM Graduates",
+          "Innovation Facilities"
+        ],
         "data": [
           [null, null, null, null, null, null, 1.3334, 2.0001, 2.0001],
           [null, null, null, null, null, null, 0.0, 0.0, 0.0006],

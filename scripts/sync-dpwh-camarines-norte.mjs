@@ -214,7 +214,7 @@ function normalizeProject(project) {
   const { contractor, contractorId } = contractorParts(project.contractor);
   const status = normalizeStatus(project.status);
   const progress = Math.max(
-    -100,
+    0,
     Math.min(100, toFiniteNumber(project.progress, status === 'Completed' ? 100 : 0))
   );
 

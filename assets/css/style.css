@@ -5867,7 +5867,9 @@ cklist with Icons - Proper Indentation */
   padding: 12px 22px;
   border-radius: var(--border-radius);
   text-decoration: none;
-  transition: background 0.18s ease, transform 0.15s ease;
+  transition:
+    background 0.18s ease,
+    transform 0.15s ease;
 }
 
 .home-fb-cta:hover,
@@ -5955,12 +5957,26 @@ cklist with Icons - Proper Indentation */
   animation: skeleton-shimmer 1.4s infinite ease-in-out;
 }
 
-.fb-skel-bar--title { height: 13px; width: 72%; margin-bottom: 8px; }
-.fb-skel-bar--100   { width: 100%; }
-.fb-skel-bar--80    { width: 80%; }
-.fb-skel-bar--60    { width: 60%; }
-.fb-skel-bar--45    { width: 45%; }
-.fb-skel-bar--sm    { height: 8px; }
+.fb-skel-bar--title {
+  height: 13px;
+  width: 72%;
+  margin-bottom: 8px;
+}
+.fb-skel-bar--100 {
+  width: 100%;
+}
+.fb-skel-bar--80 {
+  width: 80%;
+}
+.fb-skel-bar--60 {
+  width: 60%;
+}
+.fb-skel-bar--45 {
+  width: 45%;
+}
+.fb-skel-bar--sm {
+  height: 8px;
+}
 
 /* ── Post cards ── */
 .fb-feed-local {
@@ -9586,10 +9602,23 @@ a.a11y-contact-item:hover i {
   height: 6px;
   background: linear-gradient(
     90deg,
-    var(--sdg-1), var(--sdg-2), var(--sdg-3), var(--sdg-4), var(--sdg-5),
-    var(--sdg-6), var(--sdg-7), var(--sdg-8), var(--sdg-9), var(--sdg-10),
-    var(--sdg-11), var(--sdg-12), var(--sdg-13), var(--sdg-14), var(--sdg-15),
-    var(--sdg-16), var(--sdg-17)
+    var(--sdg-1),
+    var(--sdg-2),
+    var(--sdg-3),
+    var(--sdg-4),
+    var(--sdg-5),
+    var(--sdg-6),
+    var(--sdg-7),
+    var(--sdg-8),
+    var(--sdg-9),
+    var(--sdg-10),
+    var(--sdg-11),
+    var(--sdg-12),
+    var(--sdg-13),
+    var(--sdg-14),
+    var(--sdg-15),
+    var(--sdg-16),
+    var(--sdg-17)
   );
 }
 .page-header h1 {
@@ -9628,4 +9657,3 @@ a.a11y-contact-item:hover i {
 .section-title i {
   color: var(--sdg);
 }
-

@@ -47,13 +47,13 @@ To maintain a standardized schema across different LGUs, developers must normali
 
 Developers are responsible for ETL (Extract, Transform, Load) operations mapping external data fields to the BetterLGU internal schema.
 
-| Data Domain         | Official Source (Primary)  | Secondary Verification    | Internal Target Schema          |
-| :------------------ | :------------------------- | :------------------------ | :------------------------------ |
-| **Demographics**    | **PSA** (psa.gov.ph)       | Local CBMS Data           | `data/demographics.json`        |
-| **Fiscal Data**     | **BLGF** (blgf.gov.ph)     | LGU Accounting Office     | `data/fiscal_transparency.json` |
-| **Competitiveness** | **CMCI** (cmci.dti.gov.ph) | DTI Provincial Office     | `data/indices.json`             |
-| **Ordinances**      | **Sangguniang Panlalawigan**      | Official SB Facebook Page | `data/legislative.json`         |
-| **Services**        | **Citizen's Charter**      | Department Heads          | `data/services.json`            |
+| Data Domain         | Official Source (Primary)    | Secondary Verification    | Internal Target Schema          |
+| :------------------ | :--------------------------- | :------------------------ | :------------------------------ |
+| **Demographics**    | **PSA** (psa.gov.ph)         | Local CBMS Data           | `data/demographics.json`        |
+| **Fiscal Data**     | **BLGF** (blgf.gov.ph)       | LGU Accounting Office     | `data/fiscal_transparency.json` |
+| **Competitiveness** | **CMCI** (cmci.dti.gov.ph)   | DTI Provincial Office     | `data/indices.json`             |
+| **Ordinances**      | **Sangguniang Panlalawigan** | Official SB Facebook Page | `data/legislative.json`         |
+| **Services**        | **Citizen's Charter**        | Department Heads          | `data/services.json`            |
 
 ### 2.2 Integration Workflows
 
@@ -74,13 +74,13 @@ This section defines the architectural modularity required to allow LGUs to sele
 
 ### 3.1 Stack Comparison Matrix
 
-| Feature         | **BetterCamNorte A (Lightweight)** | **BetterCamNorte B (React/TS)**              |
-| :-------------- | :------------------------------- | :----------------------------------------- |
-| **Core Tech**   | Vanilla JS, Bootstrap 5, Leaflet | React, TypeScript, Tailwind                |
-| **Data Store**  | Static JSON Fetching             | Typed JSON Imports / Context API           |
-| **Hosting**     | GitHub Pages (Zero Config)       | Vercel / Netlify / GitHub Actions          |
-| **Maintenance** | Low (Accessible to novice devs)  | Medium (Requires build pipeline knowledge) |
-| **Use Case**    | 4th-6th Class Municipalities     | Cities and 1st Class Municipalities        |
+| Feature         | **BetterCamNorte A (Lightweight)** | **BetterCamNorte B (React/TS)**            |
+| :-------------- | :--------------------------------- | :----------------------------------------- |
+| **Core Tech**   | Vanilla JS, Bootstrap 5, Leaflet   | React, TypeScript, Tailwind                |
+| **Data Store**  | Static JSON Fetching               | Typed JSON Imports / Context API           |
+| **Hosting**     | GitHub Pages (Zero Config)         | Vercel / Netlify / GitHub Actions          |
+| **Maintenance** | Low (Accessible to novice devs)    | Medium (Requires build pipeline knowledge) |
+| **Use Case**    | 4th-6th Class Municipalities       | Cities and 1st Class Municipalities        |
 
 ### 3.2 Core Reusable Modules
 

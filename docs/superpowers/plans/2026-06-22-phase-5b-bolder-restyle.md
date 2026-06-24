@@ -4,7 +4,7 @@
 
 **Goal:** Apply a bolder, neutral-based identity (principle #6) and a hybrid watchdog hero (principle #1) to the shared chrome, homepage, and the transparency + statistics flagship pages — building on 5a's single `:root` token surface.
 
-**Architecture:** Add design tokens to the 5a `:root` in `style.css`, then restyle by *applying* those tokens to existing selectors. Appearance changes on purpose; the invariant is "intended change + nothing broken" (figures/charts still render, AA contrast holds, no console errors). The hero's visible copy is i18n-driven (`translations.js`) with njk fallbacks — both are updated.
+**Architecture:** Add design tokens to the 5a `:root` in `style.css`, then restyle by _applying_ those tokens to existing selectors. Appearance changes on purpose; the invariant is "intended change + nothing broken" (figures/charts still render, AA contrast holds, no console errors). The hero's visible copy is i18n-driven (`translations.js`) with njk fallbacks — both are updated.
 
 **Tech Stack:** Plain CSS custom properties, Nunjucks templates, a JS translation map. Verification via the running `eleventy --serve` preview (serverId from `preview_list`): screenshots, `preview_inspect` for contrast, `preview_console_logs`.
 
@@ -15,6 +15,7 @@
 ## Task 1: Add the 5b design tokens
 
 **Files:**
+
 - Modify: `assets/css/style.css` (the 5a `:root`, after the folded `--wide` line)
 
 - [ ] **Step 1: Capture baseline homepage screenshot**
@@ -26,34 +27,33 @@
 In `assets/css/style.css`, immediately after the `--wide: var(--display);` line (end of the 5a folded block), insert:
 
 ```css
+/* === Phase 5b: neutral scale, type scale, section spacing === */
+--n-0: #ffffff;
+--n-50: #f8f9fa;
+--n-100: #f0f2f5;
+--n-200: #e5e7eb;
+--n-300: #cbd2da;
+--n-400: #9aa3ad;
+--n-500: #6b7280;
+--n-600: #4b5563;
+--n-700: #374151;
+--n-800: #1f2733;
+--n-900: #141a22;
 
-  /* === Phase 5b: neutral scale, type scale, section spacing === */
-  --n-0: #ffffff;
-  --n-50: #f8f9fa;
-  --n-100: #f0f2f5;
-  --n-200: #e5e7eb;
-  --n-300: #cbd2da;
-  --n-400: #9aa3ad;
-  --n-500: #6b7280;
-  --n-600: #4b5563;
-  --n-700: #374151;
-  --n-800: #1f2733;
-  --n-900: #141a22;
+--text-sm: 0.875rem;
+--text-base: 1rem;
+--text-lg: 1.25rem;
+--text-xl: 1.5rem;
+--text-2xl: 1.95rem;
+--text-3xl: 2.5rem;
+--text-display: clamp(3rem, 9vw, 7rem);
 
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.5rem;
-  --text-2xl: 1.95rem;
-  --text-3xl: 2.5rem;
-  --text-display: clamp(3rem, 9vw, 7rem);
+--weight-body: 400;
+--weight-head: 600;
+--weight-display: 800;
 
-  --weight-body: 400;
-  --weight-head: 600;
-  --weight-display: 800;
-
-  --spacing-2xl: 64px;
-  --spacing-3xl: 96px;
+--spacing-2xl: 64px;
+--spacing-3xl: 96px;
 ```
 
 - [ ] **Step 3: Verify tokens resolve and nothing shifted yet**
@@ -61,8 +61,12 @@ In `assets/css/style.css`, immediately after the `--wide: var(--display);` line 
 Navigate to `http://localhost:8765/`, `preview_eval`:
 
 ```js
-(() => { const s = getComputedStyle(document.documentElement);
-  return ['--n-0','--n-100','--n-900','--text-base','--text-display','--spacing-3xl'].map(v=>v+' = '+s.getPropertyValue(v).trim()).join('\n'); })()
+(() => {
+  const s = getComputedStyle(document.documentElement);
+  return ['--n-0', '--n-100', '--n-900', '--text-base', '--text-display', '--spacing-3xl']
+    .map((v) => v + ' = ' + s.getPropertyValue(v).trim())
+    .join('\n');
+})();
 ```
 
 Expected: each resolves (e.g. `--n-900 = #141a22`, `--text-display = clamp(3rem, 9vw, 7rem)`). `preview_screenshot` — must still match Task 1 Step 1 (tokens are defined but unused, so no visual change yet).
@@ -86,6 +90,7 @@ The full-width red bar is shared chrome: its `.hotline-bar` markup is duplicated
 non-SDG fills) — the single CSS rule change propagates to every page.
 
 **Files:**
+
 - Modify: the `.hotline-bar` CSS rule in `assets/css/style.css` (its current red `background`)
 
 - [ ] **Step 1: Locate the bar**
@@ -109,6 +114,7 @@ Navigate to `http://localhost:8765/`. `preview_inspect` the bar's text element f
 ## Task 3: Reframe the hero markup (njk fallbacks, hrefs, CTAs, stat chip)
 
 **Files:**
+
 - Modify: `src/index.njk:214-260` (hero sky + earth blocks)
 
 - [ ] **Step 1: Update eyebrow + lede fallback text**
@@ -120,12 +126,12 @@ In `src/index.njk`, replace the eyebrow inner text (line ~217) `Camarines Norte 
 In `src/index.njk`, immediately after the `</p>` closing the `hero__lede` (line ~246), insert:
 
 ```html
-            <p class="hero__stat">
-              <a href="transparency/">
-                <strong>₱409.5M</strong> across <strong>63</strong> DPWH projects tracked
-              </a>
-              <span class="hero__stat-src">Source: DPWH — Camarines Norte District Engineering Office</span>
-            </p>
+<p class="hero__stat">
+  <a href="transparency/">
+    <strong>₱409.5M</strong> across <strong>63</strong> DPWH projects tracked
+  </a>
+  <span class="hero__stat-src">Source: DPWH — Camarines Norte District Engineering Office</span>
+</p>
 ```
 
 - [ ] **Step 3: Rewrite the two CTAs**
@@ -133,15 +139,15 @@ In `src/index.njk`, immediately after the `</p>` closing the `hero__lede` (line 
 Replace the `hero__actions` block (lines ~249-257) with:
 
 ```html
-            <div class="hero__actions">
-              <a href="transparency/" class="hero__btn hero__btn--primary" data-i18n="hero-cta-primary">
-                See the money
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </a>
-              <a href="transparency/#sources" class="hero__btn hero__btn--ghost" data-i18n="hero-cta-secondary"
-                >How we source this</a
-              >
-            </div>
+<div class="hero__actions">
+  <a href="transparency/" class="hero__btn hero__btn--primary" data-i18n="hero-cta-primary">
+    See the money
+    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+  </a>
+  <a href="transparency/#sources" class="hero__btn hero__btn--ghost" data-i18n="hero-cta-secondary"
+    >How we source this</a
+  >
+</div>
 ```
 
 - [ ] **Step 4: Verify (fallbacks render, links resolve)**
@@ -153,6 +159,7 @@ The i18n strings don't exist yet for the new keys, so the fallback text shows. N
 ## Task 4: Update the hero i18n strings
 
 **Files:**
+
 - Modify: `assets/js/translations.js` (the `hero-eyebrow`, `hero-subtitle` keys; add `hero-cta-primary`, `hero-cta-secondary`)
 
 - [ ] **Step 1: Find the existing hero keys**
@@ -162,6 +169,7 @@ Run: `grep -nE "hero-eyebrow|hero-subtitle|home-contact-us" assets/js/translatio
 - [ ] **Step 2: Update English strings**
 
 In the `en` block, set:
+
 - `hero-eyebrow`: `Following the money · Cost to the people: ₱0`
 - `hero-subtitle`: `An independent watchdog tracking how Camarines Norte spends public money — every figure sourced and dated.`
 - add `hero-cta-primary`: `See the money`
@@ -170,6 +178,7 @@ In the `en` block, set:
 - [ ] **Step 3: Update Filipino strings (accurate translation)**
 
 In the `fil` block, set:
+
 - `hero-eyebrow`: `Sinusundan ang pera · Halaga sa mamamayan: ₱0`
 - `hero-subtitle`: `Isang malayang bantay na sinusubaybayan kung paano ginagastos ng Camarines Norte ang pondo ng publiko — bawat datos may pinagmulan at petsa.`
 - `hero-cta-primary`: `Tingnan ang pera`
@@ -192,6 +201,7 @@ Navigate to `http://localhost:8765/`. For each lang button (EN/FIL/ILO), `previe
 ## Task 5: Style the hero (neutral base, type tokens, gold accent, stat chip)
 
 **Files:**
+
 - Modify: `assets/css/home-redesign.css` (hero rules)
 
 - [ ] **Step 1: Read current hero CSS**
@@ -201,6 +211,7 @@ Read `assets/css/home-redesign.css` hero section (the `.hero`, `.hero__title*`, 
 - [ ] **Step 2: Apply neutral base + type tokens**
 
 Edit the hero rules so that:
+
 - `.hero__title-line--sans` (the "ng Camarines Norte" line) colour changes from maroon (`var(--maroon)` / `#7a1f2b`) to `var(--ink)`.
 - `.hero__title` font-size uses `var(--text-display)` and `font-weight: var(--weight-display)`.
 - `.hero__lede` uses `font-size: var(--text-lg)` and `color: var(--ink-soft)`.
@@ -216,9 +227,20 @@ Append rules:
   font-size: var(--text-base);
   color: var(--ink);
 }
-.hero__stat a { color: inherit; text-decoration: none; border-bottom: 2px solid var(--gold); }
-.hero__stat strong { font-weight: var(--weight-display); }
-.hero__stat-src { display: block; font-size: var(--text-sm); color: var(--ink-soft); margin-top: 2px; }
+.hero__stat a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid var(--gold);
+}
+.hero__stat strong {
+  font-weight: var(--weight-display);
+}
+.hero__stat-src {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
 ```
 
 - [ ] **Step 4: Verify hero appearance + contrast**
@@ -234,6 +256,7 @@ Navigate to `http://localhost:8765/`. `preview_screenshot` — wordmark bold, su
 ## Task 6: Apply type scale + spacing rhythm + neutral surfaces to homepage sections
 
 **Files:**
+
 - Modify: `assets/css/home-redesign.css` and/or `assets/css/style.css` (homepage `.section`, `.home-section-header`, section heading/body rules)
 
 - [ ] **Step 1: Read current section rules**
@@ -261,6 +284,7 @@ Navigate to `http://localhost:8765/`. `preview_screenshot` full page (scroll via
 ## Task 7: Restyle the transparency + statistics flagship bodies
 
 **Files:**
+
 - Modify: `assets/css/transparency.css`, `assets/css/transparency-v2.css`, `assets/css/statistics.css`
 
 - [ ] **Step 1: Read each stylesheet's headings/surfaces/spacing**
@@ -270,6 +294,7 @@ For each of the three files, read the page-title, card/panel, table, and section
 - [ ] **Step 2: Apply tokens (no layout/data changes)**
 
 In each file:
+
 - Page + section headings → `var(--text-3xl)` / `var(--text-2xl)`, `var(--weight-display)`.
 - Body/captions → `var(--text-base)` / `var(--text-sm)`, `color: var(--ink)` / `var(--ink-soft)`.
 - Card/panel surfaces using ad-hoc grays → `var(--n-0)` / `var(--n-50)` / `var(--n-100)` borders `var(--n-200)`.
@@ -282,7 +307,12 @@ In each file:
 Navigate to `http://localhost:8765/transparency/` then `http://localhost:8765/statistics/`. For statistics, `preview_eval`:
 
 ```js
-['cmciOverviewChart','populationBarChart','historicalLineChart','distributionPieChart'].map(id=>{const c=Chart.getChart(id);return id+': '+(c?c.data.datasets.length+' datasets':'MISSING');}).join('\n')
+['cmciOverviewChart', 'populationBarChart', 'historicalLineChart', 'distributionPieChart']
+  .map((id) => {
+    const c = Chart.getChart(id);
+    return id + ': ' + (c ? c.data.datasets.length + ' datasets' : 'MISSING');
+  })
+  .join('\n');
 ```
 
 Expected: every chart present (non-`MISSING`). `preview_screenshot` each page — bolder headings, neutral surfaces, figures + citations intact. `preview_console_logs` (error): none on either page.

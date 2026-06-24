@@ -17,21 +17,21 @@
  *   node scripts/check-provenance.js --selftest  run the self-check
  */
 
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
 // Datasets that render public *figures*. Records (ordinances/resolutions/officials)
 // and the Citizen's-Charter-backed services list are out of scope.
 const FIGURE_DATASETS = {
-  "dpwh-projects.json": "projects",
-  "fiscal_transparency.json": "fiscal_years",
-  "demographics.json": "barangays",
+  'dpwh-projects.json': 'projects',
+  'fiscal_transparency.json': 'fiscal_years',
+  'demographics.json': 'barangays',
 };
 
 // Files that hold several independently-sourced figure sets, each carrying its own
 // provenance. Map: file -> { section: arrayKeyThatHoldsTheFigures }.
 const SECTIONED_DATASETS = {
-  "statistics.json": { population: "municipalities", cmci: "years" },
+  'statistics.json': { population: 'municipalities', cmci: 'years' },
 };
 
 const DATE_RE = /^\d{4}(-\d{2}(-\d{2})?)?$/; // YYYY | YYYY-MM | YYYY-MM-DD
@@ -39,12 +39,13 @@ const DATE_RE = /^\d{4}(-\d{2}(-\d{2})?)?$/; // YYYY | YYYY-MM | YYYY-MM-DD
 // The three rules, shared by flat and sectioned datasets.
 function fieldProblems(obj) {
   const problems = [];
-  const srcName = typeof obj.source === "string" ? obj.source : obj.source && obj.source.name;
-  if (!srcName || !String(srcName).trim()) problems.push("missing `source` (name of the issuing body)");
+  const srcName = typeof obj.source === 'string' ? obj.source : obj.source && obj.source.name;
+  if (!srcName || !String(srcName).trim())
+    problems.push('missing `source` (name of the issuing body)');
   if (!obj.source_url || !/^https?:\/\//.test(obj.source_url))
-    problems.push("missing `source_url` (link to the official source)");
+    problems.push('missing `source_url` (link to the official source)');
   if (!obj.as_of || !DATE_RE.test(obj.as_of))
-    problems.push("missing/invalid `as_of` (YYYY[-MM[-DD]] the figures are current as of)");
+    problems.push('missing/invalid `as_of` (YYYY[-MM[-DD]] the figures are current as of)');
   return problems;
 }
 
@@ -75,68 +76,84 @@ function lintNews(json) {
 }
 
 function run({ strict }) {
-  const dataDir = path.join(__dirname, "..", "data");
+  const dataDir = path.join(__dirname, '..', 'data');
   const errors = [];
   for (const [file, key] of Object.entries(FIGURE_DATASETS)) {
     const p = path.join(dataDir, file);
     if (!fs.existsSync(p)) continue;
-    errors.push(...lint(file, JSON.parse(fs.readFileSync(p, "utf8")), key));
+    errors.push(...lint(file, JSON.parse(fs.readFileSync(p, 'utf8')), key));
   }
   for (const [file, sections] of Object.entries(SECTIONED_DATASETS)) {
     const p = path.join(dataDir, file);
     if (!fs.existsSync(p)) continue;
-    errors.push(...lintSections(file, JSON.parse(fs.readFileSync(p, "utf8")), sections));
+    errors.push(...lintSections(file, JSON.parse(fs.readFileSync(p, 'utf8')), sections));
   }
   const warnings = [];
-  const newsPath = path.join(dataDir, "news.json");
+  const newsPath = path.join(dataDir, 'news.json');
   if (fs.existsSync(newsPath))
-    warnings.push(...lintNews(JSON.parse(fs.readFileSync(newsPath, "utf8"))));
+    warnings.push(...lintNews(JSON.parse(fs.readFileSync(newsPath, 'utf8'))));
 
   for (const w of warnings) console.log(`  ⚠ ${w}`);
   for (const e of errors) console.log(`  ✗ ${e}`);
   if (!errors.length && !warnings.length) {
-    console.log("  ✓ every rendered figure dataset is sourced & dated");
+    console.log('  ✓ every rendered figure dataset is sourced & dated');
     return 0;
   }
   console.log(
     `\n  ${errors.length} figure-dataset gap(s), ${warnings.length} news warning(s).` +
-      (strict ? " (--strict: failing build)" : " (warning only; run with --strict to enforce)")
+      (strict ? ' (--strict: failing build)' : ' (warning only; run with --strict to enforce)')
   );
   return strict && errors.length ? 1 : 0;
 }
 
 function selftest() {
-  const assert = require("assert");
+  const assert = require('assert');
   // clean
   assert.deepStrictEqual(
-    lint("x.json", { source: "DPWH", source_url: "https://x", as_of: "2024-01-31", projects: [{}] }, "projects"),
+    lint(
+      'x.json',
+      { source: 'DPWH', source_url: 'https://x', as_of: '2024-01-31', projects: [{}] },
+      'projects'
+    ),
     []
   );
   // empty draft skipped
-  assert.deepStrictEqual(lint("x.json", { projects: [] }, "projects"), []);
+  assert.deepStrictEqual(lint('x.json', { projects: [] }, 'projects'), []);
   // each gap caught
-  assert.strictEqual(lint("x.json", { projects: [{}] }, "projects").length, 3);
+  assert.strictEqual(lint('x.json', { projects: [{}] }, 'projects').length, 3);
   // object source + bad date
   assert.deepStrictEqual(
-    lint("x.json", { source: { name: "A" }, source_url: "https://a", as_of: "Jan 2024", projects: [{}] }, "projects").length,
+    lint(
+      'x.json',
+      { source: { name: 'A' }, source_url: 'https://a', as_of: 'Jan 2024', projects: [{}] },
+      'projects'
+    ).length,
     1
   );
   // news soft rule
-  assert.strictEqual(lintNews({ news: [{ id: "a", url: null }, { id: "b", url: "https://b" }] }).length, 1);
+  assert.strictEqual(
+    lintNews({
+      news: [
+        { id: 'a', url: null },
+        { id: 'b', url: 'https://b' },
+      ],
+    }).length,
+    1
+  );
   // sectioned: one clean section, one empty (skipped), one with a gap
   const sec = lintSections(
-    "s.json",
+    's.json',
     {
-      ok: { source: "A", source_url: "https://a", as_of: "2024", rows: [1] },
+      ok: { source: 'A', source_url: 'https://a', as_of: '2024', rows: [1] },
       empty: { rows: [] },
-      bad: { source: "B", as_of: "2024", rows: [1] },
+      bad: { source: 'B', as_of: '2024', rows: [1] },
     },
-    { ok: "rows", empty: "rows", bad: "rows" }
+    { ok: 'rows', empty: 'rows', bad: 'rows' }
   );
   assert.strictEqual(sec.length, 1); // only `bad` (missing source_url)
-  console.log("selftest OK");
+  console.log('selftest OK');
 }
 
 const args = process.argv.slice(2);
-if (args.includes("--selftest")) selftest();
-else process.exit(run({ strict: args.includes("--strict") }));
+if (args.includes('--selftest')) selftest();
+else process.exit(run({ strict: args.includes('--strict') }));

@@ -63,7 +63,11 @@ export default function Footer() {
             <h4>{t('footer-quick-links')}</h4>
             <ul className="footer-links-new">
               <li>
-                <a href="https://quiz.bettercamnorte.org/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://quiz.bettercamnorte.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {t('footer-camnorte-quiz')}
                 </a>
               </li>

@@ -1,7 +1,7 @@
 # Scope narrowed to a transparency watchdog
 
 BetterCamNorte's scope is narrowed to its core mission — showing where Camarines Norte's public
-money goes and who is accountable for it (see the *transparency watchdog* principle). Against that
+money goes and who is accountable for it (see the _transparency watchdog_ principle). Against that
 test we are:
 
 - **Keeping as core** (primary navigation): budget & fiscal transparency, DPWH / projects,

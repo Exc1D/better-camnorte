@@ -15,7 +15,8 @@ const translations: Record<string, Record<string, string>> = {
     'nav-contact': 'Contact',
 
     // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of Camarines Norte Provincial Government Governor's Office",
+    'appointment-cta-heading':
+      "Enhancing Appointment Services of Camarines Norte Provincial Government Governor's Office",
     'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
     'appointment-schedule-btn': 'Schedule Appointment',
     'appointment-create-btn': 'Create Account',
@@ -223,7 +224,8 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page
     'ord-page-title': 'Ordinance Framework',
-    'ord-page-desc': 'Provincial ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte',
+    'ord-page-desc':
+      'Provincial ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte',
     'ord-page-badge': 'Legislative',
     'ord-what-is': 'What is an Ordinance?',
     'ord-what-is-p1':
@@ -238,7 +240,8 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-traffic': 'Traffic & Transportation',
     'ord-cat-zoning': 'Zoning & Land Use',
     'ord-2025-title': '2025 Ordinances',
-    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
+    'ord-2025-subtitle':
+      'Official ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
     'ord-table-number': 'Ordinance No.',
     'ord-table-title': 'Title',
     'ord-table-date': 'Session Date',
@@ -261,9 +264,11 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-authorization': 'Authorization',
     'reso-type-appropriation': 'Appropriation',
     'reso-2026-title': '2026 Resolutions',
-    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2026',
+    'reso-2026-subtitle':
+      'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2026',
     'reso-2025-title': '2025 Resolutions',
-    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
+    'reso-2025-subtitle':
+      'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
     'reso-table-number': 'Resolution No.',
     'reso-table-title': 'Title',
     'reso-table-date': 'Session Date',
@@ -524,7 +529,8 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     'services-title': 'Direktoryo ng Serbisyong Munisipal',
-    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Camarines Norte',
+    'services-subtitle':
+      'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Camarines Norte',
     'life-events-title': 'Maghanap Ayon sa Pangyayari sa Buhay',
     'life-events-subtitle': 'Hanapin ang mga serbisyo batay sa nangyayari sa iyong buhay',
     'life-starting-business': 'Magsimula ng Negosyo',
@@ -1220,7 +1226,8 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page - Ilocano
     'biz-page-title': 'Serbisio ti Negosio',
-    'biz-page-desc': 'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Camarines Norte',
+    'biz-page-desc':
+      'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Camarines Norte',
     'biz-page-badge': 'Negosio',
     'biz-permit-new': 'Permit ti Negosio (Baro)',
     'biz-permit-new-desc': "Agaplikar ti baro a mayor's permit para iti negosio",

@@ -12,7 +12,7 @@ Design tokens have two competing sources of truth, violating web-principle #7
 - `assets/css/style.css` `:root` (loaded by all 18 content pages) defines
   `--color-primary`/`--color-primary-dark`, the full `--sdg-1..17` palette,
   neutrals, spacing, radius, shadows, `--font-main`.
-- `assets/css/home-redesign.css` `:root` (homepage only) defines a *second*,
+- `assets/css/home-redesign.css` `:root` (homepage only) defines a _second_,
   overlapping set: `--navy`, `--gold(/-soft/-deep)`, `--maroon`, `--ink`,
   `--ink-soft`, `--display` (+ `--serif`/`--wide` aliases).
 

@@ -157,7 +157,11 @@
   inset: 0 0 auto 0;
   height: 12px;
   background:
-    repeating-linear-gradient(90deg, transparent 0 calc(5.882% - 2px), oklch(1 0 0 / 0.3) calc(5.882% - 2px) 5.882%),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 calc(5.882% - 2px),
+      oklch(1 0 0 / 0.3) calc(5.882% - 2px) 5.882%
+    ),
     var(--sdg-ribbon);
   transform-origin: left center;
   transform: scaleX(var(--seam, 1));
@@ -264,7 +268,9 @@
   color: #fff;
   font-size: 1.1rem;
   background: var(--color-primary, #0032a0);
-  transition: transform 0.18s ease, background 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease;
 }
 .hero__search-btn:hover {
   transform: scale(1.06);
@@ -287,7 +293,10 @@
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
 }
 .hero__btn--primary {
   color: #2a1d04;
@@ -335,7 +344,9 @@
   color: oklch(0.96 0.01 255);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 .hero__tags a:hover {
   color: var(--gold-soft);
