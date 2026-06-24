@@ -212,7 +212,7 @@
           <div class="hero__sky">
             <p class="hero__eyebrow" data-i18n="hero-eyebrow">
               <span class="hero__flag" aria-hidden="true"></span>
-              See where the money goes · Cost to the people: ₱0
+              Independent civic transparency project · not an official government site
             </p>
             <h1 class="hero__title">
               <span class="hero__title-line hero__title-line--serif">Bantayog</span>
@@ -245,9 +245,12 @@
 
             <p class="hero__stat">
               <a href="/budget/#dpwh">
-                <strong>₱409.5M</strong> across <strong>63</strong> DPWH projects tracked
+                <strong>{{ summary.deoCostDisplay }}</strong> across
+                <strong>{{ summary.deoCount }}</strong> DPWH projects tracked
               </a>
-              <span class="hero__stat-src">Source: DPWH — Camarines Norte District Engineering Office</span>
+              <span class="hero__stat-src"
+                >Source: {{ summary.source }} · as of {{ summary.as_of }}</span
+              >
             </p>
 
             <div class="hero__actions">
@@ -421,6 +424,81 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Spending snapshot — fills the slot the (removed) history section left.
+           All figures build-computed from data/dpwh-projects.json via _data/summary.js. -->
+      <section class="section spending-snapshot">
+        <div class="container">
+          <div class="home-stats-v2-header">
+            <h2 data-i18n="home-spending-snapshot">Where the public money goes</h2>
+            <a href="/budget/#dpwh" class="home-stats-v2-link">
+              <span data-i18n="home-explore-spending">Explore spending</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="snapshot-grid">
+            <div class="snapshot-card">
+              <span class="snapshot-value">{{ summary.deoCostDisplay }}</span>
+              <span class="snapshot-label" data-i18n="home-tracked-value">Tracked project value</span>
+              <span class="snapshot-source">Camarines Norte DEO</span>
+            </div>
+            <div class="snapshot-card">
+              <span class="snapshot-value">{{ summary.deoCount }}</span>
+              <span class="snapshot-label" data-i18n="home-projects-tracked">Projects tracked</span>
+              <span class="snapshot-source">+{{ summary.regionVCount }} Region V contracts</span>
+            </div>
+            <div class="snapshot-card">
+              <span class="snapshot-value">{{ summary.as_of }}</span>
+              <span class="snapshot-label" data-i18n="home-data-as-of">Data as of</span>
+              <span class="snapshot-source">{{ summary.source }}</span>
+            </div>
+          </div>
+          <p class="snapshot-note" data-i18n="home-snapshot-note">
+            Headline figures cover projects under the Camarines Norte District Engineering
+            Office. Region V contracts mentioning Camarines Norte are tracked separately. See
+            Methodology for how projects are counted.
+          </p>
+        </div>
+        <style>
+          .snapshot-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+          }
+          .snapshot-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            background: var(--color-bg);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+          }
+          .snapshot-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-primary);
+          }
+          .snapshot-label {
+            font-weight: 600;
+          }
+          .snapshot-source {
+            font-size: 0.8125rem;
+            color: var(--color-text-light, #667085);
+          }
+          .snapshot-note {
+            margin-top: 16px;
+            font-size: 0.8125rem;
+            color: var(--color-text-light, #667085);
+            line-height: 1.6;
+          }
+          @media (max-width: 768px) {
+            .snapshot-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+        </style>
       </section>
 
       <!-- Latest Updates -->

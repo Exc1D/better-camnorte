@@ -51,7 +51,7 @@ const translations = {
 
     // Hero Section
     'hero-welcome': 'Welcome to BetterCamNorte',
-    'hero-eyebrow': 'See where the money goes · Cost to the people: ₱0',
+    'hero-eyebrow': 'Independent civic transparency project · not an official government site',
     'hero-subtitle':
       'An independent watchdog showing how Camarines Norte spends public money — every figure sourced and dated.',
     'hero-cta-primary': 'Explore the budget',
@@ -6358,7 +6358,7 @@ const translations = {
     'breadcrumb-privacy': 'Patakaran sa Pagkapribado',
     'breadcrumb-terms': 'Mga Tuntunin ng Paggamit',
     'hero-welcome': 'Maligayang Pagdating sa BetterCamNorte',
-    'hero-eyebrow': 'Tingnan kung saan napupunta ang pera · Halaga sa mamamayan: ₱0',
+    'hero-eyebrow': 'Malayang proyekto sa transparency ng mamamayan · hindi opisyal na website ng pamahalaan',
     'hero-subtitle':
       'Isang malayang bantay na nagpapakita kung paano ginagastos ng Camarines Norte ang pondo ng publiko — bawat datos may pinagmulan at petsa.',
     'hero-cta-primary': 'Tingnan ang badyet',
