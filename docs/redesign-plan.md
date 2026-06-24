@@ -4,7 +4,7 @@ The point-in-time punch-list for bringing today's site in line with
 [web-principles.md](../web-principles.md). The principles are the timeless rules; this plan is how
 we get there from here.
 
-**Rollout:** foundation first, then restyle — migrate to the system with the *current* look
+**Rollout:** foundation first, then restyle — migrate to the system with the _current_ look
 preserved and verified, then apply the new visual design. The site stays live throughout.
 
 ## Phase 0 — Resolve the blocking dependency
@@ -16,7 +16,7 @@ charter is a single 2022 image; the offices page is logos only). That content is
 maintain, not this watchdog's.
 
 - [x] Link the cut services section to the Citizen's Charter as the official source, accepting it is
-      thin today (recommended — services aren't the watchdog's job; see *transparency watchdog*).
+      thin today (recommended — services aren't the watchdog's job; see _transparency watchdog_).
       Confirm before deleting `services/` + `service-details/`.
 
 ## Phase 1 — Cut scope · _Watchdog scope · ADR-0004_
@@ -33,14 +33,14 @@ maintain, not this watchdog's.
 - [x] Rewrite the README mission: drop the "services" lead; describe the site as a public-funds
       transparency watchdog.
 - [~] Redesign primary navigation around the core. (Final shared-nav contract settled in Phase 3:
-      **Home · Transparency · Government · Legislative · Contact**, with Officials nested under
-      Government and a Projects/DPWH item deferred until that page exists.) Demote Statistics out of
-      primary nav. **Done:** removed the Services
-      dropdown and Statistics item from primary nav on every page. **Deferred to Phase 3:** the
-      cosmetic reorder and adding a Projects/DPWH item — the nav is hand-duplicated across 29 pages
-      with page-namespaced i18n keys and 4 path variants; the 11ty base layout makes this a
-      one-template edit instead of 29 fragile ones. (Homepage Statistics stat-cards link to the still-
-      live, demoted statistics page and were left in place.)
+  **Home · Transparency · Government · Legislative · Contact**, with Officials nested under
+  Government and a Projects/DPWH item deferred until that page exists.) Demote Statistics out of
+  primary nav. **Done:** removed the Services
+  dropdown and Statistics item from primary nav on every page. **Deferred to Phase 3:** the
+  cosmetic reorder and adding a Projects/DPWH item — the nav is hand-duplicated across 29 pages
+  with page-namespaced i18n keys and 4 path variants; the 11ty base layout makes this a
+  one-template edit instead of 29 fragile ones. (Homepage Statistics stat-cards link to the still-
+  live, demoted statistics page and were left in place.)
 
 ## Phase 2 — Strip the bloat · _Performance + Motion · ADR-0001_
 
@@ -50,18 +50,18 @@ maintain, not this watchdog's.
       Leaflet JS/CSS (the map is a plain OSM iframe). Removed the three dead precache entries from
       `sw.js`. Verified in-browser: `window.gsap` / `Lenis` / `THREE` are all `undefined`.
 - [~] Rebuild the home hero as a cheap CSS/SVG signature moment inside the perf budget. **Not
-      rebuilt — challenged the requirement.** Stripping Three.js leaves the existing static hero
-      (Bantayog wordmark + monument image + navy ground band) which *is* the cheap signature.
-      Verified rendering: title visible at opacity 1, monument loaded, no horizontal overflow, no
-      JS needed. Adding a new SVG moment would re-introduce the bloat we just cut.
+  rebuilt — challenged the requirement.** Stripping Three.js leaves the existing static hero
+  (Bantayog wordmark + monument image + navy ground band) which _is_ the cheap signature.
+  Verified rendering: title visible at opacity 1, monument loaded, no horizontal overflow, no
+  JS needed. Adding a new SVG moment would re-introduce the bloat we just cut.
 - [x] Audit the SDG motion layer against the budget and the "aids comprehension" rule; keep only what
       passes; confirm `prefers-reduced-motion` leaves every page complete. **Removed entirely** — the
       heading line-masks, card lift-ins, ribbon seams, hue-cycling, count-up figures and parallax are
-      all decoration that fails *motion serves comprehension* (count-up actively undercuts *every
-      figure is sourced and dated* by animating budget numbers up from zero). Deleted the motion IIFE
+      all decoration that fails _motion serves comprehension_ (count-up actively undercuts _every
+      figure is sourced and dated_ by animating budget numbers up from zero). Deleted the motion IIFE
       from `main.js` (the only Lenis consumer) and the dead `html.sdg-motion` CSS block in
       `style.css`. Reduced-motion / no-JS already rendered every page fully visible and static — that
-      is now the only state. The per-area `--sdg` accent on section-title stars/icons (a *contained*
+      is now the only state. The per-area `--sdg` accent on section-title stars/icons (a _contained_
       colour accent, ADR-0002) was kept.
 
 _Tooling: added `.claude/launch.json` (python static server on :8765) for live preview through the
@@ -78,51 +78,48 @@ remaining phases._
       identical to the old hand-authored page **outside the header region**. The foothold
       `base.njk` / `chrome-top.njk` / `chrome-bottom.njk` were dropped in favour of this
       include-injection (smaller diff, no layout indirection). `build.sh` runs `eleventy --output=dist`
-      after the asset copy; `src/` + `eleventy.config.js` + `_site/` stay out of `dist/`.
-      - **Nav reorder landed here** (the Phase 1 deferral): one shared `nav.njk` leads with the
-        watchdog core — **Home · Transparency · Government · Legislative · Contact** — using
-        **root-relative paths** (`/budget/`, `/government/`, …) correct on every page, killing the
-        4-path-variant drift, the 18 page-namespaced i18n key sets, and the empty-`href` logo bug on
-        subpages. No Projects/DPWH item: no such page exists yet (ponytail — no dead links); add it
-        when a projects page lands. Officials stay under Government.
+      after the asset copy; `src/` + `eleventy.config.js` + `_site/` stay out of `dist/`. - **Nav reorder landed here** (the Phase 1 deferral): one shared `nav.njk` leads with the
+      watchdog core — **Home · Transparency · Government · Legislative · Contact** — using
+      **root-relative paths** (`/budget/`, `/government/`, …) correct on every page, killing the
+      4-path-variant drift, the 18 page-namespaced i18n key sets, and the empty-`href` logo bug on
+      subpages. No Projects/DPWH item: no such page exists yet (ponytail — no dead links); add it
+      when a projects page lands. Officials stay under Government.
 - [ ] Define CSS custom-property tokens (neutral scale, provincial primary, SDG accent set, type,
       spacing, radius) — values matching the **current** look for now. _Deferred:_ tokens earn their
       place when something reads them (the Phase 5 restyle), not before — defining unread tokens now
       is speculation. Introduce them as the restyle flips values.
 - [~] Migrate pages to templates page-by-page. **Done for chrome** (header unified across all 18; each
-      verified byte-identical outside the header). _Deferred:_ folding repeated pages (officials, news,
-      projects) into one template + `data/*.json` is Phase 4 work — the data gains `source`/`as_of`
-      there anyway, so splitting it out earns its place then, not now.
+  verified byte-identical outside the header). _Deferred:_ folding repeated pages (officials, news,
+  projects) into one template + `data/*.json` is Phase 4 work — the data gains `source`/`as_of`
+  there anyway, so splitting it out earns its place then, not now.
 
 ## Phase 4 — Provenance · _Sourced & dated_
 
 - [x] **Build check** (`scripts/check-provenance.js`, wired into `build.sh` step 1b). Encodes
-      principle #2 as an enforceable rule: any *fetched* dataset that renders figures
+      principle #2 as an enforceable rule: any _fetched_ dataset that renders figures
       (`dpwh-projects`, `fiscal_transparency`, `demographics`) must declare a top-level `source`,
       `source_url`, and `as_of` (empty drafts are skipped, so they trip the gate the moment they're
       populated); `news.json` items each warn if they lack a source `url`. **Warning-only for now** —
-      flip to `--strict` (build-failing) once real provenance lands. The gate's report *is* the
+      flip to `--strict` (build-failing) once real provenance lands. The gate's report _is_ the
       actionable debt list; it does not invent values.
 - [~] Add `source` + `as_of` to the figure datasets. **Declared the schema, did not fabricate
-      values.** `dpwh-projects.json` now carries `source` = "DPWH — Camarines Norte District
-      Engineering Office" (the real agency, already in the file) with `source_url`/`as_of` left
-      `null` + a `_provenance_note`: those two values are the LGU's to supply (official DPWH list URL
-      + snapshot date). **Still open:** dpwh `source_url`/`as_of`; the 3 `news.json` items have no
-      source `url`; `fiscal_transparency` + `demographics` are empty drafts awaiting official data.
+  values.** `dpwh-projects.json` now carries `source` = "DPWH — Camarines Norte District
+  Engineering Office" (the real agency, already in the file) with `source_url`/`as_of` left
+  `null` + a `_provenance_note`: those two values are the LGU's to supply (official DPWH list URL + snapshot date). **Still open:** dpwh `source_url`/`as_of`; the 3 `news.json` items have no
+  source `url`; `fiscal_transparency` + `demographics` are empty drafts awaiting official data.
 - [x] **Single source of truth for the statistics figures.** They were hard-coded in
       `statistics-new.js` (`barangayData`, `historicalData`, `cmciData`), bypassing the data layer
       (`data/competitive-index.json` was a dead duplicate). Moved all three verbatim into
       `data/statistics.json` (verified byte-identical to the old constants) with per-section
-      provenance harvested from the page's *existing* citation links — `population`: PSA
+      provenance harvested from the page's _existing_ citation links — `population`: PSA
       (`psa.gov.ph`, as_of 2024), `cmci`: DTI CMCI (`cmci.dti.gov.ph`, as_of 2024). `statistics-new.js`
       now `fetch()`es the file on load; deleted `competitive-index.json`; the gate covers the new file
       via a `SECTIONED_DATASETS` check. Verified in-browser: all charts (CMCI 5×9, population ×12,
       historical 2020/2024) render from the fetched data, no console errors. Citations already render
-      from the template's `p.data-source` links, so no new rendering was needed.
-      - **Note:** the visible citation links live in the template while the gate's provenance lives in
-        the data file — a small, deliberate duplication (static citations don't vanish if a fetch
-        fails). Deriving citations from the fetched provenance is a Phase 5 nicety, not worth a
-        new failure mode now.
+      from the template's `p.data-source` links, so no new rendering was needed. - **Note:** the visible citation links live in the template while the gate's provenance lives in
+      the data file — a small, deliberate duplication (static citations don't vanish if a fetch
+      fails). Deriving citations from the fetched provenance is a Phase 5 nicety, not worth a
+      new failure mode now.
 - [ ] **Remaining provenance debt** (the gate reports it on every build): `dpwh-projects` needs a real
       `source_url` + `as_of`; the 3 `news.json` items need source `url`s; `fiscal_transparency` +
       `demographics` await official data. These values are the LGU's to supply — flip the gate to

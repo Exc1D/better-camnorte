@@ -62,12 +62,12 @@ Include in your report:
 
 ### Third-Party Services
 
-| Service          | Purpose          | Data Shared          |
-| ---------------- | ---------------- | -------------------- |
-| Google Analytics | Usage statistics | Anonymous page views |
-| Open-Meteo API   | Weather data     | Location (Camarines Norte)    |
-| ExchangeRate API | Currency rates   | None                 |
-| OpenStreetMap    | Map tiles        | None                 |
+| Service          | Purpose          | Data Shared                |
+| ---------------- | ---------------- | -------------------------- |
+| Google Analytics | Usage statistics | Anonymous page views       |
+| Open-Meteo API   | Weather data     | Location (Camarines Norte) |
+| ExchangeRate API | Currency rates   | None                       |
+| OpenStreetMap    | Map tiles        | None                       |
 
 ## Best Practices for Contributors
 

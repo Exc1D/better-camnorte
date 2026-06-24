@@ -47,49 +47,49 @@ Visit the live website: [https://bettercamnorte.org](https://bettercamnorte.org)
 
 ## Technology Stack
 
-| Category            | Technologies                                                           |
-| ------------------- | ---------------------------------------------------------------------- |
-| **Frontend**        | HTML5, CSS3, JavaScript (ES6+)                                         |
-| **Styling**         | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design        |
-| **Icons**           | Bootstrap Icons (CDN)                                                  |
-| **Fonts**           | Google Fonts (Inter)                                                   |
-| **Maps**            | Leaflet.js, OpenStreetMap                                              |
-| **Charts**          | Chart.js (Canvas-based)                                                |
-| **Animations**      | Lottie (dotlottie-player web component)                                |
-| **Data Format**     | JSON                                                                   |
-| **Build Tools**     | Node.js, npm, Bash, Babel (@babel/preset-env)                          |
-| **Minification**    | html-minifier-terser, clean-css-cli, terser                            |
-| **Code Formatting** | Prettier (auto-format on commit via git pre-commit hook)               |
-| **Version Control** | Git, GitHub                                                            |
-| **Server**          | Apache (.htaccess), mod_rewrite, mod_deflate                           |
-| **Hosting**         | cPanel (Production), Python HTTP Server (Development)                  |
+| Category            | Technologies                                                                                             |
+| ------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Frontend**        | HTML5, CSS3, JavaScript (ES6+)                                                                           |
+| **Styling**         | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design                                          |
+| **Icons**           | Bootstrap Icons (CDN)                                                                                    |
+| **Fonts**           | Google Fonts (Inter)                                                                                     |
+| **Maps**            | Leaflet.js, OpenStreetMap                                                                                |
+| **Charts**          | Chart.js (Canvas-based)                                                                                  |
+| **Animations**      | Lottie (dotlottie-player web component)                                                                  |
+| **Data Format**     | JSON                                                                                                     |
+| **Build Tools**     | Node.js, npm, Bash, Babel (@babel/preset-env)                                                            |
+| **Minification**    | html-minifier-terser, clean-css-cli, terser                                                              |
+| **Code Formatting** | Prettier (auto-format on commit via git pre-commit hook)                                                 |
+| **Version Control** | Git, GitHub                                                                                              |
+| **Server**          | Apache (.htaccess), mod_rewrite, mod_deflate                                                             |
+| **Hosting**         | cPanel (Production), Python HTTP Server (Development)                                                    |
 | **PWA**             | Service Worker (versioned caching, install prompt, seamless updates), Web App Manifest, offline fallback |
-| **SEO**             | Open Graph, Twitter Cards, XML Sitemap, robots.txt                     |
-| **Security**        | HTTPS, CSP Headers, HSTS, X-Frame-Options                              |
-| **Analytics**       | Google Analytics (gtag.js)                                             |
-| **Accessibility**   | WCAG 2.1, ARIA, Semantic HTML                                          |
-| **Performance**     | GZIP Compression, Browser Caching, Asset Minification                  |
+| **SEO**             | Open Graph, Twitter Cards, XML Sitemap, robots.txt                                                       |
+| **Security**        | HTTPS, CSP Headers, HSTS, X-Frame-Options                                                                |
+| **Analytics**       | Google Analytics (gtag.js)                                                                               |
+| **Accessibility**   | WCAG 2.1, ARIA, Semantic HTML                                                                            |
+| **Performance**     | GZIP Compression, Browser Caching, Asset Minification                                                    |
 
 ## Key Features
 
-| Feature                          | Description                                                                                                                                                                                                       |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Government Officials**         | Directory of elected officials and department heads with contact information                                                                                                                                      |
-| **Budget Transparency**          | Financial reports, income/expenditure breakdowns, and infrastructure projects                                                                                                                                     |
-| **Legislative Documents**        | Searchable database of ordinances and resolutions from Sangguniang Panlalawigan                                                                                                                                          |
-| **Provincial Statistics**         | Demographics, economic data, and competitive index rankings                                                                                                                                                       |
-| **Appointment Services**         | Online appointment scheduling integration with the Governor's Office (OASYS), featuring branded Lottie animation                                                                                                     |
-| **Camarines Norte Quiz**                  | Interactive quiz about Camarines Norte history and culture, linked from homepage CTA and footer across all pages                                                                                                           |
-| **Emergency Hotline Marquee**    | Clickable scrolling marquee for emergency contacts on tablet and mobile viewports, with pause-on-hover/focus accessibility                                                                                        |
-| **Progressive Web App**          | Installable PWA with "Install App" prompt, seamless auto-updates via skipWaiting (no manual refresh), versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation |
-| **Auto Version Management**      | Dynamic version display from `version.json`, auto-bumped on every git commit via pre-commit hook, synced across all 51+ HTML files, `package.json`, and React app                                                 |
-| **Multi-language Support**       | Full i18n coverage in English, Filipino, and Ilocano (5,546 keys per language with perfect parity)                                                                                                                |
-| **Clean URLs**                   | SEO-friendly URLs without `.html` extensions, powered by Apache mod_rewrite                                                                                                                                       |
-| **Brief History of Camarines Norte**      | Interactive timeline (1760–1957) with fully translated cards in all three languages                                                                                                                               |
-| **Mobile Navigation**            | Responsive menu with GPU-accelerated open/close transitions, body scroll lock, animation guard against rapid toggles, debounced resize handling, touch-safe hover scoping, click-outside-to-close, and focus trap |
-| **Accessibility**                | WCAG 2.1 compliant with skip links, ARIA labels, keyboard navigation, and semantic HTML                                                                                                                           |
-| **SEO Optimized**                | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap                                                                                                                                            |
-| **Performance**                  | 90%+ size reduction through minification, GZIP compression, Babel transpilation, and browser caching                                                                                                              |
+| Feature                              | Description                                                                                                                                                                                                                            |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Government Officials**             | Directory of elected officials and department heads with contact information                                                                                                                                                           |
+| **Budget Transparency**              | Financial reports, income/expenditure breakdowns, and infrastructure projects                                                                                                                                                          |
+| **Legislative Documents**            | Searchable database of ordinances and resolutions from Sangguniang Panlalawigan                                                                                                                                                        |
+| **Provincial Statistics**            | Demographics, economic data, and competitive index rankings                                                                                                                                                                            |
+| **Appointment Services**             | Online appointment scheduling integration with the Governor's Office (OASYS), featuring branded Lottie animation                                                                                                                       |
+| **Camarines Norte Quiz**             | Interactive quiz about Camarines Norte history and culture, linked from homepage CTA and footer across all pages                                                                                                                       |
+| **Emergency Hotline Marquee**        | Clickable scrolling marquee for emergency contacts on tablet and mobile viewports, with pause-on-hover/focus accessibility                                                                                                             |
+| **Progressive Web App**              | Installable PWA with "Install App" prompt, seamless auto-updates via skipWaiting (no manual refresh), versioned service worker caching (static + runtime), offline fallback page with emergency hotlines, push notification foundation |
+| **Auto Version Management**          | Dynamic version display from `version.json`, auto-bumped on every git commit via pre-commit hook, synced across all 51+ HTML files, `package.json`, and React app                                                                      |
+| **Multi-language Support**           | Full i18n coverage in English, Filipino, and Ilocano (5,546 keys per language with perfect parity)                                                                                                                                     |
+| **Clean URLs**                       | SEO-friendly URLs without `.html` extensions, powered by Apache mod_rewrite                                                                                                                                                            |
+| **Brief History of Camarines Norte** | Interactive timeline (1760–1957) with fully translated cards in all three languages                                                                                                                                                    |
+| **Mobile Navigation**                | Responsive menu with GPU-accelerated open/close transitions, body scroll lock, animation guard against rapid toggles, debounced resize handling, touch-safe hover scoping, click-outside-to-close, and focus trap                      |
+| **Accessibility**                    | WCAG 2.1 compliant with skip links, ARIA labels, keyboard navigation, and semantic HTML                                                                                                                                                |
+| **SEO Optimized**                    | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap                                                                                                                                                                 |
+| **Performance**                      | 90%+ size reduction through minification, GZIP compression, Babel transpilation, and browser caching                                                                                                                                   |
 
 ## Quick Start
 
@@ -427,13 +427,13 @@ We welcome contributions from everyone! Whether you're a developer, designer, da
 
 All public information is sourced from official government portals:
 
-| Source                             | URL                                                                       | Data Type                 |
-| ---------------------------------- | ------------------------------------------------------------------------- | ------------------------- |
-| Camarines Norte Provincial Government Official Website        | [camarinesnorte.gov.ph](https://camarinesnorte.gov.ph/)                                   | Services, Officials       |
-| Sangguniang Panlalawigan ng Camarines Norte        | [sangguniangbayan.camnorte.gov.ph](https://sangguniangbayan.camnorte.gov.ph/) | Ordinances, Resolutions   |
-| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/)                                       | Budget, Financial Reports |
-| Philippine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)                                         | Demographics, Census      |
-| DTI CMCI Portal                    | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/)                               | Competitive Index         |
+| Source                                                 | URL                                                                           | Data Type                 |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------- |
+| Camarines Norte Provincial Government Official Website | [camarinesnorte.gov.ph](https://camarinesnorte.gov.ph/)                       | Services, Officials       |
+| Sangguniang Panlalawigan ng Camarines Norte            | [sangguniangbayan.camnorte.gov.ph](https://sangguniangbayan.camnorte.gov.ph/) | Ordinances, Resolutions   |
+| Bureau of Local Government Finance                     | [blgf.gov.ph](https://blgf.gov.ph/)                                           | Budget, Financial Reports |
+| Philippine Statistics Authority                        | [psa.gov.ph](https://psa.gov.ph/)                                             | Demographics, Census      |
+| DTI CMCI Portal                                        | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/)                                   | Competitive Index         |
 
 ## License
 
@@ -448,13 +448,13 @@ See [LICENSE](LICENSE) for full details.
 
 ## Contact
 
-| Channel  | Link                                                                      |
-| -------- | ------------------------------------------------------------------------- |
-| Website  | [bettercamnorte.org](https://bettercamnorte.org)                              |
-| Email    | volunteer@bettercamnorte.org                                                |
-| Facebook | [@piocamnorte](https://www.facebook.com/piocamnorte)            |
-| LinkedIn | [BetterCamNorte](https://www.linkedin.com/company/bettercamnorte/)            |
-| Discord  | [Join Community](https://discord.com/invite/qeSu7RJkjQ)                   |
+| Channel  | Link                                                                              |
+| -------- | --------------------------------------------------------------------------------- |
+| Website  | [bettercamnorte.org](https://bettercamnorte.org)                                  |
+| Email    | volunteer@bettercamnorte.org                                                      |
+| Facebook | [@piocamnorte](https://www.facebook.com/piocamnorte)                              |
+| LinkedIn | [BetterCamNorte](https://www.linkedin.com/company/bettercamnorte/)                |
+| Discord  | [Join Community](https://discord.com/invite/qeSu7RJkjQ)                           |
 | GitHub   | [BetterCamNorte/bettercamnorte](https://github.com/BetterCamNorte/bettercamnorte) |
 
 ## Acknowledgments

@@ -68,7 +68,10 @@ export default function InfoBar() {
               <span className="rate-display">{rate}</span>
             </span>
           </div>
-          <div className="info-bar-item info-bar-weather" aria-label="Current weather in Camarines Norte">
+          <div
+            className="info-bar-item info-bar-weather"
+            aria-label="Current weather in Camarines Norte"
+          >
             <i className="bi bi-thermometer-half" aria-hidden="true" />
             <span className="weather-location">Camarines Norte</span>
             <span className="weather-temp">{temp}</span>

@@ -13,8 +13,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: { default: 'BetterCamNorte | Official Portal', template: '%s | BetterCamNorte' },
-  description: 'BetterCamNorte - Your digital gateway to Camarines Norte Provincial Government services.',
-  keywords: ['BetterCamNorte', 'Camarines Norte', 'Camarines Norte Provincial Government', 'government services'],
+  description:
+    'BetterCamNorte - Your digital gateway to Camarines Norte Provincial Government services.',
+  keywords: [
+    'BetterCamNorte',
+    'Camarines Norte',
+    'Camarines Norte Provincial Government',
+    'government services',
+  ],
   authors: [{ name: 'Ramon Logan Jr.' }],
   openGraph: {
     type: 'website',
@@ -32,7 +38,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: { card: 'summary_large_image' },
-  icons: { icon: '/assets/images/logo/camnorte-logo.png', apple: '/assets/images/logo/camnorte-logo.png' },
+  icons: {
+    icon: '/assets/images/logo/camnorte-logo.png',
+    apple: '/assets/images/logo/camnorte-logo.png',
+  },
   manifest: '/manifest.webmanifest',
   appleWebApp: {
     capable: true,

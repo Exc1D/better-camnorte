@@ -62,7 +62,8 @@ const translations = {
     'hero-find-service': 'Find a Service',
 
     // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of Camarines Norte Provincial Government Governor's Office",
+    'appointment-cta-heading':
+      "Enhancing Appointment Services of Camarines Norte Provincial Government Governor's Office",
     'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
     'appointment-schedule-btn': 'Schedule Appointment',
     'appointment-create-btn': 'Create Account',
@@ -114,8 +115,7 @@ const translations = {
 
     // Footer
     'footer-title': 'BetterCamNorte',
-    'footer-desc':
-      'A service-first information portal for the Province of Camarines Norte.',
+    'footer-desc': 'A service-first information portal for the Province of Camarines Norte.',
     'footer-quick-links': 'Quick Links',
     'footer-all-services': 'All Services',
     'footer-officials': 'Officials',
@@ -285,7 +285,8 @@ const translations = {
 
     // Ordinance Framework Page
     'ord-page-title': 'Ordinance Framework',
-    'ord-page-desc': 'Provincial ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte',
+    'ord-page-desc':
+      'Provincial ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte',
     'ord-page-badge': 'Legislative',
     'ord-what-is': 'What is an Ordinance?',
     'ord-what-is-p1':
@@ -300,7 +301,8 @@ const translations = {
     'ord-cat-traffic': 'Traffic & Transportation',
     'ord-cat-zoning': 'Zoning & Land Use',
     'ord-2025-title': '2025 Ordinances',
-    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
+    'ord-2025-subtitle':
+      'Official ordinances enacted by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
     'ord-table-number': 'Ordinance No.',
     'ord-table-title': 'Title',
     'ord-table-date': 'Session Date',
@@ -323,9 +325,11 @@ const translations = {
     'reso-type-authorization': 'Authorization',
     'reso-type-appropriation': 'Appropriation',
     'reso-2026-title': '2026 Resolutions',
-    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2026',
+    'reso-2026-subtitle':
+      'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2026',
     'reso-2025-title': '2025 Resolutions',
-    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
+    'reso-2025-subtitle':
+      'Official resolutions passed by the Sangguniang Panlalawigan ng Camarines Norte in 2025',
     'reso-table-number': 'Resolution No.',
     'reso-table-title': 'Title',
     'reso-table-date': 'Session Date',
@@ -1017,7 +1021,8 @@ const translations = {
     'assessor-office-hours': 'Office Hours',
     'assessor-official-copy-of-tax-declaration-for-legal-and':
       'Official copy of tax declaration for legal and banking purposes.',
-    'assessor-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
+    'assessor-official-lgu-camnorte-portal':
+      'Official Camarines Norte Provincial Government Portal',
     'assessor-open-data-philippines': 'Open Data Philippines',
     'assessor-ordinance-framework': 'Ordinance Framework',
     'assessor-ownercreditor': 'Owner/Creditor',
@@ -1442,7 +1447,8 @@ const translations = {
     'budget-contractor': 'Contractor',
     'budget-contribute-code-with-us': 'Contribute code with us',
     'budget-debt-service': 'Debt Service',
-    'budget-dpwh-infrastructure-projects-in-camnorte': 'DPWH Infrastructure Projects in Camarines Norte',
+    'budget-dpwh-infrastructure-projects-in-camnorte':
+      'DPWH Infrastructure Projects in Camarines Norte',
     'budget-dpwh-transparency-portal': 'DPWH Transparency Portal',
     'budget-economic-services': 'Economic Services',
     'budget-education': 'Education',
@@ -1953,7 +1959,8 @@ const translations = {
     'edu-higher-educational-institutions': 'Higher Educational Institutions',
     'edu-home': 'Home',
     'edu-infrastructure': 'Infrastructure',
-    'edu-isaiah-christian-academy-of-camnorte-inc': 'Isaiah Christian Academy of Camarines Norte, Inc.',
+    'edu-isaiah-christian-academy-of-camnorte-inc':
+      'Isaiah Christian Academy of Camarines Norte, Inc.',
     'edu-kids-workshop-learning-center': 'Kids Workshop Learning Center',
     'edu-lactawan-elementary-school': 'Lactawan Elementary School',
     'edu-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
@@ -2834,7 +2841,8 @@ const translations = {
     'home-social-services': 'Social Services',
     'home-camnorte': 'Camarines Norte',
     'home-camnorte-at-a-glance': 'Camarines Norte at a Glance',
-    'home-camnorte-municipal-hall-camarines-norte-3708': 'Camarines Norte Provincial Capitol, Camarines Norte 3708',
+    'home-camnorte-municipal-hall-camarines-norte-3708':
+      'Camarines Norte Provincial Capitol, Camarines Norte 3708',
     'home-camnorte-camarines-norte-3708': 'Camarines Norte 3708',
     'home-camnorte-was-the-largest-municipality-in-the':
       'Camarines Norte was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
@@ -4706,7 +4714,8 @@ const translations = {
     'mswdosvc-office-head-social-welfare-officer': 'Office Head / Social Welfare Officer',
     'mswdosvc-office-information': 'Office Information',
     'mswdosvc-office-personnel': 'Office Personnel',
-    'mswdosvc-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
+    'mswdosvc-official-lgu-camnorte-portal':
+      'Official Camarines Norte Provincial Government Portal',
     'mswdosvc-open-data-philippines': 'Open Data Philippines',
     'mswdosvc-ordinance-framework': 'Ordinance Framework',
     'mswdosvc-osca-focal-person': 'OSCA Focal Person',
@@ -4818,7 +4827,8 @@ const translations = {
     'news-empowering-the-people-of-camnorte-with-transparent':
       'Empowering the people of Camarines Norte with transparent access to the services, programs, and public funds of Camarines Norte Provincial Government.',
     'news-environment': 'Environment',
-    'news-fetching-news-and-updates-from-camnorte': 'Fetching news and updates from Camarines Norte.',
+    'news-fetching-news-and-updates-from-camnorte':
+      'Fetching news and updates from Camarines Norte.',
     'news-freedom-of-information': 'Freedom of Information',
     'news-health': 'Health',
     'news-home': 'Home',
@@ -5120,7 +5130,8 @@ const translations = {
     'propdec-freedom-of-information': 'Freedom of Information',
     'propdec-full-name-of-owner': 'Full Name of Owner',
     'propdec-government': 'Government',
-    'propdec-ground-floor-municipal-hall-camnorte': 'Ground Floor, Provincial Capitol, Camarines Norte',
+    'propdec-ground-floor-municipal-hall-camnorte':
+      'Ground Floor, Provincial Capitol, Camarines Norte',
     'propdec-handles-property-assessment-tax-declaration-and':
       'Handles property assessment, tax declaration, and real property records.',
     'propdec-health': 'Health',
@@ -5473,7 +5484,8 @@ const translations = {
     'slaughter-office-head': 'Office Head',
     'slaughter-office-information': 'Office Information',
     'slaughter-office-personnel': 'Office Personnel',
-    'slaughter-official-lgu-camnorte-portal': 'Official Camarines Norte Provincial Government Portal',
+    'slaughter-official-lgu-camnorte-portal':
+      'Official Camarines Norte Provincial Government Portal',
     'slaughter-open-data-philippines': 'Open Data Philippines',
     'slaughter-operations-management': 'Operations Management',
     'slaughter-ordinance-framework': 'Ordinance Framework',
@@ -6414,7 +6426,8 @@ const translations = {
     'footer-volunteer': 'Mag-volunteer sa amin',
     'footer-contribute': 'Mag-ambag ng code sa amin',
     'services-title': 'Direktoryo ng Serbisyong Munisipal',
-    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Camarines Norte',
+    'services-subtitle':
+      'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Camarines Norte',
     'search-placeholder': 'Maghanap ng serbisyo...',
     'search-no-results': 'Walang nahanap na serbisyo',
     'search-try-different': 'Subukan ang ibang mga keyword o tingnan ang mga kategorya sa ibaba',
@@ -6923,7 +6936,8 @@ const translations = {
     'a11y-no-time-limits': 'Walang Limitasyon sa Oras',
     'a11y-no-time-limits-on-reading-or-interacting':
       'Walang limitasyon sa oras sa pagbabasa o pakikipag-ugnayan.',
-    'a11y-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'a11y-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'a11y-open-data-philippines': 'Open Data Philippines',
     'a11y-ordinance-framework': 'Balangkas ng Ordinansa',
     'a11y-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -7043,7 +7057,8 @@ const translations = {
     'acct-office': 'Opisina',
     'acct-office-information': 'Impormasyon ng Opisina',
     'acct-office-personnel': 'Mga Tauhan ng Opisina',
-    'acct-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'acct-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'acct-ongoing': 'Kasalukuyan',
     'acct-open-data-philippines': 'Open Data Philippines',
     'acct-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -7147,7 +7162,8 @@ const translations = {
     'agri-home': 'Tahanan',
     'agri-infrastructure': 'Imprastraktura',
     'agri-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'agri-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'agri-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'agri-open-data-philippines': 'Open Data Philippines',
     'agri-ordinance-framework': 'Balangkas ng Ordinansa',
     'agri-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -7258,7 +7274,8 @@ const translations = {
     'assessor-office-hours': 'Oras ng Opisina',
     'assessor-official-copy-of-tax-declaration-for-legal-and':
       'Opisyal na kopya ng tax declaration para sa legal at layuning pangbangko.',
-    'assessor-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'assessor-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'assessor-open-data-philippines': 'Open Data Philippines',
     'assessor-ordinance-framework': 'Balangkas ng Ordinansa',
     'assessor-ownercreditor': 'May-ari/Pinagkakautangan',
@@ -7460,7 +7477,8 @@ const translations = {
     'biz-new-business-application': 'Bago Business Aplikasyon',
     'biz-new-permits-renewals-mayors-clearance-and-other':
       "Bagong mga permiso, mga pag-renew, Provincial Governor's clearance, sa iba pang permiso sa negosyos",
-    'biz-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'biz-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'biz-open-data-philippines': 'Open Data Philippines',
     'biz-ordinance-framework': 'Balangkas ng Ordinansa',
     'biz-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -7596,7 +7614,8 @@ const translations = {
     'bpl-office': 'Opisina',
     'bpl-office-information': 'Impormasyon ng Opisina',
     'bpl-office-personnel': 'Mga Tauhan ng Opisina',
-    'bpl-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'bpl-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'bpl-official-receipt': 'Opisyal na Resibo',
     'bpl-open-data-philippines': 'Open Data Philippines',
     'bpl-order-of-payment': 'Order of Pagbabayad',
@@ -7785,7 +7804,8 @@ const translations = {
     'cert-home': 'Tahanan',
     'cert-infrastructure': 'Imprastraktura',
     'cert-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'cert-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'cert-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'cert-open-data-philippines': 'Open Data Philippines',
     'cert-ordinance-framework': 'Balangkas ng Ordinansa',
     'cert-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -7844,7 +7864,8 @@ const translations = {
     'contact-national-local-holidays': 'Pambansa & Lokal Holidays',
     'contact-nuvelco-camnorte': 'NUVELCO Camarines Norte',
     'contact-nuvelco-camnorte-0935-812-1081': 'NUVELCO Camarines Norte 0935 812 1081',
-    'contact-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'contact-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'contact-open': 'Buksan',
     'contact-open-data-philippines': 'Open Data Philippines',
     'contact-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -8207,13 +8228,15 @@ const translations = {
     'edu-higher-educational-institutions': 'Mga Institusyon ng Mas Mataas na Edukasyon',
     'edu-home': 'Tahanan',
     'edu-infrastructure': 'Imprastraktura',
-    'edu-isaiah-christian-academy-of-camnorte-inc': 'Isaiah Christian Academy of Camarines Norte, Inc.',
+    'edu-isaiah-christian-academy-of-camnorte-inc':
+      'Isaiah Christian Academy of Camarines Norte, Inc.',
     'edu-kids-workshop-learning-center': 'Kids Workshop Learning Center',
     'edu-lactawan-elementary-school': 'Lactawan Elementary School',
     'edu-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
     'edu-nio-jesus-de-praga-learning': 'Niño Jesus de Praga Learning',
     'edu-camarines-norte-caregiver-academy': 'Camarines Norte Caregiver Academy',
-    'edu-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'edu-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'edu-open-data-philippines': 'Open Data Philippines',
     'edu-ordinance-framework': 'Balangkas ng Ordinansa',
     'edu-pilar-d-galima-elementary-school': 'Pilar D. Galima Elementary School',
@@ -8321,7 +8344,8 @@ const translations = {
     'eng-office': 'Opisina',
     'eng-office-information': 'Impormasyon ng Opisina',
     'eng-office-personnel': 'Mga Tauhan ng Opisina',
-    'eng-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'eng-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'eng-open-data-philippines': 'Open Data Philippines',
     'eng-ordinance-framework': 'Balangkas ng Ordinansa',
     'eng-pay-building-permit-fee-and-other-fees-at-the':
@@ -8404,7 +8428,8 @@ const translations = {
     'env-key-environmental-services-and-initiatives':
       'Mga Pangunahing Serbisyo at Inisyatiba sa Kapaligiran',
     'env-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'env-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'env-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'env-open-data-philippines': 'Open Data Philippines',
     'env-ordinance-framework': 'Balangkas ng Ordinansa',
     'env-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -8446,7 +8471,8 @@ const translations = {
     'err403-health': 'Kalusugan',
     'err403-infrastructure': 'Imprastraktura',
     'err403-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'err403-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'err403-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'err403-open-data-philippines': 'Open Data Philippines',
     'err403-ordinance-framework': 'Balangkas ng Ordinansa',
     'err403-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -8481,7 +8507,8 @@ const translations = {
     'err404-health': 'Kalusugan',
     'err404-infrastructure': 'Imprastraktura',
     'err404-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'err404-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'err404-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'err404-open-data-philippines': 'Open Data Philippines',
     'err404-ordinance-framework': 'Balangkas ng Ordinansa',
     'err404-page-not-found': 'Hindi Nahanap ang Pahina',
@@ -8517,7 +8544,8 @@ const translations = {
     'err500-health': 'Kalusugan',
     'err500-infrastructure': 'Imprastraktura',
     'err500-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'err500-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'err500-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'err500-open-data-philippines': 'Open Data Philippines',
     'err500-ordinance-framework': 'Balangkas ng Ordinansa',
     'err500-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -8591,7 +8619,8 @@ const translations = {
     'faq-is-this-website-mobilefriendly': 'Ang website ba na ito ay mobile-friendly?',
     'faq-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
     'faq-location-sketchmap': 'Sketch/Mapa ng Lokasyon',
-    'faq-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'faq-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'faq-open-data-philippines': 'Open Data Philippines',
     'faq-openjs-foundation': 'OpenJS Foundation',
     'faq-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -8720,7 +8749,8 @@ const translations = {
     'gov-municipal-offices': 'Mga Opisina ng Munisipyo',
     'gov-municipal-planning-development': 'Pangmunisipyo Planning & Development',
     'gov-municipal-treasurers-office': 'Opisina ng Ingat-yaman ng Munisipalidad',
-    'gov-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'gov-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'gov-open-data-philippines': 'Open Data Philippines',
     'gov-ordinance-framework': 'Balangkas ng Ordinansa',
     'gov-personnel-services-recruitment-employee-records':
@@ -8968,7 +8998,8 @@ const translations = {
     'health-nangalisan-bhs': 'Nangalisan BHS',
     'health-national-highway-camnorte': 'Pambansa Highway, Camarines Norte',
     'health-ocapon-bhs': 'Ocapon BHS',
-    'health-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'health-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'health-open-data-philippines': 'Open Data Philippines',
     'health-ordinance-framework': 'Balangkas ng Ordinansa',
     'health-osmea-bhs': 'Osmeña BHS',
@@ -9034,7 +9065,8 @@ const translations = {
       'Pagbibigay-kapangyarihan sa mga mamamayan ng Camarines Norte na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng Camarines Norte Provincial Government.',
     'home-environment': 'Kapaligiran',
     'home-father-alejandro-vidal': 'Padre Alejandro Vidal',
-    'home-fetching-the-latest-news-from-camnorte': 'Kinukuha ang pinakabagong balita mula sa Camarines Norte.',
+    'home-fetching-the-latest-news-from-camnorte':
+      'Kinukuha ang pinakabagong balita mula sa Camarines Norte.',
     'home-find-a-service': 'Find a Serbisyo',
     'home-freedom-of-information': 'Kalayaan sa Impormasyon',
     'home-governor-general-antonio-urbiztondo-declared':
@@ -9070,7 +9102,8 @@ const translations = {
     'home-lungabang': 'Lungabang',
     'home-mayorcamnortegovph': 'pgcamarinesnorte@gmail.com',
     'home-municipality': 'Munisipalidad',
-    'home-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'home-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'home-once-the-largest': 'Dating Pinakamalaki',
     'home-open-data-philippines': 'Open Data Philippines',
     'home-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -9207,7 +9240,8 @@ const translations = {
     'hrm-office-personnel': 'Mga Tauhan ng Opisina',
     'hrm-official-certification-of-current-or-previous':
       'Opisyal certification of kasalukuyang or nakaraang employment status',
-    'hrm-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'hrm-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'hrm-official-record-of-employment-history-for-lgu':
       'Opisyal na rekord ng kasaysayan ng trabaho para sa mga empleyado ng LGU',
     'hrm-official-statement-of-accumulated-leave-credits':
@@ -9304,7 +9338,8 @@ const translations = {
       'Opisina ng Pangkalahatang Serbisyo ng Munisipalidad',
     'infra-municipal-planning-development': 'Pangmunisipyo Planning & Development',
     'infra-occupancy-permit': 'Permit sa Paninirahan',
-    'infra-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'infra-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'infra-open-data-philippines': 'Open Data Philippines',
     'infra-ordinance-framework': 'Balangkas ng Ordinansa',
     'infra-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -9569,7 +9604,8 @@ const translations = {
     'magri-office-information': 'Impormasyon ng Opisina',
     'magri-official-certifications-issued-by-the-municipal':
       'Mga opisyal na sertipikasyon na ibinibigay ng Opisina ng Agrikultura ng Munisipyo',
-    'magri-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'magri-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'magri-official-production-records-for-loan-and':
       'Mga opisyal na rekord ng produksyon para sa layunin ng pautang at seguro',
     'magri-old-rsbsa-form-reference-number': 'Luma RSBSA Form / Reference Number',
@@ -9771,7 +9807,8 @@ const translations = {
     'market-office-head': 'Pinuno ng Opisina',
     'market-office-information': 'Impormasyon ng Opisina',
     'market-office-personnel': 'Mga Tauhan ng Opisina',
-    'market-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'market-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'market-open-data-philippines': 'Open Data Philippines',
     'market-ordinance-framework': 'Balangkas ng Ordinansa',
     'market-other-merchandise': 'Iba pang Paninda',
@@ -9906,7 +9943,8 @@ const translations = {
     'mbudget-office': 'Opisina',
     'mbudget-office-information': 'Impormasyon ng Opisina',
     'mbudget-office-personnel': 'Mga Tauhan ng Opisina',
-    'mbudget-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'mbudget-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'mbudget-official-receipt': 'Opisyal na Resibo',
     'mbudget-open-data-philippines': 'Open Data Philippines',
     'mbudget-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -10258,7 +10296,8 @@ const translations = {
     'mcr-office-head': 'Pinuno ng Opisina',
     'mcr-office-information': 'Impormasyon ng Opisina',
     'mcr-office-personnel': 'Mga Tauhan ng Opisina',
-    'mcr-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'mcr-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'mcr-official-receipt': 'Opisyal na Resibo',
     'mcr-open-data-philippines': 'Open Data Philippines',
     'mcr-order-of-payment': 'Order of Pagbabayad',
@@ -10415,7 +10454,8 @@ const translations = {
     'mgs-office': 'Opisina',
     'mgs-office-information': 'Impormasyon ng Opisina',
     'mgs-office-personnel': 'Mga Tauhan ng Opisina',
-    'mgs-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'mgs-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'mgs-open-data-philippines': 'Open Data Philippines',
     'mgs-operators-pool': 'Pool ng mga Operator',
     'mgs-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -10575,7 +10615,8 @@ const translations = {
       'Opisina ng Pagpaplano at Pagpapaunlad ng Munisipalidad',
     'mpdo-office': 'Opisina',
     'mpdo-office-information': 'Impormasyon ng Opisina',
-    'mpdo-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'mpdo-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'mpdo-ongoing': 'Kasalukuyan',
     'mpdo-open-data-philippines': 'Open Data Philippines',
     'mpdo-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -10764,7 +10805,8 @@ const translations = {
     'mswdo-nutritious-snacks-and-meals-during-day-care-hours':
       'Masustansyang meryenda at pagkain sa oras ng day care.',
     'mswdo-office-hours': 'Oras ng Opisina',
-    'mswdo-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'mswdo-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'mswdo-open-data-philippines': 'Open Data Philippines',
     'mswdo-ordinance-framework': 'Balangkas ng Ordinansa',
     'mswdo-parent-education-on-proper-nutrition-and-child':
@@ -11003,7 +11045,8 @@ const translations = {
     'mswdosvc-office-head-social-welfare-officer': 'Pinuno ng Opisina / Social Welfare Officer',
     'mswdosvc-office-information': 'Impormasyon ng Opisina',
     'mswdosvc-office-personnel': 'Mga Tauhan ng Opisina',
-    'mswdosvc-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'mswdosvc-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'mswdosvc-open-data-philippines': 'Open Data Philippines',
     'mswdosvc-ordinance-framework': 'Balangkas ng Ordinansa',
     'mswdosvc-osca-focal-person': 'OSCA Focal Tao',
@@ -11128,7 +11171,8 @@ const translations = {
     'news-loading-news': 'Naglo-load ng balita...',
     'news-news': 'Balita',
     'news-news-updates': 'Balita at mga Update',
-    'news-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'news-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'news-open-data-philippines': 'Open Data Philippines',
     'news-ordinance-framework': 'Balangkas ng Ordinansa',
     'news-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -11173,7 +11217,8 @@ const translations = {
     'ord-infrastructure': 'Imprastraktura',
     'ord-legislative': 'Lehislatura',
     'ord-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'ord-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'ord-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'ord-open-data-philippines': 'Open Data Philippines',
     'ord-ordinance-framework': 'Balangkas ng Ordinansa',
     'ord-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -11271,7 +11316,8 @@ const translations = {
     'privacy-national-privacy-commission': 'Pambansa Privacy Komisyon',
     'privacy-not': 'hindi',
     'privacy-number-of-visitors-and-page-views': 'Bilang ng mga bisita at page view',
-    'privacy-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'privacy-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'privacy-open-data-philippines': 'Open Data Philippines',
     'privacy-ordinance-framework': 'Balangkas ng Ordinansa',
     'privacy-our-website-may-contain-links-to-external':
@@ -11454,7 +11500,8 @@ const translations = {
     'propdec-occupancy-permit': 'Permit sa Paninirahan',
     'propdec-octtctcloa-no': 'OCT/TCT/CLOA No.',
     'propdec-office': 'Opisina',
-    'propdec-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'propdec-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'propdec-open-data-philippines': 'Open Data Philippines',
     'propdec-ordinance-framework': 'Balangkas ng Ordinansa',
     'propdec-owner-information': 'Impormasyon ng May-ari',
@@ -11513,7 +11560,8 @@ const translations = {
     'reso-infrastructure': 'Imprastraktura',
     'reso-legislative': 'Lehislatura',
     'reso-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
-    'reso-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'reso-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'reso-open-data-philippines': 'Open Data Philippines',
     'reso-ordinance-framework': 'Balangkas ng Ordinansa',
     'reso-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -11578,7 +11626,8 @@ const translations = {
     'safety-nuvelco-camnorte': 'NUVELCO Camarines Norte',
     'safety-nuvelco-camnorte-0935-812-1081': 'NUVELCO Camarines Norte 0935 812 1081',
     'safety-office': 'Opisina:',
-    'safety-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'safety-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'safety-open-data-philippines': 'Open Data Philippines',
     'safety-ordinance-framework': 'Balangkas ng Ordinansa',
     'safety-pdrrmo-n-vizcaya': 'PDRRMO N. Vizcaya',
@@ -11661,7 +11710,8 @@ const translations = {
     'sitemap-navigation': 'Nabigasyon',
     'sitemap-new-business-application': 'Bago Business Aplikasyon',
     'sitemap-news': 'Balita',
-    'sitemap-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'sitemap-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'sitemap-official-camnorte-website': 'Opisyal Camarines Norte Website',
     'sitemap-online-payment-order': 'Online Pagbabayad Order',
     'sitemap-online-services': 'Mga Online na Serbisyo',
@@ -11779,7 +11829,8 @@ const translations = {
     'slaughter-office-head': 'Pinuno ng Opisina',
     'slaughter-office-information': 'Impormasyon ng Opisina',
     'slaughter-office-personnel': 'Mga Tauhan ng Opisina',
-    'slaughter-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'slaughter-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'slaughter-open-data-philippines': 'Open Data Philippines',
     'slaughter-operations-management': 'Pamamahala ng Operasyon',
     'slaughter-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -11866,7 +11917,8 @@ const translations = {
     'social-infrastructure': 'Imprastraktura',
     'social-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
     'social-mswdo-services': 'Mga Serbisyo ng MSWDO',
-    'social-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'social-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'social-open-data-philippines': 'Open Data Philippines',
     'social-ordinance-framework': 'Balangkas ng Ordinansa',
     'social-privacy-policy': 'Patakaran sa Pagkapribado',
@@ -11953,7 +12005,8 @@ const translations = {
     'stats-local-4055': 'Lokal 40.55%',
     'stats-municipal-data': 'Datos ng Munisipyo',
     'stats-municipal-income': 'Kita ng Munisipalidad',
-    'stats-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'stats-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'stats-ordinance-framework': 'Balangkas ng Ordinansa',
     'stats-osmea': 'Osmeña',
     'stats-overview': 'Pangkalahatang-ideya',
@@ -12015,7 +12068,8 @@ const translations = {
     'svc-infrastructure': 'Imprastraktura',
     'svc-lgu-camnorte-facebook': 'Camarines Norte Provincial Government Facebook',
     'svc-need-financial-help': 'Kailangan Financial Tulong',
-    'svc-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'svc-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'svc-open-data-philippines': 'Open Data Philippines',
     'svc-ordinance-framework': 'Balangkas ng Ordinansa',
     'svc-person-with-disability': 'Taong may Kapansanan',
@@ -12055,7 +12109,8 @@ const translations = {
     'tax-municipal-assessors-office': 'Opisina ng Tagapagtasa ng Munisipalidad',
     'tax-municipal-budget-office': 'Opisina ng Badyet ng Munisipalidad',
     'tax-municipal-treasurers-office': 'Opisina ng Ingat-yaman ng Munisipalidad',
-    'tax-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'tax-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'tax-online-payment-order': 'Online Pagbabayad Order',
     'tax-open-data-philippines': 'Open Data Philippines',
     'tax-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -12200,7 +12255,8 @@ const translations = {
     'terms-no-professional-advice': 'Walang Propesyonal na Payo',
     'terms-noninfringement-of-intellectual-property-rights':
       'Non-infringement of intellectual ari-arian rights',
-    'terms-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'terms-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'terms-open-data-philippines': 'Open Data Philippines',
     'terms-ordinance-framework': 'Balangkas ng Ordinansa',
     'terms-our-response-process': 'Our Response Iproseso',
@@ -12370,7 +12426,8 @@ const translations = {
     'treas-no-discountpenalty': 'Walang diskwento/multa',
     'treas-office': 'Opisina',
     'treas-office-information': 'Impormasyon ng Opisina',
-    'treas-official-lgu-camnorte-portal': 'Opisyal na Portal ng Camarines Norte Provincial Government',
+    'treas-official-lgu-camnorte-portal':
+      'Opisyal na Portal ng Camarines Norte Provincial Government',
     'treas-official-receipt': 'Opisyal na Resibo',
     'treas-open-data-philippines': 'Open Data Philippines',
     'treas-ordinance-framework': 'Balangkas ng Ordinansa',
@@ -12612,8 +12669,7 @@ const translations = {
     'terms-camnorte-quiz': 'Camarines Norte Quiz',
     'treas-camnorte-quiz': 'Camarines Norte Quiz',
     'tricycle-camnorte-quiz': 'Camarines Norte Quiz',
-    'home-how-well-do-you-know-camnorte-camarines-norte':
-      'Gaano mo kakilala ang Camarines Norte?',
+    'home-how-well-do-you-know-camnorte-camarines-norte': 'Gaano mo kakilala ang Camarines Norte?',
     'home-evaluate-your-familiarity-with-the-municipalitys':
       'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Camarines Norte.',
     'home-take-the-quiz': 'Subukin ang Quiz',

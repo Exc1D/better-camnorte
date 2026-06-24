@@ -9,8 +9,8 @@ visual effect, a page, a redesign — this document is the tie-breaker.
   metered, sometimes-offline mobile data. Every principle serves that person first.
 - **Scope:** the static HTML/CSS/JS site. The `react-app/` migration is out of scope until it ships.
 
-The order is deliberate: *purpose* and *trust* first, then the universal *floors*, then *expression*,
-then the *machinery*.
+The order is deliberate: _purpose_ and _trust_ first, then the universal _floors_, then _expression_,
+then the _machinery_.
 
 ---
 
@@ -36,7 +36,7 @@ what makes a watchdog credible and a small volunteer team able to maintain it.
 - **No** → it does not belong. Remove it (weather widget, currency converter), or it survives only as
   unavoidable boilerplate (contact, privacy, terms, FAQ, accessibility statement).
 
-A new feature is measured against this test *before* any design or code. "It would be nice" is not
+A new feature is measured against this test _before_ any design or code. "It would be nice" is not
 "it follows the money."
 
 ---
@@ -69,7 +69,7 @@ The site must load fast and work on a low-end phone over slow 4G. Performance is
 optimise toward later; it is a gate every page passes before it ships.
 
 **Why:** A civic transparency site that only works on fast devices excludes the people who most need
-free access to government information. "₱0 to the people" means ₱0 in data *and* a working page on
+free access to government information. "₱0 to the people" means ₱0 in data _and_ a working page on
 the phone they actually own.
 
 **The test** — CI-enforced and build-failing, exactly as accessibility already is:
@@ -80,7 +80,7 @@ the phone they actually own.
 - At most one web font, subsetted, `font-display: swap`
 - LCP ≤ 2.5 s on throttled slow 4G; CLS < 0.1
 - **Exception — interactive data pages** (map, statistics): the heavy library (Leaflet, Chart.js)
-  loads only on user intent, never on first paint. Exempt from the JS budget *below the fold*, not
+  loads only on user intent, never on first paint. Exempt from the JS budget _below the fold_, not
   from the rest.
 
 If a beautiful idea can't fit this budget, it isn't beautiful here.
@@ -166,5 +166,5 @@ keeps the site coherent and cheap to change: fix the nav once, restyle once, cor
 - Colour, type, spacing, radius, and shadow come from CSS custom-property tokens — no literal hex, no
   one-off `px`, no one-off font declarations in page CSS
 - Type is Inter (subset, one variable family) with a system-font fallback; no second web font
-- A page that can't be built from existing tokens and components is a signal to *extend the system*,
+- A page that can't be built from existing tokens and components is a signal to _extend the system_,
   not to write bespoke CSS

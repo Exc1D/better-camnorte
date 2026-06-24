@@ -56,9 +56,12 @@ if ('serviceWorker' in navigator) {
       .register('/sw.js')
       .then(function (reg) {
         // Check for updates every 30 minutes
-        setInterval(function () {
-          reg.update();
-        }, 30 * 60 * 1000);
+        setInterval(
+          function () {
+            reg.update();
+          },
+          30 * 60 * 1000
+        );
 
         reg.addEventListener('updatefound', function () {
           var newWorker = reg.installing;
@@ -307,7 +310,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!link) return;
       // If it's a dropdown trigger, don't close menu (handled by dropdown init)
       if (link.getAttribute('aria-haspopup') === 'true') return;
-      if (link.parentElement && link.parentElement.classList.contains('has-dropdown') && link.parentElement.querySelector('.dropdown-menu')) return;
+      if (
+        link.parentElement &&
+        link.parentElement.classList.contains('has-dropdown') &&
+        link.parentElement.querySelector('.dropdown-menu')
+      )
+        return;
       closeMobileMenu();
     });
 

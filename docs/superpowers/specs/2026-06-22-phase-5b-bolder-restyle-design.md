@@ -8,13 +8,14 @@
 ## Goal
 
 A bolder, neutral-based visual identity that applies principle #6 (neutral base,
-SDG colour as contained accent) and nudges the homepage from *portal* toward
-*transparency watchdog* (principle #1) — without a structural rebuild. Unlike 5a,
+SDG colour as contained accent) and nudges the homepage from _portal_ toward
+_transparency watchdog_ (principle #1) — without a structural rebuild. Unlike 5a,
 this **does** change appearance.
 
 ## Scope
 
 In this pass:
+
 - **Shared chrome** — `header.njk` / `nav.njk` + `footer.css` (propagates to every page).
 - **Homepage** — hero + all existing sections (`assets/css/home-redesign.css`, `src/index.njk`).
 - **Flagship pages** — transparency and statistics page bodies + their CSS
@@ -39,9 +40,13 @@ inherit the new chrome + tokens but keep current body styling until a later pass
 Source Sans 3 (already the loaded face). Modular ~1.25 scale:
 
 ```css
---text-sm: 0.875rem; --text-base: 1rem; --text-lg: 1.25rem;
---text-xl: 1.5rem; --text-2xl: 1.95rem; --text-3xl: 2.5rem;
---text-display: clamp(3rem, 9vw, 7rem);   /* hero wordmark */
+--text-sm: 0.875rem;
+--text-base: 1rem;
+--text-lg: 1.25rem;
+--text-xl: 1.5rem;
+--text-2xl: 1.95rem;
+--text-3xl: 2.5rem;
+--text-display: clamp(3rem, 9vw, 7rem); /* hero wordmark */
 ```
 
 Weights: 400 body, 600 headings, 800 display. Headings and the hero wordmark
@@ -71,7 +76,7 @@ breathing room.
 
 Keep the monument image and the "Bantayog / ng Camarines Norte" wordmark.
 Replace the portal copy in `src/index.njk`'s hero with watchdog framing. Proposed
-copy (final wording may be tuned in implementation, but the *structure* is fixed):
+copy (final wording may be tuned in implementation, but the _structure_ is fixed):
 
 - Eyebrow: `FOLLOWING THE MONEY · COST TO THE PEOPLE: ₱0`
 - Subhead (replaces "Access government services, information, and resources…"):
@@ -84,7 +89,7 @@ copy (final wording may be tuned in implementation, but the *structure* is fixed
   → the provenance/transparency explainer. Replaces the "Contact Us" portal CTA.
 
 The hotlines/contact remain reachable from chrome + the contact section; only the
-hero's *primary* CTA changes.
+hero's _primary_ CTA changes.
 
 ### 6. Flagship page bodies
 

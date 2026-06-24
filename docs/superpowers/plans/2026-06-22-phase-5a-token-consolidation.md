@@ -27,6 +27,7 @@ Call `preview_resize` with `width: 1280, height: 860` (the named `desktop` prese
 - [ ] **Step 3: Screenshot the four baseline pages**
 
 For each URL, navigate then screenshot:
+
 - `http://localhost:8765/` (homepage — the only consumer of both token sets)
 - `http://localhost:8765/transparency/` (a `style.css`-only page) — if that path 404s, use the actual transparency page path found via `preview_snapshot` of the homepage nav
 - `http://localhost:8765/statistics/`
@@ -41,9 +42,25 @@ Navigate to `http://localhost:8765/`, then `preview_eval` with:
 ```js
 (() => {
   const s = getComputedStyle(document.documentElement);
-  return ['--navy','--gold','--gold-soft','--gold-deep','--maroon','--ink','--ink-soft','--display','--serif','--wide','--color-primary','--color-primary-dark','--font-main','--sdg-9']
-    .map(v => v + ' = ' + s.getPropertyValue(v).trim()).join('\n');
-})()
+  return [
+    '--navy',
+    '--gold',
+    '--gold-soft',
+    '--gold-deep',
+    '--maroon',
+    '--ink',
+    '--ink-soft',
+    '--display',
+    '--serif',
+    '--wide',
+    '--color-primary',
+    '--color-primary-dark',
+    '--font-main',
+    '--sdg-9',
+  ]
+    .map((v) => v + ' = ' + s.getPropertyValue(v).trim())
+    .join('\n');
+})();
 ```
 
 Expected (non-empty for every name): `--navy = #002170`, `--gold = #e0a431`, `--ink = oklch(0.32 0.04 264)`, `--display = 'Source Sans 3', 'Inter', system-ui, sans-serif`, `--color-primary = #0032a0`, etc. Save this output — it is the resolution invariant.
@@ -57,6 +74,7 @@ Expected (non-empty for every name): `--navy = #002170`, `--gold = #e0a431`, `--
 ### Task 2: Fold the home-redesign tokens into `style.css` and mark the block
 
 **Files:**
+
 - Modify: `assets/css/style.css:1-2` (banner comment) and `assets/css/style.css:26-27` (insert folded tokens)
 
 - [ ] **Step 1: Add a banner comment above the `:root`**
@@ -82,26 +100,25 @@ Replace those two lines with:
 In `assets/css/style.css`, find these two lines (currently lines 25-26):
 
 ```css
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+--shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
 ```
 
 Immediately after `--shadow-md`, insert:
 
 ```css
-
-  /* Folded from home-redesign.css (Phase 5a) — values unchanged.
+/* Folded from home-redesign.css (Phase 5a) — values unchanged.
      --navy is identical to --color-primary-dark; --display to --font-main. */
-  --navy: #002170;
-  --gold: #e0a431;
-  --gold-soft: #f3c969;
-  --gold-deep: #a9760f;
-  --maroon: #7a1f2b;
-  --ink: oklch(0.32 0.04 264);
-  --ink-soft: oklch(0.48 0.03 264);
-  --display: 'Source Sans 3', 'Inter', system-ui, sans-serif;
-  --serif: var(--display);
-  --wide: var(--display);
+--navy: #002170;
+--gold: #e0a431;
+--gold-soft: #f3c969;
+--gold-deep: #a9760f;
+--maroon: #7a1f2b;
+--ink: oklch(0.32 0.04 264);
+--ink-soft: oklch(0.48 0.03 264);
+--display: 'Source Sans 3', 'Inter', system-ui, sans-serif;
+--serif: var(--display);
+--wide: var(--display);
 ```
 
 - [ ] **Step 3: Sanity-check the file still parses**
@@ -115,6 +132,7 @@ Expected: `braces balanced: <n>` with no throw. (Catches a truncated/odd edit be
 ### Task 3: Delete the now-duplicate `:root` from `home-redesign.css`
 
 **Files:**
+
 - Modify: `assets/css/home-redesign.css:11-24` (remove the `:root { … }` block)
 
 - [ ] **Step 1: Remove the `:root` block**

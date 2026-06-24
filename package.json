@@ -1,12 +1,14 @@
 {
   "name": "bettercamnorte-web",
-  "version": "1.1.21",
+  "version": "1.1.22",
   "description": "BetterCamNorte - Official Portal for Camarines Norte Provincial Government",
   "scripts": {
     "dev": "python3 -m http.server 8000",
-    "build": "bash build.sh",
-    "build:major": "bash scripts/version.sh major && bash build.sh --no-bump",
-    "build:minor": "bash scripts/version.sh minor && bash build.sh --no-bump",
+    "sync:dpwh": "node scripts/sync-dpwh-camarines-norte.mjs",
+    "build": "npm run sync:dpwh && bash build.sh",
+    "build:offline": "bash build.sh",
+    "build:major": "bash scripts/version.sh major && npm run sync:dpwh && bash build.sh --no-bump",
+    "build:minor": "bash scripts/version.sh minor && npm run sync:dpwh && bash build.sh --no-bump",
     "serve": "python3 -m http.server 8000",
     "serve:dist": "cd dist && python3 -m http.server 8080",
     "version:major": "node scripts/bump-version.js major",
