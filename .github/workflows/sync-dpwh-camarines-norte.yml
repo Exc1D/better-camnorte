@@ -8,6 +8,7 @@ on:
       - '.github/workflows/sync-dpwh-camarines-norte.yml'
       - 'assets/js/dpwh-projects.js'
       - 'data/dpwh-projects.json'
+      - 'package.json'
   schedule:
     # Mondays at 10:15 AM Asia/Manila (02:15 UTC)
     - cron: '15 2 * * 1'
@@ -15,25 +16,26 @@ on:
     paths:
       - 'scripts/sync-dpwh-camarines-norte.mjs'
       - '.github/workflows/sync-dpwh-camarines-norte.yml'
+      - 'package.json'
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: dpwh-camarines-norte-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  sync:
+  validate:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '20'
 
@@ -65,14 +67,57 @@ jobs:
           NODE
 
       - name: Upload generated snapshot
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: dpwh-camarines-norte-projects
           path: data/dpwh-projects.json
           retention-days: 7
 
+  commit:
+    if: github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '20'
+
+      - name: Fetch and normalize DPWH projects
+        run: node scripts/sync-dpwh-camarines-norte.mjs
+
+      - name: Validate generated dataset
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+
+          const data = JSON.parse(await readFile('data/dpwh-projects.json', 'utf8'));
+          const ids = new Set(data.projects.map((project) => project.id));
+
+          if (!data.source_url || !data.as_of || !data.retrieved_at) {
+            throw new Error('Missing dataset provenance metadata.');
+          }
+          if (data.projects.length < 100) {
+            throw new Error(`Unexpectedly small project set: ${data.projects.length}`);
+          }
+          if (ids.size !== data.projects.length) {
+            throw new Error('Duplicate contract IDs found.');
+          }
+          if (data.summary.totalProjects !== data.projects.length) {
+            throw new Error('Summary project count does not match project array.');
+          }
+
+          console.log(`Validated ${data.projects.length} unique DPWH contracts as of ${data.as_of}.`);
+          NODE
+
       - name: Commit refreshed data
-        if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet -- data/dpwh-projects.json; then
             echo 'No project-data changes detected.'

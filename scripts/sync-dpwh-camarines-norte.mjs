@@ -94,12 +94,13 @@ function getPayload(body) {
           ? outer
           : [];
 
-  const pagination = outer?.pagination ?? body?.pagination ?? {
-    page: 1,
-    totalPages: 1,
-    totalCount: projects.length,
-    limit: projects.length,
-  };
+  const pagination = outer?.pagination ??
+    body?.pagination ?? {
+      page: 1,
+      totalPages: 1,
+      totalCount: projects.length,
+      limit: projects.length,
+    };
 
   return { projects, pagination };
 }
@@ -135,6 +136,7 @@ async function fetchWithRetry(url) {
       return await fetchJson(url, attempt);
     } catch (error) {
       lastError = error;
+      if (error.status >= 400 && error.status < 500 && error.status !== 429) break;
       if (attempt === MAX_RETRIES) break;
       const backoff = Math.min(30_000, 1_500 * 2 ** (attempt - 1));
       console.warn(`Request failed (${attempt}/${MAX_RETRIES}): ${error.message}`);
@@ -169,7 +171,9 @@ async function downloadAllProjects(apiBase) {
   }
 
   if (projects.length < expectedTotal) {
-    throw new Error(`Incomplete download from ${apiBase}: received ${projects.length}, expected ${expectedTotal}`);
+    throw new Error(
+      `Incomplete download from ${apiBase}: received ${projects.length}, expected ${expectedTotal}`
+    );
   }
 
   return { projects, expectedTotal };
@@ -195,7 +199,9 @@ async function getSourceProjects() {
 function isCamarinesNorteProject(project) {
   const location = project?.location ?? {};
   const province = normalizeText(location.province ?? project.province).toLowerCase();
-  const description = normalizeText(project.description ?? project.projectName ?? project.name).toLowerCase();
+  const description = normalizeText(
+    project.description ?? project.projectName ?? project.name
+  ).toLowerCase();
   return province.includes('camarines norte') || description.includes('camarines norte');
 }
 
@@ -207,7 +213,10 @@ function normalizeProject(project) {
   const contractId = normalizeText(project.contractId ?? project.contract_id ?? project.id);
   const { contractor, contractorId } = contractorParts(project.contractor);
   const status = normalizeStatus(project.status);
-  const progress = Math.max(-100, Math.min(100, toFiniteNumber(project.progress, status === 'Completed' ? 100 : 0)));
+  const progress = Math.max(
+    -100,
+    Math.min(100, toFiniteNumber(project.progress, status === 'Completed' ? 100 : 0))
+  );
 
   let displayLocation = officialProvince;
   if (!displayLocation || !displayLocation.toLowerCase().includes('camarines norte')) {
@@ -219,9 +228,9 @@ function normalizeProject(project) {
   const componentCategories = Array.isArray(project.componentCategories)
     ? project.componentCategories.map(normalizeText).filter(Boolean)
     : normalizeText(project.componentCategories)
-      .split(',')
-      .map((item) => item.trim())
-      .filter(Boolean);
+        .split(',')
+        .map((item) => item.trim())
+        .filter(Boolean);
 
   return {
     id: contractId,
@@ -287,7 +296,13 @@ function sortProjects(a, b) {
   const yearDifference = Number(b.infraYear || 0) - Number(a.infraYear || 0);
   if (yearDifference) return yearDifference;
 
-  const statusPriority = { 'On-Going': 0, 'Not Yet Started': 1, Completed: 2, Terminated: 3, Unknown: 4 };
+  const statusPriority = {
+    'On-Going': 0,
+    'Not Yet Started': 1,
+    Completed: 2,
+    Terminated: 3,
+    Unknown: 4,
+  };
   const statusDifference = (statusPriority[a.status] ?? 4) - (statusPriority[b.status] ?? 4);
   if (statusDifference) return statusDifference;
 

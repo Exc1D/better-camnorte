@@ -46,7 +46,7 @@
       container.innerHTML = `
         <div class="dpwh-data-error" role="alert">
           <strong>Project data is temporarily unavailable.</strong>
-          <span>Please use the DPWH Transparency Portal source link below.</span>
+          <span>Please try again later.</span>
         </div>`;
     }
   }
@@ -127,7 +127,8 @@
 
     if (status === 'Completed') return '<span class="dpwh-badge complete">Completed</span>';
     if (status === 'Terminated') return '<span class="dpwh-badge terminated">Terminated</span>';
-    if (status === 'Not Yet Started') return '<span class="dpwh-badge pending">Not Yet Started</span>';
+    if (status === 'Not Yet Started')
+      return '<span class="dpwh-badge pending">Not Yet Started</span>';
 
     const label = safeProgress === null ? status : `${safeProgress.toFixed(0)}%`;
     return `<span class="dpwh-badge ongoing" title="${escapeHTML(status)}">${escapeHTML(label)}</span>`;
@@ -163,7 +164,9 @@
   function renderSection(container, data) {
     const counts = getCategoryCounts(allProjects);
     const completedCount = allProjects.filter(isCompleted).length;
-    const ongoingCount = allProjects.filter((project) => normalizedStatus(project) === 'On-Going').length;
+    const ongoingCount = allProjects.filter(
+      (project) => normalizedStatus(project) === 'On-Going'
+    ).length;
     const asOf = data.as_of ? formatDate(data.as_of) : 'date not stated';
     const scanCount = Number(data.scope?.source_records_scanned);
     const sourceLink = text(data.source_url, 'https://transparency.dpwh.gov.ph/');
@@ -242,7 +245,7 @@
       const category = categoryKey(project.category);
 
       html += `
-        <tr class="dpwh-row" tabindex="0">
+        <tr class="dpwh-row">
           <td class="col-desc">
             <div class="dpwh-desc-wrap">
               <span class="dpwh-proj-id">${escapeHTML(project.id)}</span>
@@ -288,7 +291,10 @@
 
     setTimeout(
       () => {
-        tbody.insertAdjacentHTML('beforeend', renderRows(filteredProjects, displayedCount, rowsToLoad));
+        tbody.insertAdjacentHTML(
+          'beforeend',
+          renderRows(filteredProjects, displayedCount, rowsToLoad)
+        );
         displayedCount = Math.min(displayedCount + rowsToLoad, filteredProjects.length);
         isLoading = false;
         updateLoadMoreButton();
