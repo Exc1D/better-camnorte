@@ -8,14 +8,19 @@ const path = require('path');
 const peso = (n) => '₱' + (n / 1e9).toFixed(1) + 'B';
 const sum = (arr) => arr.reduce((t, p) => t + (Number(p.cost) || 0), 0);
 
-module.exports = function () {
-  const raw = JSON.parse(
-    fs.readFileSync(path.join(__dirname, '../../data/dpwh-projects.json'), 'utf8')
-  );
-  const projects = raw.projects || [];
+const summarize = (raw) => {
+  const projects = Array.isArray(raw.projects)
+    ? raw.projects.filter((project) => project && typeof project === 'object')
+    : [];
+  const source =
+    typeof raw.source === 'string'
+      ? raw.source
+      : raw.source && typeof raw.source.name === 'string'
+        ? raw.source.name
+        : '';
   const deo = projects.filter((p) => p.officialProvince === 'Camarines Norte DEO');
   return {
-    source: raw.source,
+    source,
     source_url: raw.source_url,
     as_of: raw.as_of,
     deoCount: deo.length,
@@ -25,3 +30,12 @@ module.exports = function () {
     totalCostDisplay: peso(sum(projects)),
   };
 };
+
+module.exports = function () {
+  const raw = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '../../data/dpwh-projects.json'), 'utf8')
+  );
+  return summarize(raw);
+};
+
+module.exports.summarize = summarize;

@@ -87,9 +87,9 @@
     <main id="main-content">
       <div class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-          <a href="../">Home</a>
+          <a href="../" data-i18n="breadcrumb-home">Home</a>
           <span>/</span>
-          <span aria-current="page">Methodology</span>
+          <span aria-current="page" data-i18n="method-breadcrumb">Methodology</span>
         </nav>
       </div>
 
@@ -97,10 +97,11 @@
         <div class="container">
           <div class="trans-hero-content-v2">
             <span class="trans-hero-badge-v2"
-              ><i class="bi bi-clipboard-check"></i> <span>How we work</span></span
+              ><i class="bi bi-clipboard-check"></i>
+              <span data-i18n="method-badge">How we work</span></span
             >
-            <h1>Methodology</h1>
-            <p>
+            <h1 data-i18n="method-title">Methodology</h1>
+            <p data-i18n="method-subtitle">
               How every figure on this site is sourced, counted, dated — and how you can flag one
               that's wrong.
             </p>
@@ -110,202 +111,98 @@
 
       <section class="method-section">
         <div class="container method-prose">
-          <h2>What this is</h2>
-          <p>
-            BetterCamNorte is an independent, citizen-led transparency project. It is
-            <strong>not</strong> an official website of the Provincial Government of Camarines Norte.
-            Our one job is to help citizens trace where Camarines Norte's public money goes.
+          <h2 data-i18n="method-what-title">What this is</h2>
+          <p data-i18n="method-what-body">
+            BetterCamNorte is an independent, citizen-led transparency project. It is not an
+            official website of the Provincial Government of Camarines Norte. Our one job is to help
+            citizens trace where Camarines Norte's public money goes.
           </p>
 
-          <h2>The rule every figure must pass</h2>
-          <p>
-            A number is only published if it carries a <strong>source</strong> (the issuing body), a
-            <strong>source link</strong>, and an <strong>as-of date</strong>. This is enforced at
-            build time — a figure dataset missing any of the three fails the build, so an unsourced
-            number cannot ship by accident. Figures whose provenance we cannot establish are
-            <em>unpublished</em>, not estimated.
+          <h2 data-i18n="method-rule-title">The rule every dataset must pass</h2>
+          <p data-i18n="method-rule-body">
+            Structured figure datasets covered by our provenance check must carry a source, a source
+            link, and an as-of date or the build fails. Other site content is reviewed separately
+            and is not automatically covered by that check. Figures whose provenance we cannot
+            establish are unpublished, not estimated.
           </p>
 
-          <h2>Public projects (DPWH)</h2>
+          <h2 data-i18n="method-projects-title">Public projects (DPWH)</h2>
           <p>
-            Project data comes from the
-            <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer"
+            <span data-i18n="method-projects-source-before">Project data comes from the</span>
+            <a
+              href="https://transparency.dpwh.gov.ph/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="method-dpwh-link"
               >DPWH Transparency Portal</a
-            >, refreshed each time the site is built. We scan the portal's national records and keep
-            the contracts that match Camarines Norte. Live totals — project count, total contract
-            budget, and the as-of date — are shown on the
-            <a href="../projects/">Projects page</a>; we don't restate them here so the two can never
-            disagree.
+            ><span data-i18n="method-projects-source-after"
+              >, refreshed each time the site is built. We scan the portal's national records and
+              keep the contracts that match Camarines Norte. Live totals are shown on the</span
+            >
+            <a href="../projects/" data-i18n="method-projects-link">Projects page</a
+            ><span data-i18n="method-projects-link-after"> so the two pages cannot disagree.</span>
           </p>
-          <p>
-            <strong>Headline vs. separate counts.</strong> Headline figures cover contracts tagged
-            to the <strong>Camarines Norte District Engineering Office (DEO)</strong> — the office
-            directly responsible for the province. Contracts that only <em>mention</em> Camarines
-            Norte under the broader <strong>Region V</strong> tag are counted separately, because
-            attributing them to the province would overstate local spending.
-          </p>
-
-          <h2>Honest states</h2>
-          <p>
-            We show gaps rather than hide them. A contract with no disclosed contractor reads
-            "Not stated in source"; a contract with no published budget shows a dash, not a guessed
-            amount. Where a whole dataset isn't yet verifiable — the provincial fiscal summary is
-            currently awaiting figures from the
-            <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer">BLGF</a> — the
-            section says so plainly instead of showing draft numbers as if they were final.
+          <p data-i18n="method-projects-counting">
+            Headline figures cover contracts tagged to the Camarines Norte District Engineering
+            Office (DEO). Contracts that only mention Camarines Norte under the broader Region V tag
+            are counted separately, because attributing them to the province would overstate local
+            spending.
           </p>
 
-          <h2>Freshness</h2>
+          <h2 data-i18n="method-honest-title">Honest states</h2>
           <p>
-            DPWH project data is re-pulled on every build. Each figure carries its own as-of date, so
-            you can see how current it is rather than assuming it's live. Datasets still awaiting an
-            official source are labelled with when they were last checked.
+            <span data-i18n="method-honest-before-blgf"
+              >We show gaps rather than hide them. A contract with no disclosed contractor reads
+              "Not stated in source"; a contract with no published budget shows a dash, not a
+              guessed amount. The provincial fiscal summary is currently awaiting figures from
+              the</span
+            >
+            <a
+              href="https://blgf.gov.ph/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="method-blgf-link"
+              >BLGF</a
+            ><span data-i18n="method-honest-after-blgf"
+              >, so the section says so plainly instead of showing draft numbers as final.</span
+            >
           </p>
 
-          <h2>Found a mistake? Tell us.</h2>
-          <p>
-            Corrections are a feature, not an embarrassment. If a figure looks wrong, point us at the
-            right source and we'll fix it:
+          <h2 data-i18n="method-freshness-title">Freshness</h2>
+          <p data-i18n="method-freshness-body">
+            DPWH project data is re-pulled on every build. Each figure carries its own as-of date,
+            so you can see how current it is rather than assuming it's live. Datasets still awaiting
+            an official source are labelled with when they were last checked.
+          </p>
+
+          <h2 data-i18n="method-corrections-title">Found a mistake? Tell us.</h2>
+          <p data-i18n="method-corrections-body">
+            Corrections are a feature, not an embarrassment. If a figure looks wrong, point us at
+            the right source and we'll fix it:
           </p>
           <ul>
             <li>
-              Open an issue:
+              <span data-i18n="method-corrections-issue">Open an issue:</span>
               <a
-                href="https://github.com/BetterCamNorte/bettercamnorte/issues/new"
+                href="https://github.com/Exc1D/better-camnorte/issues/new"
                 target="_blank"
                 rel="noopener noreferrer"
-                >github.com/BetterCamNorte/bettercamnorte/issues</a
+                >github.com/Exc1D/better-camnorte/issues</a
               >
             </li>
             <li>
-              Or email
+              <span data-i18n="method-corrections-email">Or email</span>
               <a href="mailto:volunteer@bettercamnorte.org">volunteer@bettercamnorte.org</a>
             </li>
           </ul>
-          <p>Please include a link to the official source so we can verify and cite it.</p>
+          <p data-i18n="method-corrections-source">
+            Please include a link to the official source so we can verify and cite it.
+          </p>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-main-new">
-          <div class="footer-brand">
-            <img
-              src="../assets/images/logo/camnorte-logo.png"
-              alt="BetterCamNorte logo"
-              class="footer-logo"
-            />
-            <span class="footer-wordmark">Better CamNorte</span>
-            <p class="footer-tagline" data-i18n="home-empowering-the-people-of-camnorte-with-transparent">
-              An independent, citizen-led project tracking how Camarines Norte spends public money —
-              every figure sourced and dated. Not an official government website.
-            </p>
-            <div class="footer-social-new">
-              <a
-                href="https://www.facebook.com/piocamnorte"
-                class="footer-social-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/company/bettercamnorte/"
-                class="footer-social-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a
-                href="https://discord.com/invite/qeSu7RJkjQ"
-                class="footer-social-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Discord"
-                ><i class="bi bi-discord"></i
-              ></a>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul class="footer-links-new">
-              <li><a href="../projects/">Projects</a></li>
-              <li><a href="../budget/">Spending</a></li>
-              <li><a href="../methodology/">Methodology</a></li>
-              <li><a href="../sitemap/">Sitemap</a></li>
-              <li><a href="../terms/">Terms of Use</a></li>
-              <li><a href="../privacy/">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Resources</h4>
-            <ul class="footer-links-new">
-              <li>
-                <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer"
-                  >DPWH Transparency Portal</a
-                >
-              </li>
-              <li>
-                <a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"
-                  >Freedom of Information</a
-                >
-              </li>
-              <li>
-                <a href="https://camnorte.gov.ph/" target="_blank" rel="noopener noreferrer"
-                  >Official Camarines Norte Provincial Government Portal</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <a href="mailto:volunteer@bettercamnorte.org" class="footer-contribute"
-              ><i class="bi bi-envelope-heart"></i> <span>Volunteer with us</span></a
-            >
-            <a
-              href="https://github.com/BetterCamNorte/bettercamnorte"
-              class="footer-contribute"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="bi bi-github"></i> <span>Contribute code with us</span></a
-            >
-          </div>
-        </div>
-        <div class="footer-bottom-new">
-          <div class="footer-copyright">
-            <span class="footer-copyright-text">&copy; 2026 BetterCamNorte</span>
-            <span class="footer-copyright-license">MIT | CC BY 4.0</span>
-            <span class="footer-copyright-disclaimer"
-              >Independent transparency project. All figures sourced from official public
-              records.</span
-            >
-            <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.22</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <style>
-      .method-section {
-        padding: 32px 0 56px;
-      }
-      .method-prose {
-        max-width: 760px;
-      }
-      .method-prose h2 {
-        margin: 32px 0 8px;
-        font-size: 1.35rem;
-      }
-      .method-prose p,
-      .method-prose li {
-        line-height: 1.7;
-        color: var(--color-text, #333);
-      }
-      .method-prose ul {
-        padding-left: 1.25rem;
-      }
-    </style>
+    {% include "footer.njk" %}
 
     <script defer src="../assets/js/translations.js"></script>
     <script defer src="../assets/js/main.js"></script>

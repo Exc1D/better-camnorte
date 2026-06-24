@@ -39,9 +39,8 @@ fi
 VERSION=$(node -e "console.log(require('./version.json').version)")
 
 # ── 1b. Provenance gate (web-principle #2: every figure sourced & dated) ──────
-# Strict gate: every shipped figure dataset must carry source/source_url/as_of.
-# Figures live only in data/*.json (none hard-coded in templates/JS), so this gate
-# sees everything that renders. News items are warn-only (not figures).
+# Strict gate for the structured figure datasets covered by check-provenance.js.
+# Static template content is reviewed separately; news items are warn-only.
 echo ""
 echo "▶ [1b] Provenance check..."
 node scripts/check-provenance.js --strict
