@@ -13,7 +13,7 @@ const translations = {
     'nav-officials': 'Officials',
     'nav-statistics': 'Statistics',
     'nav-legislative': 'Legislative',
-    'nav-transparency': 'Transparency',
+    'nav-transparency': 'Spending',
     'nav-contact': 'Contact',
     'nav-budget': 'Budget',
     'nav-news': 'News',
@@ -2780,7 +2780,7 @@ const translations = {
     'home-create-account': 'Create Account',
     'home-education': 'Education',
     'home-empowering-the-people-of-camnorte-with-transparent':
-      'Empowering the people of Camarines Norte with transparent access to the services, programs, and public funds of Camarines Norte Provincial Government.',
+      'An independent, citizen-led project tracking how Camarines Norte spends public money — every figure sourced and dated. Not an official government website.',
     'home-environment': 'Environment',
     'home-father-alejandro-vidal': 'Father Alejandro Vidal',
     'home-fetching-the-latest-news-from-camnorte': 'Fetching the latest news from Camarines Norte.',
@@ -6326,7 +6326,7 @@ const translations = {
     'nav-officials': 'Mga Opisyal',
     'nav-statistics': 'Estadistika',
     'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Transparensiya',
+    'nav-transparency': 'Paggastos',
     'nav-contact': 'Makipag-ugnayan',
     'nav-budget': 'Badyet',
     'nav-news': 'Balita',
@@ -9062,7 +9062,7 @@ const translations = {
     'home-create-account': 'Gumawa ng Account',
     'home-education': 'Edukasyon',
     'home-empowering-the-people-of-camnorte-with-transparent':
-      'Pagbibigay-kapangyarihan sa mga mamamayan ng Camarines Norte na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng Camarines Norte Provincial Government.',
+      'Isang malayang proyekto ng mga mamamayan na sumusubaybay sa paggastos ng pampublikong pera ng Camarines Norte — bawat datos ay may pinagmulan at petsa. Hindi opisyal na website ng pamahalaan.',
     'home-environment': 'Kapaligiran',
     'home-father-alejandro-vidal': 'Padre Alejandro Vidal',
     'home-fetching-the-latest-news-from-camnorte':
