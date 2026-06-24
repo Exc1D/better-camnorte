@@ -1259,3 +1259,24 @@
     font-size: 0.75rem;
   }
 }
+
+/* ponytail: empty state for unpublished (unsourced) fiscal figures */
+.sre-empty-state {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px 24px;
+}
+.sre-empty-state i {
+  font-size: 2rem;
+  color: var(--color-text-light, #667085);
+}
+.sre-empty-state h2 {
+  margin: 12px 0 8px;
+  font-size: 1.25rem;
+}
+.sre-empty-state p {
+  color: var(--color-text-light, #667085);
+  line-height: 1.6;
+  margin: 0;
+}

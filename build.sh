@@ -39,12 +39,12 @@ fi
 VERSION=$(node -e "console.log(require('./version.json').version)")
 
 # ── 1b. Provenance gate (web-principle #2: every figure sourced & dated) ──────
-# Warning-only for now — the missing source_url/as_of values are the LGU's to
-# supply, not the build's to invent. Swap to `--strict` to make it build-failing
-# once the figure datasets carry real provenance.
+# Strict gate: every shipped figure dataset must carry source/source_url/as_of.
+# Figures live only in data/*.json (none hard-coded in templates/JS), so this gate
+# sees everything that renders. News items are warn-only (not figures).
 echo ""
 echo "▶ [1b] Provenance check..."
-node scripts/check-provenance.js || true
+node scripts/check-provenance.js --strict
 
 # ── 2. Clean dist ────────────────────────────────────────────────────────────
 echo ""
