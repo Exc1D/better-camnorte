@@ -1,0 +1,74 @@
+name: Sync DPWH Camarines Norte projects
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mondays at 10:15 AM Asia/Manila (02:15 UTC)
+    - cron: '15 2 * * 1'
+  push:
+    paths:
+      - 'scripts/sync-dpwh-camarines-norte.mjs'
+      - '.github/workflows/sync-dpwh-camarines-norte.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dpwh-camarines-norte-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch and normalize DPWH projects
+        run: node scripts/sync-dpwh-camarines-norte.mjs
+
+      - name: Validate generated dataset
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+
+          const data = JSON.parse(await readFile('data/dpwh-projects.json', 'utf8'));
+          const ids = new Set(data.projects.map((project) => project.id));
+
+          if (!data.source_url || !data.as_of || !data.retrieved_at) {
+            throw new Error('Missing dataset provenance metadata.');
+          }
+          if (data.projects.length < 100) {
+            throw new Error(`Unexpectedly small project set: ${data.projects.length}`);
+          }
+          if (ids.size !== data.projects.length) {
+            throw new Error('Duplicate contract IDs found.');
+          }
+          if (data.summary.totalProjects !== data.projects.length) {
+            throw new Error('Summary project count does not match project array.');
+          }
+
+          console.log(`Validated ${data.projects.length} unique DPWH contracts as of ${data.as_of}.`);
+          NODE
+
+      - name: Commit refreshed data
+        run: |
+          if git diff --quiet -- data/dpwh-projects.json; then
+            echo 'No project-data changes detected.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/dpwh-projects.json
+          git commit -m "chore(data): refresh Camarines Norte DPWH projects"
+          git push
