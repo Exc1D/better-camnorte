@@ -5,3 +5,7 @@ package-lock.json
 *.min.css
 react-app/.next
 react-app/node_modules
+
+# Third-party vendor code and generated data — not ours to format
+assets/vendor
+data/flood

@@ -1309,3 +1309,146 @@
 .method-prose ul {
   padding-left: 1.25rem;
 }
+
+/* Flood-control map */
+.flood-map-section {
+  padding: 8px 0 48px;
+}
+
+.flood-map-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.flood-period {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.flood-period button {
+  padding: 8px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.flood-period button:hover:not(.active) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.flood-period button.active {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.flood-map-count {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+
+#flood-map {
+  height: 70vh;
+  min-height: 460px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  z-index: 0; /* keep tiles/controls under the site header dropdowns */
+}
+
+.flood-map-error {
+  padding: 16px;
+  background: #fdecea;
+  color: #611a15;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.flood-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 12px 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+
+.flood-legend-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.flood-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.flood-legend .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.flood-legend .swatch.h1 {
+  background: #9ecae1;
+}
+.flood-legend .swatch.h2 {
+  background: #4292c6;
+}
+.flood-legend .swatch.h3 {
+  background: #08519c;
+}
+.flood-legend .swatch.marker {
+  background: #e53935;
+  border: 1.5px solid #b71c1c;
+  border-radius: 50%;
+}
+
+.flood-popup-title {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.flood-popup-meta {
+  margin: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.flood-popup-meta div {
+  display: flex;
+  gap: 6px;
+}
+
+.flood-popup-meta dt {
+  flex: 0 0 72px;
+  font-weight: 600;
+  color: var(--color-text-light);
+}
+
+.flood-popup-meta dd {
+  margin: 0;
+}
+
+.flood-popup-id {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.6875rem;
+  color: var(--color-text-light);
+}

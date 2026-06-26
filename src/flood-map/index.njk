@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8777S9SP9X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-8777S9SP9X');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="See Camarines Norte DPWH flood-control projects plotted against modeled flood-hazard zones (5-, 25-, and 100-year return periods). An independent transparency project, not an official government site."
+    />
+    <meta name="author" content="Ramon Logan Jr." />
+    <meta
+      name="keywords"
+      content="Camarines Norte flood control, DPWH flood projects, flood hazard map, flood-prone areas, public works transparency"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bettercamnorte.org/flood-map/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bettercamnorte.org/flood-map/" />
+    <meta property="og:title" content="Flood-Control Map | BetterCamNorte" />
+    <meta
+      property="og:description"
+      content="Where DPWH flood-control contracts sit against modeled flood-hazard zones for Camarines Norte. An independent transparency project, not an official government site."
+    />
+    <meta
+      property="og:image"
+      content="https://bettercamnorte.org/assets/images/banners/opengraph.png"
+    />
+    <meta property="og:site_name" content="BetterCamNorte" />
+
+    <title>Flood-Control Map | BetterCamNorte</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo/camnorte-logo.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets/images/logo/camnorte-logo.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Leaflet (self-hosted) -->
+    <link rel="stylesheet" href="../assets/vendor/leaflet/leaflet.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/accessibility.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/transparency-v2.css" />
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    {% include "header.njk" %}
+
+    <main id="main-content">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../">Home</a>
+          <span>/</span>
+          <span aria-current="page">Flood Map</span>
+        </nav>
+      </div>
+
+      <section class="trans-hero-v2">
+        <div class="container">
+          <div class="trans-hero-content-v2">
+            <span class="trans-hero-badge-v2"
+              ><i class="bi bi-water"></i> <span>Flood Control</span></span
+            >
+            <h1>Flood-control projects on the hazard map</h1>
+            <p>
+              Where DPWH flood-control contracts sit against modeled flood-hazard zones for
+              Camarines Norte. Choose a return period to compare how far floodwater is expected to
+              reach.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="flood-map-section">
+        <div class="container">
+          <div class="flood-map-toolbar">
+            <div class="flood-period" role="group" aria-label="Flood-hazard return period">
+              <button type="button" data-period="5yr" aria-pressed="false">5-year</button>
+              <button type="button" data-period="25yr" aria-pressed="false">25-year</button>
+              <button type="button" data-period="100yr" class="active" aria-pressed="true">
+                100-year
+              </button>
+            </div>
+            <p class="flood-map-count" id="flood-map-count">Loading flood-control projects…</p>
+          </div>
+
+          <div
+            id="flood-map"
+            role="application"
+            aria-label="Map of flood-control projects and modeled flood-hazard zones in Camarines Norte"
+          ></div>
+
+          <div class="flood-legend" aria-hidden="true">
+            <span class="flood-legend-group">
+              <strong>Flood hazard</strong>
+              <span class="flood-legend-item"><i class="swatch h1"></i>Low</span>
+              <span class="flood-legend-item"><i class="swatch h2"></i>Medium</span>
+              <span class="flood-legend-item"><i class="swatch h3"></i>High</span>
+            </span>
+            <span class="flood-legend-group">
+              <strong>Projects</strong>
+              <span class="flood-legend-item"><i class="swatch marker"></i>Flood-control contract</span>
+            </span>
+          </div>
+
+          <div class="dpwh-provenance" role="note">
+            <i class="bi bi-info-circle"></i>
+            <span>
+              Hazard zones are modeled scenarios from DPWH flood-hazard maps, simplified for web
+              display. Project points use DPWH-reported coordinates; contracts without coordinates
+              are not shown. A project outside a hazard zone is not evidence of misplacement —
+              hazard models, geocoding, and actual works extent each carry uncertainty. This overlay
+              is for public orientation, not engineering or legal conclusions.
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "footer.njk" %}
+
+    <script defer src="../assets/js/translations.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/version.js"></script>
+    <script defer src="../assets/vendor/leaflet/leaflet.js"></script>
+    <script defer src="../assets/js/flood-map.js"></script>
+  </body>
+</html>
