@@ -10,18 +10,70 @@ const translations = {
     'nav-home': 'Home',
     'nav-services': 'Services',
     'nav-government': 'Government',
+    'nav-projects': 'Projects',
     'nav-officials': 'Officials',
     'nav-statistics': 'Statistics',
     'nav-legislative': 'Legislative',
-    'nav-transparency': 'Transparency',
+    'nav-transparency': 'Spending',
     'nav-contact': 'Contact',
     'nav-budget': 'Budget',
+    'nav-methodology': 'Methodology',
     'nav-news': 'News',
     'nav-faq': 'FAQ',
     'nav-sitemap': 'Sitemap',
     'nav-privacy': 'Privacy',
     'nav-terms': 'Terms',
     'nav-accessibility': 'Accessibility',
+
+    // Budget and methodology pages
+    'budget-fiscal-pending-title': 'Provincial fiscal summary — awaiting verified data',
+    'budget-fiscal-pending-note':
+      "We don't yet have an official, dated source for the province's statement of receipts and expenditures, so we publish nothing here. A figure without a traceable source does not ship. Source: Bureau of Local Government Finance (BLGF).",
+    'method-breadcrumb': 'Methodology',
+    'method-badge': 'How we work',
+    'method-title': 'Methodology',
+    'method-subtitle':
+      "How every figure on this site is sourced, counted, dated — and how you can flag one that's wrong.",
+    'method-what-title': 'What this is',
+    'method-what-body':
+      "BetterCamNorte is an independent, citizen-led transparency project. It is not an official website of the Provincial Government of Camarines Norte. Our one job is to help citizens trace where Camarines Norte's public money goes.",
+    'method-rule-title': 'The rule every dataset must pass',
+    'method-rule-body':
+      'Structured figure datasets covered by our provenance check must carry a source, a source link, and an as-of date or the build fails. Other site content is reviewed separately and is not automatically covered by that check. Figures whose provenance we cannot establish are unpublished, not estimated.',
+    'method-projects-title': 'Public projects (DPWH)',
+    'method-projects-source-before': 'Project data comes from the',
+    'method-dpwh-link': 'DPWH Transparency Portal',
+    'method-projects-source-after':
+      ", refreshed each time the site is built. We scan the portal's national records and keep the contracts that match Camarines Norte. Live totals are shown on the",
+    'method-projects-link': 'Projects page',
+    'method-projects-link-after': ' so the two pages cannot disagree.',
+    'method-projects-counting':
+      'Headline figures cover contracts tagged to the Camarines Norte District Engineering Office (DEO). Contracts that only mention Camarines Norte under the broader Region V tag are counted separately, because attributing them to the province would overstate local spending.',
+    'method-honest-title': 'Honest states',
+    'method-honest-before-blgf':
+      'We show gaps rather than hide them. A contract with no disclosed contractor reads "Not stated in source"; a contract with no published budget shows a dash, not a guessed amount. The provincial fiscal summary is currently awaiting figures from the',
+    'method-blgf-link': 'BLGF',
+    'method-honest-after-blgf':
+      ', so the section says so plainly instead of showing draft numbers as final.',
+    'method-freshness-title': 'Freshness',
+    'method-freshness-body':
+      "DPWH project data is re-pulled on every build. Each figure carries its own as-of date, so you can see how current it is rather than assuming it's live. Datasets still awaiting an official source are labelled with when they were last checked.",
+    'method-corrections-title': 'Found a mistake? Tell us.',
+    'method-corrections-body':
+      "Corrections are a feature, not an embarrassment. If a figure looks wrong, point us at the right source and we'll fix it:",
+    'method-corrections-issue': 'Open an issue:',
+    'method-corrections-email': 'Or email',
+    'method-corrections-source':
+      'Please include a link to the official source so we can verify and cite it.',
+    'health-page-breadcrumb': 'Health services',
+    'health-page-subtitle':
+      'Start with verified public sources for health assistance in Camarines Norte.',
+    'health-page-provider-title': 'Check current requirements with the official provider',
+    'health-page-provider-body':
+      'BetterCamNorte no longer publishes unverified fees, requirements, or turnaround times for vaccination, health certificates, or medical assistance. Those details can change and should come from the responsible government health office.',
+    'health-page-provider-cta': 'Visit the official Camarines Norte provincial portal',
+    'health-page-independent-note':
+      'This page restores the health-search destination while verified service records are being assembled. BetterCamNorte is an independent project, not an official government website.',
 
     // Statistics Page
     'stats-title': 'Provincial Statistics',
@@ -51,7 +103,7 @@ const translations = {
 
     // Hero Section
     'hero-welcome': 'Welcome to BetterCamNorte',
-    'hero-eyebrow': 'See where the money goes · Cost to the people: ₱0',
+    'hero-eyebrow': 'Independent civic transparency project · not an official government site',
     'hero-subtitle':
       'An independent watchdog showing how Camarines Norte spends public money — every figure sourced and dated.',
     'hero-cta-primary': 'Explore the budget',
@@ -129,6 +181,16 @@ const translations = {
     'footer-resources': 'Resources',
     'footer-volunteer': 'Volunteer with us',
     'footer-contribute': 'Contribute code with us',
+    'footer-logo-alt': 'BetterCamNorte logo',
+    'footer-dpwh-portal': 'DPWH Transparency Portal',
+    'footer-foi': 'Freedom of Information',
+    'footer-open-data': 'Open Data Philippines',
+    'footer-official-portal': 'Official Camarines Norte Provincial Government Portal',
+    'footer-cost-label': 'Cost to the People of Camarines Norte =',
+    'footer-cost-aria': 'Cost to the People of Camarines Norte: Zero Pesos',
+    'footer-disclaimer':
+      'Independent transparency project. All figures sourced from official public records.',
+    'footer-version-label': 'Ver.',
 
     // Services Page
     'services-title': 'Government Services Directory',
@@ -2780,7 +2842,7 @@ const translations = {
     'home-create-account': 'Create Account',
     'home-education': 'Education',
     'home-empowering-the-people-of-camnorte-with-transparent':
-      'Empowering the people of Camarines Norte with transparent access to the services, programs, and public funds of Camarines Norte Provincial Government.',
+      'An independent, citizen-led project tracking how Camarines Norte spends public money — every figure sourced and dated. Not an official government website.',
     'home-environment': 'Environment',
     'home-father-alejandro-vidal': 'Father Alejandro Vidal',
     'home-fetching-the-latest-news-from-camnorte': 'Fetching the latest news from Camarines Norte.',
@@ -6323,18 +6385,71 @@ const translations = {
     'nav-home': 'Tahanan',
     'nav-services': 'Mga Serbisyo',
     'nav-government': 'Pamahalaan',
+    'nav-projects': 'Mga Proyekto',
     'nav-officials': 'Mga Opisyal',
     'nav-statistics': 'Estadistika',
     'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Transparensiya',
+    'nav-transparency': 'Paggastos',
     'nav-contact': 'Makipag-ugnayan',
     'nav-budget': 'Badyet',
+    'nav-methodology': 'Pamamaraan',
     'nav-news': 'Balita',
     'nav-faq': 'Mga Tanong',
     'nav-sitemap': 'Mapa ng Site',
     'nav-privacy': 'Pagkapribado',
     'nav-terms': 'Mga Tuntunin',
     'nav-accessibility': 'Aksesibilidad',
+    'budget-fiscal-pending-title':
+      'Buod ng pananalapi ng lalawigan — naghihintay ng beripikadong datos',
+    'budget-fiscal-pending-note':
+      'Wala pa kaming opisyal at may petsang pinagmulan para sa ulat ng mga natanggap at ginastos ng lalawigan, kaya wala muna kaming inilalathala rito. Hindi namin inilalathala ang bilang na walang masusubaybayang pinagmulan. Pinagmulan: Bureau of Local Government Finance (BLGF).',
+    'method-breadcrumb': 'Pamamaraan',
+    'method-badge': 'Paano kami nagtatrabaho',
+    'method-title': 'Pamamaraan',
+    'method-subtitle':
+      'Paano kinukuha, binibilang, at nilalagyan ng petsa ang bawat bilang sa site — at paano ka makapagtuturo ng mali.',
+    'method-what-title': 'Ano ito',
+    'method-what-body':
+      'Ang BetterCamNorte ay isang malaya at pinangungunahan ng mamamayang proyekto sa transparency. Hindi ito opisyal na website ng Pamahalaang Panlalawigan ng Camarines Norte. Layunin naming tulungan ang mamamayan na masundan kung saan napupunta ang pampublikong pera ng Camarines Norte.',
+    'method-rule-title': 'Ang tuntuning dapat sundin ng bawat dataset',
+    'method-rule-body':
+      'Ang mga structured dataset na saklaw ng aming provenance check ay dapat may pinagmulan, link ng pinagmulan, at petsang as-of; kung wala, babagsak ang build. Hiwalay na sinusuri ang ibang nilalaman ng site at hindi iyon awtomatikong saklaw ng check na ito. Hindi namin inilalathala o tinatantiya ang mga bilang na hindi mapatunayan ang pinagmulan.',
+    'method-projects-title': 'Mga pampublikong proyekto (DPWH)',
+    'method-projects-source-before': 'Ang datos ng proyekto ay mula sa',
+    'method-dpwh-link': 'DPWH Transparency Portal',
+    'method-projects-source-after':
+      ', na nire-refresh sa bawat build ng site. Sinusuri namin ang mga pambansang tala at kinukuha ang mga kontratang tumutugma sa Camarines Norte. Nasa',
+    'method-projects-link': 'pahina ng Mga Proyekto',
+    'method-projects-link-after':
+      ' ang mga kasalukuyang kabuuan upang hindi magkaiba ang dalawang pahina.',
+    'method-projects-counting':
+      'Saklaw ng pangunahing bilang ang mga kontratang naka-tag sa Camarines Norte District Engineering Office (DEO). Hiwalay ang bilang ng mga kontratang binabanggit lamang ang Camarines Norte sa mas malawak na tag na Region V upang hindi lumabis ang naiuugnay na lokal na paggastos.',
+    'method-honest-title': 'Tapat na pagpapakita ng kulang na datos',
+    'method-honest-before-blgf':
+      'Ipinapakita namin ang kakulangan sa halip na itago ito. Ang kontratang walang nakasaad na contractor ay may markang "Hindi nakasaad sa pinagmulan"; gitling naman ang badyet na hindi nailathala, hindi hula. Naghihintay pa ang buod ng pananalapi ng lalawigan ng mga bilang mula sa',
+    'method-blgf-link': 'BLGF',
+    'method-honest-after-blgf':
+      ', kaya malinaw itong sinasabi ng seksyon sa halip na ipakitang pinal ang mga draft na bilang.',
+    'method-freshness-title': 'Pagiging napapanahon',
+    'method-freshness-body':
+      'Muling kinukuha ang datos ng mga proyekto ng DPWH sa bawat build. May sariling as-of date ang bawat bilang upang makita kung gaano ito kapanahon. Nilalagyan ng petsa ng huling pagsusuri ang mga dataset na naghihintay pa ng opisyal na pinagmulan.',
+    'method-corrections-title': 'May nakitang mali? Sabihin sa amin.',
+    'method-corrections-body':
+      'Bahagi ng trabaho ang pagwawasto. Kung mukhang mali ang isang bilang, ituro sa amin ang tamang pinagmulan at aayusin namin ito:',
+    'method-corrections-issue': 'Magbukas ng issue:',
+    'method-corrections-email': 'O mag-email sa',
+    'method-corrections-source':
+      'Pakisama ang link ng opisyal na pinagmulan upang ma-verify at maisipi namin ito.',
+    'health-page-breadcrumb': 'Mga serbisyong pangkalusugan',
+    'health-page-subtitle':
+      'Magsimula sa beripikadong pampublikong pinagmulan para sa tulong pangkalusugan sa Camarines Norte.',
+    'health-page-provider-title':
+      'Kumpirmahin ang kasalukuyang mga kinakailangan sa opisyal na tagapagbigay',
+    'health-page-provider-body':
+      'Hindi na naglalathala ang BetterCamNorte ng hindi beripikadong bayarin, kinakailangan, o tagal ng pagproseso para sa bakuna, health certificate, o tulong medikal. Maaaring magbago ang mga detalyeng iyon at dapat manggaling sa responsableng tanggapan ng kalusugan ng pamahalaan.',
+    'health-page-provider-cta': 'Bisitahin ang opisyal na portal ng Lalawigan ng Camarines Norte',
+    'health-page-independent-note':
+      'Ibinalik ng pahinang ito ang destinasyon ng paghahanap sa kalusugan habang kinokompleto ang beripikadong tala ng serbisyo. Ang BetterCamNorte ay isang malayang proyekto, hindi opisyal na website ng pamahalaan.',
     'stats-title': 'Estadistika ng Munisipalidad',
     'stats-subtitle': 'Datos at estadistika tungkol sa Camarines Norte',
     'stats-demographics': 'Pangkalahatang-ideya ng Demograpiya',
@@ -6358,7 +6473,8 @@ const translations = {
     'breadcrumb-privacy': 'Patakaran sa Pagkapribado',
     'breadcrumb-terms': 'Mga Tuntunin ng Paggamit',
     'hero-welcome': 'Maligayang Pagdating sa BetterCamNorte',
-    'hero-eyebrow': 'Tingnan kung saan napupunta ang pera · Halaga sa mamamayan: ₱0',
+    'hero-eyebrow':
+      'Malayang proyekto sa transparency ng mamamayan · hindi opisyal na website ng pamahalaan',
     'hero-subtitle':
       'Isang malayang bantay na nagpapakita kung paano ginagastos ng Camarines Norte ang pondo ng publiko — bawat datos may pinagmulan at petsa.',
     'hero-cta-primary': 'Tingnan ang badyet',
@@ -6425,6 +6541,16 @@ const translations = {
     'footer-resources': 'Mga Mapagkukunan',
     'footer-volunteer': 'Mag-volunteer sa amin',
     'footer-contribute': 'Mag-ambag ng code sa amin',
+    'footer-logo-alt': 'Logo ng BetterCamNorte',
+    'footer-dpwh-portal': 'DPWH Transparency Portal',
+    'footer-foi': 'Freedom of Information',
+    'footer-open-data': 'Open Data Philippines',
+    'footer-official-portal': 'Opisyal na Portal ng Pamahalaang Panlalawigan ng Camarines Norte',
+    'footer-cost-label': 'Gastos sa mamamayan ng Camarines Norte =',
+    'footer-cost-aria': 'Gastos sa mamamayan ng Camarines Norte: Zero Pesos',
+    'footer-disclaimer':
+      'Malayang proyekto sa transparency. Lahat ng bilang ay mula sa opisyal na pampublikong tala.',
+    'footer-version-label': 'Bers.',
     'services-title': 'Direktoryo ng Serbisyong Munisipal',
     'services-subtitle':
       'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Camarines Norte',
@@ -9062,7 +9188,7 @@ const translations = {
     'home-create-account': 'Gumawa ng Account',
     'home-education': 'Edukasyon',
     'home-empowering-the-people-of-camnorte-with-transparent':
-      'Pagbibigay-kapangyarihan sa mga mamamayan ng Camarines Norte na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng Camarines Norte Provincial Government.',
+      'Isang malayang proyekto ng mga mamamayan na sumusubaybay sa paggastos ng pampublikong pera ng Camarines Norte — bawat datos ay may pinagmulan at petsa. Hindi opisyal na website ng pamahalaan.',
     'home-environment': 'Kapaligiran',
     'home-father-alejandro-vidal': 'Padre Alejandro Vidal',
     'home-fetching-the-latest-news-from-camnorte':

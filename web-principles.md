@@ -168,3 +168,35 @@ keeps the site coherent and cheap to change: fix the nav once, restyle once, cor
 - Type is Inter (subset, one variable family) with a system-font fallback; no second web font
 - A page that can't be built from existing tokens and components is a signal to _extend the system_,
   not to write bespoke CSS
+
+## 8. Copy before layout
+
+No page redesign begins until its audience, promise, proof, and primary action are written. The words
+decide the layout, not the reverse.
+
+**The test:** before any markup or CSS changes, the page has a one-line answer to: who is this for, what
+do we promise them, what proof backs it, and what is the single primary action.
+
+## 9. Independence is always explicit
+
+The site must never be mistaken for an official provincial-government website. Identity, metadata, and
+copy say "independent, citizen-led project" — never "official portal" or `GovernmentOrganization`.
+
+**The test:** title, OG/Twitter tags, JSON-LD `@type`, and visible copy all disclose independence;
+official contact details are never presented as the site's own.
+
+## 10. One page, one primary action
+
+Each page has exactly one primary action; secondary actions are visually subordinate. Competing CTAs of
+equal weight are a defect.
+
+**The test:** a viewport shows one dominant action. Anything else (utility links, secondary CTAs) is
+smaller, quieter, or below the fold.
+
+## 11. Freshness and correction are product features
+
+Every dataset has an owner, an update schedule, a last-checked date, and a correction process. Gaps are
+shown honestly ("awaiting verified data", "last checked 45 days ago") rather than hidden.
+
+**The test:** each figure dataset declares `source`/`source_url`/`as_of` (enforced by the provenance
+gate); a visible correction path (GitHub issue + email) lets anyone flag an error.

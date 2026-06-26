@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8777S9SP9X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-8777S9SP9X');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="How BetterCamNorte sources, counts, and dates every figure — what's included, known gaps, update schedule, and how to submit a correction. An independent transparency project, not an official government site."
+    />
+    <meta name="author" content="Ramon Logan Jr." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bettercamnorte.org/methodology/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bettercamnorte.org/methodology/" />
+    <meta property="og:title" content="Methodology | BetterCamNorte" />
+    <meta
+      property="og:description"
+      content="How we source, count, and date every figure — and how to flag an error. An independent transparency project, not an official government site."
+    />
+    <meta property="og:site_name" content="BetterCamNorte" />
+
+    <title>Methodology | BetterCamNorte</title>
+
+    <link rel="icon" type="image/png" href="../assets/images/logo/camnorte-logo.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico" />
+    <link rel="apple-touch-icon" href="../assets/images/logo/camnorte-logo.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/accessibility.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/transparency-v2.css" />
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="hotline-bar">
+      <div class="container">
+        <div class="hotline-inner">
+          <div class="hotline-items">
+            <a href="tel:09274008033" class="hotline-item"
+              ><i class="bi bi-shield-fill"></i><span>Police: 0927 400 8033</span></a
+            >
+            <a href="tel:09162840885" class="hotline-item"
+              ><i class="bi bi-heart-fill"></i><span>MSWDO: 0916 284 0885</span></a
+            >
+            <a href="tel:09360620305" class="hotline-item"
+              ><i class="bi bi-fire"></i><span>Fire: 0936 062 0305</span></a
+            >
+            <a href="tel:0906188086" class="hotline-item"
+              ><i class="bi bi-building"></i><span>DILG: 0906 188 086</span></a
+            >
+            <a href="tel:09263833744" class="hotline-item"
+              ><i class="bi bi-exclamation-triangle-fill"></i><span>MDRRMO: 0926 383 3744</span></a
+            >
+            <a href="tel:09068195569" class="hotline-item"
+              ><i class="bi bi-truck"></i><span>R2TMC: 0906 819 5569</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "header.njk" %}
+
+    <main id="main-content">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../" data-i18n="breadcrumb-home">Home</a>
+          <span>/</span>
+          <span aria-current="page" data-i18n="method-breadcrumb">Methodology</span>
+        </nav>
+      </div>
+
+      <section class="trans-hero-v2">
+        <div class="container">
+          <div class="trans-hero-content-v2">
+            <span class="trans-hero-badge-v2"
+              ><i class="bi bi-clipboard-check"></i>
+              <span data-i18n="method-badge">How we work</span></span
+            >
+            <h1 data-i18n="method-title">Methodology</h1>
+            <p data-i18n="method-subtitle">
+              How every figure on this site is sourced, counted, dated — and how you can flag one
+              that's wrong.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="method-section">
+        <div class="container method-prose">
+          <h2 data-i18n="method-what-title">What this is</h2>
+          <p data-i18n="method-what-body">
+            BetterCamNorte is an independent, citizen-led transparency project. It is not an
+            official website of the Provincial Government of Camarines Norte. Our one job is to help
+            citizens trace where Camarines Norte's public money goes.
+          </p>
+
+          <h2 data-i18n="method-rule-title">The rule every dataset must pass</h2>
+          <p data-i18n="method-rule-body">
+            Structured figure datasets covered by our provenance check must carry a source, a source
+            link, and an as-of date or the build fails. Other site content is reviewed separately
+            and is not automatically covered by that check. Figures whose provenance we cannot
+            establish are unpublished, not estimated.
+          </p>
+
+          <h2 data-i18n="method-projects-title">Public projects (DPWH)</h2>
+          <p>
+            <span data-i18n="method-projects-source-before">Project data comes from the</span>
+            <a
+              href="https://transparency.dpwh.gov.ph/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="method-dpwh-link"
+              >DPWH Transparency Portal</a
+            ><span data-i18n="method-projects-source-after"
+              >, refreshed each time the site is built. We scan the portal's national records and
+              keep the contracts that match Camarines Norte. Live totals are shown on the</span
+            >
+            <a href="../projects/" data-i18n="method-projects-link">Projects page</a
+            ><span data-i18n="method-projects-link-after"> so the two pages cannot disagree.</span>
+          </p>
+          <p data-i18n="method-projects-counting">
+            Headline figures cover contracts tagged to the Camarines Norte District Engineering
+            Office (DEO). Contracts that only mention Camarines Norte under the broader Region V tag
+            are counted separately, because attributing them to the province would overstate local
+            spending.
+          </p>
+
+          <h2 data-i18n="method-honest-title">Honest states</h2>
+          <p>
+            <span data-i18n="method-honest-before-blgf"
+              >We show gaps rather than hide them. A contract with no disclosed contractor reads
+              "Not stated in source"; a contract with no published budget shows a dash, not a
+              guessed amount. The provincial fiscal summary is currently awaiting figures from
+              the</span
+            >
+            <a
+              href="https://blgf.gov.ph/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="method-blgf-link"
+              >BLGF</a
+            ><span data-i18n="method-honest-after-blgf"
+              >, so the section says so plainly instead of showing draft numbers as final.</span
+            >
+          </p>
+
+          <h2 data-i18n="method-freshness-title">Freshness</h2>
+          <p data-i18n="method-freshness-body">
+            DPWH project data is re-pulled on every build. Each figure carries its own as-of date,
+            so you can see how current it is rather than assuming it's live. Datasets still awaiting
+            an official source are labelled with when they were last checked.
+          </p>
+
+          <h2 data-i18n="method-corrections-title">Found a mistake? Tell us.</h2>
+          <p data-i18n="method-corrections-body">
+            Corrections are a feature, not an embarrassment. If a figure looks wrong, point us at
+            the right source and we'll fix it:
+          </p>
+          <ul>
+            <li>
+              <span data-i18n="method-corrections-issue">Open an issue:</span>
+              <a
+                href="https://github.com/Exc1D/better-camnorte/issues/new"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/Exc1D/better-camnorte/issues</a
+              >
+            </li>
+            <li>
+              <span data-i18n="method-corrections-email">Or email</span>
+              <a href="mailto:volunteer@bettercamnorte.org">volunteer@bettercamnorte.org</a>
+            </li>
+          </ul>
+          <p data-i18n="method-corrections-source">
+            Please include a link to the official source so we can verify and cite it.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    {% include "footer.njk" %}
+
+    <script defer src="../assets/js/translations.js"></script>
+    <script defer src="../assets/js/main.js"></script>
+    <script defer src="../assets/js/version.js"></script>
+  </body>
+</html>

@@ -8,13 +8,14 @@
         aria-haspopup="true"
         aria-expanded="false"
         {% if "/budget" in page.url or "/statistics" in page.url %}class="active"{% endif %}
-        >Transparency</a
+        >Spending</a
       >
       <ul class="dropdown-menu">
         <li><a href="/budget/" data-i18n="nav-budget">Budget</a></li>
         <li><a href="/statistics/" data-i18n="nav-statistics">Statistics</a></li>
       </ul>
     </li>
+    <li><a href="/projects/"{% if "/projects" in page.url %} class="active"{% endif %} data-i18n="nav-projects">Projects</a></li>
     <li><a href="/government/"{% if "/government" in page.url %} class="active"{% endif %} data-i18n="nav-government">Government</a></li>
     <li class="has-dropdown">
       <a
@@ -38,6 +39,7 @@
         </li>
       </ul>
     </li>
+    <li><a href="/methodology/"{% if "/methodology" in page.url %} class="active"{% endif %} data-i18n="nav-methodology">Methodology</a></li>
     <li><a href="/news/"{% if "/news" in page.url %} class="active"{% endif %} data-i18n="nav-news">News</a></li>
     <li><a href="/contact/"{% if "/contact" in page.url %} class="active"{% endif %} data-i18n="nav-contact">Contact</a></li>
   </ul>

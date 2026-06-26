@@ -15,14 +15,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="BetterCamNorte - Your digital gateway to Camarines Norte Provincial Government services. Access government services, online transactions via Filipizen, emergency hotlines, government information, and transparency data for Camarines Norte."
+      content="BetterCamNorte is an independent, citizen-led project tracking where Camarines Norte's public money goes — public works, budgets, and the officials accountable for them. Not an official government website."
     />
 
     <!-- SEO Meta Tags -->
     <meta name="author" content="Ramon Logan Jr." />
     <meta
       name="keywords"
-      content="BetterCamNorte, Camarines Norte Provincial Government, government services, government transparency, Filipizen online services, emergency hotlines, birth certificate, business permit, real property tax, MSWDO, SEEDO, Camarines Norte Philippines"
+      content="Camarines Norte public spending, DPWH projects, provincial budget transparency, government accountability, public works tracker, where the money goes, independent watchdog, Camarines Norte Philippines"
     />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
@@ -36,10 +36,10 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bettercamnorte.org/" />
-    <meta property="og:title" content="BetterCamNorte | Official Portal" />
+    <meta property="og:title" content="BetterCamNorte | Public Spending & Project Tracker" />
     <meta
       property="og:description"
-      content="Empowering the people of Camarines Norte with transparent access to the services, programs, and public funds of Camarines Norte Provincial Government."
+      content="Track Camarines Norte's public spending and projects — every figure sourced and dated. An independent transparency project, not an official government site."
     />
     <meta
       property="og:image"
@@ -54,10 +54,10 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://bettercamnorte.org/" />
-    <meta name="twitter:title" content="BetterCamNorte | Official Portal" />
+    <meta name="twitter:title" content="BetterCamNorte | Public Spending & Project Tracker" />
     <meta
       name="twitter:description"
-      content="Empowering the people of Camarines Norte with transparent access to the services, programs, and public funds of Camarines Norte Provincial Government."
+      content="Track Camarines Norte's public spending and projects — every figure sourced and dated. An independent transparency project, not an official government site."
     />
     <meta
       name="twitter:image"
@@ -71,7 +71,7 @@
     />
 
     <!-- Additional SEO -->
-    <meta name="geo.region" content="PH-NUV" />
+    <meta name="geo.region" content="PH-CAN" />
     <meta name="geo.placename" content="Camarines Norte" />
     <meta name="geo.position" content="14.1122;122.9553" />
     <meta name="ICBM" content="14.1122, 122.9553" />
@@ -83,7 +83,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="BetterCamNorte" />
 
-    <title>BetterCamNorte | Official Portal</title>
+    <title>BetterCamNorte | Public Spending & Project Tracker</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo/camnorte-logo.png" />
@@ -116,12 +116,11 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "GovernmentOrganization",
-        "name": "Province of Camarines Norte",
-        "alternateName": "BetterCamNorte",
+        "@type": "Organization",
+        "name": "BetterCamNorte",
         "url": "https://bettercamnorte.org",
         "logo": "https://bettercamnorte.org/assets/images/logo/camnorte-logo.png",
-        "description": "Official portal of the Province of Camarines Norte. Access government services, government information, and community updates.",
+        "description": "Independent, citizen-led public-spending transparency project tracking where Camarines Norte's public money goes. Not an official website of the Provincial Government of Camarines Norte.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Provincial Capitol",
@@ -213,7 +212,7 @@
           <div class="hero__sky">
             <p class="hero__eyebrow" data-i18n="hero-eyebrow">
               <span class="hero__flag" aria-hidden="true"></span>
-              See where the money goes · Cost to the people: ₱0
+              Independent civic transparency project · not an official government site
             </p>
             <h1 class="hero__title">
               <span class="hero__title-line hero__title-line--serif">Bantayog</span>
@@ -246,9 +245,12 @@
 
             <p class="hero__stat">
               <a href="/budget/#dpwh">
-                <strong>₱409.5M</strong> across <strong>63</strong> DPWH projects tracked
+                <strong>{{ summary.deoCostDisplay }}</strong> across
+                <strong>{{ summary.deoCount }}</strong> DPWH projects tracked
               </a>
-              <span class="hero__stat-src">Source: DPWH — Camarines Norte District Engineering Office</span>
+              <span class="hero__stat-src"
+                >Source: {{ summary.source }} · as of {{ summary.as_of }}</span
+              >
             </p>
 
             <div class="hero__actions">
@@ -256,54 +258,11 @@
                 Explore the budget
                 <i class="bi bi-arrow-right" aria-hidden="true"></i>
               </a>
-              <a href="/budget/#dpwh" class="hero__btn hero__btn--ghost" data-i18n="hero-cta-secondary"
+              <a href="/methodology/" class="hero__btn hero__btn--ghost" data-i18n="hero-cta-secondary"
                 >How we source this</a
               >
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      <!-- Appointment Services CTA -->
-      <section class="appointment-cta-section" aria-label="Governor's Office Appointment Services">
-        <div class="container">
-          <div class="appointment-cta-inner">
-            <div class="appointment-cta-animation" aria-hidden="true">
-              <dotlottie-player
-                src="assets/animation/ramonloganjr-booking.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></dotlottie-player>
-            </div>
-            <div class="appointment-cta-content">
-              <h2 class="appointment-cta-heading" data-i18n="appointment-cta-heading">
-                Enhancing Appointment Services of Camarines Norte Provincial Government Governor's Office
-              </h2>
-              <p class="appointment-cta-subtitle" data-i18n="appointment-cta-subtitle">
-                No lines. No back-and-forth. Just efficient appointments.
-              </p>
-              <div class="appointment-cta-actions">
-                <a
-                  href="https://camnortemayorsoffice-oasys.com/user/auth/login.php"
-                  class="appointment-cta-btn appointment-cta-btn--primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="bi bi-calendar-check" aria-hidden="true"></i>
-                  <span data-i18n="home-schedule-appointment">Schedule Appointment</span></a
-                >
-                <a
-                  href="https://camnortemayorsoffice-oasys.com/user/auth/register.php"
-                  class="appointment-cta-btn appointment-cta-btn--outline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="bi bi-person-plus" aria-hidden="true"></i>
-                  <span data-i18n="home-create-account">Create Account</span></a
-                >
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -424,314 +383,76 @@
         </div>
       </section>
 
-      <!-- Brief History of Camarines Norte Section -->
-      <section class="section history-section">
+      <!-- Spending snapshot — fills the slot the (removed) history section left.
+           All figures build-computed from data/dpwh-projects.json via _data/summary.js. -->
+      <section class="section spending-snapshot">
         <div class="container">
           <div class="home-stats-v2-header">
-            <h2>
-              <i class="bi bi-book" aria-hidden="true"></i>
-              <span data-i18n="home-brief-history-of-camnorte">Brief History of Camarines Norte</span>
-            </h2>
+            <h2 data-i18n="home-spending-snapshot">Where the public money goes</h2>
+            <a href="/budget/#dpwh" class="home-stats-v2-link">
+              <span data-i18n="home-explore-spending">Explore spending</span>
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="history-content">
-            <div class="history-timeline">
-              <div class="timeline-item" data-year="1760">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">1760</span>
-            <p data-i18n="home-history-1760">
-                    The original name of the town was <strong>Bintauan</strong>, then a Gaddang
-                    settlement that is now a barangay of Villaverde.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item" data-year="1767">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">1767</span>
-            <p data-i18n="home-history-1767">
-                    The town was formally founded by <strong>Father Alejandro Vidal</strong>, a
-                    Dominican priest who led a Spanish mission.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item" data-year="1768">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">1768</span>
-            <p data-i18n="home-history-1768">
-                    Named <strong>Lungabang</strong>, from the Gaddang word for cave,
-                    <em>lungab</em>. Later changed to Lumabang by the Spaniards.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item" data-year="1851">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">1851</span>
-            <p data-i18n="home-governor-general-antonio-urbiztondo-declared">
-                    Governor General Antonio Urbiztondo declared Lumabang a barrio of Bayombong for
-                    insufficient inhabitants and revenue.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item" data-year="1853">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">1853</span>
-            <p data-i18n="home-history-1853">
-                    The first <strong>Ilocanos arrived</strong>, brought by Don Diego Lumicao, a
-                    former gobernadorcillo.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item" data-year="1889">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">1889</span>
-            <p data-i18n="home-history-1889">
-                    Renamed <strong>Camarines Norte</strong> in honor of Governor General
-                    <strong>Ramon Camarines Norte y Llanderal</strong>. The town was redeveloped by Father
-                    Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100
-                    square blocks.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-item" data-year="1957">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <span class="timeline-year">1957</span>
-            <p data-i18n="home-history-1957">
-                    The barrios of Ibung and Bintawan were separated to form the town of Ibung,
-                    later renamed as <strong>Villaverde</strong>. Camarines Norte's land area was reduced to
-                    <strong>13,980 hectares</strong>.
-                  </p>
-                </div>
-              </div>
+          <div class="snapshot-grid">
+            <div class="snapshot-card">
+              <span class="snapshot-value">{{ summary.deoCostDisplay }}</span>
+              <span class="snapshot-label" data-i18n="home-tracked-value">Tracked project value</span>
+              <span class="snapshot-source">Camarines Norte DEO</span>
             </div>
-            <div class="history-summary">
-              <div class="history-card">
-                <div class="history-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                <div class="history-card-content">
-                  <h4 data-i18n="home-once-the-largest">Once the Largest</h4>
-                  <p data-i18n="home-camnorte-was-the-largest-municipality-in-the">
-                    Camarines Norte was the largest municipality in the province until Caliat and Bintawan
-                    were separated to become Quezon and Villaverde respectively.
-                  </p>
-                </div>
-              </div>
-              <div class="history-card">
-                <div class="history-card-icon"><i class="bi bi-grid-3x3"></i></div>
-                <div class="history-card-content">
-                  <h4 data-i18n="home-urban-planning">Urban Planning</h4>
-                  <p data-i18n="home-the-1889-redevelopment-created-a-grid-of-100">
-                    The 1889 redevelopment created a grid of 100 square blocks, each with an
-                    aggregate area of one hectare, with streets running north-south and east-west.
-                  </p>
-                </div>
-              </div>
+            <div class="snapshot-card">
+              <span class="snapshot-value">{{ summary.deoCount }}</span>
+              <span class="snapshot-label" data-i18n="home-projects-tracked">Projects tracked</span>
+              <span class="snapshot-source">+{{ summary.regionVCount }} Region V contracts</span>
+            </div>
+            <div class="snapshot-card">
+              <span class="snapshot-value">{{ summary.as_of }}</span>
+              <span class="snapshot-label" data-i18n="home-data-as-of">Data as of</span>
+              <span class="snapshot-source">{{ summary.source }}</span>
             </div>
           </div>
+          <p class="snapshot-note" data-i18n="home-snapshot-note">
+            Headline figures cover projects under the Camarines Norte District Engineering
+            Office. Region V contracts mentioning Camarines Norte are tracked separately. See the
+            <a href="/methodology/">methodology</a> for how projects are counted.
+          </p>
         </div>
         <style>
-          .history-section {
-            background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
-          }
-          .history-section .home-stats-v2-header h2 {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-          }
-          .history-section .home-stats-v2-header h2 i {
-            color: var(--color-primary);
-          }
-          .history-content {
+          .snapshot-grid {
             display: grid;
-            grid-template-columns: 1fr 340px;
-            gap: 32px;
-            align-items: start;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
           }
-          .history-timeline {
-            position: relative;
-            padding-left: 28px;
-          }
-          .history-timeline::before {
-            content: '';
-            position: absolute;
-            left: 6px;
-            top: 8px;
-            bottom: 8px;
-            width: 2px;
-            background: linear-gradient(
-              180deg,
-              var(--color-primary) 0%,
-              rgba(0, 50, 160, 0.2) 100%
-            );
-            border-radius: 2px;
-          }
-          .timeline-item {
-            position: relative;
-            padding-bottom: 20px;
-            opacity: 0;
-            animation: fadeInUp 0.5s ease forwards;
-          }
-          .timeline-item:nth-child(1) {
-            animation-delay: 0.1s;
-          }
-          .timeline-item:nth-child(2) {
-            animation-delay: 0.2s;
-          }
-          .timeline-item:nth-child(3) {
-            animation-delay: 0.3s;
-          }
-          .timeline-item:nth-child(4) {
-            animation-delay: 0.4s;
-          }
-          .timeline-item:nth-child(5) {
-            animation-delay: 0.5s;
-          }
-          .timeline-item:nth-child(6) {
-            animation-delay: 0.6s;
-          }
-          .timeline-item:nth-child(7) {
-            animation-delay: 0.7s;
-          }
-          .timeline-item:last-child {
-            padding-bottom: 0;
-          }
-          .timeline-marker {
-            position: absolute;
-            left: -28px;
-            top: 4px;
-            width: 14px;
-            height: 14px;
-            background: var(--color-bg);
-            border: 3px solid var(--color-primary);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            z-index: 1;
-          }
-          .timeline-item:hover .timeline-marker {
-            background: var(--color-primary);
-            transform: scale(1.2);
-            box-shadow: 0 0 0 4px rgba(0, 50, 160, 0.15);
-          }
-          .timeline-content {
-            background: var(--color-bg);
-            border: 1px solid rgba(0, 0, 0, 0.06);
-            border-radius: 10px;
-            padding: 16px 18px;
-            transition: all 0.3s ease;
-          }
-          .timeline-item:hover .timeline-content {
-            border-color: var(--color-primary);
-            box-shadow: 0 4px 16px rgba(0, 50, 160, 0.1);
-            transform: translateX(4px);
-          }
-          .timeline-year {
-            display: inline-block;
-            background: var(--color-primary);
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 3px 10px;
-            border-radius: 20px;
-            margin-bottom: 8px;
-          }
-          .timeline-content p {
-            font-size: 0.875rem;
-            color: var(--color-text);
-            margin: 0;
-            line-height: 1.6;
-          }
-          .timeline-content p strong {
-            color: var(--color-primary);
-          }
-          .timeline-content p em {
-            font-style: italic;
-            color: var(--color-text-light);
-          }
-          .history-summary {
+          .snapshot-card {
             display: flex;
             flex-direction: column;
-            gap: 16px;
-            position: sticky;
-            top: 100px;
-          }
-          .history-card {
+            gap: 4px;
             background: var(--color-bg);
-            border: 1px solid rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 12px;
             padding: 20px;
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            transition: all 0.3s ease;
           }
-          .history-card:hover {
-            border-color: var(--color-primary);
-            box-shadow: 0 4px 16px rgba(0, 50, 160, 0.1);
-            transform: translateY(-2px);
+          .snapshot-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-primary);
           }
-          .history-card-icon {
-            width: 44px;
-            height: 44px;
-            background: linear-gradient(
-              135deg,
-              var(--color-primary) 0%,
-              var(--color-secondary) 100%
-            );
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-          }
-          .history-card-icon i {
-            color: white;
-            font-size: 1.25rem;
-          }
-          .history-card-content h4 {
-            font-size: 0.9375rem;
+          .snapshot-label {
             font-weight: 600;
-            color: var(--color-text);
-            margin: 0 0 6px 0;
           }
-          .history-card-content p {
+          .snapshot-source {
             font-size: 0.8125rem;
-            color: var(--color-text-light);
-            margin: 0;
-            line-height: 1.5;
+            color: var(--color-text-light, #667085);
           }
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translateY(16px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
+          .snapshot-note {
+            margin-top: 16px;
+            font-size: 0.8125rem;
+            color: var(--color-text-light, #667085);
+            line-height: 1.6;
           }
-          @media (max-width: 900px) {
-            .history-content {
+          @media (max-width: 768px) {
+            .snapshot-grid {
               grid-template-columns: 1fr;
-            }
-            .history-summary {
-              position: static;
-              flex-direction: row;
-              flex-wrap: wrap;
-            }
-            .history-card {
-              flex: 1 1 280px;
-            }
-          }
-          @media (max-width: 575px) {
-            .history-summary {
-              flex-direction: column;
-            }
-            .history-card {
-              flex: 1 1 100%;
             }
           }
         </style>
@@ -898,49 +619,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Camarines Norte Quiz CTA -->
-      <section class="quiz-cta-section" aria-label="Camarines Norte Quiz">
-        <div class="container">
-          <div class="quiz-cta-inner">
-            <div class="quiz-cta-animation" aria-hidden="true">
-              <dotlottie-player
-                src="assets/animation/ramonloganjr-exam.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></dotlottie-player>
-            </div>
-            <div class="quiz-cta-content">
-              <h2 class="quiz-cta-heading" data-i18n="home-camnorte-quiz">Camarines Norte Quiz</h2>
-              <p
-                class="quiz-cta-subtitle"
-                data-i18n="home-how-well-do-you-know-camnorte-camarines-norte"
-              >
-                How well do you know Camarines Norte?
-              </p>
-              <p
-                class="quiz-cta-description"
-                data-i18n="home-evaluate-your-familiarity-with-the-municipalitys"
-              >
-                Evaluate your familiarity with the municipality's heritage, cultural identity, and
-                geographic significance through an interactive knowledge assessment designed to
-                showcase one of Camarines Norte's most prominent localities.
-              </p>
-              <a
-                href="https://quiz.bettercamnorte.org/"
-                class="quiz-cta-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
-                <span data-i18n="home-take-the-quiz">Take the Quiz</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
@@ -957,8 +635,8 @@
               class="footer-tagline"
               data-i18n="home-empowering-the-people-of-camnorte-with-transparent"
             >
-              Empowering the people of Camarines Norte with transparent access to the services, programs, and
-              public funds of Camarines Norte Provincial Government.
+              An independent, citizen-led project tracking how Camarines Norte spends public money —
+              every figure sourced and dated. Not an official government website.
             </p>
             <div class="footer-social-new">
               <a
@@ -1151,7 +829,7 @@
             <span class="footer-copyright-disclaimer"
               >All public information sourced from official government portals.</span
             >
-            <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.22</span>
+            <span class="footer-version"><i class="bi bi-boxes"></i> Ver. 1.1.25</span>
           </div>
         </div>
       </div>

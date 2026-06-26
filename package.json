@@ -1,7 +1,7 @@
 {
   "name": "bettercamnorte-web",
-  "version": "1.1.22",
-  "description": "BetterCamNorte - Official Portal for Camarines Norte Provincial Government",
+  "version": "1.1.25",
+  "description": "BetterCamNorte - independent, citizen-led public-spending transparency tracker for Camarines Norte (not an official government site)",
   "scripts": {
     "dev": "python3 -m http.server 8000",
     "sync:dpwh": "node scripts/sync-dpwh-camarines-norte.mjs",
