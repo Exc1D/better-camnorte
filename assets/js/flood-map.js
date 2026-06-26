@@ -98,18 +98,27 @@
 
     const hazardCache = {};
     let hazardLayer = null;
+    let activePeriod = DEFAULT_PERIOD;
+    let hazardToken = 0;
 
     async function showHazard(period) {
+      // Latest click wins: if a newer period is requested while this fetch is in
+      // flight, drop the stale result so the map can't end up showing one period
+      // while the toolbar says another.
+      const token = ++hazardToken;
       if (!hazardCache[period]) {
         const response = await fetch(`../data/flood/flood-${period}.geojson`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         hazardCache[period] = await response.json();
       }
+      if (token !== hazardToken) return;
       if (hazardLayer) map.removeLayer(hazardLayer);
       hazardLayer = L.geoJSON(hazardCache[period], {
         pane: 'hazard',
         style: hazardStyle,
       }).addTo(map);
+      activePeriod = period;
+      syncButtons(period);
     }
 
     // Project markers (loaded once; independent of the hazard period).
@@ -136,30 +145,40 @@
           }).bindPopup(popupHTML(project), { maxWidth: 300 })
         );
       });
+      const counter = document.getElementById('flood-map-count');
       if (markers.length) {
         const group = L.featureGroup(markers).addTo(map);
         map.fitBounds(group.getBounds(), { padding: [30, 30], maxZoom: 12 });
         projectsLoaded = true;
-        const counter = document.getElementById('flood-map-count');
         if (counter)
           counter.textContent = `${markers.length} flood-control projects with mapped coordinates`;
+      } else if (counter) {
+        counter.textContent = 'No flood-control projects to display.';
       }
     } catch (error) {
       console.error('Failed to load flood-control projects:', error);
+      const counter = document.getElementById('flood-map-count');
+      if (counter) counter.textContent = 'Flood-control project data is unavailable.';
     }
 
-    // Period selector.
+    // Period selector. The active state follows the layer that actually rendered
+    // (set inside showHazard), so an out-of-order or failed fetch can't leave the
+    // toolbar pointing at a period the map isn't showing.
     const buttons = document.querySelectorAll('.flood-period button');
+    function syncButtons(period) {
+      buttons.forEach((b) => {
+        const on = b.dataset.period === period;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-pressed', String(on));
+      });
+    }
     buttons.forEach((btn) => {
       btn.addEventListener('click', async () => {
-        buttons.forEach((b) => {
-          b.classList.toggle('active', b === btn);
-          b.setAttribute('aria-pressed', String(b === btn));
-        });
         try {
           await showHazard(btn.dataset.period);
         } catch (error) {
           console.error('Failed to load hazard layer:', error);
+          syncButtons(activePeriod);
         }
       });
     });
