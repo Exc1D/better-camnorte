@@ -3,8 +3,8 @@
   "source_url": "https://transparency.dpwh.gov.ph/",
   "api_source_url": "https://api.dpwh.bettergov.ph/projects",
   "official_api_url": "https://api.transparency.dpwh.gov.ph/projects",
-  "as_of": "2026-06-26",
-  "retrieved_at": "2026-06-26T07:47:52.037Z",
+  "as_of": "2026-06-29",
+  "retrieved_at": "2026-06-29T07:03:09.984Z",
   "scope": {
     "geography": "Camarines Norte",
     "inclusion_rule": "Included when the official DPWH location.province field or contract description contains “Camarines Norte”.",
